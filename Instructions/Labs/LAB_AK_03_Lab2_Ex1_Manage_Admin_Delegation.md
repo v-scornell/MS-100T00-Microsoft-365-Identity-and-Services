@@ -12,7 +12,7 @@ As Holly Dickson, Adatum’s Enterprise Administrator and Microsoft 365 Global A
 
 3. In the **Active users** list, select **Diego Siciliani**. 
 
-	**Note:** Select Diego’s name and do NOT select the circle to the left of the name; the circle with the check mark is typically used for selecting multiple users when you want to perform one of the user-related actions on the menu bar that appears above the list of users, such as **Manage product licenses** and **Manage roles**). Selecting a user’s name opens a detail pane specifically for that user.
+	**Note:** Select Diego’s name; do not select the circle to the left of his name. The circle with the check mark is typically used for selecting multiple users when you want to perform one of the user-related actions on the menu bar that appears above the list of users, such as **Manage product licenses** and **Manage roles**. Selecting a user’s name opens a detail pane specifically for that user.
 
 4. In the **Diego Siciliani** pane that appears, the **Account** tab is displayed by default. In this tab, scroll down to the **Roles** section and select **Manage roles**. 
 
