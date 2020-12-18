@@ -12,6 +12,8 @@ As Holly Dickson, Adatum’s Enterprise Administrator and Microsoft 365 Global A
 
 3. In the **Active users** list, select **Diego Siciliani**. 
 
+	**Note:** Select Diego’s name and do NOT select the circle to the left of the name; the circle with the check mark is for selecting a user when you want to perform one of the user-related actions on the menu bar that appears above the list of users, such as Reset password and Manage product licenses). Selecting a user’s name opens a detail pane specifically for that user.
+
 4. In the **Diego Siciliani** pane that appears, the **Account** tab is displayed by default. In this tab, scroll down to the **Roles** section and select **Manage roles**. 
 
 5. In the **Manage roles** window, the **User (no admin center access)** option is currently selected by default. Now that you want to assign Diego an administrator role, select the **Admin center access** option. This enables the admin roles for selection. 
