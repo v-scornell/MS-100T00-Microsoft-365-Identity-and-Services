@@ -45,7 +45,7 @@ This task is similar to the prior one in that you will assign administrator righ
 
 4. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press Enter:   <br/>
 
-		Set-ExecutionPolicy unrestricted <br\>
+		Set-ExecutionPolicy unrestricted
 
 	‎If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.** 
 
@@ -76,7 +76,7 @@ This task is similar to the prior one in that you will assign administrator righ
 			
 9. You should now run the following two commands as described in the previous step to verify that Patti Fernandez was assigned the Service support administrator role:  <br/> 
 
-		&dollar;role = Get-MsolRole -RoleName "Service support administrator" <br/>
+		&dollar;role = Get-MsolRole -RoleName "Service support administrator"
 
 		Get-MsolRoleMember -RoleObjectId $role.ObjectId
 	
@@ -84,7 +84,7 @@ This task is similar to the prior one in that you will assign administrator righ
 
 11. You should now run the following two commands to verify which Adatum users have been assigned to the **Billing administrator** role.  <br/>
 
-		&dollar;role = Get-MsolRole -RoleName "Billing administrator"  <br/>
+		&dollar;role = Get-MsolRole -RoleName "Billing administrator"
 
 		Get-MsolRoleMember -RoleObjectId $role.ObjectId
 
