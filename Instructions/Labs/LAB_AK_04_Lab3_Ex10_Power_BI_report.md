@@ -131,7 +131,7 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 ‎  
 ‎Take this opportunity to arrange the columns in whatever order you want.
 
-35. Next, you want to rename the columns so that they map to the user-friendly column names used in the SharePoint list rather than their database field names. To rename a field, under the **Fields** tab in the **Visualizations** pane, select the drop-down arrow for the field, select **Rename** in the menu that appears, and then enter the new name and press Enter.   
+35. Next, you want to rename the columns so that they map to the user-friendly column names used in the SharePoint list rather than their database field names. To rename a field, under the **Fields** tab in the **Visualizations** pane, select the drop-down arrow for the field, select **Rename for this visual** in the menu that appears, and then enter the new name and press Enter.   
 ‎  
 ‎Change the names of the following fields:
 
@@ -161,9 +161,9 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 
 41. Since the Title field is referred to as the Issue Status in the SharePoint list, you want to rename it here to reflect this name in the chart.
 
-	- In the **Legend** field, select the **drop-down arrow** next to **Title**, and in the menu, select **Rename**. Enter **Issue Status** as the new name of the **Legend**.
+	- In the **Legend** field, select the **drop-down arrow** next to **Title**, and in the menu, select **Rename for this visual**. Enter **Issue Status** as the new name of the **Legend**.
 
-	- In the **Value** field, select the **drop-down arrow** next to **Count of** **Title**, and in the menu, select **Rename**. Enter **Count of Issue Status** as the new name of the **Value**.
+	- In the **Value** field, select the **drop-down arrow** next to **Count of Title**, and in the menu, select **Rename for this visual**. Enter **Count of Issue Status** as the new name of the **Value**.
 
 42. To change formatting of the chart, ensure the chart is selected. If the chart is not already selected, click your mouse inside the area of where the chart had previously appeared; this will display the chart outline. 
 
