@@ -154,7 +154,7 @@
 <br><br></li>
 <li><strong>START HERE TO PERFORM THIS TASK USING POWERSHELL. </strong>
   <br><br>Since you are at this step, you have chosen to use Windows PowerShell to export the table data into a SharePoint list in the IT Services site rather than using Excel to accomplish this task. 
-  <br><br>Confirm that the <strong>Service Request System.csv </strong>file is present in the <strong>C:\Users\Administrator\Documents</strong> folder. This file contains copies of the service request tickets from Adatum&rsquo;s old ticketing system. 
+  <br><br>Open <strong>File Explorer</strong> and confirm the <strong>Service Request System.csv </strong>file is present in the <strong>Documents</strong> folder (where the Documents folder points to the actual path of C:\Users\Administrator.ADATUM\Documents). This .csv file contains copies of the service request tickets from Adatum&rsquo;s old ticketing system. 
   <br><br>Confirm that the <strong>ImportCsvToSharepointList.ps1</strong> script is present in the <strong>Documents</strong> folder as well. This script contains the PowerShell commands you will run to export the table data from the <strong>Service Request System.csv </strong>file and import it into a SharePoint list in the IT Services site.</li>
 <li>In the <strong>Search</strong> field on the taskbar at the bottom of the desktop, enter <strong>PowerShell</strong>. 
   <br><br><strong>Important: </strong>Because you MUST run several of the commands within this script individually rather than running the entire script at once, you should select <strong>Windows PowerShell ISE </strong>(not Windows PowerShell); therefore, right-click on <strong>Windows PowerShell ISE</strong> and select <strong>Run as administrator</strong>.</li>
