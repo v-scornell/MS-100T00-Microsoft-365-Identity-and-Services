@@ -37,13 +37,13 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 
 	When you are ready to proceed, select the **X** in the upper right-hand corner to close this window. 
 
-13. If you are already signed into Microsoft 365, then you may automatically be signed into Power BI Desktop as the same user that is signed into Microsoft 365. However, if the **Sign in** option appears in the upper-left corner of the screen, then select it now to sign in.
+13. If you are already signed into Microsoft 365, then you may automatically be signed into Power BI Desktop as the same user that is signed into Microsoft 365. However, if the **Sign in** option appears in the upper-right corner of the screen, then select it now to sign in.
 
 	Assuming you must sign in, select the **Sign in** option. On the **Enter your email address** dialog box, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the email address field and then select **Continue**. 
 	
-	In the **Pick an account** window that appears, select **Holly@xxxxxZZZZZZ.onmicrosoft.com**. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.  
+	In the **Pick an account** window that appears (which may take a minute or so to appear), select **Holly@xxxxxZZZZZZ.onmicrosoft.com**. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.  
 
-14. In the **Power BI Desktop**, you want to create a new report based on the Service Desk Ticketing system you created earlier. You want to begin by naming the report, so select **File** from the menu bar, select **Save as,** and name your file **ServiceRequestPowerBI**. By default, the file will be saved in the **Documents** folder as a Power BI file (.pbix). Select **Save**.
+14. In the **Power BI Desktop**, you want to create a new report based on the Service Desk Ticketing system you created earlier. You must begin by naming the report, so select **File** from the menu bar, select **Save as,** and enter **ServiceRequestPowerBI** in the **File name** field. By default, the file will be saved in the **Documents** folder as a Power BI file (.pbix). Select **Save**.
 
 15. In the ribbon that appears at the top of the screen below the menu bar, select **Get data**. In the drop-down menu that appears, select **More…** 
 
@@ -77,13 +77,13 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 ‎  
 ‎In the **Power Query Editor**, use the scroll bar to scroll to the right until you find the column labeled **FieldValuesAsText** (this column is in the middle of a bunch of columns whose rows display the word **Record** in orange-colored font; so you can quickly scroll to the right until you come upon the orange colored Record rows and then locate the **FieldValuesAsText** column). Select the icon to the right of the **FieldValuesAsText** column name.
 
-23. This opens a new window that shows all the fields associated with this data type. The first check box field is **(Select All Columns),** and since it is selected, all the fields below it are selected. You want to unselect this check box, which unselects all the other fields. 
+23. This opens a new window that shows all the columns that associated with this data type. In the top right corner of this window, select the "A thru Z" sort box that appears to the right of the Search field, and in the menu that appears, select **Name**. In the list of columns, the first check box is **(Select All Columns),** and since it is selected, all the columns below it are selected. You want to unselect this check box, which unselects all the other columns. The reason for doing this is that you only want to select the **Customer** and **Assignto** columns, which you will do in the next two steps.
 
-24. Scroll down through the list of fields until you locate the **Customer** field. Select its check box.
+24. Scroll down through the list of columns until you locate the **Assignto** column and then select its check box. 
 
-25. Below the **Customer** field is the **Assignto** field. Select its checkbox. 
+25. Then scroll down to the **Customer** column and select its check box. 
 
-26. Select **OK.**
+26. Select **OK**.
 
 27. Note how the **FieldValuesAsText** column is replaced with two **FieldValuesAsText**-related columns, one titled **FieldValuesAsText.Customer** and the other **FieldValuesAsText.Assignto.** The names associated with these fields are displayed for each record from the SharePoint list. 
 
@@ -101,7 +101,7 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 ‎  
 ‎For this visualization, right-click on **Page 1** and select **Rename Page** in the menu that appears. Enter **Service Request Tickets** as the new name and press Enter to change the page name.
 
-31. The **Visualizations** pane includes a series of icons that represent the different types of visualizations that you can create. If you do not select an icon from the **Visualizations** pane, the default visualization type will be applied, which is a **Table**.   
+31. The **Visualizations** pane (which appears to the left of the **Fields** pane) includes a series of icons that represent the different types of visualizations that you can create. If you do not select an icon from the **Visualizations** pane, the default visualization type will be applied, which is a **Table**.   
 ‎  
 ‎The first visualization that you create will use the default **Table** visualization. While you do not have to select an icon for the Table visualization, it is recommended that you do so to see how it will appear in the report canvas. When you hover your mouse over each icon, the visualization type is displayed. Select the **Table** icon (fifth row, second from the left; hover your mouse over it to verify this is the correct icon before selecting it). 
 
@@ -219,7 +219,7 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 
 59. From the **Publish to Power BI** window that appears, select **My workspace** and then press **Select**. 
 
-60. Once published, a green check mark will appear next to the word **Success!** Select **Got it**.
+60. Once published, a green check mark will appear next to the word **Success!** Select **Got it** to close the window.
 
 61. Close the Power BI Desktop by selecting **X** icon in the top right corner of the screen.
  
@@ -242,9 +242,7 @@ Dashboards can only be created in Power BI Online because they are a feature of 
 ‎  
 ‎**Note:** Since Holly is the same user who created the report that she now wants to pin to a dashboard, she should select **My workspace** (this will show just her work). However, if she was going to use a report created by another Adatum user, she would select **Workspaces** and then select **Adatum Corporation** (or if she was collaborating with a user from another organization that had shared a report with her, she would select that organization instead). 
 
-5. At the top of the **My workspace** screen you will see 4 options: **Dashboards,** **Reports**, **Workbooks**, and **Datasets**.   
-‎  
-‎Select **Reports** and then select **ServiceRequestPowerBI** (the report you just published). 
+5. At the top of the **My workspace** page you will see 3 tabs: **All**, **Content**, and **Datasets + dataflows**. On the **All** tab, which is displayed by default, two **ServiceRequestPowerBI** objects are displayed - one is the report that you just published and the other is a dataset (see the **Type** column). Select the **ServiceRequestPowerBI** report.
 
 6. In the top-right corner of each visualization are several icons. Depending on the visualization size, they may not appear until you hover your mouse over the top right of the visualization (the icons may also appear on the bottom right corner if the visualization is flush with the top of the screen). Hover your mouse over the top right of the **Table** visualization and the four icons will appear. Then hover your mouse over each icon to display the tool tip for each.   
 ‎  
@@ -252,9 +250,9 @@ Dashboards can only be created in Power BI Online because they are a feature of 
 
 7. In the **Pin to dashboard** window, select **New dashboard,** enter **ServiceRequestDashboard** in the **Dashboard name** field, then select **Pin**. 
 
-8. A **Pinned to dashboard** pop-up window appears that allows you to create a phone view that will optimize your dashboard for phone views. For now, select **Go to dashboard**.   
+8. A **Pinned to dashboard** pop-up window will appear that allows you to create a phone view that will optimize your dashboard for phone views. For now, select **Go to dashboard**.   
 ‎  
-‎**Note:** If you do not select anything when this pop-up window appears, it will close after a few seconds and you will remain in the report window. If this happens to you (for example, you were reading this instruction and the pop-up window suddenly closed), then in the left-hand navigation pane, select **My workspace**, select the **Dashboards** tab (if necessary), and then select the **ServiceRequestDashboard** you just created.
+‎**Note:** If you do not select anything when this pop-up window appears, it will close after a few seconds and you will remain in the report window. If this happens to you (for example, you were reading this instruction and the pop-up window suddenly closed), then in the left-hand navigation pane, select **My workspace**, and then under the **All** tab select the **ServiceRequestDashboard** you just created.
 
 9. On your Dashboard page, notice at the top of the page how you can ask a question about your data. Select **Ask a question about your data**, which displays a Q&A screen with several predefined questions related to the data displayed in your dashboard. Select one of the available questions. If you enter your own question, Power BI will show a list of available questions that map to the text that you are typing.   
 ‎  
@@ -262,21 +260,23 @@ Dashboards can only be created in Power BI Online because they are a feature of 
 ‎  
 ‎The top row of the page displays the **My workspace &gt; ServiceRequestDashboard &gt; Q&amp;A** navigation thread. Select the **My workspace** portion of this thread. 
 
-10. In your **My workspace** page, select the **Reports** tab, and then select the **ServiceRequestPowerBI** report.
+10. In your **My workspace** page, in the **All** tab, select the **ServiceRequestPowerBI** report.
 
 11. For the stacked column visualization, select the **Pin visual** icon. In the **Pin to dashboard** window that appears, the **Existing dashboard** option is selected by default, and the dashboard name is selected by default in the **Select existing dashboard** field. Since this is the dashboard you want to pin the visualization to, select **Pin**. 
 
-12. In the **Pin to dashboard** pop-up window, select **Go to Dashboard**. If this window disappears before you can make this selection, then in the left-hand navigation pane, select **My workspace**, select the **Dashboards** tab (if necessary), and then select **ServiceRequestDashboard**.
+12. In the **Pin to dashboard** pop-up window, select **Go to Dashboard**. If this window disappears before you can make this selection, then in the left-hand navigation pane, select **My workspace**, in the **All** tab, select **ServiceRequestDashboard**.
 
-13. At this point you may be wondering why create the dashboard since you have the same information in your report. In this lab exercise, you only have one report, but a dashboard can be made up of visualizations from many different reports. A dashboard provides a one-page view of your most important metrics, from one or many reports, and provides an entry way to the underlying reports and datasets.   
+13. At this point you may be wondering why you created the dashboard since you have the same information in your report. In this lab exercise, you only have one report, but a dashboard can be made up of visualizations from many different reports. A dashboard provides a one-page view of your most important metrics, from one or many reports, and provides an entry way to the underlying reports and datasets.   
 ‎  
 ‎Select either visualization on your dashboard and note how you are taken back to the underlying report.
 
 14. On the left-hand navigation pane, select **My workspace**.
 
-15. On the main screen, select the **Dashboards** tab (if necessary). To the left of the dashboard you created is a **star** icon. You can mark this dashboard as one of your favorites by selecting this icon. Notice that when you select the star, it changes to a solid star rather than the outlined star that it originally appeared as. If you select it again so that is no longer a Favorite, it will return to its original unfilled state.   
+15. On the main screen, under the **All** tab, hover your mouse over the name of the dashboard you created. This will display several icons to the right of the dashboard name, one of which is a **star** icon. You can mark this dashboard as one of your favorites by selecting this icon. Select the **star** icon. 
+
+		Notice that when you select the star, it changes to a solid star rather than the outlined star that it originally appeared as. Select the **star** icon  again so that is no longer a Favorite; notice how it returns to its original unfilled state.   
 ‎  
-‎Select the star icon to make it one of your favorites.
+‎Select the star icon again to make it one of your favorites.
 
 16. In the left-hand navigation pane, select **Favorites**. You should see this dashboard in your list of favorites. Select the **ServiceRequestDashboard** to open it. 
 
@@ -284,9 +284,9 @@ Dashboards can only be created in Power BI Online because they are a feature of 
 ‎  
 ‎If you do not perform these remaining steps, leave the Power BI service open in your browser and proceed to the next task.
 
-18. Now that you have created your dashboard, you can view it on a mobile device if you wish. In the menu bar at the top of the dashboard, select **Web view**. In the menu that appears, select **Phone view**. 
+18. Now that you have created your dashboard, you can view it on a mobile device if you wish. In the menu bar at the top of the dashboard, select **Edit**. In the menu that appears, select **Mobile view**. 
 
-19. In the **Phone Version** dialog box that appears, select **Continue**.
+19. If a **Phone Version** dialog box appears, select **Continue**.
 
 20. An **Edit phone view** screen will appear that shows how the dashboard will appear on your mobile device. If you hover your mouse over each visualization, a border will appear. You can select a border and drag it to change the size of the visualizations.
 
