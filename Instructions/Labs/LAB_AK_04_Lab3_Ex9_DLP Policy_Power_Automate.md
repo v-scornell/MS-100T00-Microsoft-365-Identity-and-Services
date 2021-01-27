@@ -49,7 +49,7 @@ In this task, Holly wants to create a data lost prevention policy for the flows 
    
       In practice, you would not be able to implement this policy as you need both connectors used by the flow in the same group. If both connectors are not in the same group, the policy will be automatically suspended. Continue on to see how connectors in both groups impact the flow. 
 
-12. In your Edge browser, select the **View your flow owners | Power Automate** tab to return to the **Flows** window that displays your flow in the **Team flows** tab. 
+12. In your Edge browser, select the **View your flow owners | Power Automate** tab to return to the **Flows** window that displays your flow in the **Shared with me** tab. 
 
 13. Select the **Service Request Flow for new/modified tickets**, which displays the detail information about the selected flow.  
 
@@ -69,7 +69,7 @@ In this task, Holly wants to create a data lost prevention policy for the flows 
 
 16. At the top of the page, to the left of the flow name, select the left arrow to return to the Detail page for the flow. 
 
-17. In the heading at the top of the page, **Flow &gt; Service Request Flow for new/modified tickets**, select **Flow** to return to the list of Team flows. 
+17. In the heading at the top of the page, **Flow &gt; Service Request Flow for new/modified tickets**, select **Flow** to return to the list of **Shared with me** flows. 
 
 18. Leave your Edge browser and all its tabs open for the next task.
 
@@ -84,7 +84,7 @@ In your role as Holly, you will update this DLP policy to include Outlook as an 
 
 1. You should still be logged into LON-DC1 as **ADATUM\Administrator** and a password of **Pa55w.rd**; if not, then do so now.
 
-2. You should still have your Edge browser open to the **Edit your flow | Power Automate** tab, which should still be displaying the **Flows** window and the **Team flows** tab.   
+2. You should still have your Edge browser open to the **Edit your flow | Power Automate** tab, which should still be displaying the **Flows** window and the **Shared with me** tab.   
 ‎  
 ‎In your browser, select the **Power Platform admin center** tab, which should be displaying the **Data policies** window. If you closed this tab at the end of the prior task, then in the **Manage your flows | Microsoft Power Automate** tab, select the gear **(Settings)** icon, select **Admin center** in the **Settings** pane, and then in the **Power Platform admin center,** select **Data policies.**
 
@@ -104,7 +104,7 @@ In your role as Holly, you will update this DLP policy to include Outlook as an 
 
 8. On the **Review** page, review all the settings that you previously assigned to the new policy. If any setting needs to be changed, select the **Edit** option for that setting. If all settings are correct, select the **Update policy** button. 
 
-9. In your browser, select the **Edit your flow | Power Automate** tab to return back to the **Flows** window that displays your flow in the **Team flows** tab. Notice that under the **Modified** column, it still indicates **Activity suspended**.
+9. In your browser, select the **Edit your flow | Power Automate** tab to return back to the **Flows** window that displays your flow in the **Shared with me** tab. Notice that under the **Modified** column, it still indicates **Activity suspended**.
 
 10. Select **Service Request Flow for new/modified tickets** to see the detail information about the flow.   
 ‎  
