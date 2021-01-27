@@ -168,11 +168,11 @@ In this task you will add an additional owner to the Power Automate flow that yo
 
 7. On the left-hand navigation pane, select **My flows**. 
 
-8. In the **Flows** window, notice that the **My flows** tab is selected by default. Also notice the message that appears in the middle of the screen indicating **You don’t have any flows**. Do not worry! Since you have shared ownership of the flow with another user or group, the flow is now considered a Team flow. 
+8. In the **Flows** window, notice that the **Cloud flows** tab is selected by default. Also notice the message that appears in the middle of the screen indicating **You don’t have any flows**. Do not worry! Since you have shared ownership of the flow with another user or group, the flow is now considered a shared flow. 
 
-9. In the **Flows** window, select the **Team flows** tab. The flow should appear in the list of Team flows. 
+9. In the **Flows** window, select the **Shared with me** tab.
 
-10. In the **Team flows** tab, hover your mouse over the name of the flow and select the **vertical ellipses (More commands)** icon that appears to the right of the flow name. In the menu that appears, review the options that are available. Select the **Esc** button on your keyboard to close the menu (or select anywhere on the screen).
+10. In the **Shared with me** tab, hover your mouse over the name of the flow and select the **vertical ellipses (More commands)** icon that appears to the right of the flow name. In the menu that appears, review the options that are available. Select the **Esc** button on your keyboard to close the menu (or select anywhere on the screen).
 
 11. Leave all the tabs open in your browser for the next task.
 
