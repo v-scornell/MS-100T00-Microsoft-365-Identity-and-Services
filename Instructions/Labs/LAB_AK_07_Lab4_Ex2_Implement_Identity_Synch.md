@@ -145,7 +145,7 @@ This task sets up another scenario for testing whether the sync process is worki
 
 	- **Tia Zecirevic**  
 	
-	While you can remove each user individually, the quickest way is to remove all three at one time. Select the first user, then hold the **Ctrl** key down while selecting the other two. With all three users selected, select the **Remove** button and then select **Yes** to confirm the removal. Verify the three users have been removed, and then select **OK.**
+	While you can remove each user individually, the quickest way is to remove all three at one time. Select the first user, then hold the **Ctrl** key down while selecting the other two. With all three users selected, select the **Delete** button and then select **Yes** to confirm the removal. Verify the three users have been removed, and then select **OK.**
 
 4. Close the **Active Directory Users and Computers** window.
   
