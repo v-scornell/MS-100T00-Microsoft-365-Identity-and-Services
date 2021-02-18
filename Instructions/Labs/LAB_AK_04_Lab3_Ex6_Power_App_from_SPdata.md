@@ -66,6 +66,8 @@ You can create a Power App through either the Power App portal or through ShareP
 13. In the Service Desk Requests data entry form that apears, enter the following information:
 
 	- Title – **Power App test** (this field only appears if you used PowerShell to create the Service Desk Requests list; it does not appear if you created the list using Excel).
+	
+	- Issue Status – **Active**
 
 	- Date - **June** 
 
@@ -74,8 +76,6 @@ You can create a Power App through either the Power App portal or through ShareP
 	- Location – **Main Office**
 
 	- Issue Title – **Power App test**
-
-	- Issue Status – **Active**
 
 	- Customer – leave blank
 
