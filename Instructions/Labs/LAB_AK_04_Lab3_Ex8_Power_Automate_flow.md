@@ -25,7 +25,7 @@ To improve communication between management and internal users, Holly Dickson ha
 
 7. From the left navigation pane, select **+ Create.**
 
-8. On the **Three ways to make a flow** page, scroll down on the landing page until you see **Start from a connector**, and then select **SharePoint**.
+8. On the **Three ways to make a flow** page, scroll down on the landing page until you see **Start from connector**, and then select **SharePoint**.
 
 9. On the **SharePoint** page, scroll down to view SharePoint triggers and templates. 
 
