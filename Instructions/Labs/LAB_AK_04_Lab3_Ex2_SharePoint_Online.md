@@ -127,7 +127,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 	- Group Settings:
 
-		- Who can view the membership of the group: **Groups Members**
+		- Who can view the membership of the group: **Holly Dickson**
 
 		- Who can edit the membership of the Group: **Group Owner**
 
