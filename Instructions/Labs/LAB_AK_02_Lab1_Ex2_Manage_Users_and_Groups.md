@@ -35,7 +35,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 		**Holly@xxxxxZZZZZZ.onmicrosoft.com**  
 	
-	- Password settings: select the **Let me create the password** option
+	- Password settings: Clear (uncheck) the box next to **Automatically create a password**
 
 	- Password: **Pa55w.rd** (Hint: Select the eye icon at the right side of the field to verify the password that you entered)
 
