@@ -9,7 +9,7 @@ In your lab environment, your lab hosting provider has already created a free Mi
 
 ### Task 1 - Obtain Your Microsoft 365 Credentials
 
-Once you launch the lab, a free trial tenant will be automatically created for you to access Microsoft 365 in the Microsoft Virtual Lab environment. Within this tenant, your lab hosting provider will create a Microsoft 365 user account for a default tenant administrator named MOD Administrator. Your lab hosting provider will assign this user account a unique username and password, and the account will be assigned the Microsoft 365 Global administrator role. You must retrieve this username and password so that you can sign into Microsoft 365 within the Microsoft Virtual Lab environment. You will also be assigned a unique network IP address and UPN name for your Microsoft 365 blob. You will also use this UPN name in various tasks throughout the labs for this course.
+Once you launch the lab, a free trial tenant will be automatically created for you to access Microsoft 365 in the Microsoft Virtual Lab environment. Within this tenant, your lab hosting provider will create a Microsoft 365 user account for a default tenant administrator named MOD Administrator. Your lab hosting provider will assign this user account a unique username and password, and the account will be assigned the Microsoft 365 Global administrator role. You must retrieve this username and password so that you can sign into Microsoft 365 within the Microsoft Virtual Lab environment under the resource section. You will also be assigned a unique network IP address and UPN name for your Microsoft 365 blob. You will also use this UPN name in various tasks throughout the labs for this course.
 
 Because this course can be offered by learning partners using any one of several authorized lab hosting providers, the actual steps involved to retrieve the UPN name, network IP address, and tenant ID associated with your tenant may vary by lab hosting provider. Therefore, your instructor will provide you with the necessary instructions on how to retrieve this information for your course. <br/>
 
@@ -31,11 +31,11 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have bee
 
 2. On **LON-DC1**, you must select **Ctrl+Alt+Delete** to log in (your instructor will guide you on how to find this option in your VM environment). Log into LON-DC1 as the **Administrator** with the password **Pa55w.rd**. 
 
-3. If you receive a **Networks** warning message asking if you want this PC to be discoverable by other PCs and devices on this network, select **Yes**.
+3.  If you receive a **Windows License** warning message asking you to activate Windows in Settings. Select **Close**. If you also receive a **Networks** warning message asking if you want this PC to be discoverable by other PCs and devices on this network, select **Yes**.
 
 4. **Server Manager** will automatically start. Leave it open (it’s used in the next task) but minimize the window for now.
 
-5. On the taskbar at the bottom of the page, select the **Microsoft Edge** icon. If necessary, maximize your browser window when it opens.
+5. On the taskbar at the bottom of the page, select the **Internet Explorer** icon. If necessary, maximize your browser window when it opens.
 
 6. In your browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: **https://portal.office.com/** 
 
@@ -102,7 +102,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have bee
 
 23. Verify the users you selected appear at the bottom of the **Release preferences** pane, and then select the **X** in the upper-right corner of the **Release preferences** pane to close it. 
 
-24. Tn the list of organization profile data, select **Custom themes**.
+24. In the list of organization profile data, select **Custom themes**.
 
 25. In the **Custom themes** pane, scroll to the bottom of the pane and select the **Show the user's display name** check box. <br/>
 
@@ -111,8 +111,6 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have bee
 	**Tip:** Some color patterns aesthetically distract users. If you do change any of the colors, it is recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
 
 26. Select **Save** when you are done and then close the **Custom themes** pane once your changes have been saved.
-
-27. Remain logged into LON-DC1 with Microsoft Edge open to the **Microsoft 365 admin center** tab for the next task.
 
 
 ### Task 3 – Prepare for Microsoft Azure Active Directory 
@@ -133,7 +131,7 @@ Azure Active Directory is needed to perform several configuration steps when ins
 
 4. In the notification bar at the bottom of the page that displays the download status of the msoidcli_64bit.msi file, select **Open file** once the download is complete. 
 
-5. If a **Do you want to run this file?** dialog box appears, select **Run**.
+5. If a **Do you want to allow pop-ups?** dialog box appears, select **Allow Once** or **Always allow on theis site**. If a **Do you want to run this file?** dialog box appears, select **Run**.
 
 6. In the **Microsoft Online Services Sign-in Assistant Setup** wizard, select **I accept the terms in the License Agreement and Privacy Statement** and then select **Install**. 
 
@@ -141,7 +139,7 @@ Azure Active Directory is needed to perform several configuration steps when ins
 
 8. Close the **Download Microsoft Online Services** tab in your Edge browser. 
 
-9. You must now open **Windows PowerShell**. Select the magnifying glass (Search) icon on the taskbar at the bottom of the screen and type **powershell** in the Search box that appears. In the list of search results, right-click on **Windows PowerShell** (do not select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu that appears. 
+9. You must now open **Windows PowerShell**. Select the magnifying glass (Search) icon on the taskbar at the bottom of the screen and type **powershell** in the Search box that appears. In the list of search results, right-click on **Windows PowerShell** (do not select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu that appears or while highlightening **PowerShell . 
 
 10. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command and then press Enter:
 
