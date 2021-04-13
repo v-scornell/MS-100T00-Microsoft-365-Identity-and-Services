@@ -196,4 +196,4 @@ By the time you get to the Module 4 labs, External Access should be ready so tha
 11. In your Microsoft Edge browser, close the **External access - Microsoft Teams** tab. This should return you to the **Microsoft 365 admin center** tab, which you should leave open as you proceed to the next exercise.
 
 
-# Proceed to Lab 1 - Exercise 2
+# Proceed to Lab 1 - Exercise 2 
