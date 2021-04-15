@@ -20,17 +20,15 @@ As you continue in your role as Holly Dickson, you are ready to review the steps
 
 5. In the **recipients** view, the **mailboxes** tab appears by default (see the tabs across the top of the page - mailboxes, groups, resources, and so on). The mailboxes that appear in this view include all the user accounts that were pre-created in your tenant by the lab hosting provider, along with the mailboxes for Holly Dickson and Laura Atkins that were created when you added their Microsoft 365 user accounts in the prior lab. <br/>
 
-	Select the mailbox for **Joni Sherman** by double-clicking on her **DISPLAY NAME.** This will open the **Edit User Mailbox** window with Joni’s data prefilled. By default, the window displays the **general** tab (the tabs appear in the left-hand pane).
+	Select the mailbox for **Joni Sherman** by clicking on her **DISPLAY NAME.** This will open the **User Mailbox** window with Joni’s data prefilled. By default, the window displays the **Mailbox** tab (the tabs appear at the top under Joni's name).
 
-6.  At the bottom of the **general** tab, select **More options**.
+6.  At the bottom of the **Mailbox** tab, Under more **More options** select **Custom attributes**.
 
-7. Under **Custom attributes**, select the **pencil (edit)** icon. 
-
-8. This opens the **Custom attributes** window for Joni. You can enter up to 15 attributes. You will not be entering any attributes in this lab exercise, but it’s important that you know this feature is available. Select **Cancel**.   <br/>
+7. This opens the **Custom attributes** window for Joni. You can enter up to 15 attributes. You will not be entering any attributes in this lab exercise, but it’s important that you know this feature is available. Select **Cancel**.   <br/>
 
 	‎**Note:** Custom attributes are properties your company can use for specific mailbox identification, such as a cost center number for the mailbox or other information such as an HR personnel number.
 
-9. In addition to the **general** tab, the left-hand pane of the **Edit Mailbox** window includes several other tabs that enable you to enter additional information pertaining to this specific mailbox. While you will not enter any of this optional information for the purposes of this lab, take a few minutes now and select the following tabs to see what additional information can be captured: 
+8. In addition to the **Mailbox** tab, there is the **Account** tab which combined includes several other sections that enable you to enter additional information pertaining to this specific mailbox. While you will not enter any of this optional information for the purposes of this lab, take a few minutes now and select the following tabs to see what additional information can be captured: 
 
 	- **contact information.** This tab enables you to add personal information such as Street, City or Mobile number for the user.
 
@@ -40,17 +38,17 @@ As you continue in your role as Holly Dickson, you are ready to review the steps
 
 	- **member of.** This tab displays the Distribution groups that include this user.
 	
-10. On the left-hand pane select **mailbox delegation.** This tab enables the admin to assign a user to this mailbox’s Send As, Send on Behalf, or Full Access permissions. This option is commonly used if you want another user to be able to send messages from this mailbox.
+9. Select **mailbox delegation.** This enables the admin to assign a user to this mailbox’s Send As, Send on Behalf permissions, or Read and manage. This option is commonly used if you want another user to be able to send messages from this mailbox.
 
-11. Scroll down on this **mailbox delegation** window and select the plus (+) sign under the **Full Access** section. 
+10. While in the **mailbox delegation** window and select **Edit** to the right of **Read and manage** 
 
-12. In the **Select Full Access** window, select **Holly Dickson** from the list of user accounts, select the **add-&gt;** button, and then select **OK.**  <br/>
+11. In the **Manage Mailbox deligation* window, select **+ Add permissions**. In the search bar type in **Holly Dickson**  and select **Holly Dickson** from the list of user accounts, select the **Save** button. Then select **Close** then **cance**l twice  <br/>
 
 	‎**Note:** After about an hour Holly Dickson will be able to access Joni’s mailbox without needing a password.
 
-13. On Joni Sherman's **Edit Mailbox** window, select **Save**, and then select **OK** once the changes are saved.
+12. On Joni Sherman's **Mailbox** window, select the **X** in the top right hand of the pane.
 
-14. Leave your browser and all the tabs open for the next task.
+13. Leave your browser and all the tabs open for the next task.
 
  
 ### Task 2 – Manage Groups 
