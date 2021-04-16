@@ -61,51 +61,59 @@ In this task you will create two types of groups within Exchange Online. The fir
 
 	**Note:** You should already see the **Inside Sales** group that you created in Lab 2. This is a Microsoft 365 group whose email address is associated with the custom, on-premises domain (@xxxUPNxxx.xxxCustomDomainxxx.xxx). In the following steps, you will create a Distribution list group and a Microsoft 365 group whose email addresses will be in Microsoft 365 (@xxxxxZZZZZZ.onmicrosoft.com). 
 
-2. Select the drop-down arrow next to the **New Microsoft 365 group** button. In the drop-down menu, select **Distribution list**.
+2. Select **Add a  group** button under the Microsoft 365 tab.
 
-3. In the **new distribution list** window that appears, enter the following information:
+3. In the **Choose a group type** window that appears, choose **Distribution** and click **Next**.
 
-	- Display Name: **Sales Department**
+4. In the **Set up the Basics** tab, add the group name of **Sales Department** next to **Name** and leave description blank and select **Next**.
 
-	- Alias: **SalesDept**
+5. In the **Edit settings** tab Enter the following then click **Next**:	
 
-	- Email Address: tab into the field and the **SalesDept** alias will appear. In the domain field to the right of it, select the drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
+	- Email Address: Type in  **SalesDept**. In the domain field to the right of it, select the drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
 
-	- Owners: Since you are logged into the EAC using Holly Dickson, her account is displayed as the default Owner. However, Holly wants Alex Wilber to co-own the group, so select the **plus (+)** sign under the **Owners** section, and in the **Select Owner** window, select **Alex Wilber**, select the **add-&gt;** button, and then select **OK**.
+	- Joining the Group: Select **Owner Approval** This allows the owner to control who can join the group.
+	
+	- Leaving the Group: Select **Closed** This allows the owner to control who can leave the group. Together with Joining the group you can control who joins or leaves your distribution. However if you need less administration leaving open for either is an option. 
 
-	- Members: select the plus (+) sign under the **Members** section, and in the **Select Members** window, select **Allan Deyoung**. Then hold down the **Ctrl** key and select **Diego Siciliani** and **Lynne Robbins**. This will select all three users at once, at which point you should select the **add-&gt;** button and then select **OK**. 
+6. In the next section select **Create group** and click **Close**
 
-4. Select **Save** and then select **OK** once the changes are saved successfully.
+7. Wait until you see your group name under the **Distribution list** tab. If you don't see it, refresh every 5 minutes.
 
-5. Select the **+New Microsoft 365 group** button (not the drop-down arrow to the right of it, but the button itself). 
+8. Once you see your new group, **Sales Department**, click on the group name and click on the **Members** tab.
 
-6. In the **Create a group** window that appears, enter the following information:
+9. Click on **View and manage owners**. Since you are logged into the EAC using Holly Dickson, her account is displayed as the default Owner. However, Holly wants Alex Wilber to co-own the group, so select the **plus (+)** sign under the **Owners** section, and in the **Select Owner** window, select **Alex Wilber**, select the **add** button, and then select the back arrow. 
+
+10. Click on **View and manage members** now.select the plus (+) sign under the **Members** section, and in the **Select Members** window, select **Allan Deyoung**. Then hold down the **Ctrl** key and select **Diego Siciliani** and **Lynne Robbins**. This will select all three users at once, at which point you should select the **add** button and then select back arrow. 
+
+11. Verify the changes are made and the click on the **X** in the top right hand corner.
+
+12. Select the **Add a group** button. 
+
+13. In the **Choose a group** window that appears, choose **Dynamic distrabution** and select **Next** enter the following information:
 
 	- Group name: **Dynamics CRM Project Team**
+	
+	- Description: **Adatum users working on the Microsoft Dynamics CRM project.** 
+
+14. In the **Assign users** Enter the folling inofrmation then click on **Next**:
+
+	- Owners: **Holly Dickson**
+	
+	- Members: Ensure **All recipient types** is selected
+
+15. Under **Edit settings** Enter the folling inofrmation then click on **Next**:
 
 	- Group email address: **DynCRM**
 
 	- Group email address domain: In the domain field to the right of the **DynCRM** alias, select the drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
 
-	- Privacy: **Public – Anyone can see content**
+14. Select **Create Group** and then select **Close**. 
 
-	- Owners: Leave as **Holly**
+15. Go to the **Dynamic distribution list** and click directly on **Dynamic CRM Project Team**.
 
-	- Language: Leave as **English**
+16. In the **Dynamics CRM Project Team** window, the **Members**. Under **Owners**, select the **View all and manage owners**, and in the **Add Owners** window, select **Nestor Wilke**, select the **add** button, and then select back arrow.
 
-	- Description: **Adatum users working on the Microsoft Dynamics CRM project.**
-
-	- Subscribe new members: leave this check box selected so that members get conversations and calendar events sent to their Inboxes
-
-7. Select **Save** and then select **OK** once the changes are saved successfully.
-
-8. In the **Dynamics CRM Project Team** window, the **ownership** tab in the left-hand pane is displayed by default. Under **Owners**, select the **plus (+)** sign, and in the **Select Members** window, select **Nestor Wilke**, select the **add-&gt;** button, and then select **OK**.
-
-9. In the left-hand pane, select **membership**.
-
-10. Under **Members**, select the **plus (+)** sign, and in the **Select Members** window, select **Isaiah Langer**. Then hold down the **Ctrl** key and select **Joni Sherman**, and **Patti Fernandez**. This process will select all three users. Select the **add-&gt;** button and then select **OK.** 
-
-11. Select **Save** and then select **OK** once the changes are saved successfully.
+17. Ensure all changes were made then close out of the **Dynamics CRM Project Team** window.
 
 
 ### Task 3 - Upgrade Distribution Lists
@@ -114,25 +122,12 @@ Organizations have typically relied on distribution groups in Exchange to commun
 
 1. In the **Exchange admin center**, you should still be displaying **recipients** from the left-hand navigation pane, and you should still be displaying the **groups** tab. 
 
-2. Below the tabs at the top of the screen are two large boxes that enable you to perform two functions: create a group in Outlook and upgrade distribution lists. In the **UPGRADE Distribution Lists** box, select the **Get Started** button. This opens a **Bulk upgrade DLs to groups in Outlook** window.
-
-3. On the **Bulk upgrade DLs to groups in Outlook** window, the **Showing** field controls what information is being displayed. By default, it displays **Available for upgrade**, which displays any distribution lists that are available to be upgraded to a Microsoft 365 group. Adatum currently has only one distribution list that's available to be upgraded, the Sales Department group. <br/>
-
-	Select the drop-down arrow in the **Showing** field and select the other option, **Upgraded DLs**. This option shows any distribution list groups that have been upgraded to a Microsoft 365 group. As you can see, there are no groups currently in this list. <br/>
-
-	Now that you are familiar with the query options on this window, you want to return back to where you started so that you can upgrade the Sales Department group. Select the drop-down arrow for the **Showing** field and select the **Available for upgrade** option. 
-
-4. Select the check box to the left of the **Sales Department** distribution list and at the bottom of the window select the **Start Upgrade** button.<br/>
+2. Select the circle to the left of the **Sales Department** distribution list and when you see a check mark select the three horizontal ellipses and select **Upgrade distribution group**.
 	
-5. It may take a minute or so before the **Upgrade in progress** window appears. Select **OK**. 
+3. A **Ready to upgrade** pop up will appear. Select **Upgrade**. <br>
+	This may take up to 5 minutes for it to show up under your **Microsoft 365** tab
 
-6. Note how the value in the **Showing** field is changed to **Upgraded DLs**. If the **Sales Department** group is not displayed in the group list, select the **Refresh** button to the right of the **Showing** field. <br/>
-
-	Once the **Sales Department** group appears in the list, select the drop-down arrow for the **Showing** field and select the **Available for upgrade** option. As you can see, this query is now empty, since the Sales Department has been upgraded. 
-
-7. Select the **X** in the upper-right corner of the **Bulk Upgrade** window to close it.
-
-8. This returns you to the **groups** tab in the **recipients** view. If the **Sales Department** group still displays as a **Distribution list**, then select the **Refresh** icon in the menu bar above the list; the Sales Department group will now display as a **Microsoft 365** group. 
+4. If the **Sales Department** group still displays as a **Distribution list**, then select the **Refresh** icon in the menu bar above the list; the Sales Department group will now display as a **Microsoft 365** group. 
  
 
 ### Task 4 - Configure a Group Naming Policy
@@ -141,77 +136,71 @@ A group naming policy enables organizations to standardize and manage the names 
 
 Adatum’s CTO wants Holly to implement a standard naming policy throughout the organization based on the following format: **{Department}{Group Name}{City}**
 
-1. In the **Exchange admin center**, you should still be displaying the list of groups. In the menu bar that appears over the list of groups, select the **ellipsis** (...) icon, and in the menu that appears, select **Configure group naming policy.**
+1. In the **Exchange admin center**, you should still be displaying the list of groups. In the menu bar that appears over the list of groups, select **Configure group naming policy.**
 
-2. In the **group naming policy** window that appears, the **general** tab in the left-hand pane appears by default. Under the **Group Naming Policy** section, you can select a prefix and a suffix. <br/>
+2. In the **Edit group naming policy** window that appears, you can select a prefix and a suffix. <br/>
 
-	In the **For the prefix, apply the following sequence:** field, select the drop-down arrow and select **Attribute.** This opens a **select an attribute** window. Select the drop-down arrow, select **Department**, and then select **OK** (do NOT select the **Add** button; this is for adding additional prefix values, which you will not do).
+	In the **For the prefix, apply the following sequence:** field, select the drop-down arrow and select **Attribute** aned to the right in the **select one** field select **Department**.
 
-3. In the **For the suffix, apply the following sequence:** field, select the drop-down arrow and select **Text**. This opens an **Enter text** window. In the **Enter text** field, enter **Group** and then select **OK**.
+3. In the **AND** field, select the drop-down arrow and select **Text**. In the **Enter text** field, enter **Group**.
 
-4. Select the **Add** button below the **For the suffix, apply the following sequence:** field. 
+4. Select the **Add suffix** button below the **AND** field. 
 
-5. In the **followed by...** field that appears, select the drop-down arrow and select **Attribute.** This opens a **select an attribute** window. Select the drop-down arrow, select **City**, and then select **OK**.
+5. In the field that appears, select the drop-down arrow and select **Attribute**. Select the drop-down arrow, select **City**.
 
-6. Review the **Preview of policy** example that is based on the parameters you selected. If any need to be fixed, select the correct values now. When everything looks OK, select the **Save** button at the bottom of the window.
+6. Review the **Preview policy** example that is based on the parameters you selected. If any need to be fixed, select the correct values now. When everything looks OK, select the **Save** button at the bottom of the window and close out of the pane.
 
 
 ### Task 5 – Manage Resources
 
 A room mailbox is a resource mailbox that is assigned to a physical location, such as a conference room, an auditorium, or a training room. Users can easily reserve these rooms by including room mailboxes in their meeting requests. Adatum’s CTO wants to test this feature using the company’s most popular conference room, and he has asked Holly to configure this resource.
 
-1. In the **Exchange admin center**, you should still be displaying **recipients** from the left-hand navigation pane. In this list of tabs across the top of the screen, select **resources.**
+1. In the **Exchange admin center**, you should still be displaying **recipients** from the left-hand navigation pane. In this select **resources.**
 
-2. In the menu bar that appears over the list of resources, select the **plus (+)** sign and then in the drop-down menu, select **Room mailbox.**  <br/>
+2. In the menu bar, select the **Add a resource** sign and then in the new window, select **Room**.  <br/>
 	
 	‎**Note:** This selection is designed for administrators to set up a meeting location for booking purposes. When scheduling meetings, you will be able to select the room from the Global Address List (GAL).
 
-3. In the **new room mailbox** window that appears, enter the following information:
+3. In the **Fill in the basic info** window that appears, enter the following information:
 
 	- Room name: **Conference Room 1**
 
 	- Email address: **Con1**
 
 	- Email address domain: In the domain field to the right of the **Con1** alias, select the drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
+	
+	- Capacity: **15**
 
 	- Location: The room is in Building 5, Room 2011, so enter **5/2011**
 
 	- Phone: **425-555-2011**
 
-	- Capacity: **15**
+4. Select **Next** and then select **Next** for the resource address section.
 
-4. Select **Save** and then select **OK** once the changes are successfully saved.
+5. In the **Booking options** window select the **Allow scheduling only during working hours** check box. 
 
-5. **Conference Room 1** now appears in the list of resources. You must now edit the booking properties for this resource. Since Conference Room 1 is the only resource in the list, it's already selected by default; therefore, select the **Edit** (pencil) icon on the menu bar.
-
-6. In the **Conference Room 1** window that appears, select the **booking options** tab in the left-hand pane.
-
-7. Select the **Allow scheduling only during working hours** check box. 
-
-8. In the **Maximum booking lead time (days)** field, change the value from **180** days to **60** days.  <br/>
-
-	‎**Note:** The standard duration of 180 days can be too long for scheduling out most meetings. As a best practice, organizations should establish a company standard so that events do not over-book locations.
-
-9. In the **Maximum duration (hours)** field, change the value from **24.0** hours to **120** hours (this is five days, or one work week). 
-
-10. In the left-hand navigation pane, select **booking delegates**.
-
-11. Select the **Select delegates who can accept or decline booking requests** option.  <br/>
+6. In the **Booking delegates** type in **Holly Dickson** and **Nestor Wilke**. <br/>
 
 	**Note:** This option allows a user to filter booking requests.
+	
+7. Ensure the box next to **Automatically decline meetings outside of limits below** is selected or you won't be able to input the following information.
 
-12. Under **Delegates**, select the **plus (+)** sign. In the **Select Delegates** window, select **Holly Dickson** and then hold down the **Ctrl** key and select and **Nestor Wilke**. This will select both users at once; then select the **add-&gt;** button and select **OK.** 
+8. In the **Booking window (days)** field, input **60** days.  <br/>
 
-13. Select **Save** and then select **OK** once the changes are successfully saved.
+	‎**Note:** As a best practice, organizations should establish a company standard so that events do not over-book locations.
+
+9. In the **Maximum duration (hours)** field, input **120** hours (this is five days, or one work week). 
+
+10. Select **Next** then review the resource information. Click on **Create** and wait for the resouce to be created. When it's finished, you'll see a **Done** button appear. Click **Done** and you have successfully created a new room mailbox.
 
 
 ### Task 6 – Manage Contacts
 
 One of the key features of Exchange Online is the ability to maintain different types of contacts in the Exchange Admin Center. In this task, you will be introduced to mail contacts and mail users.
 
-1. In the **Exchange admin center**, you should still be displaying **recipients** from the left-hand navigation pane. In this list of recipient tabs across the top of the screen, select **contacts.**
+1. In the **Exchange admin center**, you should still be displaying **recipients** from the left-hand navigation pane. Select **contacts.**
 
-2. In the menu bar that appears over the list of contacts, select the **plus (+)** sign, and in the menu that appears, select **Mail contact.**  <br/>
+2. In the menu bar that appears over the list of contacts, select **Add a contact** and in the menu that appears, in the first drop down menu select **Mail contact.**  <br/>
 
 	‎**Note:** This option enables external people from outside your organization to be added to your Exchange Online distribution lists.
 
@@ -219,19 +208,15 @@ One of the key features of Exchange Online is the ability to maintain different 
 
 	- First name: **Hai**
 
-	- Initials: leave blank
-
 	- Last Name: **Chu**
 
 	- Display Name: tab into the field and **Hai Chu** is automatically displayed
 
-	- Alias: **Hai**
-
 	- External Email Address: **Hai@fabrikam.com**
 
-4. Select **Save** and then select **OK** once the changes are successfully saved. Hai should now appear in the list of contacts as a **Mail contact**.
+4. Select **Add** and then select **close** once the changes are successfully saved. Hai should now appear in the list of contacts as a **Mail contact**. If not, refresh your menu and in a minute or so you should see Hai Chu.
 
-5. On the menu bar above the contacts list, select the **plus** **(+)** sign to add another contact. In the drop-down menu, select **Mail user.**  <br/>
+5. On the menu bar above the contacts list, select the **Add a contact** sign to add another contact. In the new window in the first drop-down menu, select **Mail user.** (should be selected by default) <br/>
 
 	**Note:** This option is for individuals who need to use the company domain even though they are not a full-time employee (for example: contractors, advisors, and selective temporary staff). This option will forward email to the individual’s external email when mail is sent to the contact’s internal company account.  <br/>
 	
@@ -241,15 +226,13 @@ One of the key features of Exchange Online is the ability to maintain different 
 
 	- First name: **Bill**
 
-	- Initials: leave blank
-
 	- Last Name: **Norman**
 
 	- Display Name: tab into the field and **Bill Norman** is automatically displayed
 
-	- Alias: **Bill**
-
 	- External email address: **Bill@fabrikam.com**
+	
+	- Alais: Bill 
 
 	- User ID: **Bill** (this is the user’s alias for his internal Adatum account)
 
@@ -259,7 +242,7 @@ One of the key features of Exchange Online is the ability to maintain different 
 
 	- Confirm Password: **Pa55w.rd**
 
-7. Select **Save** and then select **OK** once the changes are successfully saved. Bill Norman should now appear in the list of contacts as a **Mail user**.
+7. Select **Add** and then select **Close** once the changes are successfully saved. Bill Norman should now appear in the list of contacts as a **Mail user**. If not, refresh your menu and in a minute or so you should see Bill Norman.
 
 8. Leave the Exchange admin center tab open and proceed to the next task.
 
