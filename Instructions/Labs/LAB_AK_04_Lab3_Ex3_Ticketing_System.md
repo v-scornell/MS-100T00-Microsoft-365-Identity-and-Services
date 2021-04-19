@@ -50,7 +50,7 @@ Instead, in your role as Holly Dickson, you will perform the following steps in 
         - **Use Client integration features**
 
 12. Scroll to the bottom of the page and select the **Create** button to create the new **Restricted Use** permission level.
-13. Once the permission level is created you will be redirected to the **Permissions** \> **Permission Levels** page. Verify the new **Restricted Us**e permission level appears in the list of permission levels for this IT Services site.
+13. Once the permission level is created you will be redirected to the **Permissions** \> **Permission Levels** page. Verify the new **Restricted Use** permission level appears in the list of permission levels for this IT Services site.
 
     On this **Permissions** \> **Permission Levels** heading line, select the **Permissions** link to return to the **Permissions: IT Services** page.
 14. In the ribbon displayed at the top of the screen, the **PERMISSIONS** tab is displayed by default. In this tab, under the **Grant** section, select **Create Group**.
