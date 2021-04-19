@@ -50,7 +50,7 @@ A team site includes a group of related web pages, a default document library fo
 
 13. You’re now going to test the process of deleting a team site and then restoring it. In the list of **Active sites**, select the circle to the left of the **IT Services** site name (do not select the IT Services site name, as this will open a properties window for the site).
 
-14. In the menu bar at the top of the page, select **Delete**. 
+14. In the menu bar at the top of the page, select **Delete**. If not seen click on the three horizontal elipses **...** and in the drop down menu select **Delete**.
 
 15. In the **Delete Microsoft 365 group** window, select the **Delete the group “IT Services” and all its resources** check box and then select **Delete.** Note that the IT Services site disappears from the **Active sites** list. 
 
@@ -127,7 +127,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 	- Group Settings:
 
-		- Who can view the membership of the group: **Holly Dickson**
+		- Who can view the membership of the group: **Group Members**
 
 		- Who can edit the membership of the Group: **Group Owner**
 
