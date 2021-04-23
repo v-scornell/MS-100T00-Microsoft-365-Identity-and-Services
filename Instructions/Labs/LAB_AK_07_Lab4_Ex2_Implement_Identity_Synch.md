@@ -14,7 +14,7 @@ In this task, you will run the Azure AD Connect setup wizard to enable synchroni
 
 3. In your **Edge** browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane, select **Users**, and then select **Active Users**. <br/>
 
-4. In the **Active users** window, on the menu bar, select the **ellipsis** icon (to the right of **Export users**), and then in the drop-down menu, select **Directory synchronization**. 
+4. In the **Active users** window, on the menu bar, select the **ellipsis** icon (to the right of **Add multiple users**), and then in the drop-down menu, select **Directory synchronization**. 
 
 5. In the **Azure Active Directory preparation** window, select **Go to the Download center to get the Azure AD Connect tool**. This opens a new tab in your browser and takes you to the Microsoft Download Center.
 
@@ -145,7 +145,7 @@ This task sets up another scenario for testing whether the sync process is worki
 
 	- **Tia Zecirevic**  
 	
-	While you can remove each user individually, the quickest way is to remove all three at one time. Select the first user, then hold the **Ctrl** key down while selecting the other two. With all three users selected, select the **Delete** button and then select **Yes** to confirm the removal. Verify the three users have been removed, and then select **OK.**
+	While you can remove each user individually, the quickest way is to remove all three at one time. Select the first user, then hold the **Ctrl** key down while selecting the other two. With all three users selected, select the **Remove** button and then select **Yes** to confirm the removal. Verify the three users have been removed, and then select **OK.**
 
 4. Close the **Active Directory Users and Computers** window.
   
