@@ -72,7 +72,7 @@ $ServiceRequestSystem
 
 foreach($Record in $ServiceRequestSystem){
 Add-PnPListItem -List "Service Desk Requests" -Values @{
-"issueTitle"= $Record.'Issue Title';
+"issueTitle"= $Record.'IssueTitle';
 "Date"= $Record.'Date';
 "Location"= $Record. 'Location';
 "Title"= $Record.'Issue Status';
