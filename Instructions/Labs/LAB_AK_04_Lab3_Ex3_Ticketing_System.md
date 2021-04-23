@@ -322,7 +322,7 @@ In this task, you will continue in your role as Holly Dickson, Adatum’s Enterp
       - Filter section - **Show items only when the following is true**
       - Show the items when column section – select **Issue status** column
       - Operand field – **Is equal to**
-      - Condition field – enter **Closed**
+      - Condition field – enter **Resolved**
 11. Scroll to the bottom of the page and select **OK**.
 12. You will now create a view showing all cases for each support agent. On the **Service Desk Requests** page, select the **gear** (**Settings**) icon in the top right corner of the webpage. In the menu that appears, select **List settings.**
 13. In the **Service Desk Requests \> Settings** page, scroll down to the **Views** section and select **Create view.**
