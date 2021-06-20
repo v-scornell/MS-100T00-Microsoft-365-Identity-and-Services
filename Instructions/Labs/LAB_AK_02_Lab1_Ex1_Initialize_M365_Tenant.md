@@ -35,7 +35,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have bee
 
 4. **Server Manager** will automatically start. Leave it open (it’s used in the next task) but minimize the window for now.
 
-5. On the taskbar at the bottom of the page, select the **Internet Explorer** icon. If necessary, maximize your browser window when it opens.
+5. On the taskbar at the bottom of the page, select the **Microsoft Edge** icon. If necessary, maximize your browser window when it opens.
 
 6. In your browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: **https://portal.office.com/** 
 
@@ -104,7 +104,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have bee
 
 24. In the list of organization profile data, select **Custom themes**.
 
-25. In the **Custom themes** pane, scroll to the bottom of the pane and select the **Show the user's display name** check box. <br/>
+25. In the **Custom themes** pane, in the **Customize Microsoft 365 for your organization** select **+ Add theme**, then select the **Show the user's display name** check box. <br/>
 
 	As you scroll through the pane, review the various theme and branding options that are available for you to update. For this lab, you can change any of the options or leave the default values as is. For example, you can add the logo of your company and set the background image as the default for all your users. Along with these options you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
 
