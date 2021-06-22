@@ -18,7 +18,7 @@ As you continue in your role as Holly Dickson, you are ready to review the steps
 
 4. In the **Exchange admin center**, select **recipients** in the left-hand navigation pane.
 
-5. In the **recipients** view, the **mailboxes** tab appears by default (see the tabs across the top of the page - mailboxes, groups, resources, and so on). The mailboxes that appear in this view include all the user accounts that were pre-created in your tenant by the lab hosting provider, along with the mailboxes for Holly Dickson and Laura Atkins that were created when you added their Microsoft 365 user accounts in the prior lab. <br/>
+5. In the **recipients** view, under recipients select **Mailboxes**. The mailboxes that appear in this view include all the user accounts that were pre-created in your tenant by the lab hosting provider, along with the mailboxes for Holly Dickson and Laura Atkins that were created when you added their Microsoft 365 user accounts in the prior lab. <br/>
 
 	Select the mailbox for **Joni Sherman** by clicking on her **DISPLAY NAME.** This will open the **User Mailbox** window with Joni’s data prefilled. By default, the window displays the **Mailbox** tab (the tabs appear at the top under Joni's name).
 
@@ -34,13 +34,9 @@ As you continue in your role as Holly Dickson, you are ready to review the steps
 
 	- **organization.** This tab enables you to add company-specific information such as Title or Department for the user.
 
-	- **mailbox features.** This tab enables the admin to assign specific policies to the user. These policies range from the sharing policy to the address book policy. This option also covers device usage and connectivity.
+9. Select the **Mailbox** tab again, then select **Manage mailbox delegation.** This enables the admin to assign a user to this mailbox’s Send As, Send on Behalf permissions, or Read and manage. This option is commonly used if you want another user to be able to send messages from this mailbox.
 
-	- **member of.** This tab displays the Distribution groups that include this user.
-	
-9. Select **mailbox delegation.** This enables the admin to assign a user to this mailbox’s Send As, Send on Behalf permissions, or Read and manage. This option is commonly used if you want another user to be able to send messages from this mailbox.
-
-10. While in the **mailbox delegation** window and select **Edit** to the right of **Read and manage** 
+10. While in the **Manage mailbox delegation** window and select **Edit** to the right of **Read and manage** 
 
 11. In the **Manage Mailbox deligation* window, select **+ Add permissions**. In the search bar type in **Holly Dickson**  and select **Holly Dickson** from the list of user accounts, select the **Save** button. Then select **Close** then **cance**l twice  <br/>
 
@@ -79,9 +75,9 @@ In this task you will create two types of groups within Exchange Online. The fir
 
 8. Once you see your new group, **Sales Department**, click on the group name and click on the **Members** tab.
 
-9. Click on **View and manage owners**. Since you are logged into the EAC using Holly Dickson, her account is displayed as the default Owner. However, Holly wants Alex Wilber to co-own the group, so select the **plus (+)** sign under the **Owners** section, and in the **Select Owner** window, select **Alex Wilber**, select the **add** button, and then select the back arrow. 
+9. Click on **View all and manage owners**. Since you are logged into the EAC using Holly Dickson, her account is displayed as the default Owner. However, Holly wants Alex Wilber to co-own the group, so select the **+ Add owners** sign under the **Owners** section, and in the **Add Owners** window, select **Alex Wilber**, select the **Add (1)** button, and then select the back arrow. 
 
-10. Click on **View and manage members** now.select the plus (+) sign under the **Members** section, and in the **Select Members** window, select **Allan Deyoung**. Then hold down the **Ctrl** key and select **Diego Siciliani** and **Lynne Robbins**. This will select all three users at once, at which point you should select the **add** button and then select back arrow. 
+10. Click on **View all and manage members** now.select the plus **+ Add members** under the **Members** section, and in the **Add Members** window, select **Allan Deyoung**, and **Diego Siciliani** and **Lynne Robbins**, then select the **Add (3)** button and then select back arrow. 
 
 11. Verify the changes are made and the click on the **X** in the top right hand corner.
 
@@ -109,7 +105,7 @@ In this task you will create two types of groups within Exchange Online. The fir
 
 15. Go to the **Dynamic distribution list** and click directly on **Dynamic CRM Project Team**.
 
-16. In the **Dynamics CRM Project Team** window, the **Members**. Under **Owners**, select the **View all and manage owners**, and in the **Add Owners** window, select **Nestor Wilke**, select the **add** button, and then select back arrow.
+16. In the **Dynamics CRM Project Team** window, the **Members**. Under **Owners**, select the **View all and manage owners**, and in the **Add Owners** window, select **Nestor Wilke**, select the **Add (1)** button, and then select back arrow.
 
 17. Ensure all changes were made then close out of the **Dynamics CRM Project Team** window.
 
@@ -134,17 +130,17 @@ A group naming policy enables organizations to standardize and manage the names 
 
 Adatum’s CTO wants Holly to implement a standard naming policy throughout the organization based on the following format: **{Department}{Group Name}{City}**
 
-1. In the **Exchange admin center**, you should still be displaying the list of groups. In the menu bar that appears over the list of groups, select **Configure group naming policy.**
+1. In the **Exchange admin center**, you should still be displaying the list of groups. In the menu bar that appears over the list of groups, select **Add naming policy.**
 
 2. In the **Edit group naming policy** window that appears, you can select a prefix and a suffix. <br/>
 
-	In the **For the prefix, apply the following sequence:** field, select the drop-down arrow and select **Attribute** aned to the right in the **select one** field select **Department**.
+	In the **For the prefix, apply the following sequence:** field, select the drop-down arrow and select **Attribute** and to the right in the **select one** field select **Department**.
 
-3. In the **AND** field, select the drop-down arrow and select **Text**. In the **Enter text** field, enter **Group**.
+3. Select **Add prefix** select the drop-down arrow in the box that has **Attribute** and select **Text**. In the **Add text** field, enter **Group**.
 
-4. Select the **Add suffix** button below the **AND** field. 
+4. Below the **AND** field. 
 
-5. In the field that appears, select the drop-down arrow and select **Attribute**. Select the drop-down arrow, select **City**.
+5. Below the **AND  Select a suffix to add to the end of group names**, select the drop-down arrow and select **Attribute**. Select the drop-down arrow, select **City**.
 
 6. Review the **Preview policy** example that is based on the parameters you selected. If any need to be fixed, select the correct values now. When everything looks OK, select the **Save** button at the bottom of the window and close out of the pane.
 
@@ -163,7 +159,7 @@ A room mailbox is a resource mailbox that is assigned to a physical location, su
 
 	- Room name: **Conference Room 1**
 
-	- Email address: **Con1**
+	- Resource email: **Con1**
 
 	- Email address domain: In the domain field to the right of the **Con1** alias, select the drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
 	
@@ -177,7 +173,7 @@ A room mailbox is a resource mailbox that is assigned to a physical location, su
 
 5. In the **Booking options** window select the **Allow scheduling only during working hours** check box. 
 
-6. In the **Booking delegates** type in **Holly Dickson** and **Nestor Wilke**. <br/>
+6. Uncheck the **Auto-accepts meeting request**, then in the **Booking delegates** type in **Holly Dickson** and **Nestor Wilke**. <br/>
 
 	**Note:** This option allows a user to filter booking requests.
 	
@@ -202,7 +198,7 @@ One of the key features of Exchange Online is the ability to maintain different 
 
 	‎**Note:** This option enables external people from outside your organization to be added to your Exchange Online distribution lists.
 
-3. In the **new mail contact** window that appears, enter the following information.
+3. In the **Add contact** window that appears, enter the following information.
 
 	- First name: **Hai**
 
@@ -230,7 +226,7 @@ One of the key features of Exchange Online is the ability to maintain different 
 
 	- External email address: **Bill@fabrikam.com**
 	
-	- Alais: Bill 
+	- Alias: Bill 
 
 	- User ID: **Bill** (this is the user’s alias for his internal Adatum account)
 
@@ -298,7 +294,7 @@ Holly has investigated the situation and has found that in Microsoft 365, you ca
 
 3. The **Home > Policy > Mail filtering** window displays a list of default **Anti-spam settings** that control how messages are handled by Microsoft 365 anti-spam policies. <br/>
 
-	Select the drop-down arrow to the left of the **Connection filter policy (always ON)** filter. This displays the current settings for this default connection filter. Select the **Edit policy** button.
+	Select the drop-down arrow to the left of the **Connection filter policy (Default)** filter. This displays the current settings for this default connection filter. Select the **Edit connection filter policy** link.
 
 4. In the **Connection filter policy** pane that appears, the **Connection filtering** section displays options regarding which IP Addresses will be allowed to send messages to your environment and what IP addresses will be blocked from sending messages. <br/>
 
@@ -319,11 +315,9 @@ As Adatum’s Global Admin, Holly doesn't need to set up or maintain the filteri
 
 1. In the **Office 365 Security & Compliance** center, you should still be displaying the **Home > Policy > Mail filtering** window after having completed the prior task. <br/>
 
-	Select the drop-down arrow to the left of the **Default spam filter policy (always ON)** filter. This displays the current settings for this default spam filter. Take a moment and review the policy settings that are available in this filter, and then select the **Edit policy** button.
+	Select the **Anti-spam inbound policy (Default)** filter. This displays the current settings for this default spam filter. Take a moment and review the policy settings that are available in this filter, and then select the **Edit actions** link. 
 
-2. In the **Default spam filter policy (always ON)** pane that appears, select the drop-down arrow to the right of the **Spam and bulk actions**.  <br/>
-
-	‎**Note:** In this section you will be presented a variety of options on how you would like spam to be handled and what rating will be triggered depending on the severity of the spam.
+2. Make the below changes then select **Save**.	‎**Note:** In this section you will be presented a variety of options on how you would like spam to be handled and what rating will be triggered depending on the severity of the spam.
 
 3. In the **spam and bulk actions** section, make the following selections:
 
@@ -335,63 +329,54 @@ As Adatum’s Global Admin, Holly doesn't need to set up or maintain the filteri
 
 	- High confidence phishing email: **Quarantine message**
 
-	- Bulk email: **Move message to Junk Email folder**
+	- Bulk: **Move message to Junk Email folder**
 
 	- Select the threshold: **5**
 
 	- Quarantine (retain spam for days): **10** 
 
 	- Prepend subject line with this text: enter **WARNING: This message contains potential spam!**
+	
+	- Enable end-user spam notifications check box, and then change the **Send end-user spam notifications every (days)** value to **5**.
+
 
 4. Select the drop-down arrow to the right of the **International spam** section.  <br/>
 
 	‎**Note:** This section allows you to automatically tag messages as spam when they originate from countries/regions that are to be avoided or distrusted, as well as messages written in specific languages.
 
-5. Under the **Filter email messages written in the following languages** setting, select **Edit**.
+5. Select the **Edit spam threshold and properties** link.
 
-6. In the **International spam settings** pane that appears, select the **Filter email messages written in the following languages** check box. 
+6. In the **Mark as spam** section, select the **Contains specific languages** drop down, and select **On**. 
 
 7. You should already know the languages that you want to filter. In the **Languages** field, enter the first letter of a language that you want to filter. This will display all languages that start with that letter (as well as any languages that contain that letter within the name of the language). <br/>
 
 	Enter a letter and then select a language with that letter in it that you want to filter. Repeat this step for a couple of languages. 
 
-8. Once you have finished selecting the languages you want to filter, select **Save**.
-
-9. In the **International spam** section, under the **Filter email messages sent from the following countries or regions**, select **Edit**.
-
-10. In the **International spam settings** pane that appears, select the **Filter email messages sent from the following countries or regions** check box. 
+9.  In the **Mark as spam** section, select the **From these countries** drop down, and select **On**.
 
 11. You should already know the countries/regions that you want to filter. In the **Country/Region** field, enter the first letter of a country/region that you want to filter. This will display all countries/regions that start with that letter (as well as any countries/regions that contain that letter within the name of the country/region). <br/>
 
 	Enter a letter and then select a country/region with that letter in it that you want to filter. Repeat this step for a couple of countries/regions. 
 
-12. Once you have finished selecting the countries/region you want to filter, select **Save**.
-
 13. Select the drop-down arrow to the right of the **Spam properties** section.  <br/>
 
 	‎**Note:** This section allows you to automatically tag messages as spam that have embedded URL’s with specific attributes or that have embedded HTML in the message.
 
-14. Select the drop-down arrow to the left of **Increase spam score** and then turn **On** the following options:
+14. Under the **Spam properties** section, turn **On** the following options:
 
 	- **URL redirect to other port**
 
 	- **URL to .biz or .info websites**
 
-15. Select the drop-down arrow to the left of **Mark as spam** and then turn **On** the following options:
+15. Under the **Mark as spam** section, turn **On** the following options:
 
 	- **Empty messages**
 
-	- **Conditional Sender ID filtering: hard fail**
+	- **Sender ID filtering: hard fail**
 
 16. Select **Save** and then select **OK** once the changes are successfully saved.
 
-17. In the list of spam filters, select the drop-down arrow to the left of the **Default spam filter policy (always ON)** filter that you just edited. This displays a summary of the filter. At the bottom of the middle column of settings for this policy, the **End-user spam notifications** setting is turned **Off**. Below this option, select **Configure end-user spam notifications**.
-
-18. In the **Default** window that appears, select the **Enable end-user spam notifications** check box, and then change the **Send end-user spam notifications every (days)** value to **5**.
-
-19. Select **Save**. In the list of settings for this policy, note the **End-user spam notifications** setting is now turned **On** and the **Send end-user spam notifications every (days)** setting is set to **5**.
-
-20. In your Edge browser, close the **Security & Compliance** center tab, but leave all other tabs open. 
+17. In your Edge browser, close the **Security & Compliance** center tab, but leave all other tabs open. 
 
 
 ### Task 10 – Manage Mail Flow Rules 
@@ -402,7 +387,7 @@ Holly has discovered that mail flow rules contain a richer set of conditions, ex
 
 1. On LON-DC1, select the **Exchange admin center** tab in your Edge browser, and then in the left-hand navigation pane select **mail flow**.
 
-2. In the list of mail flow tabs across the top of the page, **rules** is already selected by default since it’s the first tab. <br/>
+2. Under **Mail flow**, select **rules**. <br/>
 
 	**Note:** In this section you will be presented with a variety of options to protect against emails being sent from Adatum that have sensitive information, as well as creating custom rules to prevent or track messaging-related issues from recipients in your environment. For the purposes of this lab, you will only update the email size restriction rule.
 
@@ -420,8 +405,7 @@ Holly has discovered that mail flow rules contain a richer set of conditions, ex
 
 	- Do the following: hover your mouse over **Block the message...**, and then in the drop-down menu that appears, select **Reject the message and include an explanation**. 
 
-		- To the right of this drop-down field, select **Enter text**.
-		
+			
 		- In the **specify rejection reason** window, enter the following text: **Your message exceeds the size limit. Please adjust the message size or compress the email content and send it as a zipped file.**
 
 		- Select **OK.**
@@ -439,7 +423,7 @@ A domain that’s added to an organization's on-premises environment is called a
 
 In this task, you will use the Exchange Admin Center to view the accepted domain that you previously created and configure its domain type. Each domain can be changed to either authoritative (which accepts all inbound or outbound mail) or internal relay (which only accepts internal email). By default, all domains should be set to authoritative. You want to ensure that your custom domain’s type is set to authoritative.
 
-1. In the **Exchange admin center**, you should still be displaying **mail flow** from the left-hand navigation pane. In this list of mail flow tabs across the top of the screen, select **accepted domains.**
+1. In the **Exchange admin center**, you should still be displaying **mail flow** from the left-hand navigation pane. Under the mail flow section, select **accepted domains.**
 
 2. In the list of accepted domains, you should see Adatum’s two domains – its custom on-premises domain (xxxUPNxxx.xxxCustomDomainxxx.xxx) that you added in Lab 1, and its Microsoft 365 cloud domain (xxxxxZZZZZZ.onmicrosoft.com).
 
