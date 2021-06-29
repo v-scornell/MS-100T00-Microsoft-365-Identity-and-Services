@@ -115,7 +115,7 @@ As part of her Microsoft Teams pilot project for Adatum, Holly wants to create a
 
 	- Create voice messages: **Allowed in chats and channels**
 
-	- On mobile devices, display favorite channels about recent chats: **Disabled**
+	- On mobile devices, display favorite channels about recent chats: **Not enabled**
 
 	- Remove users from a group chat: **Off**
 	
@@ -183,7 +183,7 @@ Now that you have created the resource account for your calling queue, you will 
 
 	- Call answering: 
 
-		- **Choose which call agents to associate with this call queue:** Select the **Add users** button. In the **Add users** pane that appears on the right-side of the screen, in the **Search by display name or username** field, enter **Allan**. As you type **Allan**, a window appears listing users whose name starts with **Allan**. As you hover your mouse over **Allan Deyoung**, an **Add** button appears to the right of it. Select the **Add** button.
+		- **Choose which call agents to associate with this call queue:** Select the **Choose users and groups** option, then select **Add users**. In the **Add users** pane that appears on the right-side of the screen, in the **Search by display name or username** field, enter **Allan**. As you type **Allan**, a window appears listing users whose name starts with **Allan**. As you hover your mouse over **Allan Deyoung**, an **Add** button appears to the right of it. Select the **Add** button.
 		
 			**Important:** Note the red error message that appears across the top of the page. The error message indicates that Allan cannot be associated with this call queue because he is not enterprise-voice enabled. Select anywhere in the red error message to close the **Add users** pane, and then select the **X** on the right-side of this error message to close it.
 			
@@ -234,11 +234,11 @@ As part of her Microsoft Teams pilot project, Holly Dickson has been tasked with
 
 	- Inbound calls can be routed to a call group: **On**
 
-	- Allow delegation for inbound and outbound calls: **Off**
+	- Delegation for inbound and outbound calls: **Off**
 
 	- Prevent toll bypass and send calls through the PSTN: **On**
 
-	- Busy on busy is available when in a call: **On**
+	- Busy on busy is available when in a call: **Enabled**
 	
 	- Allow web PSTN calling: **On**
 
@@ -351,7 +351,7 @@ Microsoft Teams includes a variety of global settings that control performance w
 		
 	- Tagging
 		
-		- Tags are managed by: **Disabled**
+		- Tags are managed by: **Not enabled**
 
 	- Email integration
 

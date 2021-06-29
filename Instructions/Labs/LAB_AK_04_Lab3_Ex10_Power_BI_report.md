@@ -319,7 +319,7 @@ As part of her pilot project, Holly wants to share the dashboard that she just c
 ‎  
 ‎In the **Enter email addresses** field, enter **Laura**, and then in the list of Adatum users whose first name starts with Allan, select **Laura Atkins.**
 
-6. Towards the bottom of the Share dashboard pane, review the options that are already selected with a check mark. Leave the boxes checked and select **Share**. Once the dashboard is shared, you will see a message that says **Success!! Your dashboard has been shared successfully.**
+6. Towards the bottom of the Share dashboard pane, review the options that are already selected with a check mark. Leave the boxes checked and select **Grant access**. Once the dashboard is shared, you will see a message that says **Success!! Access has been granted.**
 
 7. Switch to **LON-CL1** so that you can test whether the dashboard was successfully shared.   
 
@@ -331,7 +331,7 @@ As part of her pilot project, Holly wants to share the dashboard that she just c
 
 11. If a **You have an account with us** window appears that indicates Laura is already using another Microsoft service, then select **Sign in** to enter your existing password. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 
-12. In the **Almost there** window, leave the check box blank so that Microsoft does not share Laura’s information with partners, and then select **Start**.
+12. In the **Almost there** window, leave the check box blank so that Microsoft does not share Laura’s information with partners, and then select **Get started**.
 
 13. In the **Invite more people** window, scroll to the bottom and select **Skip**.
 

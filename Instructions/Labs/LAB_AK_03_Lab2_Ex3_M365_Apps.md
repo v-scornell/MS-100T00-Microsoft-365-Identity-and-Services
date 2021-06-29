@@ -23,7 +23,7 @@ Therefore, you must use one of Adatum's on-premises user accounts that has been 
 
 3. You will begin by testing whether a user **without** an appropriate Office 365 license can install Microsoft 365 Apps for enterprise. For this test, you will use **Laura Atkins**. Your lab hosting provider has already created an on-premises user account for Laura, but she does not have a Microsoft 365 user account. You will create a Microsoft 365 account for Laura, but you will not assign her an Office 365 license. 
 
-	At the top of the **Active users** window, select **Add a user** on the menu bar and select **Single user**.
+	At the top of the **Active users** window, select **Add a user** on the menu bar.
 
 4. In the **Set up the basics** window, enter the following information:
 	- First name: **Laura**
