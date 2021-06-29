@@ -247,40 +247,74 @@ Adatum has experienced a recent rash of malware infections. The company's CTO ha
 
 **Note:** In these next three tasks you will configure malware, connection, and spam filters, respectively. These filters were previously configured in the Exchange admin center; however, starting December 1, 2020, that functionality has been moved to the Security and Compliance Center, which is where you will go to create these filters.
 
-1. On LON-DC1, select the **Microsoft 365 admin center** tab in your Edge browser, and then in the left-hand navigation pane under **Admin centers**, select **Security**.
+1.  You should still be logged into LON-CL1 as the **Holly Dickson** with a
+    password of **Pa55w.rd**; however, if the log-in page appears, then log in
+    now.
 
-2. In the **Office 365 Security and Compliance** center, in the left-hand navigation pane, select **Threat management** and then select **Policy**.
+2.  In your **Edge** browser, you should still have a tab open for the
+    **Microsoft 365 admin center**. If so, then select this tab and proceed to
+    the next step; otherwise, navigate to the **Office 365 home** page, log in
+    as your tenant admin account, navigate to the **Microsoft 365 admin
+    center**, and then in the left-hand navigation pane, select **Show all**.
 
-3. In the **Home > Policy** window, under the **Policies** section, select the **Anti-malware** tile. 
+3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane
+    under **Admin centers**, select **Security**.
 
-4. In the **Home > Policy > Anti-malware** window, select the **Default** filter. 
+4.  In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
+    navigation pane, and then in the expanded group select **Policy**.
+    
+6.  In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
+    navigation pane, and then in the expanded group select **Permissions**.
+    
+7.  In the **Home \> permissions** page in the **search** field, type **Org** then select the search glass.
 
-5. In the **Default** filter pane that appears, select the **Edit policy** button. This will open the **Edit a anti-malware policy** window for the **Default** policy. This window will present a variety of options on how your environment will respond, what it will respond to, and how it identifies key recipients. 
+8.  On the **Home \> permissions** page list, select the **Organization Management** role.
 
-6. The **Name your policy** tab in the left-navigation pane is displayed by default. Since the policy is already named, select the **Malware detection response** tab.
+9.  On the **Organization Management**page under the **members**section, select the **Edit** icon.
 
-7. In the **Malware detection response** tab, select the **Yes and use the default notification text** option. <br/>
+10. On the **editing choose members** page. Select **choose members**.
 
-	**Note:** You will select **Save** once you have finished updating the policy, so do not select the **Save** button at this time.
+11. On the **choose members** page, Select the **add** icon.
 
-8. Select the **Common attachment types filter** tab, select the **On – Email with filtered file attachment types will trigger the malware detection response (recommended)** option.
+12. On the **choose members** list. Select the **HOlly Dickson** account.Then select the **add** icon.
 
-9. Select the **Notifications** tab and under the **Administrator notifications** section, select the **Notify administrator about undelivered messages from internal senders** check box. <br/>
+13. On the **choose members** page. Select the**done** icon.
 
-	In the **Administrator email address** field that appears below this option, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
+14. On the **editing choose members** page, select the **save** icon.
 
-10. Under the **Administrator notifications** section, select the **Notify administrator about undelivered messages from external senders** check box. <br/>
+     **Note**: the organization management role may take a minute or two to update the microsoft tenant. If the policy doesn't update within a few minutes proceed to the connection filter task. 
+     
+16.  In the **Home \> Policy** page, select the **Anti-Malware** tile under the
+    **Policies** section.
 
-	In the **Administrator email address** field that appears below this option, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
+17. In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
+    of the window, select **+Create** to add a new malware filter. This
+    initiates the **Create an anti-malware policy** wizard.
 
-11. You have finished updating this **Default** anti-malware policy, so select **Save**.
+18. In the **Name your policy** page, enter **Malware Policy** in the **Name**
+    field.
+    
+19. In the **Description** field, enter **This policy has been created to
+    protect the messaging environment** and then select **Next**.   
 
-12. On the **Security & Compliance** dialog box that appears asking whether you want to continue updating your organization settings, select **Yes**. <br/>
+19. In the **users and domains**section under domains, enter **onmicrosoft.com** and then select **Next**.
 
-	**Note:** It may take a couple of minutes for the organization settings to get updated. 
-	
-13. Leave your Edge browser open to the **Office 365 Security & Compliance** center for the next task.
+20. On the **protection settins** page, select the checkboxes for **enable the common attachements filter** and **enable zero-hour auto purge for malware (recommended)**.
 
+21. On the **Notifications** section, since this filter will not generate any
+    notifications, do not select any of the notification options, and instead
+    select **Next**.
+
+22. On the **reivew** section, confirm that all the information is correct, then select the submit icon.
+
+23. Congratulations, the New ant-malware policy has been created. Select the done icon.
+
+    **Note**: A **Security & Compliance** window will appear with a message that indicates your organization settings need to be updated. Select **Yes** to continue.
+    
+24.  It may take a minute or so for your organization settings to be updated.
+    Once the update is complete and you are back on the **Home \> Policy \>
+    Anti-malware** page, you can proceed to the next task. Do not close any of
+    the browser tabs.
 
 ### Task 8 – Manage Connection Filters
 
@@ -312,6 +346,7 @@ Holly has investigated the situation and has found that in Microsoft 365, you ca
 For Microsoft 365 customers whose mailboxes are hosted in Microsoft Exchange Online, their email messages are automatically protected against spam and malware. Microsoft 365 has built-in malware and spam filtering capabilities that help protect inbound and outbound messages from malicious software and help protect you from spam. 
 
 As Adatum’s Global Admin, Holly doesn't need to set up or maintain the filtering technologies, which are enabled by default. However, she can make company-specific filtering customizations in the Security and Compliance center. She has decided to test this out by configuring a spam policy to grant or deny an email by focusing on the language of the email and the location of the email's origin.
+
 
 1. In the **Office 365 Security & Compliance** center, you should still be displaying the **Home > Policy > Mail filtering** window after having completed the prior task. <br/>
 
@@ -353,30 +388,99 @@ As Adatum’s Global Admin, Holly doesn't need to set up or maintain the filteri
 	Enter a letter and then select a language with that letter in it that you want to filter. Repeat this step for a couple of languages. 
 
 9.  In the **Mark as spam** section, select the **From these countries** drop down, and select **On**.
+=======
+1.  You should still be logged into LON-CL1 as the **Administrator** with a
+    password of **Pa55w.rd**; however, if the log-in page appears, then log in
+    now.
 
-11. You should already know the countries/regions that you want to filter. In the **Country/Region** field, enter the first letter of a country/region that you want to filter. This will display all countries/regions that start with that letter (as well as any countries/regions that contain that letter within the name of the country/region). <br/>
+2.  In your **Edge** browser, you should still be in the **Office 365 Security &
+    Compliance center** (SCC). If so, then proceed to the next step; otherwise,
+    perform the steps from the prior task to navigate to the SCC now.
 
-	Enter a letter and then select a country/region with that letter in it that you want to filter. Repeat this step for a couple of countries/regions. 
+3.  In the **Office 365 Security & Compliance center**, you should still be on
+    the **Anti-spam settings** page after completing the prior task. If so, then
+    proceed to the next step; otherwise, in the left-hand navigation pane,
+    select **Threat Management**, select **Policy,** and then select the
+    **Anti-spam** tile under the **Policies** section.
+
+4.  In the **Anti-spam policies** windows in the list of policies, select the
+    **Anti-spam inbound policy(defualt)**.
+
+
+5.  In the **Anti-spam inbound policy (default)** pane, you will be
+    presented a variety of options on how you would like spam to be handled and
+    what rating will be triggered depending on the severity of the spam. The
+    following steps will guide you through these settings so that you can update
+    them per Adatum's requirements.
+
+6.  Select the **edit spam threshhold and properties** link, under the **bulk email threashold & spam properties** section. Update the
+    following settings:
+
 
 13. Select the drop-down arrow to the right of the **Spam properties** section.  <br/>
 
-	‎**Note:** This section allows you to automatically tag messages as spam that have embedded URL’s with specific attributes or that have embedded HTML in the message.
+    -   set the threshold: **5** 
+   
+    -   **mark as spam** 
+    -   empty messages: **Off**
+    -   Embedded tags in HTML: **On**
+    -   JavaScript or VBScript in HTML :**On**
+    -   SPF record hard fail: **On**
+    -   Sender ID filtering hard fail: **On**
+    -   from these counties:
+
+           -   Type the letters **"ab"** in the **from theses countries** field to display
+                the list of countries starting with the letters “ab” or that
+                include an “ab”. You can enter any letter or letters that you
+                wish.
+
+
+           -   Select any country/region you want to restrict.
 
 14. Under the **Spam properties** section, turn **On** the following options:
 
-	- **URL redirect to other port**
+           -   If you want to restrict an additional country, repeat the
+                prior two steps.
+                
+                
+7.  Once you have selected all the countries/regions that you want to restrict. Select **save**.             
 
-	- **URL to .biz or .info websites**
+8.  Select the **edit actions** icon under the **actions** section to update the following
+    settings:
+
+    **Note:** This section determines what happens to emails that have been tagged as spam.
+
 
 15. Under the **Mark as spam** section, turn **On** the following options:
 
-	- **Empty messages**
+    -   Select the **spam** drop-down arrow and select the **Move message to junk email folder**.
+
+
+    -   Select the **phishing** drop-down arrow and select **quarrantine message**.
+
 
 	- **Sender ID filtering: hard fail**
 
-16. Select **Save** and then select **OK** once the changes are successfully saved.
+     -  change **retain spam in quarantine for this many days** to **10** days.
+
+9.  Select **Save**.
+
 
 17. In your Edge browser, close the **Security & Compliance** center tab, but leave all other tabs open. 
+
+10.  In the list of spam filters, select the drop-down arrow to the left of the
+    **Default spam filter policy (always ON)** filter that you just edited. In
+    the middle column of settings for this filter, note how **End-user spam
+    notifications** are disabled (it status is **Off**). <br/><br/>
+    Below this option, select **Configure end-user spam notifications**.
+
+11.  In the **Default** window that appears, select the **Enable end-user spam
+    notifications** check box, and then change the **Send end-user spam
+    notifications every (days)** value to **5**.
+
+12.  Select **Save**.
+
+13. In your Edge browser, close the **Security & Compliance** center tab, but leave all other tabs open. 
 
 
 ### Task 10 – Manage Mail Flow Rules 
