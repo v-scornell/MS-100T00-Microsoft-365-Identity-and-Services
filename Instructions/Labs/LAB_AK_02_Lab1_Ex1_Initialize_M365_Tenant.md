@@ -123,7 +123,6 @@ Azure Active Directory is required to perform several configuration steps when i
 
 		Install-Module MSOnline
 	
-
 3. If you are prompted to install the **NuGet provider,** enter **Y** to select **[Y] Yes**. 
 
 4. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
