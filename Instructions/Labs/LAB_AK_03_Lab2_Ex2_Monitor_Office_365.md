@@ -117,7 +117,7 @@ Adatum's CTO is concerned with the service health issues that have recently come
 
 	‎**Note:** There may be little or no data shown due to the limited mailbox usage in the lab environment. 
 
-8. Under the **Email activity** chart select the **View more** button. This displays the **Email activity** report. In the report header at the top of the page, select the **Exchange activity** drop-down arrow. In the menu that appears, select the **Exchange** drop-down arrow and then select **Mailbox usage**. 
+8. Under the **Email activity** chart select the **View more** button. This displays the **Exchange** report dashboard. In the report header at the top of the page, select **Mailbox usage**. 
 
 9. The default mailbox usage that is initially displayed is **30 days**. Select the other date views at the top of the report (**7 days**, **90 days**, and **180 days**) to see how the display changes. 
 
