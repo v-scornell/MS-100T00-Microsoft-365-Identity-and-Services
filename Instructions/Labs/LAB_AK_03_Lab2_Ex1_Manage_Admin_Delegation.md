@@ -24,9 +24,9 @@ As Holly Dickson, Adatum’s Enterprise Administrator and Microsoft 365 Global A
 
 8. On the **Manage roles** window, select the **X** in the upper-right corner of the screen to close it. This returns you to the **Active users** list. 
 
-9. Repeat steps 3-8 for **Lynne Robbins.** Assign Lynne to both the **Helpdesk admin** role and the **User Administrator** role under the **Identity** category. <br/>
+9. Repeat steps 3-8 for **Lynne Robbins.** Assign Lynne to the **User Administrator** role under the **Identity** category.
 
-	**Note:** Both roles are in the list of commonly used admin roles that appear under the **Admin center access** option; therefore, you do not have to select **Show all by category**. 
+   **Note:** The role is in the list of commonly used admin roles that appear under the **Admin center access** option; therefore, you do not have to select **Show all by category**.
 
 10. Remain logged into LON-DC1 and the Microsoft 365 admin center as Holly Dickson.
 
