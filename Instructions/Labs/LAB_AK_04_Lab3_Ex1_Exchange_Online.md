@@ -51,11 +51,11 @@ As you continue in your role as Holly Dickson, you are ready to review the steps
 
 In this task you will create two types of groups within Exchange Online. The first is a distribution list of email recipients, which is used to create a one-stop email list for contacting users simultaneously rather than having to email each recipient individually. The second type of group is a Microsoft 365 group.
 
-1. Your browser should still be open to the **Exchange admin center** from the prior task, and it should still be displaying **recipients** from the left-hand navigation pane. In the prior task, you worked with user accounts using the **mailboxes** tab. In this task, you will be creating groups, so select the **groups** tab at the top of the **recipients** page.  <br/>
+1. Your browser should still be open to the **Exchange admin center** from the prior task, and it should still be displaying **Recipients** from the left-hand navigation pane. In the prior task, you worked with user accounts using the **Mailboxes** section. In this task, you will be creating groups, so select the **Groups** section under **Recipients**.
 
-	**Note:** You should already see the **Inside Sales** group that you created in Lab 2. This is a Microsoft 365 group whose email address is associated with the custom, on-premises domain (@xxxUPNxxx.xxxCustomDomainxxx.xxx). In the following steps, you will create a Distribution list group and a Microsoft 365 group whose email addresses will be in Microsoft 365 (@xxxxxZZZZZZ.onmicrosoft.com). 
+	**Note:** You should already see the **Inside Sales** group that you created in Lab 1. This is a Microsoft 365 group whose email address is associated with the custom, on-premises domain (@xxxUPNxxx.xxxCustomDomainxxx.xxx). In the following steps, you will create a Distribution list group and a Microsoft 365 group whose email addresses will be in Microsoft 365 (@xxxxxZZZZZZ.onmicrosoft.com). 
 
-2. Select **Add a  group** button under the Microsoft 365 tab.
+2. Select **Add a group** button under the Microsoft 365 tab.
 
 3. In the **Choose a group type** window that appears, choose **Distribution** and click **Next**.
 
