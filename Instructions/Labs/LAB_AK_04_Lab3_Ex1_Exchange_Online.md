@@ -134,7 +134,7 @@ Adatum’s CTO wants Holly to implement a standard naming policy throughout the 
 
 2. In the **Edit group naming policy** window that appears, you can select a prefix and a suffix. <br/>
 
-	In the **For the prefix, apply the following sequence:** field, select the drop-down arrow and select **Attribute** and to the right in the **select one** field select **Department**.
+	In the **Choose a prefix to add to the beginning of the group names** field, select the drop-down arrow and select **Attribute** and to the right in the **select one** field select **Department**.
 
 3. Select **Add prefix** select the drop-down arrow in the box that has **Attribute** and select **Text**. In the **Add text** field, enter **Group**.
 
