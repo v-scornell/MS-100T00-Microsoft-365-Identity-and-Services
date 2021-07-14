@@ -93,7 +93,14 @@ In this task you will create two types of groups within Exchange Online. The fir
 
 	- Owners: **Holly Dickson**
 	
-	- Members: Ensure **All recipient types** is selected
+	- Members: Ensure **Only the following recipient types** is selected
+
+	- Select the **Users with Exchange Mailboxes** checkbox 
+
+	- Membership in this group will be determined by the rules you set below: 
+		- Attribute: **Department**
+		- Text field: **Sales**
+	
 
 15. Under **Edit settings** Enter the folling inofrmation then click on **Next**:
 
