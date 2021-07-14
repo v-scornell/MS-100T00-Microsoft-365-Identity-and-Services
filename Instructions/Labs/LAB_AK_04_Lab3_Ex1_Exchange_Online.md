@@ -73,7 +73,7 @@ In this task you will create two types of groups within Exchange Online. The fir
 
 7. Wait until you see your group name under the **Distribution list** tab. If you don't see it, refresh every 5 minutes.
 
-8. Once you see your new group, **Sales Department**, click on the group name and click on the **Members** tab.
+8. On the **Groups**dashboard, select the **Distribution list**section,the **Sales Department** distribution list should no be present. Select the group name and select the **Members** tab.
 
 9. Click on **View all and manage owners**. Since you are logged into the EAC using Holly Dickson, her account is displayed as the default Owner. However, Holly wants Alex Wilber to co-own the group, so select the **+ Add owners** sign under the **Owners** section, and in the **Add Owners** window, select **Alex Wilber**, select the **Add (1)** button, and then select the back arrow. 
 
