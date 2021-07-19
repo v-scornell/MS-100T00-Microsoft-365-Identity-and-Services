@@ -211,7 +211,7 @@ group.
 16. In the **Choose a group type** window that appears, select **Dynamic
     distribution,** and then select **Next.**
 
-17. On the **Set up the basics** page**,** enter the following information and
+17. On the **Set up the basics** page, enter the following information and
     then select **Next**:
 
     -   Name: **Dynamics CRM Project Team**
@@ -492,9 +492,9 @@ introduced to mail contacts and mail users.
         drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where
         xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider.
 
-    -   Password: **Pa55w.rd.**
+    -   Password: **Pa55w.rd**
 
-    -   Confirm: **Pa55w.rd.**
+    -   Confirm: **Pa55w.rd**
 
 8.  Select **Add.**
 
@@ -640,43 +640,43 @@ enable you to customize organization management objects.
 
         	Install-Module -name Exchangeonlinemanagement
 
-25. If you are prompted to confirm whether you want to install the module from
+    3. If you are prompted to confirm whether you want to install the module from
     an untrusted repository (PSGallery), enter **A** to select **[A] Yes to
     All.**
 
-26. At the command prompt, type the following command and press Enter:
+    4. At the command prompt, type the following command and press Enter:
 
    		Connect-exchangeonline
 
-1.  A **Microsoft 365 Sign in** window will appear. Enter in the username for
+    5.  A **Microsoft 365 Sign in** window will appear. Enter in the username for
     the **Mod Administrator** account provided by your learning provider
     (admin@M365xZZZZZZ.onmicrosoft.com) and then select **Next**.
 
-2.  In the **Enter password** window, enter the password for this admin account
+    6.  In the **Enter password** window, enter the password for this admin account
     provided by your learning provider, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
 
-3.  At the command prompt, type the following command and press Enter (**Note:**
+    7.  At the command prompt, type the following command and press Enter (**Note:**
     This command may fail the first time. If it fails, re-run this step until it
     returns a successful result (the command prompt appears with no errors);
     testing shows that it sometimes takes two attempts):
 
 		Enable-OrganizationCustomization
 
-1.  Close the PowerShell window.
+    8.  Close the PowerShell window.
 
-2.  Return to your **Edge** browser and the **Review** page for your new
+    9.  Return to your **Edge** browser and the **Review** page for your new
     anti-malware policy. Select **Submit** to resubmit your anti-malware policy.
     This time the policy should be successfully saved.
 
-3.  On the **Created new anti-malware policy** page, it indicates the new policy
+25.  On the **Created new anti-malware policy** page, it indicates the new policy
     has been created and will go into effect immediately. Select **Done.**
 
     **Note**: If a **Security & Compliance** window appears with a message that
     indicates your organization settings need to be updated, select **Yes** to
     continue. It may take a minute for your organization settings to be updated.
 
-4.  Your new anti-malware policy should appear in the list of policies on the
+26.  Your new anti-malware policy should appear in the list of policies on the
     **Home \> Policy \> Anti-malware** page. Leave your browser and all tabs
     open and proceed to the next task.
 
@@ -788,20 +788,18 @@ email’s origin.
 
     -   Sender ID filtering hard fail: **On**
 
-    -   Contains specific languages: **On  
+    -   Contains specific languages: **On**  
         
         **Note:** These next two settings allow you to automatically tag messages
         as spam when they originate from countries/regions that are to be
-        avoided or distrusted, as well as messages written in specific languages
-        
-        
+        avoided or distrusted, as well as messages written in specific languages.
+                
         You should already know the languages that you want to filter. In the
         blank field that appears below the **Contains specific languages**
         field, enter the first letter of a language that you want to filter.
         This will display all languages that start with that letter (as well as
         any languages that contain that letter within the name of the language).
-        
-        
+                
         Enter a letter and then select a language with the letter in it that you
         want to filter. Repeat this step for a couple of languages.
 
