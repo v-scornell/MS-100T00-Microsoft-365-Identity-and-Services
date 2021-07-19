@@ -4,7 +4,7 @@ As Adatum begins its transition to Microsoft 365 as its hosted cloud solution, t
 
 ### Task 1 – Review the Power Platform Admin Center
 
-In your role as Holly Dickson, you want to review the Power Platform admin center, which is the go-to destination for administrators who create, manage, and support their Power Platform environments. 
+In your role as Holly Dickson, you want to review the Power Platform admin center, which is the go-to destination for administrators who create, manage, and support their Microsoft Power Platform environments. 
 
 1. Switch to **LON-DC1**, where you should still be logged in as **ADATUM\Administrator** and password **Pa55w.rd**; if not, then do so now.
 
