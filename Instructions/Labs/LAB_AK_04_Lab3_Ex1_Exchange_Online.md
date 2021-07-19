@@ -624,9 +624,9 @@ enable you to customize organization management objects.
     Holly through the Organization Management role haven’t fully propagated
     through the system. For this lab, instead of waiting an hour or so for this
     permission replication to occur, select **OK** in this dialog box and then
-    perform the following steps that enable you to customize organization
+    perform the following PowerShell commands that will enable you to customize organization
     management objects. Once you’ve completed these steps, you will resubmit the
-    **Review** page.
+    **Review** page to save the malware policy that you just created.
 
     1.  On LON-CL1, you must open an elevated instance of **Windows
         PowerShell**. Select the magnifying glass (Search) icon on the taskbar
@@ -672,7 +672,7 @@ enable you to customize organization management objects.
 25.  On the **Created new anti-malware policy** page, it indicates the new policy
     has been created and will go into effect immediately. Select **Done.**
 
-    **Note**: If a **Security & Compliance** window appears with a message that
+        **Note**: If a **Security & Compliance** window appears with a message that
     indicates your organization settings need to be updated, select **Yes** to
     continue. It may take a minute for your organization settings to be updated.
 
