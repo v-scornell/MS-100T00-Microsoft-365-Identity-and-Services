@@ -80,25 +80,23 @@ In this task you will download and use the IdFix tool to fix the on-premises use
 
 6. In the **Do you want to install this application?** dialog box, select **Install**.
 
-7. If a **Do you want to run this file?** dialog box appears, select **Run**.
+7. In the **IdFix Privacy Statement** message box, select **OK**. 
 
-8. In the **IdFix Privacy Statement** message box, select **OK**. 
+8. In the **IdFix** window that appears, on the menu bar at the very top of the screen, select **Query** to query the directory. After a short wait, you should see several errors. 
 
-9. In the **IdFix** window that appears, on the menu bar at the very top of the screen, select **Query** to query the directory. After a short wait, you should see several errors. 
-
-10. Select the **ERROR** column heading to sort the records by error in alphabetical error. <br/>
+9. Select the **ERROR** column heading to sort the records by error in alphabetical error. <br/>
 
 	‎**Note:** If any **topleveldomain** errors appear, then ignore them as they cannot be fixed by the IdFix tool.  
 
-11. In the **Klemen Sic** row, select the drop-down arrow in the **ACTION** field and select **EDIT**. 
+10. In the **Klemen Sic** row, select the drop-down arrow in the **ACTION** field and select **EDIT**. 
 
-12. On the menu bar at the top of the window, select **Apply**. 
+11. On the menu bar at the top of the window, select **Apply**. 
 
-13. In the **Apply Pending** dialog box that appears, select **Yes**. <br/>
+12. In the **Apply Pending** dialog box that appears, select **Yes**. <br/>
 
 	‎**Note:** Notice the value in the **Action** column changed from **EDIT** to **COMPLETE** for this user; this indicates that IdFix updated the user object and corrected the error. 
 
-14. On the menu bar, select **Query**. In the query results, note how the Klemen Sic row no longer appears in the results, since you just fixed this object. <br/>
+13. On the menu bar, select **Query**. In the query results, note how the Klemen Sic row no longer appears in the results, since you just fixed this object. <br/>
 
 	**Note:** If a dialog box appears indicating an unhandled exception has occurred, select **Continue**. <br/>
 
@@ -106,9 +104,9 @@ In this task you will download and use the IdFix tool to fix the on-premises use
 
 	**Important:** When there are format and duplicate errors for distinguished names, the **UPDATE** column either contains the same string as the **VALUE** column, or the **UPDATE** column entry is blank. In either case, this means that IdFix cannot suggest a remediation for the error. You can either fix these errors outside IdFix, or manually remediate them within IdFix. You can also export the results and use Windows PowerShell to remediate many errors.  
 
-15. Close the IdFix window. 
+14. Close the IdFix window. 
 
-16. Leave your Edge browser open. 
+15. Leave your Edge browser open. 
 
 
 ### Task 4: Prepare for Directory Synchronization    
