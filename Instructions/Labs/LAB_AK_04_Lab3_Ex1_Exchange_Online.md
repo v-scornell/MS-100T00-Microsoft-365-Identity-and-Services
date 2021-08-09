@@ -534,7 +534,7 @@ Management permissions haven’t fully propagated through the system for Holly. 
 work around this, you will be provided with PowerShell instructions that will
 enable you to customize organization management objects.
 
-1.  You should still be logged into LON-CL1 as the **Holly Dickson** with a
+1.  You should still be logged into LON-CL1 as the **Administrator** with a
     password of **Pa55w.rd**; however, if the log-in page appears, then log in
     now.
 
