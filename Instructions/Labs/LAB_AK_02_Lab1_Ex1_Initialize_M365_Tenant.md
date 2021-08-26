@@ -106,7 +106,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have bee
 
 25. In the **Custom themes** pane, in the **Customize Microsoft 365 for your organization** select **+ Add theme**, then select the **Show the user's display name** check box. <br/>
 
-	Review the various tabs in this pane. As you scroll through the options on the **Logos** and **Colors** panes, review the theme and branding options that are available for you to update. For this lab, you can change any of the options or leave the default values as is. For example, you can add the logo of your company and set the background image as the default for all your users. Along with these options you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
+	Review the various tabs in this pane. As you scroll through the options on the **Logos** and **Colors** tabs, review the theme and branding options that are available for you to update. For this lab, you can change any of the options or leave the default values as is. For example, you can add the logo of your company and set the background image as the default for all your users. Along with these options you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
 
 	**Tip:** Some color patterns aesthetically distract users. If you do change any of the colors, it is recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
 
