@@ -98,7 +98,7 @@ Holly is now going to test whether users can be prohibited from downloading Micr
 	
 	In the **Microsoft 365 admin center**, under **Users** in the left-hand navigation pane select **Active users**, and then in the in the **Active users** list, scroll down to **Laura Atkins**. The value in the **Licenses** column for Laura currently indicates that she is **Unlicensed**. Select **Laura Atkins**.
 
-8. In Laura Atkins’ account window, the **Account** tab is displayed by default. Select the **Licenses and Apps** tab. In the **Licenses** section, select the **Office 365 E5** check box and then select **Save changes**. You can then close Laura’s account window. In the **Active users** list, note how the value in the **Licenses** column for Laura now displays **Office 365 E5**.
+8. In Laura Atkins’ account window, the **Account** tab is displayed by default. Select the **Licenses and Apps** tab. In the **Licenses** section, select the **Office 365 E3** check box and then select **Save changes**. You can then close Laura’s account window. In the **Active users** list, note how the value in the **Licenses** column for Laura now displays **Office 365 E3**.
 
 9. You should now check whether Laura can download Microsoft 365 Apps for enterprise on to her client PC when the global Office download setting has been turned Off. <br/>
 
