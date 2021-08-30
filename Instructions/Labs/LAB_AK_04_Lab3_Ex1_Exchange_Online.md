@@ -581,7 +581,7 @@ enable you to customize organization management objects.
     navigation pane, select **Threat management** to expand this group, and then
     select **Policy**.
 
-15. In the **Home \> Policy** page, under the **Policies** section, select
+15. In the **Security > Policies & Rules > Threat policies > Anti-malware** page, under the **Policies & Rules** tab, select
     **Anti-malware**.
 
 16. In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
