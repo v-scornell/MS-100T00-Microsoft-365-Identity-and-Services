@@ -584,7 +584,7 @@ enable you to customize organization management objects.
 15. In the **Security > Policies & Rules > Threat policies > Anti-malware** page, under the **Policies & Rules** tab, select
     **Anti-malware**.
 
-16. In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
+16. In the **Security > Policies & Rules > Threat policies > Anti-malware** page, on the menu bar at the top
     of the window, select **+Create** to add a new malware filter. This starts
     the **Create a new anti-malware policy** wizard.
 
