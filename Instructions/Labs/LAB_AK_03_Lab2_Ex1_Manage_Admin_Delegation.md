@@ -121,7 +121,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 11. In your **Edge** browser navigate to **https://portal.office.com**. 
 
-12. You will begin by signing into Microsoft 365 as **Allan Deyoung**. In the **Sign-in** window, enter **AllanD@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter the Tenant Password provided by your instructor.  If you are signed in to another account, sign out and sign back in using **Allan Deyoung** credentials .
+12. You will begin by signing into Microsoft 365 as **Allan Deyoung**. In the **Sign-in** window, enter ***AllanD@xxxxxZZZZZZ.onmicrosoft.com*** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter the Tenant Password provided by your instructor.  If you are signed in to another account, sign out and sign back in using **Allan Deyoung** credentials .
 
 13. On the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**.
 
