@@ -646,7 +646,7 @@ enable you to customize organization management objects.
 
     4. At the command prompt, type the following command and press Enter:
 
-   		Connect-exchangeonline
+   		**Connect-exchangeonline**
 
     5.  A **Microsoft 365 Sign in** window will appear. Enter in the username for
     the **Mod Administrator** account provided by your learning provider
