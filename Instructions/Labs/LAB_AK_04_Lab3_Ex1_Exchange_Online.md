@@ -661,7 +661,7 @@ enable you to customize organization management objects.
     returns a successful result (the command prompt appears with no errors);
     testing shows that it sometimes takes two attempts):
 
-		Enable-OrganizationCustomization
+		**Enable-OrganizationCustomization**
 
     8.  Close the PowerShell window.
 
