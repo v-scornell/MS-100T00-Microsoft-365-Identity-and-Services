@@ -72,9 +72,9 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 25. On the **Microsoft 365 admin center** page, in the left-hand navigation pane, select **Show all** (if necessary). 
 
-26. Scroll down through the left-hand navigation pane, and under **Admin centers,** select **Security**. This will open the Office 365 Security & Compliance center in a new tab.
+26. Scroll down through the left-hand navigation pane, and under **Admin centers,** select **Exchange**. This will open the Exchange admin center in a new tab.
 
-27. In the **Office 365 Security & Compliance center**, in the left-hand navigation pane, select **Mail flow**, and then in the Mail Flow group, select **Message trace**. 
+27. In the **Exchange admin center**, in the left-hand navigation pane, select **Mail flow**, and then in the Mail Flow group, select **Message trace**. 
 
 28. In the **Home > Message trace** window, select the **+Start a trace** button. 
 
