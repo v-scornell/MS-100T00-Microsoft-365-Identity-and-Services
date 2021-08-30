@@ -76,7 +76,7 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 27. In the **Exchange admin center**, in the left-hand navigation pane, select **Mail flow**, and then in the Mail Flow group, select **Message trace**. 
 
-28. In the **Home > Message trace** window, select the **+Start a trace** button. 
+28. In the **Message trace** window, select the **+Start a trace** button. 
 
 29. In the **New message trace** pane that appears, select the **By these people** field. This displays the list of active users. Scroll down and select **Holly Dickson**.
 
