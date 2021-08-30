@@ -677,7 +677,7 @@ enable you to customize organization management objects.
     continue. It may take a minute for your organization settings to be updated.*
 
 26.  Your new anti-malware policy should appear in the list of policies on the
-    **Home \> Policy \> Anti-malware** page. Leave your browser and all tabs
+    **Security > Policies & Rules > Threat policies > Anti-malware** page. Leave your browser and all tabs
     open and proceed to the next task.
 
 **Task 8 – Manage Connection Filters**
