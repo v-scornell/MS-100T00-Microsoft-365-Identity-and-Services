@@ -45,7 +45,7 @@ Holly Spencer is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 		**Holly@M365xZZZZZZ.onmicrosoft.com**  
 	
-	- Password settings: select the **Let me create the password** option
+	- Password settings: uncheck the **Automatically create a password** option
 
 	- Password: **Pa55w.rd** 
 
@@ -149,7 +149,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 	**Note:** The IT admins group does not have a group email address because it's a Security group. Two additional group types are Mail-enabled Security groups and Distribution groups. Neither of these group types were used in this lab because it can take up to an hour for these two types of groups to appear in the Groups list; whereas Microsoft 365 groups and Security groups usually take just a matter of minutes to appear. 
 
-24. You’re now ready to add members to the groups. In the list of **Active groups**, select the **IT Admins** group. 
+24. You’re now ready to add members to the groups. In the list of **Active groups**, select the **Security**, then **IT Admins** group. 
 
 25. In the **IT Admins** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
 
