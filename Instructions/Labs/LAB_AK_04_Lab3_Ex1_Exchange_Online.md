@@ -672,9 +672,9 @@ enable you to customize organization management objects.
 25.  On the **Created new anti-malware policy** page, it indicates the new policy
     has been created and will go into effect immediately. Select **Done.**
 
-        **Note**: If a **Security & Compliance** window appears with a message that
+        *Note: If a **Security & Compliance** window appears with a message that
     indicates your organization settings need to be updated, select **Yes** to
-    continue. It may take a minute for your organization settings to be updated.
+    continue. It may take a minute for your organization settings to be updated.*
 
 26.  Your new anti-malware policy should appear in the list of policies on the
     **Home \> Policy \> Anti-malware** page. Leave your browser and all tabs
