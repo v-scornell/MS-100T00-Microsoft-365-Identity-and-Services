@@ -22,7 +22,7 @@ As Holly Dickson, Adatum's Enterprise Administrator, you want to customize the c
 
 7. In the **Global** window that appears, under the **General** section, review each setting. All settings in this section should be turned **On**.
 
-8. Under the **Audio &amp; video** section, review each setting. Select the **Allow transcription** toggle switch to turn it **On**.
+8. Under the **Audio &amp; video** section, review each setting. Under **Recording &amp; transcription** Select the **Allow transcription** toggle switch to turn it **On**.
 
 9. Under the **Content Sharing** section, review each setting and make the following changes: 
 
