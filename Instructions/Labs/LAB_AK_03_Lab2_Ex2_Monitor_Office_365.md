@@ -119,21 +119,23 @@ Adatum's CTO is concerned with the service health issues that have recently come
 
 8. Under the **Email activity** chart select the **View more** button. This displays the **Exchange** report dashboard. In the report header at the top of the page, select **Mailbox usage**. 
 
-9. The default mailbox usage that is initially displayed is **30 days**. Select the other date views at the top of the report (**7 days**, **90 days**, and **180 days**) to see how the display changes. 
+9. The default mailbox usage that is initially displayed is **Past 30 days**. Select the down-arrow that appears next to **Past 30 days** and select one of the other options that appear in the drop-down menu (**7 days**, **90 days**, and **180 days**) to see how the display changes. 
 
-10. Scroll down to the bottom of the page to see mailbox details for each of the active users.
+10. Scroll down below the charts to see mailbox details for each of the active users.
 
-11. Scroll back to the top of the page. On the menu bar above the chart, it currently displays **Mailbox usage** followed by a drop-down arrow. Select the drop-down arrow, and in the menu that appears, select **SharePoint**. In the SharePoint group, select **Site usage**. 
+11. Scroll back to the top of the page. On the navigation line at the top of the page (**Home > Usage > Exchange**), select **Usage** to return to the Usage page. 
 
-12. The default site usage that is initially displayed at the top-right of the screen is **Past 30 days**. Select the drop-down arrow next to this and in the menu that appears, select the other date views to see how the display changes: **7 days**, **90 days**, and **180 days**. 
-
-13. Scroll down to the bottom of the page to see details for each of the site collections for your tenant.
+12. Review the various reports on this page. While there may be limited or no data for each report, you at least get a feel for the types of reporting that's available. 
 
 14. You now want to review the reports that are available in the **Exchange admin center**. In your browser, you should have the **Exchange admin center** tab open from the prior task; if so, select it now. However, if you previously closed this tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Exchange**.
 
 15. In the **Exchange admin center**, select **Reports** in the left-hand navigation pane, and then select **Mail flow**. 
 
-16. In the **Reports > Mail flow** window, select **Inbound messages report** (this report has data to view; none of the other reports have data). 
+16. In the **Reports > Mail flow** window, select **Inbound messages report** (this report has data to view; none of the other reports have data). Review the information displayed for this report. 
+
+17. On the navigation line at the top of the page (**Reports > Mail flow > Inbound messages report**), select **Mail flow** to return to this reporting page. 
+
+18. In the **Reports > Mail flow** window, review the various reports that are available. 
 
 17. Close the **Exchange admin center** tab in your Edge browser but leave the other Microsoft 365 admin center tabs open for the next task.
  
