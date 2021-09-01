@@ -139,7 +139,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 20. In the **Microsoft 365 admin center**, select **Users** on the left-hand navigation pane and then select **Active users**. 
 
-21. As the **Helpdesk administrator**, Lynne has permission to change user passwords. Lynne was recently contacted by **Diego Siciliani** and **Allan Deyoung**, who each reported that their passwords may have been compromised. Per Adatum's company policy, Lynne must reset their passwords to a temporary value, and then force them to reset their password at their next login.   <br/>
+21. As the **User Administrator**, Lynne has permission to change user passwords. Lynne was recently contacted by **Diego Siciliani** and **Debra Berger**, who each reported that their passwords may have been compromised. Per Adatum's company policy, Lynne must reset their passwords to a temporary value, and then force them to reset their password at their next login.   <br/>
 
 	‎In the **Active users** list, as you move your mouse from one user account to another, notice the **key (Reset a password)** icon that appears to the right of each user's name. Select the key icon that appears to the right of **Diego Siciliani's** name.
 
@@ -155,21 +155,21 @@ In this task, you will begin by examining the administrative properties of two u
 
 25. If a survey request window appears, select **Cancel**.
 
-26. In the **Active users** list, select the **key (Reset a password)** icon for **Allan Deyoung**. 
+26. In the **Active users** list, select the **key (Reset a password)** icon for **Debra Berger**. 
 
-27. In the **Reset password** window for Allan, if the **Automatically create a password** check box displays a check mark, then select this box to clear it. Lynne wants to manually assign Allan a password, so enter **P@$$w0rd** in the **Password** field. 
+27. In the **Reset password** window for Debra, if the **Automatically create a password** check box displays a check mark, then select this box to clear it. Lynne wants to manually assign Debra a password, so enter **P@$$w0rd** in the **Password** field. 
 
-	This is just a temporary password because Lynne wants to force Allan to change it the next time he logs in. Therefore, verify the **Require this user to change their password when they first sign in** check box displays a check mark; if the box is clear, then select it so that it displays a check mark.
+	This is just a temporary password because Lynne wants to force Debra to change it the next time she logs in. Therefore, verify the **Require this user to change their password when they first sign in** check box displays a check mark; if the box is clear, then select it so that it displays a check mark.
 
 28. Select **Reset password**.<br/>
 
-29. On the **Reset password** window, you should receive a message indicating the password was successfully reset. Select the **Email the sign-in info to me** check box. This displays a **Your email** field, which displays Lynne Robbins' email address. Since you also want to email this temporary password to Allan, you should enter Allan's email address following Lynne's. </br>
+29. On the **Reset password** window, you should receive a message indicating the password was successfully reset. Select the **Email the sign-in info to me** check box. This displays a **Your email** field, which displays Lynne Robbins' email address. Since you also want to email this temporary password to Debra, you should enter Debra's email address following Lynne's. </br>
 
-	If you enter multiple email addresses in this field, they must be separated by a semicolon and a space. Therefore, enter a semicolon and a space following Lynne's email address, enter Allan's email address of **AllanD@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the prefix provided by your lab hosting provider), and then select **Send email and close**.
+	If you enter multiple email addresses in this field, they must be separated by a semicolon and a space. Therefore, enter a semicolon and a space following Lynne's email address, enter Debra's email address of **DebraB@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the prefix provided by your lab hosting provider), and then select **Send email and close**.
 
 30. Management has recently discovered that Alex Wilber's username may have been compromised. As a result, Lynne has been asked to block Alex's account so that no one can sign in with his username until management is able to determine the extent of the issue. In the **Active users** list, select the circle to the left of **Alex Wilber's** name (do NOT select Alex’s name itself). 
 
-	**Note:** Since you are going to run a global command on Alex's account rather than a command associated with his account, you only want Alex's account selected in the list of active users. If any other user account is selected, you must unselect that user account before proceeding. Examine Allan Deyoung's account, since you just reset his password; uncheck his account if necessary (select the check mark to unselect it). Only Alex's account should be selected. 
+	**Note:** Since you are going to run a global command on Alex's account rather than a command associated with his account, you only want Alex's account selected in the list of active users. If any other user account is selected, you must unselect that user account before proceeding. Examine Debra Berger's account, since you just reset her password; uncheck her account if necessary (select the check mark to unselect it). Only Alex's account should be selected. 
 
 31. In the menu bar at the top of the page, select the **ellipsis icon (...)** to display a drop-down menu of additional options. In the menu that appears, select **Edit sign-in status**.
 
