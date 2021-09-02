@@ -1,4 +1,4 @@
-**Learning Path 4 - Lab 3 - Exercise 1 - Review Key Features of Exchange Online**
+# Learning Path 4 - Lab 3 - Exercise 1 - Review Key Features of Exchange Online
 
 Holly Dickson is Adatum’s Enterprise Administrator. She has recently deployed
 Microsoft 365 in a virtualized lab environment. Now that she has a tenant
@@ -13,7 +13,7 @@ of the basic administrative functions in Exchange Online related to mail flow
 and recipient management. Since the Global Administrator role includes the
 Exchange Administrator role, Holly can perform all Exchange-related tasks.
 
-**Task 1 – Manage Recipients**
+### Task 1 – Manage Recipients
 
 As you continue in your role as Holly Dickson, you are ready to review the steps
 involved in creating and managing mail flow recipients.
@@ -104,7 +104,7 @@ involved in creating and managing mail flow recipients.
 
 14. Leave your browser and all the tabs open for the next task.
 
-**Task 2 – Manage Groups**
+### Task 2 – Manage Groups
 
 In this task you will create two types of groups within Exchange Online. The
 first is a distribution list of email recipients, which is used to create a
@@ -263,7 +263,7 @@ group.
     Department group. In this case, add **Nestor Wilke** as a co-owner of the
     **Dynamics CRM Project Team** group.
 
-**Task 3 - Upgrade Distribution Lists**
+### Task 3 - Upgrade Distribution Lists
 
 Organizations have typically relied on distribution groups in Exchange to
 communicate and collaborate with groups of people both inside and outside the
@@ -291,7 +291,7 @@ to share.
     the list of Microsoft 365 groups. You may need to select **Refresh** on the
     menu bar every couple of minutes before the Sales Department group appears.
 
-**Task 4 - Configure a Group Naming Policy**
+### Task 4 - Configure a Group Naming Policy
 
 A group naming policy enables organizations to standardize and manage the names
 of distribution groups created by its users. You can require that a specific
@@ -334,7 +334,7 @@ organization based on the following format: **{Department} {Group Name} {City}**
 6.  Once the group naming policy changes have been saved, close the **Edit group
     naming policy** pane. Leave all your browser tabs open for the next task.
 
-**Task 5 – Manage Resources**
+### Task 5 – Manage Resources
 
 A room mailbox is a resource mailbox that is assigned to a physical location,
 such as a conference room, an auditorium, or a training room. Users can easily
@@ -414,7 +414,7 @@ meetings, you can select the room from the Global Address List (GAL).
 
 15. Leave your browser and all tabs open for the next task.
 
-**Task 6 – Manage Contacts**
+### Task 6 – Manage Contacts
 
 One of the key features of Exchange Online is the ability to maintain different
 types of contacts in the Exchange Admin Center. In this task, you will be
@@ -506,7 +506,7 @@ introduced to mail contacts and mail users.
 
 10. Leave the Exchange admin center tab open and proceed to the next task.
 
-**Task 7 – Configure Messaging Protection**
+### Task 7 – Configure Messaging Protection
 
 Adatum has experienced a recent rash of malware infections. The company’s CTO
 has asked Holly to investigate the various options that are available in
@@ -680,7 +680,7 @@ enable you to customize organization management objects.
     **Home \> Policy \> Anti-malware** page. Leave your browser and all tabs
     open and proceed to the next task.
 
-**Task 8 – Manage Connection Filters**
+### Task 8 – Manage Connection Filters
 
 Holly has been contacted by Adatum’s CTO. He is upset that he keeps finding
 email from friends and business associates in his junk email folder, and he’s
@@ -742,7 +742,7 @@ spammers) that you never want to receive email messages from.
 9.  Leave your Edge browser open to the **Office 365 Security & Compliance**
     center for the next task.
 
-**Task 9 – Manage Spam Filters**
+### Task 9 – Manage Spam Filters
 
 For Microsoft 365 customers whose mailboxes are hosted in Microsoft Exchange
 Online, their email messages are automatically protected against spam and
@@ -847,7 +847,7 @@ email’s origin.
 10. In your Edge browser, close the **Security & Compliance** center tab, but
     leave all other tabs open.
 
-**Task 10 – Manage Mail Flow Rules**
+### Task 10 – Manage Mail Flow Rules
 
 After Holly reviewed the messaging environment at Adatum Corporation, she
 discovered that Adatum’s current mail flow policy is to simply wait until
@@ -913,7 +913,7 @@ size.
 
 7.  Leave your Edge browser open as well as all the tabs.
 
-**Task 11 – Validate Accepted Domains**
+### Task 11 – Validate Accepted Domains
 
 A domain that’s added to an organization’s on-premises environment is called an
 accepted, or custom domain. You can create mailboxes with accepted domains to
