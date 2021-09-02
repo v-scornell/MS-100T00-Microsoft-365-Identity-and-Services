@@ -25,7 +25,7 @@ Holly Spencer is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 7. Select the **Save changes** button at the bottom of the **Christie Cline** profile pane.
 
-8. Select the **X** to close the **Christie Cline** profile pane.
+8. Select the **X** to close the **Christie Cline** profile pane. On the **Active users** window, note how Christie's account is now **Unlicensed**.
 
 9. You are now ready to create a user account for Holly Dickson. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users. 
 
