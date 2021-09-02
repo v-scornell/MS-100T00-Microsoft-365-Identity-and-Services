@@ -124,7 +124,7 @@ group.
     365 group whose email addresses will be in Microsoft 365
     (@xxxxxZZZZZZ.onmicrosoft.com).
 
-2.  The Groups page displays a tab for each type of group that can be
+2.  The **Groups** page displays a tab for each type of group that can be
     maintained. The **Microsoft 365** tab is displayed by default, which
     displays all the Microsoft 365 groups. Select **Add a group**, which
     initiates the **Add a group** wizard.
@@ -205,13 +205,15 @@ group.
     the window to close it.
 
 15. This should return you to the **Groups** page, which is currently displaying
-    the **Distribution list** tab. Select the **Add a group** button. You will
-    now add a dynamic distribution group.
+    the **Distribution list** tab. You will now add a dynamic distribution group, so select the **Dynamic distribution list** tab.
 
-16. In the **Choose a group type** window that appears, select **Dynamic
-    distribution,** and then select **Next.**
+16. In the **Dynamic distribution list** tab, select **Add a group**. This initiates the **Add a group** wizard.
 
-17. On the **Set up the basics** page, enter the following information and
+17. In the **Add a group** wizard, the steps to add a group are displayed in the
+    left-hand column. In the **Choose a group type** page, select
+    **Dynamic distribution** and then select **Next**.
+
+18. On the **Set up the basics** page, enter the following information and
     then select **Next**:
 
     -   Name: **Dynamics CRM Project Team**
@@ -219,22 +221,22 @@ group.
     -   Description: **Adatum users working on the Microsoft Dynamics CRM
         project**
 
-18. On the **Assign users** page, enter the following information and then
+19. On the **Assign users** page, enter the following information and then
     select **Next**:
 
     -   Owners: **Holly Dickson**
 
-    -   Members: Ensure **Only the following recipient types** is selected
+    -   Members: select **Only the following recipient types**
 
     -   Select the **Users with Exchange Mailboxes** check box.
 
     -   Membership in this group will be determined by the rules you set below:
 
-        -   Attribute: **Department**
+        -   Select condition: **Department**
 
-        -   Text field: **Sales**
+        -   Enter words, separate with commas: **Sales**
 
-19. On the **Edit settings** page, enter the following information then select
+20. On the **Edit settings** page, enter the following information then select
     **Next:**
 
     -   Group email address: **DynCRM**
@@ -244,24 +246,29 @@ group.
         **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix
         provided by your lab hosting provider.
 
-20. On the **Review and finish adding group** page, review the information that
+21. On the **Review and finish adding group** page, review the information that
     you entered for this group. If anything needs to be changed, select the
     appropriate **Edit** link and make your corrections. When everything is
     correct, select the **Create group** button.
 
-21. Once the group is created, the **Dynamics CRM Project Team is created** page
-    appears. Select **Close**.
+22. Once the group is created, the **Dynamics CRM Project Team is created, but it isn't ready to use yet** page
+    appears. Note the message that it may take up to two hours until you can send a message to this group. Select **Close**.
 
-22. This should return you to the **Groups** page, which is currently displaying
-    the **Distribution list** tab. Select the **Dynamic Distribution list** tab
-    to see the dynamic distribution group that you just created. If **Dynamics
+23. This should return you to the **Groups** page, which is currently displaying
+    the **Dynamic Distribution list** tab. If **Dynamics
     CRM Project Team** does not appear in the list of dynamic distribution
-    groups, refresh the page every 5 minutes until the group appears.
+    groups, refresh the page every few minutes until the group appears.
 
-23. Holly now wants to add Nestor Wilke as a co-owner of this group. Perform the
+24. Holly now wants to add Nestor Wilke as a co-owner of this group. Perform the
     same steps that you completed earlier when you added an owner to the Sales
     Department group. In this case, add **Nestor Wilke** as a co-owner of the
     **Dynamics CRM Project Team** group.
+
+25. This should return you to the **Groups** page, which is currently displaying
+    the **Dynamic Distribution list** tab. Select the **Dynamics
+    CRM Project Team**, and in the detail pane that opens for the group, select **Members**.
+    
+26. Note that instead of having two owners (Holly and Nestor), only Nestor appears as the owner of the group. This is due to the fact that a dynamic distribution group is different from the other group types because it can only have one owner. So when you added Nestor as a group owner in the earlier step, what actually happened is that Nestor replaced Holly as owner of the group. 
 
 ### Task 3 - Upgrade Distribution Lists
 
