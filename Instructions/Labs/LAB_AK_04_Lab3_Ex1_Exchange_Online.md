@@ -574,44 +574,54 @@ enable you to customize organization management objects.
 
 13. On the **Organization Management** pane, Holly should now appear as the only member of this role group. Select **Close**.
 
-14. In **Microsoft 365 Defender**, in the left-hand
+14. On **LON-CL1**, you must log out of Microsoft 365 as the MOD Administrator and log back in as Holly. On the **Microsoft 365 admin center**, select the **MA** circle in the upper-right corner of the screen, and in the **MOD Administrator** window that appears, select **Sign out**.
+
+15.  Once you're signed out, close the **Sign out** tab in your browser. This takes you to the **Microsoft Office Home** tab, which is now replaced with an **Office 365 Login** tab. Under the **MOD, you're signed out now** message, select **Switch to a different account**.
+
+16.  In the **Email address** field that appears, enter Holly's email address (**Holly@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and select **Sign in**. Enter **Pa55w.rd** as Holly's password and select **Sign in**. In the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**.
+
+17.  In the **Microsoft Office Home** page, in the column of icons on the left-side of the screen, select the final (**Admin**) icon to open the Microsoft 365 admin center.
+
+18.  In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane, and then under the **Admin centers** section, select **Security**. This opens the Microsoft 365 Defender portal in a new tab.
+
+19. In **Microsoft 365 Defender**, in the left-hand
     navigation pane, under the **Email & collaboration** section, select **Policies & rules**.
 
-15. In the **Policies & rules** page, select **Threat policies**.
+20. In the **Policies & rules** page, select **Threat policies**.
 
-16. In the **Threat policies** page, under the **Policies** section, select **Anti-malware**.
+21. In the **Threat policies** page, under the **Policies** section, select **Anti-malware**.
 
-17. In the **Policies & rules > Threat policies > Anti-malware** page, on the menu bar at the top
+22. In the **Policies & rules > Threat policies > Anti-malware** page, on the menu bar at the top
     of the window, select **+Create** to add a new malware filter. This starts
     the **Create a new anti-malware policy** wizard.
 
-18. In the **Name your policy** page, enter **Malware Policy** in the **Name**
+23. In the **Name your policy** page, enter **Malware Policy** in the **Name**
     field.
 
-19. In the **Description** field, enter **This policy has been created to
+24. In the **Description** field, enter **This policy has been created to
     protect Adatum’s messaging environment** and then select **Next**.
 
-20. In the **Users and domains** page, enter **onmicrosoft.com** in the
+25. In the **Users and domains** page, enter **onmicrosoft.com** in the
     **Domains** field. This will display the list of Adatum domains containing
     **onmicrosoft.com**. Select the **M365xZZZZZZ.onmicrosoft.com** domain
     that’s displayed and then select **Next**.
 
-21. On the **Protection settings** page, under the **Protection settings**
+26. On the **Protection settings** page, under the **Protection settings**
     group, select the check boxes for the following settings:
 
     -   **Enable the common attachments filter** (if it’s not already selected)
 
     -   **Enable zero-hour auto purge for malware (recommended)**.
 
-22. In the **Notification** section, do not select any of the notification
+27. In the **Notification** section, do not select any of the notification
     options since this filter will not generate any notifications. Select **Next**.
 
-23. On the **Review** page, review all the information for this malware policy.
+28. On the **Review** page, review all the information for this malware policy.
     If anything needs to be changed, select the **Back** button and make the
     necessary corrections. When all the information is correct, select
     **Submit**.
 
-24. If the anti-malware policy was successfully created, then skip to the next
+29. If the anti-malware policy was successfully created, then skip to the next
     step.  
     
     However, if you receive a **Client Error** dialog box that indicates an
@@ -664,14 +674,14 @@ enable you to customize organization management objects.
     anti-malware policy. Select **Submit** to resubmit your anti-malware policy.
     This time the policy should be successfully saved.
 
-25.  On the **Created new anti-malware policy** page, it indicates the new policy
+30.  On the **Created new anti-malware policy** page, it indicates the new policy
     has been created and will go into effect immediately. Select **Done.** <br/>
 
    		**Note**: If a dialog box appears with a message that
     indicates your organization settings need to be updated, select **Yes** to
     continue. It may take a minute for your organization settings to be updated.
 
-26. Leave your browser open for the next task.
+31. Leave your browser open for the next task.
 
 ### Task 8 – Manage Connection Filters
 
@@ -687,24 +697,14 @@ trust. This is known as an Allow list, or Safe Sender list. You can also create
 a Blocked senders list, which is a list of IP addresses (typically from known
 spammers) that you never want to receive email messages from.
 
-1.  Holly Dickson wants to use LON-CL1 to manage the connection filters. On **LON-CL1**, you must log out of Microsoft 365 as the MOD Administrator and log back in as Holly. On the **Microsoft 365 admin center**, select the **MA** circle in the upper-right corner of the screen, and in the **MOD Administrator** window that appears, select **Sign out**.
+1.  You should still be logged into Microsoft 365 as Holly Dickson after completing the prior task. Your Edge browser should still be in the **Microsoft 365 Defender** portal on the **Policies & rules > Threat policies > Anti-malware** window. 
 
-2.  Once you're signed out, close the **Sign out** tab in your browser. This takes you to the **Microsoft Office Home** tab, which is now replaced with an **Office 365 Login** tab. Under the **MOD, you're signed out now** message, select **Switch to a different account**.
+2.  In the the **Policies & rules > Threat policies > Anti-malware** thread at the top of the page, select **Threat policies**.
 
-3.  In the **Email address** field that appears, enter Holly's email address (**Holly@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and select **Sign in**. Enter **Pa55w.rd** as Holly's password and select **Sign in**. In the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**.
-
-4.  In the **Microsoft Office Home** page, in the column of icons on the left-side of the screen, select the final (**Admin**) icon to open the Microsoft 365 admin center.
-
-5.  In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane, and then under the **Admin centers** section, select **Security**. This opens the Microsoft 365 Defender portal in a new tab.
-
-6.  In the **Microsoft 365 Defender** portal, under the **Email & collaboration** section, select **Policies & rules**. 
-
-7.  In the **Policies & rules** window, select **Threat policies**.
-
-8.  In the **Threat policies** window, under the **Policies** section, select
+3.  In the **Threat policies** window, under the **Policies** section, select
     **Anti-spam**.
 
-9.  The **Policies & rules > Threat policies > Anti-spam policies** window displays a list of
+4.  The **Policies & rules > Threat policies > Anti-spam policies** window displays a list of
     default **Anti-spam policies** that control how messages are handled by
     Microsoft 365 anti-spam policies.
 
@@ -712,7 +712,7 @@ spammers) that you never want to receive email messages from.
     This displays the current settings for this default spam filter in the
     right-hand pane.
 
-10. In the **Connection filter policy (Default)** pane, the **Connection
+5.  In the **Connection filter policy (Default)** pane, the **Connection
     filtering** section displays options regarding which IP Addresses may send
     messages to your environment and what IP addresses will be blocked from
     sending messages.
@@ -723,18 +723,18 @@ spammers) that you never want to receive email messages from.
     this lab, simply review the fact that you can create allowed and blocked
     lists of IP addresses.
 
-11. At the bottom of the **Connection filtering** section, select the **Edit
+6.  At the bottom of the **Connection filtering** section, select the **Edit
     connection filter policy** link.
 
-12. In the **Connection filter policy (Default)** pane, select the **Turn on
+7.  In the **Connection filter policy (Default)** pane, select the **Turn on
     safe list** check box. This is a best practice that enables for your tenant the most common third-party sources of trusted senders that Microsoft
     subscribes to. Selecting this check box skips spam filtering on messages
     sent from these senders, ensuring they are never mistakenly marked as spam.
 
-13. Select **Save** to save this filter, and then select **Close** once the
+8.  Select **Save** to save this filter, and then select **Close** once the
     changes are successfully saved.
 
-14. Leave your Edge browser open to the **Microsoft 365 Defender** portal for the next task.
+9. Leave your Edge browser open to the **Microsoft 365 Defender** portal for the next task.
 
 ### Task 9 – Manage Spam Filters
 
