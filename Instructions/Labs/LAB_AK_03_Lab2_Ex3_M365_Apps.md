@@ -4,7 +4,7 @@ You have taken on the persona of Holly Dickson, Adatum's Enterprise Administrato
 
 In the first two tasks in this exercise, you will verify the following conditions that affect whether a user can be blocked from downloading the Microsoft 365 Apps for enterprise suite: <br/>
 
-- The user does not have an appropriate Office 365 license (which you will verify in Task 1). 
+- The user does not have an appropriate Microsoft 365 license (which you will verify in Task 1). 
 	
 - An admin turns off the global Office download setting that controls the downloading of mobile and desktop apps for all users (which you will verify in Task 2).
 
@@ -13,15 +13,15 @@ In the final task in this exercise, you will install the Microsoft 365 Apps for 
 
 ### Task 1 – Verify how licensing affects installing Microsoft 365 Apps for enterprise
 
-In this task, Holly will test whether a user who has not been assigned an appropriate Office 365 license can download Microsoft 365 Apps for enterprise. For this test, you cannot use any of the existing users that appear in the **Active Users** list in the Microsoft 365 admin center. These users only have Microsoft 365 accounts (xxxxxZZZZZZ.onmicrosoft.com accounts); they do not have corresponding on-premises accounts in the adatum domain. Without an on-premises account, you cannot log into the Client 1 (LON-CL1) VM as any of these users to install Microsoft 365 Apps for enterprise on the client machine. 
+In this task, Holly will test whether a user who has not been assigned an appropriate Microsoft 365 license can download Microsoft 365 Apps for enterprise. For this test, you cannot use any of the existing users that appear in the **Active Users** list in the Microsoft 365 admin center. These users only have Microsoft 365 accounts (xxxxxZZZZZZ.onmicrosoft.com accounts); they do not have corresponding on-premises accounts in the adatum domain. Without an on-premises account, you cannot log into the Client 1 (LON-CL1) VM as any of these users to install Microsoft 365 Apps for enterprise on the client machine. 
 
-Therefore, you must use one of Adatum's on-premises user accounts that has been loaded in its on-premises domain (adatum.com) by your lab hosting provider. For this test, you will use **Laura Atkins**. You will create a Microsoft 365 account for Laura, but you will not assign her an Office 365 license. 
+Therefore, you must use one of Adatum's on-premises user accounts that has been loaded in its on-premises domain (adatum.com) by your lab hosting provider. For this test, you will use **Laura Atkins**. You will create a Microsoft 365 account for Laura, but you will not assign her a Microsoft 365 license. 
 
 1. You should still be logged into LON-DC1 as **Administrator** and password **Pa55w.rd**. 
 
 2. The **Microsoft 365 admin center** should still be open in your Edge browser from the prior lab, where you should be logged into Microsoft 365 as Holly Dickson. In the left-hand navigation pane, select **Users** and then select **Active users**. 
 
-3. You will begin by testing whether a user **without** an appropriate Office 365 license can install Microsoft 365 Apps for enterprise. For this test, you will use **Laura Atkins**. Your lab hosting provider has already created an on-premises user account for Laura, but she does not have a Microsoft 365 user account. You will create a Microsoft 365 account for Laura, but you will not assign her an Office 365 license. 
+3. You will begin by testing whether a user **without** an appropriate Microsoft 365 license can install Microsoft 365 Apps for enterprise. For this test, you will use **Laura Atkins**. Your lab hosting provider has already created an on-premises user account for Laura, but she does not have a Microsoft 365 user account. You will create a Microsoft 365 account for Laura, but you will not assign her a Microsoft 365 license. 
 
 	At the top of the **Active users** window, select **Add a user** on the menu bar.
 
@@ -71,9 +71,9 @@ Therefore, you must use one of Adatum's on-premises user accounts that has been 
 
 	Select the **Install Office** button, and then in the drop-down menu that appears, select **Install software**. This opens the **My account** window for Laura.
 
-19. In Laura's **My account** window, under the **Office apps &amp; devices** section, select **View apps &amp; devices**. Note the message that appears at the top of page. Laura has not been assigned an Office license that includes the Office desktop apps, so she’s unable to install Microsoft 365 Apps for enterprise. <br/>
+19. In Laura's **My account** window, under the **Office apps &amp; devices** section, select **View apps &amp; devices**. Note the message that appears at the top of page. Laura has not been assigned a license that includes the Office desktop apps, so she’s unable to install Microsoft 365 Apps for enterprise. <br/>
 	
-	‎**Important:** You have just verified that a user cannot download Microsoft 365 Apps for enterprise if he or she has not been assigned an appropriate Office 365 license.
+	‎**Important:** You have just verified that a user cannot download Microsoft 365 Apps for enterprise if he or she has not been assigned an appropriate Microsoft 365 license.
 	
 20. Leave LON-CL1 open and remain signed into Microsoft 365 as Laura Atkins for the next task.
 
@@ -94,11 +94,11 @@ Holly is now going to test whether users can be prohibited from downloading Micr
 
 6. Scroll to the top of the **Office installation options** pane. Once you receive a message indicating the changes are saved, select the **X** in the upper-right corner of this window to close it. 
 
-7. You should now test whether turning off this global download setting affects a **licensed** user from installing Microsoft 365 Apps for enterprise. In this case, you’re once again going to use **Laura Atkins**, so you must first assign Laura an Office 365 license. 
+7. You should now test whether turning off this global download setting affects a **licensed** user from installing Microsoft 365 Apps for enterprise. In this case, you’re once again going to use **Laura Atkins**, so you must first assign Laura a Microsoft 365 license. 
 	
 	In the **Microsoft 365 admin center**, under **Users** in the left-hand navigation pane select **Active users**, and then in the in the **Active users** list, scroll down to **Laura Atkins**. The value in the **Licenses** column for Laura currently indicates that she is **Unlicensed**. Select **Laura Atkins**.
 
-8. In Laura Atkins’ account window, the **Account** tab is displayed by default. Select the **Licenses and Apps** tab. In the **Licenses** section, select the **Office 365 E5** check box and then select **Save changes**. You can then close Laura’s account window. In the **Active users** list, note how the value in the **Licenses** column for Laura now displays **Office 365 E5**.
+8. In Laura Atkins’ account window, the **Account** tab is displayed by default. Select the **Licenses and Apps** tab. In the **Licenses** section, select the **Microsoft 365 E5** check box and then select **Save changes**. You can then close Laura’s account window. In the **Active users** list, note how the value in the **Licenses** column for Laura now displays **Microsoft 365 E5**.
 
 9. You should now check whether Laura can download Microsoft 365 Apps for enterprise on to her client PC when the global Office download setting has been turned Off. <br/>
 
@@ -152,7 +152,7 @@ Holly is now going to test whether users can be prohibited from downloading Micr
 
 26. On **LON-CL1**, Laura's Edge browser should still be open, and the **Office apps and devices** page should be displayed along with the error message that indicated your admin has turned off Office installs. Since you just turned this global option back On, you need to refresh this page to see how it affects Laura’s ability to download Microsoft 365 Apps for enterprise. <br/>
 
-	**Note:** Unlike the previous time when you refreshed this page and it did not reflect Laura's updated Office 365 license status, refreshing this page after updating the global download setting works. 
+	**Note:** Unlike the previous time when you refreshed this page and it did not reflect Laura's updated Microsoft 365 license status, refreshing this page after updating the global download setting works. 
 
 	Select the **Refresh icon** that appears to the left of the address bar at the top of your browser. 
 
