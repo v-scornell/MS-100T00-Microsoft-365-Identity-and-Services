@@ -964,4 +964,4 @@ type is set to authoritative.
     return you to the **Microsoft 365 admin center** tab, which you will access
     in the next exercise.
 
-**Proceed to Lab 3 - Exercise 2**
+### Proceed to Lab 3 - Exercise 2
