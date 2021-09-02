@@ -267,8 +267,8 @@ group.
 25. This should return you to the **Groups** page, which is currently displaying
     the **Dynamic Distribution list** tab. Select the **Dynamics
     CRM Project Team**, and in the detail pane that opens for the group, select **Members**.
-    
-26. Note that instead of having two owners (Holly and Nestor), only Nestor appears as the owner of the group. This is due to the fact that a dynamic distribution group is different from the other group types because it can only have one owner. So when you added Nestor as a group owner in the earlier step, what actually happened is that Nestor replaced Holly as owner of the group. 
+
+	**Note:** Instead of having two owners (Holly and Nestor), verify that only Nestor appears as the owner of the group. This is due to the fact that a dynamic distribution group is different from the other group types because it can only have one owner. So when you added Nestor as a group owner in the earlier step, what actually happened is that Nestor replaced Holly as owner of the group. 
 
 ### Task 3 - Upgrade Distribution Lists
 
