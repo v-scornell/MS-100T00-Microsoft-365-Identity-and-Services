@@ -517,13 +517,8 @@ introduced to mail contacts and mail users.
 
 Adatum has experienced a recent rash of malware infections. The company’s CTO
 has asked Holly to investigate the various options that are available in
-Exchange Online to fortify Adatum’s messaging environment.
-
-**Note:** In these next three tasks you will configure malware, connection, and
-spam policies, respectively. These policies were previously configured in the
-Exchange admin center; however, starting December 1, 2020, that functionality
-was moved to the Security and Compliance Center, which is where you will go to
-create these policies.
+Exchange Online to fortify Adatum’s messaging environment. In these next three tasks, you will configure malware, connection, and
+spam policies, respectively. 
 
 **Warning:** To create these policies, you must be assigned the **Organization
 Management** role, which you will assign to Holly at the start of this task.
@@ -552,71 +547,70 @@ enable you to customize organization management objects.
     and then in the left-hand navigation pane, select **Show all**.
 
 3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane
-    under **Admin centers**, select **Security**.
+    under **Admin centers**, select **Security**. This opens **Microsoft 365 Defender** in a new tab.
 
-4.  In the **Office 365 Security & Compliance center**, in the left-hand
-    navigation pane, select **Permissions**.
+4.  In the **Microsoft 365 Defender** portal, scroll down to the last section in the left-hand
+    navigation pane and select **Permissions & roles**.
 
-5.  In the **Home \> Permissions** page, enter **org** in the **Search** field
+5.  In the **Permissions & roles** page, under the **Email & collaboration roles** group, select **Roles**. 
+
+6. In the **Permissions & roles \> Permissions** page, enter **org** in the **Search** field
     and then select the magnifying glass icon. This is a quick way to display
     the Organization Management role group so that you don’t have to scroll
     through a list of roles to find it.
-
-6.  The search will display the **Organization Management** role, which is the
+    
+    The search will display the **Organization Management** role, which is the
     only role starting with **org**. Select the check box next to this role to
     display the details for this role group.
 
 7.  In the **Organization Management** pane that appears on the right, scroll
-    down to the **Members** section at the bottom of the pane. In the
+    down to the **Members** section at the bottom of the pane. To the right of the
     **Members** section, select **Edit**.
 
 8.  On the **Editing Choose members** page, select **Choose members**.
 
 9.  On the **Choose members** page, select the **+Add** button.
 
-10. In the list of users, select the check box next to **Holly Dickson** and
-    then select the **Add** button.
+10. In the **Choose which members to add from the list below** field, enter **Holly**. This will display all accounts starting with Holly. Select the check box next to **Holly Dickson** and then select the **Add** button.
 
 11. On the **Choose members** page, Holly should appear in the list of members
     who will be assigned to this role group. Select **Done**.
 
 12. On the **Editing Choose members** page, select **Save**.
 
-13. On the **Organization Management** pane, select **Close**.
+13. On the **Organization Management** pane, Holly should now appear as the only member of this role group. Select **Close**.
 
-14. In the **Office 365 Security & Compliance** center, in the left-hand
-    navigation pane, select **Threat management** to expand this group, and then
-    select **Policy**.
+14. In **Microsoft 365 Defender**, in the left-hand
+    navigation pane, under the **Email & collaboration** section, select **Policies & rules**.
 
-15. In the **Home \> Policy** page, under the **Policies** section, select
-    **Anti-malware**.
+15. In the **Policies & rules** page, select **Threat policies**.
 
-16. In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
+16. In the **Threat policies** page, under the **Policies** section, select **Anti-malware**.
+
+17. In the **Policies & rules > Threat policies > Anti-malware** page, on the menu bar at the top
     of the window, select **+Create** to add a new malware filter. This starts
     the **Create a new anti-malware policy** wizard.
 
-17. In the **Name your policy** page, enter **Malware Policy** in the **Name**
+18. In the **Name your policy** page, enter **Malware Policy** in the **Name**
     field.
 
-18. In the **Description** field, enter **This policy has been created to
+19. In the **Description** field, enter **This policy has been created to
     protect Adatum’s messaging environment** and then select **Next**.
 
-19. In the **Users and domains** page, enter **onmicrosoft.com** in the
+20. In the **Users and domains** page, enter **onmicrosoft.com** in the
     **Domains** field. This will display the list of Adatum domains containing
     **onmicrosoft.com**. Select the **M365xZZZZZZ.onmicrosoft.com** domain
     that’s displayed and then select **Next**.
 
-20. On the **Protection settings** page, under the **Protection settings**
+21. On the **Protection settings** page, under the **Protection settings**
     group, select the check boxes for the following settings:
 
     -   **Enable the common attachments filter** (if it’s not already selected)
 
     -   **Enable zero-hour auto purge for malware (recommended)**.
 
-21. In the **Notification** section, do not select any of the notification
-    options since this filter will not generate any notifications.
-
-22. Select **Next**.
+22. In the **Notification** section, do not select any of the notification
+    options since this filter will not generate any notifications. Select **Next**.
 
 23. On the **Review** page, review all the information for this malware policy.
     If anything needs to be changed, select the **Back** button and make the
@@ -679,12 +673,12 @@ enable you to customize organization management objects.
 25.  On the **Created new anti-malware policy** page, it indicates the new policy
     has been created and will go into effect immediately. Select **Done.**
 
-        **Note**: If a **Security & Compliance** window appears with a message that
+        **Note**: If a dialog box appears with a message that
     indicates your organization settings need to be updated, select **Yes** to
     continue. It may take a minute for your organization settings to be updated.
 
 26.  Your new anti-malware policy should appear in the list of policies on the
-    **Home \> Policy \> Anti-malware** page. Leave your browser and all tabs
+    **Policies & rules > Threat policies > Anti-malware** page. Leave your browser and all tabs
     open and proceed to the next task.
 
 ### Task 8 – Manage Connection Filters
@@ -701,21 +695,19 @@ trust. This is known as an Allow list, or Safe Sender list. You can also create
 a Blocked senders list, which is a list of IP addresses (typically from known
 spammers) that you never want to receive email messages from.
 
-1.  In your **Edge** browser, you should still have a tab open for the **Office
-    365 Security & Compliance center**. If so, select this tab and proceed to
+1.  In your **Edge** browser, you should still have an Anti-malware tab open for **Microsoft 365 Defender**. If so, select this tab and proceed to
     the next step. Otherwise, navigate to the **Office 365 home** page, log in
     as your tenant admin account, navigate to the **Microsoft 365 admin
     center**, select **Show all** in the left-hand navigation pane, and then
     select **Security**.
 
-2.  In the **Office 365 Security & Compliance** center, the **Home \> Policy \>
-    Anti-malware** window should still be displayed from the prior task. In this
-    thread at the top of the page, select **Policy**.
+2.  In the **Microsoft 365 Defender** portal, the **Policies & rules > Threat policies > Anti-malware** window should still be displayed from the prior task. In this
+    thread at the top of the page, select **Threat policies**.
 
-3.  In the **Home \> Policy** window, under the **Policies** section, select
+3.  In the **Threat policies** window, under the **Policies** section, select
     **Anti-spam**.
 
-4.  The **Home \> Policy \> Anti-spam policies** window displays a list of
+4.  The **Policies & rules > Threat policies > Anti-spam policies** window displays a list of
     default **Anti-spam policies** that control how messages are handled by
     Microsoft 365 anti-spam policies.
 
@@ -730,7 +722,7 @@ spammers) that you never want to receive email messages from.
 
     You will NOT be adding IP addresses to the allow or block lists. You can do
     this if you have a known IP address you would like to test against. It
-    typically takes up to 1 hour to replicate the change within the system. For
+    typically takes up to 1 hour to propagate the change within the system. For
     this lab, simply review the fact that you can create allowed and blocked
     lists of IP addresses.
 
@@ -738,16 +730,14 @@ spammers) that you never want to receive email messages from.
     connection filter policy** link.
 
 7.  In the **Connection filter policy (Default)** pane, select the **Turn on
-    safe list** check box. This is a best practice that enables for your tenant
-    the most common third-party sources of trusted senders that Microsoft
+    safe list** check box. This is a best practice that enables for your tenant the most common third-party sources of trusted senders that Microsoft
     subscribes to. Selecting this check box skips spam filtering on messages
     sent from these senders, ensuring they are never mistakenly marked as spam.
 
 8.  Select **Save** to save this filter, and then select **Close** once the
     changes are successfully saved.
 
-9.  Leave your Edge browser open to the **Office 365 Security & Compliance**
-    center for the next task.
+9.  Leave your Edge browser open to the **Microsoft 365 Defender** portal for the next task.
 
 ### Task 9 – Manage Spam Filters
 
@@ -759,28 +749,27 @@ protect you from spam.
 
 As Adatum’s Global Admin, Holly doesn’t need to set up or maintain the filtering
 technologies, which are enabled by default. However, she can make
-company-specific filtering customizations in the Security and Compliance center.
-She has decided to test this out by configuring a spam policy to grant or deny
+company-specific filtering customizations in the Microsoft 365 Defender portal.
+Holly has decided to test this out by configuring a spam policy to grant or deny
 an email by focusing on the language of the email and the location of the
 email’s origin.
 
-1.  In the **Office 365 Security & Compliance** center, the **Home \> Policy \>
-    Anti-spam policies** window should still be displayed after having completed
+1.  In the **Microsoft 365 Defender** portal, the **Policies & rules > Threat policies > Anti-spam policies** window should still be displayed after having completed
     the prior task.
 
-    Select the **Anti-spam inbound policy (Default)**.
+    In the list of anti-spam policies, select the **Anti-spam inbound policy (Default)**.
 
 2.  In the **Anti-spam inbound policy (Default)** pane that appears, take a
     moment and review the policy settings that are available in this filter.
-    There are three sections of settings – Bulk email threshold & spam
-    properties, Actions, and Allowed and blocked senders and domains.
+    There are three sections of settings – **Bulk email threshold & spam
+    properties**, **Actions**, and **Allowed and blocked senders and domains**.
 
 3.  Once you’ve finished reviewing these settings, scroll to the bottom of the
     **Bulk email threshold & spam properties** section and select the **Edit
     spam threshold and properties** link.
 
 4.  In the **Spam threshold and properties** pane that appears, the **Bulk email
-    threshold** at the top of the pane is set to **7** by default. Change this value
+    threshold** at the top of the pane is set to **7** by default. Drga the slider to the left on the slider bar and change this value
     to **5.**
 
 5.  Under the **Mark as spam** section, update the following settings:
@@ -795,12 +784,12 @@ email’s origin.
 
     -   Sender ID filtering hard fail: **On**
 
-    -   Contains specific languages: **On**  
-        
         **Note:** These next two settings allow you to automatically tag messages
         as spam when they originate from countries/regions that are to be
         avoided or distrusted, as well as messages written in specific languages.
-                
+   
+       -   Contains specific languages: **On**  
+
         You should already know the languages that you want to filter. In the
         blank field that appears below the **Contains specific languages**
         field, enter the first letter of a language that you want to filter.
@@ -851,7 +840,7 @@ email’s origin.
 9.  Select **Save** to update the settings, and then select **Close** to close
     the **Anti-spam inbound policy (Default)** pane.
 
-10. In your Edge browser, close the **Security & Compliance** center tab, but
+10. In your Edge browser, close the **Microsoft 365 Defender** tab (the tab name is **Anti-spam policies - Microsoft 365 security**), but
     leave all other tabs open.
 
 ### Task 10 – Manage Mail Flow Rules
