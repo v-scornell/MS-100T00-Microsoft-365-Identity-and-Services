@@ -268,7 +268,7 @@ group.
     the **Dynamic Distribution list** tab. Select the **Dynamics
     CRM Project Team**, and in the detail pane that opens for the group, select **Members**.
 
-	**Note:** Instead of having two owners (Holly and Nestor), verify that only Nestor appears as the owner of the group. This is due to the fact that a dynamic distribution group is different from the other group types because it can only have one owner. So when you added Nestor as a group owner in the earlier step, what actually happened is that Nestor replaced Holly as owner of the group. 
+	**Note:** Instead of having two owners (Holly and Nestor), verify that only Nestor appears as the owner of the group. A dynamic distribution group is different from the other group types because it can only have one owner. So when you added Nestor as a group owner in the earlier step, what actually happened is that Nestor replaced Holly as sole owner of the group. 
 
 ### Task 3 - Upgrade Distribution Lists
 
@@ -769,7 +769,7 @@ email’s origin.
     spam threshold and properties** link.
 
 4.  In the **Spam threshold and properties** pane that appears, the **Bulk email
-    threshold** at the top of the pane is set to **7** by default. Drga the slider to the left on the slider bar and change this value
+    threshold** at the top of the pane is set to **7** by default. Drag the slider to the left on the slider bar and change this value
     to **5.**
 
 5.  Under the **Mark as spam** section, update the following settings:
@@ -784,11 +784,11 @@ email’s origin.
 
     -   Sender ID filtering hard fail: **On**
 
-        **Note:** These next two settings allow you to automatically tag messages
+    **Note:** These next two settings allow you to automatically tag messages
         as spam when they originate from countries/regions that are to be
         avoided or distrusted, as well as messages written in specific languages.
    
-       -   Contains specific languages: **On**  
+    -   Contains specific languages: **On**  
 
         You should already know the languages that you want to filter. In the
         blank field that appears below the **Contains specific languages**
@@ -799,15 +799,15 @@ email’s origin.
         Enter a letter and then select a language with the letter in it that you
         want to filter. Repeat this step for a couple of languages.
 
-    -   From these countries: **On**   
-        
-        You should already know the countries that you want to filter. In the
+    -   From these countries: **On**
+
+		You should already know the countries that you want to filter. In the
         blank field that appears below the **From these countries** field, enter
         the first letter of a country that you want to filter. This will display
         all countries that start with that letter (as well as any countries that
-        contain that letter within the name of the language).  
-        
-        Enter a letter and then select a country with the letter in it that you
+        contain that letter within the name of the language).
+
+		Enter a letter and then select a country with the letter in it that you
         want to filter. Repeat this step for a couple of countries.
 
 6.  Select **Save**.
