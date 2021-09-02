@@ -16,13 +16,13 @@ As Holly Dickson, Adatum's Enterprise Administrator, you want to customize the c
 
 4. In the **Microsoft 365 admin center** tab, in the left-hand navigation pane under the **Admin centers** section, select **Teams.** This will open the Microsoft Teams admin center.
 
-5. In the **Microsoft Teams admin center**, in the left-hand navigation pane, select **Meetings** and then in the drop=down menu, select **Meeting policies**.
+5. In the **Microsoft Teams admin center**, in the left-hand navigation pane, select **Meetings** to expand the **Meetings** group. In this group, select **Meeting policies**.
 
 6. In the **Meeting policies** window, scroll down to the list of meeting policies and select **Global (Org-wide default)**. 
 
 7. In the **Global** window that appears, under the **General** section, review each setting. All settings in this section should be turned **On**.
 
-8. Under the **Audio &amp; video** section, review each setting. Select the **Allow transcription** toggle switch to turn it **On**.
+8. Under the **Recording & transcription** section, review each setting. Select the **Allow transcription** toggle switch to turn it **On**.
 
 9. Under the **Content Sharing** section, review each setting and make the following changes: 
 
@@ -288,17 +288,17 @@ As part of her Microsoft Teams pilot project, Holly Dickson wants to block commu
 
 ### Task 8 – Manage Guest Access
 
-Microsoft Teams’ guest access feature is a tenant-level setting that is turned Off by default. Once this setting is turned On, you can configure settings for guests. IT admins can add guests at the tenant level, set and manage guest user policies and permissions, and generate reports on guest user activity. 
+Microsoft Teams’ guest access feature enables you to configure settings for guests. IT admins can add guests at the tenant level, set and manage guest user policies and permissions, and generate reports on guest user activity. Guest access is turned On by default.
 
-As part of your Microsoft Teams pilot project for Adatum, you will turn on guest access and then customize a variety of the guest settings as defined by Adatum’s project team.
+As part of your Microsoft Teams pilot project for Adatum, you will customize a variety of the guest settings as defined by Adatum’s project team.
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
 2. In your Edge browser, in the **Microsoft Teams admin center**, under **Org-wide settings** in the left-hand navigation pane select **Guest access.**
 
-3. In the **Guest access** window, set the **Allow guest access in Teams** setting to **On**. 
+3. In the **Guest access** window, verify the **Allow guest access in Teams** setting is set to **On**. If it's turned Off, then change this setting to **On**.  
 
-4. Once you set this switch to **On**, a variety of additional settings are displayed. Scroll down the page and select the following values for each setting:
+4. Scroll down the page and update the following values for each setting:
 
 	- Calling
 
