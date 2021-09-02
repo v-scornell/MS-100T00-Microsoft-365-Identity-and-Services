@@ -514,7 +514,7 @@ introduced to mail contacts and mail users.
 ### Task 7 – Configure Messaging Protection
 
 Adatum has experienced a recent rash of malware infections. The company’s CTO
-has asked Holly to investigate the various options that are available in
+has asked Holly Dickson to investigate the various options that are available in
 Exchange Online to fortify Adatum’s messaging environment. In these next three tasks, you will configure malware, connection, and
 spam policies, respectively. 
 
@@ -535,7 +535,7 @@ enable you to customize organization management objects.
 
 1.  In this task, you should switch to **LON-CL1**.
 
-2.  At the end of the prior lab, you were logged into LON-CL1 as the adatum\administrator. You are now going to sign into Microsoft 365 as the MOD Administrator so that you can assign Holly the Organization Management role. Open your Edge browser. 
+2.  At the end of the prior lab, you were logged into LON-CL1 as the adatum\administrator. You are now going to sign into Microsoft 365 as the MOD Administrator so that you can assign Holly Dickson the Organization Management role. Open your Edge browser. 
 
 	In your **Edge** browser, navigate to the **Office 365 home** page by entering **https://portal.office.com**, and log in as
     your tenant admin account (**admin@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
@@ -574,7 +574,7 @@ enable you to customize organization management objects.
 
 13. On the **Organization Management** pane, Holly should now appear as the only member of this role group. Select **Close**.
 
-14. On **LON-CL1**, you must log out of Microsoft 365 as the MOD Administrator and log back in as Holly. On the **Microsoft 365 admin center**, select the **MA** circle in the upper-right corner of the screen, and in the **MOD Administrator** window that appears, select **Sign out**.
+14. On **LON-CL1**, you must log out of Microsoft 365 as the MOD Administrator and log back in as Holly Dickson. On the **Microsoft 365 admin center**, select the **MA** circle in the upper-right corner of the screen, and in the **MOD Administrator** window that appears, select **Sign out**.
 
 15.  Once you're signed out, close the **Sign out** tab in your browser. This takes you to the **Microsoft Office Home** tab, which is now replaced with an **Office 365 Login** tab. Under the **MOD, you're signed out now** message, select **Switch to a different account**.
 
