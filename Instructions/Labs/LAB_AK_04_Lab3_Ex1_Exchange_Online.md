@@ -224,7 +224,7 @@ group.
 19. On the **Assign users** page, enter the following information and then
     select **Next**:
 
-    -   Owners: **Holly Dickson**
+    -   Owner: **Holly Dickson**
 
     -   Members: select **Only the following recipient types**
 
