@@ -523,8 +523,7 @@ Management** role, which you will assign to Holly at the start of this task.
 However, it sometimes takes an hour or so for the role permissions to propagate
 through the system. This is due to the replication process that occurs within
 the system. In the Microsoft data centers, certain objects are consolidated to
-save space. You may encounter this delay when you assign RBAC roles in the
-Security and Compliance Center, or when you use Exchange Online PowerShell or
+save space. You may encounter this delay when you assign RBAC roles in Microsoft 365 Defender, or when you use Exchange Online PowerShell or
 the Exchange admin center to change one of these objects for the first time.
 
 Therefore, when you create the malware policy later in this task and you attempt
