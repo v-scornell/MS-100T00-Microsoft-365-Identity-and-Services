@@ -92,7 +92,7 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 	Repeat this step for the other failed message. 
 
-35. Close the **Message trace search results** window, and then close the **New message trace** window. This will return you to the **Home > Message trace** window in the **exchange center**. Leave this tab open for the next task.
+35. Close the **Message trace search results** window, and then close the **New message trace** window. This will return you to the **Home > Message trace** window in the **Exchange Center**. Leave this tab open for the next task.
 
 36. In your Edge browser, close the **Mail - Holly Dickson - Outlook** tab, but leave the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open for the next task.
   
