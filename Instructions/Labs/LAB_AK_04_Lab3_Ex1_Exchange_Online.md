@@ -646,7 +646,7 @@ enable you to customize organization management objects.
 
     4. At the command prompt, type the following command and press Enter:
 
-   		**Connect-exchangeonline**
+   		Connect-exchangeonline
 
     5.  A **Microsoft 365 Sign in** window will appear. Enter in the username for
     the **Mod Administrator** account provided by your learning provider
@@ -661,7 +661,7 @@ enable you to customize organization management objects.
     returns a successful result (the command prompt appears with no errors);
     testing shows that it sometimes takes two attempts):
 
-		**Enable-OrganizationCustomization**
+		Enable-OrganizationCustomization
 
     8.  Close the PowerShell window.
 
@@ -677,7 +677,7 @@ enable you to customize organization management objects.
     continue. It may take a minute for your organization settings to be updated.*
 
 26.  Your new anti-malware policy should appear in the list of policies on the
-    **Security > Policies & Rules > Threat policies > Anti-malware** page. Leave your browser and all tabs
+    **Security \> Policies & Rules \> Threat policies \> Anti-malware** page. Leave your browser and all tabs
     open and proceed to the next task.
 
 **Task 8 – Manage Connection Filters**
