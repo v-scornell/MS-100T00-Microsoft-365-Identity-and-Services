@@ -7,7 +7,7 @@ In the following lab exercise, you will take on the role of Holly Dickson, Adatu
 
 ### Task 1 - Create a User Account for Adatum's Enterprise Administrator
 
-Holly Spencer is Adatum’s Enterprise Administrator. Since a Microsoft 365 user account has not been set up for her, you initially signed into Microsoft 365 as the MOD Administrator account (the default Global admin) in the previous lab. In this task, you will continue in your role as the MOD Administrator, during which you will create a Microsoft 365 user account for Holly. One of Adatum's existing users, Isaiah Langer, is moving to a reduced capacity role. You will reassign Isaiah's Microsoft 365 E5 license to Holly's new account, and you will assign her user account the Microsoft 365 Global Administrator role, which gives her the ability to perform all administrative functions within Microsoft 365. Following this task, you will perform all remaining labs using Holly's persona.  
+Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user account has not been set up for her, you initially signed into Microsoft 365 as the MOD Administrator account (the default Global admin) in the previous lab. In this task, you will continue in your role as the MOD Administrator, during which you will create a Microsoft 365 user account for Holly. One of Adatum's existing users, Isaiah Langer, is moving to a reduced capacity role. You will reassign Isaiah's Microsoft 365 E5 license to Holly's new account, and you will assign her user account the Microsoft 365 Global Administrator role, which gives her the ability to perform all administrative functions within Microsoft 365. Following this task, you will perform all remaining labs using Holly's persona.  
 
 **Important:** As a best practice in your real-world deployment, you should always write down the first Global admin account’s credentials (in this lab, the MOD Administrator account, whose username is admin@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider) and store it away for security reasons. **This account should be a non-personalized identity** that owns the highest privileges possible in a tenant. It should **not** be MFA activated (because it is not personalized). Because the username and password for this account are typically shared among several users, this first Global admin is a perfect target for attacks; therefore, it is always recommended that organizations create personalized service admin accounts and keep as few Global admins as possible. For those Global admins that you do create in your real-world deployment, they should each be mapped to a single identity (such as Holly Dickson), and they should each have Multi-Factor Authentication (MFA) enforced. That being said, you will not turn on MFA for Holly's account because time is limited in this training course and we do not want to take up lab time by making you log in using a second authentication method every time Holly logs in.
 
@@ -15,7 +15,7 @@ Holly Spencer is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**. 
 
-3. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Spencer, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services. 
+3. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services. 
 
 4. Since all of Adatum's Microsoft 365 E5 licenses have been assigned, you must begin by removing the license from Isaiah Langer's account. Isaiah has taken on a reduced role in the company, so he no longer needs access to Microsoft 365. You will then assign his license to Holly. In the **Active Users** window, select **Isaiah Langer** from the list of active users.
 
@@ -33,9 +33,9 @@ Holly Spencer is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- First name: **Holly**
 
-	- Last name: **Spencer** 
+	- Last name: **Dickson** 
 
-	- Display name: When you tab into this field, **Holly Spencer** will appear.
+	- Display name: When you tab into this field, **Holly Dickson** will appear.
 
 	- Username: **Holly** <br/>
 	
@@ -71,7 +71,7 @@ Holly Spencer is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 17. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
-18. On the **Holly Spencer added to active users** page, under the **User details** section, verify Holly's password is **Pa55w.rd** and then select **Close.** 
+18. On the **Holly Dickson added to active users** page, under the **User details** section, verify Holly's password is **Pa55w.rd** and then select **Close.** 
 
 	**Note:** If you accidentally entered a different password, then once you return to the **Active Users** page, you will need to select the **Reset a password** icon (the key icon that appears when you hover over Holly's account) to change her password to the correct value.
 
