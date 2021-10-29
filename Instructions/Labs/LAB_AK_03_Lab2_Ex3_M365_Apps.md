@@ -1,6 +1,6 @@
 # Learning Path 3 - Lab 2 - Exercise 3 - Manage a Microsoft 365 Apps for enterprise installation
 
-You have taken on the persona of Holly Dickson, Adatum's Enterprise Administrator, and you have Microsoft 365 deployed in a virtualized lab environment. In this exercise, you will perform the tasks necessary to manage a user-driven Microsoft 365 Apps for enterprise installation. Performing a user-driven Microsoft 365 Apps for enterprise installation is a two-step process: 1) configuring the user account so the user is eligible to download and install the Office 365 deployment tool, and 2) performing the installation. 
+You have taken on the persona of Holly Spencer, Adatum's Enterprise Administrator, and you have Microsoft 365 deployed in a virtualized lab environment. In this exercise, you will perform the tasks necessary to manage a user-driven Microsoft 365 Apps for enterprise installation. Performing a user-driven Microsoft 365 Apps for enterprise installation is a two-step process: 1) configuring the user account so the user is eligible to download and install the Office 365 deployment tool, and 2) performing the installation. 
 
 In the first two tasks in this exercise, you will verify the following conditions that affect whether a user can be blocked from downloading the Microsoft 365 Apps for enterprise suite: <br/>
 
@@ -19,7 +19,7 @@ Therefore, you must use one of Adatum's on-premises user accounts that has been 
 
 1. You should still be logged into LON-DC1 as **Administrator** and password **Pa55w.rd**. 
 
-2. The **Microsoft 365 admin center** should still be open in your Edge browser from the prior lab, where you should be logged into Microsoft 365 as Holly Dickson. In the left-hand navigation pane, select **Users** and then select **Active users**. 
+2. The **Microsoft 365 admin center** should still be open in your Edge browser from the prior lab, where you should be logged into Microsoft 365 as Holly Spencer. In the left-hand navigation pane, select **Users** and then select **Active users**. 
 
 3. You will begin by testing whether a user **without** an appropriate Microsoft 365 license can install Microsoft 365 Apps for enterprise. For this test, you will use **Laura Atkins**. Your lab hosting provider has already created an on-premises user account for Laura, but she does not have a Microsoft 365 user account. You will create a Microsoft 365 account for Laura, but you will not assign her a Microsoft 365 license. 
 
@@ -90,7 +90,7 @@ However, Adatum does not have an available Microsoft 365 E5 license that Holly c
 
 3. In the **Settings** window, the **Services** tab is displayed by default. Scroll down through the list of services and select **Office installation options**.
 
-4. In the **Office installation options** pane that appears, under the **Apps for Windows and mobile devices** section, the **Office (includes Skype for Business)** check box is currently selected. Select this check box so that it’s blank, which turns this feature **Off**. 
+4. In the **Office installation options** pane that appears, select the **Installation** tab, then under the **Apps for Windows and mobile devices** section, the **Office (includes Skype for Business)** check box is currently selected. Select this check box so that it’s blank, which turns this feature **Off**. 
 
 5. Select **Save**. 
 
@@ -118,59 +118,45 @@ However, Adatum does not have an available Microsoft 365 E5 license that Holly c
 
 	Select the **Refresh icon** that appears to the left of the address bar at the top of your browser. This will refresh the **Office apps &amp; devices** page. <br/>
 	
-	**Note:** Refreshing the **Office apps &amp; devices** page does not re-verify Laura's licensing status as it still returns the same error message as before when Laura was unlicensed. You were asked to refresh this page to show you this condition. Therefore, proceed to the next step to log out of Microsoft 365 and log back in as Laura. 
+	**Note:** If refreshing the **Office apps &amp; devices** page does not re-verify Laura's licensing status, sign out and sign back in. 
 
-15. Select the Laura Atkins icon (the circle with **LA** in it) in the upper-right corner of the screen, and in the **Laura Atkins** window that appears, select **Sign out**.
-	
-	**Important**: As a best practice to avoid any confusion when logging out as one user and logging in as another, close all other tabs that are open in your Edge browser except for this **Sign out** tab.
-
-16. In **Microsoft Edge**, in the **Sign out** tab, go to the **Microsoft Office Home** page by entering the following URL in the address bar: **https://portal.office.com/**
-
-17. In the **Pick an account** window, select **Laura@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
-
-18. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in.**
-
-19. In the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes.**
-
-20. In the **Microsoft Office Home** page for Laura, notice that the column of Microsoft 365 app icons now appears on the left-side of the screen because Laura has been assigned an Office 365 license. <br/>
+15. In the **Microsoft Office Home** page for Laura, notice that the column of Microsoft 365 app icons now appears on the left-side of the screen because Laura has been assigned an Office 365 license. <br/>
 
 	Select the **Install Office** button, and then in the drop-down menu, select **Install software**.<br/>
 	
-21. In the **My account** window, under the **Office apps &amp; devices** section, select **View apps &amp; devices**. 
+16. In the **My account** window, under the **Office apps &amp; devices** section, select **View apps &amp; devices**. 
 
-22. In the **Apps &amp; devices** window, a message is displayed under the **Office** section that indicates the admin has turned off Office installs. <br/>
+17. In the **Apps &amp; devices** window, a message is displayed under the **Office** section that indicates the admin has turned off Office installs. <br/>
 	
 	‎**Important:** You have just verified that a licensed user is unable to download Microsoft 365 Apps for enterprise if the global Office download setting has been turned Off.
 
-23. At this point Holly wants to turn the global Office download setting back On so that Laura can download Microsoft 365 Apps for enterprise. <br/>
+18. At this point Holly wants to turn the global Office download setting back On so that Laura can download Microsoft 365 Apps for enterprise. <br/>
 
 	To do this, switch back to **LON-DC1**. 
 
-24. On **LON-DC1**, you should still be logged into Microsoft 365 as Holly Dickson. In the **Microsoft 365 admin center**, under the **Settings** section in the left-hand navigation pane, select **Org Settings**. 
+19. On **LON-DC1**, you should still be logged into Microsoft 365 as Holly Dickson. In the **Microsoft 365 admin center**, under the **Settings** section in the left-hand navigation pane, select **Org Settings**. 
 
-25. In the **Settings** window, the **Services** tab is displayed by default. Scroll down through the list of services and select **Office installation options**.
+20. In the **Settings** window, the **Services** tab is displayed by default. Scroll down through the list of services and select **Office installation options**.
 
-26. In the **Office installation options** pane, under the **Apps for Windows and mobile devices** section, the **Office (includes Skype for Business)** check box is currently blank. Select this check box so that it displays a check mark, which now turns this feature back On.
+21. In the **Office installation options** pane, select the **Installation** tab, then under the **Apps for Windows and mobile devices** section, the **Office (includes Skype for Business)** check box is currently blank. Select this check box so that it displays a check mark, which now turns this feature back On.
 
-27. Select **Save**.
+22. Select **Save**.
 
-28. Once you receive a message indicating the changes are saved, select the **X** in the upper-right corner of this window to close it. 
+23. Once you receive a message indicating the changes are saved, select the **X** in the upper-right corner of this window to close it. 
 
-29. Now that this global Office download option is turned back On, you should see if it affects Laura’s ability to download Microsoft 365 Apps for enterprise. <br/>
+24. Now that this global Office download option is turned back On, you should see if it affects Laura’s ability to download Microsoft 365 Apps for enterprise. <br/>
 
 	To do this, switch back to **LON-CL1**.
 
-30. On **LON-CL1**, Laura's Edge browser should still be open, and the **Office apps and devices** page should be displayed along with the error message that indicated your admin has turned off Office installs. Since you just turned this global option back On, you need to refresh this page to see how it affects Laura’s ability to download Microsoft 365 Apps for enterprise. <br/>
-
-	**Note:** Unlike the previous time when you refreshed this page and it did not reflect Laura's updated Microsoft 365 license status, refreshing this page after updating the global download setting works. 
+25. On **LON-CL1**, Laura's Edge browser should still be open, and the **Office apps and devices** page should be displayed along with the error message that indicated your admin has turned off Office installs. Since you just turned this global option back On, you need to refresh this page to see how it affects Laura’s ability to download Microsoft 365 Apps for enterprise. <br/>
 
 	Select the **Refresh icon** that appears to the left of the address bar at the top of your browser. 
 
-31. In the **My account** window that appears, under the **Office apps &amp; devices** section, an **Install Office** button appears along with a message indicating you can install Office on up to 5 PCs or Macs, 5 tablets, and 5 smartphones. 
+26. In the **My account** window that appears, under the **Office apps &amp; devices** section, an **Install Office** button appears along with a message indicating you can install Office on up to 5 PCs or Macs, 5 tablets, and 5 smartphones. 
 	
 	‎**Important:** You have just verified that a user with an Office license is able to download Microsoft 365 Apps for enterprise if the global Office download setting is turned On.
 
-32. Remain on LON-CL1 and continue to the next task to perform the user-driven installation for Laura Atkins.
+27. Remain on LON-CL1 and continue to the next task to perform the user-driven installation for Laura Atkins.
 
 
 ### Task 3 – Perform a User-Driven Installation of Microsoft 365 Apps for enterprise 
