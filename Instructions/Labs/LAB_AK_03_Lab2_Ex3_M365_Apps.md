@@ -207,21 +207,23 @@ In the prior task, you logged into Laura Atkins’ client PC, and you verified t
 
 11. On the **Sign in to set up Office** page, sign in as **Laura@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.
 
-12. On the **Accept the license agreement** window, select **Accept**.
+12. On the **Stay signed in to all your apps** window, click **OK**.
 
-13. On the **Your privacy option** window, select **Close**.
+13. On the **You're all set!** window, select **Done**.
 
-14. Verify that Word is functioning properly by opening a blank Word document, entering some text, and saving the document to the **Documents** folder. <br/>
+14. On the **Acept the license agreement** window, select **Accept**, and then select **Close**.
 
-15. Close Word.
+15. Verify that Word is functioning properly by opening a blank Word document, entering some text, and saving the document to the **Documents** folder. <br/>
 
-16. Now that you have completed this lab exercise by installing Microsoft 365 Apps for enterprise, you should log out of LON-CL1 as Laura Atkins and log back in as the Adatum administrator. This will prepare LON-CL1 for the next lab.
+16. Close Word.
+
+17. Now that you have completed this lab exercise by installing Microsoft 365 Apps for enterprise, you should log out of LON-CL1 as Laura Atkins and log back in as the Adatum administrator. This will prepare LON-CL1 for the next lab.
 
 	On LON-CL1, select the **Ctrl+Alt+Delete** function in your VM lab environment. 
 	
-17. On the desktop menu, select **Switch user**. 
+18. On the desktop menu, select **Switch user**. 
 
-18. On the desktop, the **Administrator** is selected by default. Enter **Pa55w.rd** in the **Password** field and then select the forward arrow. 
+19. On the desktop, the **Administrator** is selected by default. Enter **Pa55w.rd** in the **Password** field and then select the forward arrow. 
 
 	The desktop should now display the logged on user as **adatum\administrator**. LON-CL1 is now ready for the next lab.
 
