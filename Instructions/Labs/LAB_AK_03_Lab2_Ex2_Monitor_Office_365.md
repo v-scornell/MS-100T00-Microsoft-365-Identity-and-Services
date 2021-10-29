@@ -78,7 +78,7 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 28. In the **Message trace** window, the **Default queries** tab is displayed by default. In this tab, select **+Start a trace** on the menu bar. 
 
-29. In the **New message trace** pane that appears, both the **Senders** and **Recipients** fields are set to **All** be default. Holly wants to configure the trace to just look for email messages that she sent. In the **Senders** field, enter **Holly**. This displays the list of active users whose name starts with Holly. In the list of users that appears, select **Holly Dickson**.
+29. In the **New message trace** pane that appears, both the **Senders** and **Recipients** fields are set to **All** be default. Holly wants to configure the trace to just look for email messages that she sent. In the **Senders** field, enter **Holly**. This displays the list of active users whose name starts with Holly. In the list of users that appears, select **Holly Spencer**.
 
 30. Under the **Time range** section, select the slider bar below **1 day** (don't select the **1 day** heading; you must select on the slider bar itself). Note how the slider circle moved under **1 day**.
 
@@ -148,9 +148,9 @@ If an organization runs into a situation in Microsoft 365 where it needs assista
 
 2. In the left-hand navigation bar, under the **Support** group, select **New service request**.
 
-3. In the **Support Assistant** pane that appears, select the **Message** line at the bottom of the window (which currently displays **Message e.g. How do I install Office?**) and type the following message: **This is a test of the service request system; a call back is not needed.** When you are done, select the **Send message** arrow icon that appears below the message line.
+3. In the **Support Assistant** pane that appears, select the **Message** line at the bottom of the window (which currently displays **Example: Can't install Office**) and type the following message: **Can't install office**.
 
-4. This initiates an automated bot that asks a clarifying question and provides some optional answers that you can choose from. Select one of the answers to see how the automated bot responds. 
+4. This provides self-help solutions with insights and recommended articles to assist with your request. Select one of the recommended articles. 
 
 5. If you need further assistance and would like to speak to a Microsoft support agent, at the top of the window select the **headset** icon (the middle icon) to get help from one of the support agents. Select the **headset** icon now.
 
