@@ -57,8 +57,7 @@ involved in creating and managing mail flow recipients.
 
 7.  This opens the **Custom attributes** window for Joni. You can enter up to 15
     attributes. You will not be entering any attributes in this lab exercise,
-    but it’s important that you know this feature is available. Select
-    **Cancel**.
+    but it’s important that you know this feature is available. Select the **back arrow** to return to the previous page.
 
     ‎**Note:** Custom attributes are properties your company can use for specific
     mailbox identification, such as a cost center number for the mailbox or
