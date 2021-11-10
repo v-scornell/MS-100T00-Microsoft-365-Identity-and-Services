@@ -36,6 +36,7 @@ In this task, Holly wants to create a data lost prevention policy for the flows 
    Before you select the SharePoint connector, note how nothing appears above the **Assign connectors** heading at the top of the page. Now, in the list of filtered **Non-business** connectors, select the **SharePoint** connector. Once you selected the SharePoint connector, notice how the **Move to Business** option now appears at the top of the page.
 
 8. Since Adatum wants the connector for this policy to share data with connectors in other groups, you must move the SharePoint connector from the **Non-business** group to the **Business** group. 
+9. On the Custom connectors page, select **Next**.
 
       To do so, select the **Move to Business** option at the top of the page. Once the connector has been moved, note how the **Business** tab now displays **(1)** next to it (indicating there is now one Business connector), and how the number of **Non-business** connectors is now reduced by 1. Select the **Business** tab to see the SharePoint connector. Select **Next**.
 
