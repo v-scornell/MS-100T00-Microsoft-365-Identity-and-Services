@@ -211,7 +211,7 @@ In the prior task, you logged into Laura Atkins’ client PC, and you verified t
 
 13. On the **You're all set!** window, select **Done**.
 
-14. On the **Acept the license agreement** window, select **Accept**, and then select **Close**.
+14. On the **Accept the license agreement** window, select **Accept**, and then select **Close**.
 
 15. Verify that Word is functioning properly by opening a blank Word document, entering some text, and saving the document to the **Documents** folder. <br/>
 
