@@ -57,8 +57,7 @@ involved in creating and managing mail flow recipients.
 
 7.  This opens the **Custom attributes** window for Joni. You can enter up to 15
     attributes. You will not be entering any attributes in this lab exercise,
-    but it’s important that you know this feature is available. Select
-    **Cancel**.
+    but it’s important that you know this feature is available. Select the **back arrow** to return to the previous page.
 
     ‎**Note:** Custom attributes are properties your company can use for specific
     mailbox identification, such as a cost center number for the mailbox or
@@ -829,10 +828,6 @@ email’s origin.
 
     -   Prepend subject line with this text: enter **WARNING: This message
         contains potential spam!**
-
-    -   Enable end-user spam notifications: select this check box
-
-    -   Send end-user spam notifications every (days): **5**
 
 9.  Select **Save** to update the settings, and then select **Close** to close
     the **Anti-spam inbound policy (Default)** pane.
