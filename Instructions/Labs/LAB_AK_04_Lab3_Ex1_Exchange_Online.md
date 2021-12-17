@@ -532,10 +532,10 @@ Management permissions haven’t fully propagated through the system for Holly. 
 work around this, you will be provided with PowerShell instructions that will
 enable you to customize organization management objects.
 
-1.  In this task, you should switch to **LON-CL1**.
 
-2.  At the end of the prior lab, you were logged into LON-CL1 as the adatum\administrator. You are now going to sign into Microsoft 365 as the MOD Administrator so that you can assign Holly Dickson the Organization Management role. Open your Edge browser. 
-
+1.  You should still be logged into LON-CL1 as the **Administrator** with a
+    password of **Pa55w.rd**; however, if the log-in page appears, then log in
+    now.
 	In your **Edge** browser, navigate to the **Office 365 home** page by entering **https://portal.office.com**, and log in as
     your tenant admin account (**admin@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
     provider, and enter the tenant password). In the **Office 365 Home** page, navigate to the **Microsoft 365 admin center**.
