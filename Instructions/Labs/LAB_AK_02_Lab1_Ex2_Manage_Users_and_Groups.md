@@ -103,7 +103,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 8. If a survey window appears, select **Cancel**.
 
-9. In the **Microsoft 365 admin center**, select **Groups** in the left-hand navigation pane, and then under it, select **Active Groups**. 
+9. In the **Microsoft 365 admin center**, select **Show all**, then select **Teams & groups** in the left-hand navigation pane, and then under it, select **Active Teams & groups**. 
 
 10. In the **Active groups** page, select **Add a group** that appears on the menu bar above the list of groups. This initiates the **Add a group** wizard. 
 
@@ -149,7 +149,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 	**Note:** The IT admins group does not have a group email address because it's a Security group. Two additional group types are Mail-enabled Security groups and Distribution groups. Neither of these group types were used in this lab because it can take up to an hour for these two types of groups to appear in the Groups list; whereas Microsoft 365 groups and Security groups usually take just a matter of minutes to appear. 
 
-24. You’re now ready to add members to the groups. In the list of **Active groups**, select the **IT Admins** group. 
+24. You’re now ready to add members to the groups. In the list of **Active groups**, select the **Security** tab, and then select the **IT Admins** group. 
 
 25. In the **IT Admins** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
 
@@ -161,7 +161,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 29. Verify that the members list has the three users and select the **X** to close the members pane. This displays the list of users for this group. Select **Close** again. 
 
-30. You now want to test the effect of deleting a group. In the list of **Active groups,** select the vertical ellipsis icon (**More actions**) that appears to the right of the **Inside Sales** group. In the drop-down menu that appears, select **Delete group**. 
+30. You now want to test the effect of deleting a group. In the list of **Active groups,** select the **Microsoft 365** tab, then select the vertical ellipsis icon (**More actions**) that appears to the right of the **Inside Sales** group. In the drop-down menu that appears, select **Delete team**. 
 
 31. In the **Delete Inside Sales?** pane that appears, select the **Delete group** button.
 
