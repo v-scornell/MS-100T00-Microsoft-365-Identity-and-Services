@@ -39,6 +39,7 @@ This task is similar to the prior one in that you will assign administrator righ
 
 2. You should begin by connecting your PowerShell session to the Microsoft Online Service. At the command prompt, type the following command, and then press Enter:  <br/>
 
+		Install-Module MSOnline
 		Connect-MsolService
 	
 3. In the **Sign in** dialog box that appears, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with password **Pa55w.rd**. 
@@ -163,9 +164,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 28. Select **Reset password**.<br/>
 
-29. On the **Reset password** window, you should receive a message indicating the password was successfully reset. Select the **Email the sign-in info to me** check box. This displays a **Your email** field, which displays Lynne Robbins' email address. Since you also want to email this temporary password to Debra, you should enter Debra's email address following Lynne's. </br>
-
-	If you enter multiple email addresses in this field, they must be separated by a semicolon and a space. Therefore, enter a semicolon and a space following Lynne's email address, enter Debra's email address of **DebraB@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the prefix provided by your lab hosting provider), and then select **Send email and close**.
+29. On the **Reset password** window, you should receive a message indicating the password was successfully reset. 
 
 30. Management has recently discovered that Alex Wilber's username may have been compromised. As a result, Lynne has been asked to block Alex's account so that no one can sign in with his username until management is able to determine the extent of the issue. In the **Active users** list, select the circle to the left of **Alex Wilber's** name (do NOT select Alex’s name itself). 
 
