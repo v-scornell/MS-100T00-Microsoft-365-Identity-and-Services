@@ -43,7 +43,7 @@ You can create a Power App through either the Power App portal or through ShareP
 
 4. On the **Three ways to make an app** page, scroll down to the **Start from data** section and select **SharePoint**. 
 
-5. A new browser tap opens that displays the available Connections. A **Hi Holly** dialog box will appear over top of this page. Since your country/region is the United States, select **Get started**.
+5. A new browser tap opens that displays the available Connections. A **Hi Holly** dialog box will appear over top of this page. Leave the default country/region and select **Get started**.
 
 6. In the **Power Apps** studio, on the **Connections** page, the details pane displays the **SharePoint** connection page. Under the **How do you want to connect to your data?** option, select **Connect directly (cloud services)** and then select the **Create** button.
 
@@ -232,9 +232,9 @@ The app that Holly created in the earlier task is known as a canvas app. It was 
 
 	Notice how the records displayed in the gallery have been updated to reflect the **Assign To** field. 
 
-9. Close the **Data** window by selecting the **X** in the upper right corner.
+9. Holly now wants to customize the browse screen to change the **Title1** field so that it maps to the **Issue Title** column of the SharePoint list. Select the drop-down arrow for the **Title1** field, select **Issue Title**.
 
-10. Holly now wants to customize the browse screen to change the **Title1** field so that it maps to the **Issue Title** column of the SharePoint list. Select the drop-down arrow for the **Title1** field, select **Issue Title**, and then close the **Data** window. 
+10.  Close the **Data** window by selecting the **X** in the upper right corner.
 
 11. You are now ready to save your changes to the app. Select **File** from the top menu bar of the PowerApps screen, and then select **Save** from the navigation pane that appears on the left side of the screen. In the body of the screen, in the **Service Request Ticketing app** window, select the **Save** button. 
 
@@ -276,7 +276,7 @@ However, the IT Consultant has just informed Holly that there’s another way in
 
 9. Since Holly created the Service Request Ticketing system app, you must be logged into Teams as Holly to add this Power App to Teams.  
 ‎  
-‎If the **Teams** app is not open on your taskbar, then enter **Teams** in the **Search** box on the taskbar, select **Microsoft Teams** from the menu, and if prompted, sign in as **holly@xxxxxZZZZZZ.onmicosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).   
+‎If the **Teams** app is not open on your taskbar, then enter **Teams** in the **Search** box on the taskbar, select **Microsoft Teams** from the menu, and if prompted, sign in as **holly@xxxxxZZZZZZ.onmicosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). Alternately, navigate to **https://teams.microsoft.com** using Microsoft Edge.   
 ‎  
 ‎If you are not prompted to sign in, then check to see who the Teams apps is signed in under. If the user icon is **Holly Dickson**, then skip to the next step; otherwise, select the user icon and in the menu, select **Sign out**, sign back in as **holly@xxxxxZZZZZZ.onmicosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**, and then select **OK** if a **Stay signed in to all your apps** window appears.
 
