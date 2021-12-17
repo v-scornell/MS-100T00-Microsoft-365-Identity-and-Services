@@ -1,4 +1,4 @@
-**Learning Path 4 - Lab 3 - Exercise 1 - Review Key Features of Exchange Online**
+# Learning Path 4 - Lab 3 - Exercise 1 - Review Key Features of Exchange Online
 
 Holly Dickson is Adatum’s Enterprise Administrator. She has recently deployed
 Microsoft 365 in a virtualized lab environment. Now that she has a tenant
@@ -13,7 +13,7 @@ of the basic administrative functions in Exchange Online related to mail flow
 and recipient management. Since the Global Administrator role includes the
 Exchange Administrator role, Holly can perform all Exchange-related tasks.
 
-**Task 1 – Manage Recipients**
+### Task 1 – Manage Recipients
 
 As you continue in your role as Holly Dickson, you are ready to review the steps
 involved in creating and managing mail flow recipients.
@@ -28,10 +28,8 @@ involved in creating and managing mail flow recipients.
 
 2.  You should still have an Edge browser session and the Microsoft 365 admin
     center open from the prior lab. If so, proceed to the next step; otherwise,
-    open Microsoft Edge, navigate to
-    [**https://portal.office.com/**](https://portal.office.com/), log in as
-    [**Holly@xxxxxZZZZZZ.onmicrosoft.com**](mailto:Holly@xxxxxZZZZZZ.onmicrosoft.com)
-    (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
+    open Microsoft Edge, navigate to **https://portal.office.com/**, log in as
+    **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
     provider) and **Pa55w.rd**, and then in the **Microsoft Office Home** page,
     select **Admin** to open the Microsoft 365 admin center.
 
@@ -59,8 +57,7 @@ involved in creating and managing mail flow recipients.
 
 7.  This opens the **Custom attributes** window for Joni. You can enter up to 15
     attributes. You will not be entering any attributes in this lab exercise,
-    but it’s important that you know this feature is available. Select
-    **Cancel**.
+    but it’s important that you know this feature is available. Select the **back arrow** to return to the previous page.
 
     ‎**Note:** Custom attributes are properties your company can use for specific
     mailbox identification, such as a cost center number for the mailbox or
@@ -104,7 +101,7 @@ involved in creating and managing mail flow recipients.
 
 14. Leave your browser and all the tabs open for the next task.
 
-**Task 2 – Manage Groups**
+### Task 2 – Manage Groups
 
 In this task you will create two types of groups within Exchange Online. The
 first is a distribution list of email recipients, which is used to create a
@@ -124,7 +121,7 @@ group.
     365 group whose email addresses will be in Microsoft 365
     (@xxxxxZZZZZZ.onmicrosoft.com).
 
-2.  The Groups page displays a tab for each type of group that can be
+2.  The **Groups** page displays a tab for each type of group that can be
     maintained. The **Microsoft 365** tab is displayed by default, which
     displays all the Microsoft 365 groups. Select **Add a group**, which
     initiates the **Add a group** wizard.
@@ -205,13 +202,15 @@ group.
     the window to close it.
 
 15. This should return you to the **Groups** page, which is currently displaying
-    the **Distribution list** tab. Select the **Add a group** button. You will
-    now add a dynamic distribution group.
+    the **Distribution list** tab. You will now add a dynamic distribution group, so select the **Dynamic distribution list** tab.
 
-16. In the **Choose a group type** window that appears, select **Dynamic
-    distribution,** and then select **Next.**
+16. In the **Dynamic distribution list** tab, select **Add a group**. This initiates the **Add a group** wizard.
 
-17. On the **Set up the basics** page, enter the following information and
+17. In the **Add a group** wizard, the steps to add a group are displayed in the
+    left-hand column. In the **Choose a group type** page, select
+    **Dynamic distribution** and then select **Next**.
+
+18. On the **Set up the basics** page, enter the following information and
     then select **Next**:
 
     -   Name: **Dynamics CRM Project Team**
@@ -219,22 +218,22 @@ group.
     -   Description: **Adatum users working on the Microsoft Dynamics CRM
         project**
 
-18. On the **Assign users** page, enter the following information and then
+19. On the **Assign users** page, enter the following information and then
     select **Next**:
 
-    -   Owners: **Holly Dickson**
+    -   Owner: **Holly Dickson**
 
-    -   Members: Ensure **Only the following recipient types** is selected
+    -   Members: select **Only the following recipient types**
 
     -   Select the **Users with Exchange Mailboxes** check box.
 
     -   Membership in this group will be determined by the rules you set below:
 
-        -   Attribute: **Department**
+        -   Select condition: **Department**
 
-        -   Text field: **Sales**
+        -   Enter words, separate with commas: **Sales**
 
-19. On the **Edit settings** page, enter the following information then select
+20. On the **Edit settings** page, enter the following information then select
     **Next:**
 
     -   Group email address: **DynCRM**
@@ -244,26 +243,31 @@ group.
         **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix
         provided by your lab hosting provider.
 
-20. On the **Review and finish adding group** page, review the information that
+21. On the **Review and finish adding group** page, review the information that
     you entered for this group. If anything needs to be changed, select the
     appropriate **Edit** link and make your corrections. When everything is
     correct, select the **Create group** button.
 
-21. Once the group is created, the **Dynamics CRM Project Team is created** page
-    appears. Select **Close**.
+22. Once the group is created, the **Dynamics CRM Project Team is created, but it isn't ready to use yet** page
+    appears. Note the message that it may take up to two hours until you can send a message to this group. Select **Close**.
 
-22. This should return you to the **Groups** page, which is currently displaying
-    the **Distribution list** tab. Select the **Dynamic Distribution list** tab
-    to see the dynamic distribution group that you just created. If **Dynamics
+23. This should return you to the **Groups** page, which is currently displaying
+    the **Dynamic Distribution list** tab. If **Dynamics
     CRM Project Team** does not appear in the list of dynamic distribution
-    groups, refresh the page every 5 minutes until the group appears.
+    groups, refresh the page every few minutes until the group appears.
 
-23. Holly now wants to add Nestor Wilke as a co-owner of this group. Perform the
+24. Holly now wants to add Nestor Wilke as a co-owner of this group. Perform the
     same steps that you completed earlier when you added an owner to the Sales
     Department group. In this case, add **Nestor Wilke** as a co-owner of the
     **Dynamics CRM Project Team** group.
 
-**Task 3 - Upgrade Distribution Lists**
+25. This should return you to the **Groups** page, which is currently displaying
+    the **Dynamic Distribution list** tab. Select the **Dynamics
+    CRM Project Team**, and in the detail pane that opens for the group, select **Members**.
+
+	**Note:** Instead of having two owners (Holly and Nestor), verify that only Nestor appears as the owner of the group. A dynamic distribution group is different from the other group types because it can only have one owner. So when you added Nestor as a group owner in the earlier step, what actually happened is that Nestor replaced Holly as sole owner of the group. 
+
+### Task 3 - Upgrade Distribution Lists
 
 Organizations have typically relied on distribution groups in Exchange to
 communicate and collaborate with groups of people both inside and outside the
@@ -291,7 +295,7 @@ to share.
     the list of Microsoft 365 groups. You may need to select **Refresh** on the
     menu bar every couple of minutes before the Sales Department group appears.
 
-**Task 4 - Configure a Group Naming Policy**
+### Task 4 - Configure a Group Naming Policy
 
 A group naming policy enables organizations to standardize and manage the names
 of distribution groups created by its users. You can require that a specific
@@ -334,7 +338,7 @@ organization based on the following format: **{Department} {Group Name} {City}**
 6.  Once the group naming policy changes have been saved, close the **Edit group
     naming policy** pane. Leave all your browser tabs open for the next task.
 
-**Task 5 – Manage Resources**
+### Task 5 – Manage Resources
 
 A room mailbox is a resource mailbox that is assigned to a physical location,
 such as a conference room, an auditorium, or a training room. Users can easily
@@ -414,7 +418,7 @@ meetings, you can select the room from the Global Address List (GAL).
 
 15. Leave your browser and all tabs open for the next task.
 
-**Task 6 – Manage Contacts**
+### Task 6 – Manage Contacts
 
 One of the key features of Exchange Online is the ability to maintain different
 types of contacts in the Exchange Admin Center. In this task, you will be
@@ -506,25 +510,19 @@ introduced to mail contacts and mail users.
 
 10. Leave the Exchange admin center tab open and proceed to the next task.
 
-**Task 7 – Configure Messaging Protection**
+### Task 7 – Configure Messaging Protection
 
 Adatum has experienced a recent rash of malware infections. The company’s CTO
-has asked Holly to investigate the various options that are available in
-Exchange Online to fortify Adatum’s messaging environment.
-
-**Note:** In these next three tasks you will configure malware, connection, and
-spam policies, respectively. These policies were previously configured in the
-Exchange admin center; however, starting December 1, 2020, that functionality
-was moved to the Security and Compliance Center, which is where you will go to
-create these policies.
+has asked Holly Dickson to investigate the various options that are available in
+Exchange Online to fortify Adatum’s messaging environment. In these next three tasks, you will configure malware, connection, and
+spam policies, respectively. 
 
 **Warning:** To create these policies, you must be assigned the **Organization
 Management** role, which you will assign to Holly at the start of this task.
 However, it sometimes takes an hour or so for the role permissions to propagate
 through the system. This is due to the replication process that occurs within
 the system. In the Microsoft data centers, certain objects are consolidated to
-save space. You may encounter this delay when you assign RBAC roles in the
-Security and Compliance Center, or when you use Exchange Online PowerShell or
+save space. You may encounter this delay when you assign RBAC roles in Microsoft 365 Defender, or when you use Exchange Online PowerShell or
 the Exchange admin center to change one of these objects for the first time.
 
 Therefore, when you create the malware policy later in this task and you attempt
@@ -534,89 +532,96 @@ Management permissions haven’t fully propagated through the system for Holly. 
 work around this, you will be provided with PowerShell instructions that will
 enable you to customize organization management objects.
 
+
 1.  You should still be logged into LON-CL1 as the **Administrator** with a
     password of **Pa55w.rd**; however, if the log-in page appears, then log in
     now.
+	In your **Edge** browser, navigate to the **Office 365 home** page by entering **https://portal.office.com**, and log in as
+    your tenant admin account (**admin@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
+    provider, and enter the tenant password). In the **Office 365 Home** page, navigate to the **Microsoft 365 admin center**.
 
-2.  In your **Edge** browser, you should still have a tab open for the
-    **Microsoft 365 admin center**. If so, select this tab and proceed to the
-    next step; otherwise, navigate to the **Office 365 home** page, log in as
-    your tenant admin account, navigate to the **Microsoft 365 admin center**,
-    and then in the left-hand navigation pane, select **Show all**.
+3. In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane, and then under **Admin centers**, select **Security**. This opens **Microsoft 365 Defender** in a new tab.
 
-3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane
-    under **Admin centers**, select **Security**.
+4.  In the **Microsoft 365 Defender** portal, scroll down to the last section in the left-hand
+    navigation pane and select **Permissions & roles**.
 
-4.  In the **Office 365 Security & Compliance center**, in the left-hand
-    navigation pane, select **Permissions**.
+5.  In the **Permissions & roles** page, under the **Email & collaboration roles** group, select **Roles**. 
 
-5.  In the **Home \> Permissions** page, enter **org** in the **Search** field
+6. In the **Permissions & roles \> Permissions** page, enter **org** in the **Search** field
     and then select the magnifying glass icon. This is a quick way to display
     the Organization Management role group so that you don’t have to scroll
     through a list of roles to find it.
-
-6.  The search will display the **Organization Management** role, which is the
+    
+    The search will display the **Organization Management** role, which is the
     only role starting with **org**. Select the check box next to this role to
     display the details for this role group.
 
 7.  In the **Organization Management** pane that appears on the right, scroll
-    down to the **Members** section at the bottom of the pane. In the
+    down to the **Members** section at the bottom of the pane. To the right of the
     **Members** section, select **Edit**.
 
 8.  On the **Editing Choose members** page, select **Choose members**.
 
 9.  On the **Choose members** page, select the **+Add** button.
 
-10. In the list of users, select the check box next to **Holly Dickson** and
-    then select the **Add** button.
+10. In the **Choose which members to add from the list below** field, enter **Holly**. This will display all accounts starting with Holly. Select the check box next to **Holly Dickson** and then select the **Add** button.
 
 11. On the **Choose members** page, Holly should appear in the list of members
     who will be assigned to this role group. Select **Done**.
 
 12. On the **Editing Choose members** page, select **Save**.
 
-13. On the **Organization Management** pane, select **Close**.
+13. On the **Organization Management** pane, Holly should now appear as the only member of this role group. Select **Close**.
 
-14. In the **Office 365 Security & Compliance** center, in the left-hand
-    navigation pane, select **Threat management** to expand this group, and then
-    select **Policy**.
+14. On **LON-CL1**, you must log out of Microsoft 365 as the MOD Administrator and log back in as Holly Dickson. On the **Microsoft 365 admin center**, select the **MA** circle in the upper-right corner of the screen, and in the **MOD Administrator** window that appears, select **Sign out**.
 
-15. In the **Home \> Policy** page, under the **Policies** section, select
-    **Anti-malware**.
+15.  Once you're signed out, close the **Sign out** tab in your browser. This takes you to the **Microsoft Office Home** tab, which is now replaced with an **Office 365 Login** tab. Under the **MOD, you're signed out now** message, select **Switch to a different account**.
 
-16. In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
+16.  In the **Email address** field that appears, enter Holly's email address (**Holly@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and select **Sign in**. Enter **Pa55w.rd** as Holly's password and select **Sign in**. In the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**.
+
+17.  In the **Microsoft Office Home** page, in the column of icons on the left-side of the screen, select the final (**Admin**) icon to open the Microsoft 365 admin center.
+
+18.  In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane, and then under the **Admin centers** section, select **Security**. This opens the Microsoft 365 Defender portal in a new tab.
+
+19. In **Microsoft 365 Defender**, in the left-hand
+    navigation pane, under the **Email & collaboration** section, select **Policies & rules**.
+
+20. In the **Policies & rules** page, select **Threat policies**.
+
+21. In the **Threat policies** page, under the **Policies** section, select **Anti-malware**.
+
+22. In the **Policies & rules > Threat policies > Anti-malware** page, on the menu bar at the top
+
     of the window, select **+Create** to add a new malware filter. This starts
     the **Create a new anti-malware policy** wizard.
 
-17. In the **Name your policy** page, enter **Malware Policy** in the **Name**
+23. In the **Name your policy** page, enter **Malware Policy** in the **Name**
     field.
 
-18. In the **Description** field, enter **This policy has been created to
+24. In the **Description** field, enter **This policy has been created to
     protect Adatum’s messaging environment** and then select **Next**.
 
-19. In the **Users and domains** page, enter **onmicrosoft.com** in the
+25. In the **Users and domains** page, enter **onmicrosoft.com** in the
     **Domains** field. This will display the list of Adatum domains containing
     **onmicrosoft.com**. Select the **M365xZZZZZZ.onmicrosoft.com** domain
     that’s displayed and then select **Next**.
 
-20. On the **Protection settings** page, under the **Protection settings**
+26. On the **Protection settings** page, under the **Protection settings**
     group, select the check boxes for the following settings:
 
     -   **Enable the common attachments filter** (if it’s not already selected)
 
     -   **Enable zero-hour auto purge for malware (recommended)**.
 
-21. In the **Notification** section, do not select any of the notification
-    options since this filter will not generate any notifications.
+27. In the **Notification** section, do not select any of the notification
+    options since this filter will not generate any notifications. Select **Next**.
 
-22. Select **Next**.
-
-23. On the **Review** page, review all the information for this malware policy.
+28. On the **Review** page, review all the information for this malware policy.
     If anything needs to be changed, select the **Back** button and make the
     necessary corrections. When all the information is correct, select
     **Submit**.
 
-24. If the anti-malware policy was successfully created, then skip to the next
+29. If the anti-malware policy was successfully created, then skip to the next
     step.  
     
     However, if you receive a **Client Error** dialog box that indicates an
@@ -669,18 +674,18 @@ enable you to customize organization management objects.
     anti-malware policy. Select **Submit** to resubmit your anti-malware policy.
     This time the policy should be successfully saved.
 
-25.  On the **Created new anti-malware policy** page, it indicates the new policy
-    has been created and will go into effect immediately. Select **Done.**
+30.  On the **Created new anti-malware policy** page, it indicates the new policy
+    has been created and will go into effect immediately. Select **Done.** <br/>
 
-        **Note**: If a **Security & Compliance** window appears with a message that
+   		**Note**: If a dialog box appears with a message that
+
     indicates your organization settings need to be updated, select **Yes** to
-    continue. It may take a minute for your organization settings to be updated.
+    continue. It may take a minute for your organization settings to be updated.*
 
-26.  Your new anti-malware policy should appear in the list of policies on the
-    **Home \> Policy \> Anti-malware** page. Leave your browser and all tabs
-    open and proceed to the next task.
+31. Leave your browser open for the next task.
 
-**Task 8 – Manage Connection Filters**
+
+### Task 8 – Manage Connection Filters
 
 Holly has been contacted by Adatum’s CTO. He is upset that he keeps finding
 email from friends and business associates in his junk email folder, and he’s
@@ -694,21 +699,14 @@ trust. This is known as an Allow list, or Safe Sender list. You can also create
 a Blocked senders list, which is a list of IP addresses (typically from known
 spammers) that you never want to receive email messages from.
 
-1.  In your **Edge** browser, you should still have a tab open for the **Office
-    365 Security & Compliance center**. If so, select this tab and proceed to
-    the next step. Otherwise, navigate to the **Office 365 home** page, log in
-    as your tenant admin account, navigate to the **Microsoft 365 admin
-    center**, select **Show all** in the left-hand navigation pane, and then
-    select **Security**.
+1.  You should still be logged into Microsoft 365 as Holly Dickson after completing the prior task. Your Edge browser should still be in the **Microsoft 365 Defender** portal on the **Policies & rules > Threat policies > Anti-malware** window. 
 
-2.  In the **Office 365 Security & Compliance** center, the **Home \> Policy \>
-    Anti-malware** window should still be displayed from the prior task. In this
-    thread at the top of the page, select **Policy**.
+2.  In the the **Policies & rules > Threat policies > Anti-malware** thread at the top of the page, select **Threat policies**.
 
-3.  In the **Home \> Policy** window, under the **Policies** section, select
+3.  In the **Threat policies** window, under the **Policies** section, select
     **Anti-spam**.
 
-4.  The **Home \> Policy \> Anti-spam policies** window displays a list of
+4.  The **Policies & rules > Threat policies > Anti-spam policies** window displays a list of
     default **Anti-spam policies** that control how messages are handled by
     Microsoft 365 anti-spam policies.
 
@@ -723,7 +721,7 @@ spammers) that you never want to receive email messages from.
 
     You will NOT be adding IP addresses to the allow or block lists. You can do
     this if you have a known IP address you would like to test against. It
-    typically takes up to 1 hour to replicate the change within the system. For
+    typically takes up to 1 hour to propagate the change within the system. For
     this lab, simply review the fact that you can create allowed and blocked
     lists of IP addresses.
 
@@ -731,18 +729,16 @@ spammers) that you never want to receive email messages from.
     connection filter policy** link.
 
 7.  In the **Connection filter policy (Default)** pane, select the **Turn on
-    safe list** check box. This is a best practice that enables for your tenant
-    the most common third-party sources of trusted senders that Microsoft
+    safe list** check box. This is a best practice that enables for your tenant the most common third-party sources of trusted senders that Microsoft
     subscribes to. Selecting this check box skips spam filtering on messages
     sent from these senders, ensuring they are never mistakenly marked as spam.
 
 8.  Select **Save** to save this filter, and then select **Close** once the
     changes are successfully saved.
 
-9.  Leave your Edge browser open to the **Office 365 Security & Compliance**
-    center for the next task.
+9. Leave your Edge browser open to the **Microsoft 365 Defender** portal for the next task.
 
-**Task 9 – Manage Spam Filters**
+### Task 9 – Manage Spam Filters
 
 For Microsoft 365 customers whose mailboxes are hosted in Microsoft Exchange
 Online, their email messages are automatically protected against spam and
@@ -752,28 +748,27 @@ protect you from spam.
 
 As Adatum’s Global Admin, Holly doesn’t need to set up or maintain the filtering
 technologies, which are enabled by default. However, she can make
-company-specific filtering customizations in the Security and Compliance center.
-She has decided to test this out by configuring a spam policy to grant or deny
+company-specific filtering customizations in the Microsoft 365 Defender portal.
+Holly has decided to test this out by configuring a spam policy to grant or deny
 an email by focusing on the language of the email and the location of the
 email’s origin.
 
-1.  In the **Office 365 Security & Compliance** center, the **Home \> Policy \>
-    Anti-spam policies** window should still be displayed after having completed
+1.  In the **Microsoft 365 Defender** portal, the **Policies & rules > Threat policies > Anti-spam policies** window should still be displayed after having completed
     the prior task.
 
-    Select the **Anti-spam inbound policy (Default)**.
+    In the list of anti-spam policies, select the **Anti-spam inbound policy (Default)**.
 
 2.  In the **Anti-spam inbound policy (Default)** pane that appears, take a
     moment and review the policy settings that are available in this filter.
-    There are three sections of settings – Bulk email threshold & spam
-    properties, Actions, and Allowed and blocked senders and domains.
+    There are three sections of settings – **Bulk email threshold & spam
+    properties**, **Actions**, and **Allowed and blocked senders and domains**.
 
 3.  Once you’ve finished reviewing these settings, scroll to the bottom of the
     **Bulk email threshold & spam properties** section and select the **Edit
     spam threshold and properties** link.
 
 4.  In the **Spam threshold and properties** pane that appears, the **Bulk email
-    threshold** at the top of the pane is set to **7** by default. Change this value
+    threshold** at the top of the pane is set to **7** by default. Drag the slider to the left on the slider bar and change this value
     to **5.**
 
 5.  Under the **Mark as spam** section, update the following settings:
@@ -788,12 +783,12 @@ email’s origin.
 
     -   Sender ID filtering hard fail: **On**
 
-    -   Contains specific languages: **On**  
-        
-        **Note:** These next two settings allow you to automatically tag messages
+    **Note:** These next two settings allow you to automatically tag messages
         as spam when they originate from countries/regions that are to be
         avoided or distrusted, as well as messages written in specific languages.
-                
+   
+    -   Contains specific languages: **On**  
+
         You should already know the languages that you want to filter. In the
         blank field that appears below the **Contains specific languages**
         field, enter the first letter of a language that you want to filter.
@@ -803,15 +798,15 @@ email’s origin.
         Enter a letter and then select a language with the letter in it that you
         want to filter. Repeat this step for a couple of languages.
 
-    -   From these countries: **On**   
-        
-        You should already know the countries that you want to filter. In the
+    -   From these countries: **On**
+
+		You should already know the countries that you want to filter. In the
         blank field that appears below the **From these countries** field, enter
         the first letter of a country that you want to filter. This will display
         all countries that start with that letter (as well as any countries that
-        contain that letter within the name of the language).  
-        
-        Enter a letter and then select a country with the letter in it that you
+        contain that letter within the name of the language).
+
+		Enter a letter and then select a country with the letter in it that you
         want to filter. Repeat this step for a couple of countries.
 
 6.  Select **Save**.
@@ -837,17 +832,13 @@ email’s origin.
     -   Prepend subject line with this text: enter **WARNING: This message
         contains potential spam!**
 
-    -   Enable end-user spam notifications: select this check box
-
-    -   Send end-user spam notifications every (days): **5**
-
 9.  Select **Save** to update the settings, and then select **Close** to close
     the **Anti-spam inbound policy (Default)** pane.
 
-10. In your Edge browser, close the **Security & Compliance** center tab, but
+10. In your Edge browser, close the **Microsoft 365 Defender** tab (the tab name is **Anti-spam policies - Microsoft 365 security**), but
     leave all other tabs open.
 
-**Task 10 – Manage Mail Flow Rules**
+### Task 10 – Manage Mail Flow Rules
 
 After Holly reviewed the messaging environment at Adatum Corporation, she
 discovered that Adatum’s current mail flow policy is to simply wait until
@@ -913,7 +904,7 @@ size.
 
 7.  Leave your Edge browser open as well as all the tabs.
 
-**Task 11 – Validate Accepted Domains**
+### Task 11 – Validate Accepted Domains
 
 A domain that’s added to an organization’s on-premises environment is called an
 accepted, or custom domain. You can create mailboxes with accepted domains to
@@ -964,4 +955,4 @@ type is set to authoritative.
     return you to the **Microsoft 365 admin center** tab, which you will access
     in the next exercise.
 
-**Proceed to Lab 3 - Exercise 2**
+### Proceed to Lab 3 - Exercise 2

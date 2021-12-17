@@ -16,13 +16,13 @@ As Holly Dickson, Adatum's Enterprise Administrator, you want to customize the c
 
 4. In the **Microsoft 365 admin center** tab, in the left-hand navigation pane under the **Admin centers** section, select **Teams.** This will open the Microsoft Teams admin center.
 
-5. In the **Microsoft Teams admin center**, in the left-hand navigation pane, select **Meetings** and then in the drop=down menu, select **Meeting policies**.
+5. In the **Microsoft Teams admin center**, in the left-hand navigation pane, select **Meetings** to expand the **Meetings** group. In this group, select **Meeting policies**.
 
 6. In the **Meeting policies** window, scroll down to the list of meeting policies and select **Global (Org-wide default)**. 
 
 7. In the **Global** window that appears, under the **General** section, review each setting. All settings in this section should be turned **On**.
 
-8. Under the **Audio &amp; video** section, review each setting. Select the **Allow transcription** toggle switch to turn it **On**.
+8. Under the **Recording & transcription** section, review each setting. Select the **Allow transcription** toggle switch to turn it **On**.
 
 9. Under the **Content Sharing** section, review each setting and make the following changes: 
 
@@ -136,7 +136,7 @@ Creating a calling queue is a two-step process. In this task, you will first cre
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, select **Org-wide Settings** in the left-hand navigation pane and then select **Resource accounts.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Resource accounts.**
 
 3. In the **Resource accounts** window, select **+Add** in the menu bar at the top of the page.
 
@@ -255,11 +255,11 @@ As part of her Microsoft Teams pilot project, Holly Dickson wants to block commu
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, select **Org-wide settings** in the left-hand navigation pane and then select **External access.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **External access.**
 
-3. In the **External access** window, leave the two settings involving Skype for Business/Teams and Skype users set to **On**. Also note that in the list of domains, the domain of the IT Consultant who helped formulate the new Service Request Ticketing system (**xxxxxZZZZZZonmicrosoft.com**) appears in the list, and that communication is Allowed with this domain. You added this domain back in Lab 1. 
+3. In the **External access** window, leave the settings involving Skype users set to **On**. If necessary, set the **Choose which external domains your users have access to** drop-down field to **Block only specific external domains**. 
 
-4. To add the domain in which you want to allow communication, select **+Add a domain** in the menu bar that appears above the list.  
+4. To add the domain in which you want to allow communication, select **Block domains** in the menu bar that appears above the list.  
 
 5. In the **Add a domain** window, enter the following information:
 
@@ -288,17 +288,17 @@ As part of her Microsoft Teams pilot project, Holly Dickson wants to block commu
 
 ### Task 8 – Manage Guest Access
 
-Microsoft Teams’ guest access feature is a tenant-level setting that is turned Off by default. Once this setting is turned On, you can configure settings for guests. IT admins can add guests at the tenant level, set and manage guest user policies and permissions, and generate reports on guest user activity. 
+Microsoft Teams’ guest access feature enables you to configure settings for guests. IT admins can add guests at the tenant level, set and manage guest user policies and permissions, and generate reports on guest user activity. Guest access is turned On by default.
 
-As part of your Microsoft Teams pilot project for Adatum, you will turn on guest access and then customize a variety of the guest settings as defined by Adatum’s project team.
+As part of your Microsoft Teams pilot project for Adatum, you will customize a variety of the guest settings as defined by Adatum’s project team.
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, under **Org-wide settings** in the left-hand navigation pane select **Guest access.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, under **Users** in the left-hand navigation pane select **Guest access.**
 
-3. In the **Guest access** window, set the **Allow guest access in Teams** setting to **On**. 
+3. In the **Guest access** window, verify the **Allow guest access in Teams** setting is set to **On**. If it's turned Off, then change this setting to **On**.  
 
-4. Once you set this switch to **On**, a variety of additional settings are displayed. Scroll down the page and select the following values for each setting:
+4. Scroll down the page and update the following values for each setting:
 
 	- Calling
 
@@ -341,7 +341,7 @@ Microsoft Teams includes a variety of global settings that control performance w
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, under **Org-wide settings** in the left-hand navigation pane select **Teams settings.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, under **Teams** in the left-hand navigation pane select **Teams settings.**
 
 3. In the **Teams settings** window, select the following values for each setting:
 
@@ -400,7 +400,7 @@ In this task, you will open the Microsoft Teams desktop application on LON-CL1 a
 
 1. Switch to **LON-CL1**. You should still be logged into your LON-CL1 VM as the Administrator with a password of **Pa55w.rd**; if not, then do so now. 
 
-2. If the **Microsoft Teams** icon appears on the taskbar, then select it now; otherwise, navigate to the desktop and double-click the **Microsoft Teams** icon. Maximize the Microsoft Teams window (if necessary).
+2. If the **Microsoft Teams** icon appears on the taskbar, then select it now; otherwise, navigate to the desktop and double-click the **Microsoft Teams** icon. Maximize the Microsoft Teams window (if necessary). If Teams is not installed, navigate to **https://teams.microsoft.com** in Microsoft Edge.
 
 3. You want to sign into Microsoft Teams as Adatum’s MOD Administrator. If you receive a log-in screen, then log in as **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and enter your tenant email password as the **Password**.
 

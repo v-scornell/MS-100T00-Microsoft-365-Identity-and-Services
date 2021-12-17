@@ -72,7 +72,7 @@ In this task you will download and use the IdFix tool to fix the on-premises use
 
 	**https://microsoft.github.io/idfix/installation/**
 	
-3. On the **Microsoft - IdFix** window, under the **Installation** section at the top of the page, the instructions direct you to run **setup.exe** to install the IdFix application on your machine. Select **setup.exe** to download the file to LON-DC1. 
+3. On the **Microsoft - IdFix** window, under the **Step 2: Install** section at the top of the page, the instructions direct you to run **setup.exe** to install the IdFix application on your machine. Select **setup.exe** to download the file to LON-DC1. 
 
 4. Once the **setup.exe** file is downloaded, it will appear in the notification bar at the bottom of the screen. Select **Open file**. 
 

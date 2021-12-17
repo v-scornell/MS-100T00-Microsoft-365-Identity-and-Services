@@ -72,27 +72,29 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 25. On the **Microsoft 365 admin center** page, in the left-hand navigation pane, select **Show all** (if necessary). 
 
-26. Scroll down through the left-hand navigation pane, and under **Admin centers,** select **Security**. This will open the Office 365 Security & Compliance center in a new tab.
+26. Scroll down through the left-hand navigation pane, and under **Admin centers,** select **Exchange**. This will open the Exchange admin center in a new tab.
 
-27. In the **Office 365 Security & Compliance center**, in the left-hand navigation pane, select **Mail flow**, and then in the Mail Flow group, select **Message trace**. 
 
-28. In the **Home > Message trace** window, select the **+Start a trace** button. 
 
-29. In the **New message trace** pane that appears, select the **By these people** field. This displays the list of active users. Scroll down and select **Holly Dickson**.
+27. In the **Exchange admin center**, in the left-hand navigation pane, select **Mail flow**, and then select **Message trace**. 
 
-30. Under the **Within this time range** section, select **1 day** that appears above the slider. Note how the slider circle moved under **1 day**.
+28. In the **Message trace** window, the **Default queries** tab is displayed by default. In this tab, select **+Start a trace** on the menu bar. 
 
-31. Scroll down and select **More search options**. In the **Delivery status** field, select the drop-down arrow and select **Failed**.
+29. In the **New message trace** pane that appears, both the **Senders** and **Recipients** fields are set to **All** be default. Holly wants to configure the trace to just look for email messages that she sent. In the **Senders** field, enter **Holly**. This displays the list of active users whose name starts with Holly. In the list of users that appears, select **Holly Spencer**.
 
-32. At the bottom of the page, select the **Search** button. 
+30. Under the **Time range** section, select the slider bar below **1 day** (don't select the **1 day** heading; you must select on the slider bar itself). Note how the slider circle moved under **1 day**.
 
-33. In the **Message trace search results** window that appears, if no failed message deliveries appear in the list, you may need to wait several minutes before selecting the **Refresh** button that appears above the item list. 
+31. Select the drop-down arrow to the right of **Detailed search options**. A number of advanced search options will appear. You want to customize the trace to look for failed messages. Select the **Delivery status** field, and in the drop-down menu that appears, select **Failed**.
+
+32. Note the **Report type** option is set to **Summary report**. This is the report type that you want to create, so leave this option selected. At the bottom of the page, select the **Search** button. 
+
+33. In the **Message trace > Message trace search results** window that appears, if no failed message deliveries appear in the list, you may need to wait several minutes before selecting the **Refresh** button that appears above the item list. 
 
 34. Double-click on the first failed message to view the **Message trace details** pane for that message. This displays the sender, recipient, status, and error information, as well as the **How to fix it** instructions. Select the **Close** button at the bottom of the pane to close it. <br/>
 
 	Repeat this step for the other failed message. 
 
-35. Close the **Message trace search results** window, and then close the **New message trace** window. This will return you to the **Home > Message trace** window in the **Office 365 Security and Compliance center**. Leave this tab open for the next task.
+35. In the **Message trace > Message trace search results** window, select the **Message trace** portion of this navigation line to return to the **Message trace** window. Leave this tab open for the next task.
 
 36. In your Edge browser, close the **Mail - Holly Dickson - Outlook** tab, but leave the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open for the next task.
   
@@ -107,7 +109,7 @@ Adatum's CTO is concerned with the service health issues that have recently come
 
 3. On the **Service health** page, the **All services** tab is displayed by default across the top of the page. Select the **History** tab.  
 
-4. The default option is to display a list of items from the past 7 days (see the right side of the menu bar above the list of items; **Past 7 days** displays as the default option). Select any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it. 
+4. In the **History** tab on the **Service health** window, the default option is to display a list of items from the past 7 days (see the right side of the menu bar above the list of items; **Past 7 days** displays as the default option). Select any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it. 
 
 5. In the **Microsoft 365 admin center**, on the left-hand navigation pane, select **Reports**, and then select **Usage.** 
 
@@ -119,27 +121,25 @@ Adatum's CTO is concerned with the service health issues that have recently come
 
 8. Under the **Email activity** chart select the **View more** button. This displays the **Exchange** report dashboard. In the report header at the top of the page, select **Mailbox usage**. 
 
-9. The default mailbox usage that is initially displayed is **30 days**. Select the other date views at the top of the report (**7 days**, **90 days**, and **180 days**) to see how the display changes. 
+9. The default mailbox usage that is initially displayed is **Past 30 days**. Select the down-arrow that appears next to **Past 30 days** and select one of the other options that appear in the drop-down menu (**7 days**, **90 days**, and **180 days**) to see how the display changes. 
 
-10. Scroll down to the bottom of the page to see mailbox details for each of the active users.
+10. Scroll down below the charts to see mailbox details for each of the active users.
 
-11. Scroll back to the top of the page. On the menu bar above the chart, it currently displays **Mailbox usage** followed by a drop-down arrow. Select the drop-down arrow, and in the menu that appears, select **SharePoint**. In the SharePoint group, select **Site usage**. 
+11. Scroll back to the top of the page. On the navigation line at the top of the page (**Home > Usage > Exchange**), select **Usage** to return to the Usage page. 
 
-12. The default site usage that is initially displayed at the top-right of the screen is **Past 30 days**. Select the drop-down arrow next to this and in the menu that appears, select the other date views to see how the display changes: **7 days**, **90 days**, and **180 days**. 
+12. Review the various reports on this page. While there may be limited or no data for each report, you at least get a feel for the types of reporting that's available. 
 
-13. Scroll down to the bottom of the page to see details for each of the site collections for your tenant.
+14. You now want to review the reports that are available in the **Exchange admin center**. In your browser, you should have the **Exchange admin center** tab open from the prior task; if so, select it now. However, if you previously closed this tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Exchange**.
 
-14. You now want to review the reports that are available in the **Office 365 Security &amp; Compliance** center. In your browser, you should have the **Message trace - Security & Compliance** tab open from the prior task; if so, select it now. However, if you previously closed this tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
+15. In the **Exchange admin center**, select **Reports** in the left-hand navigation pane, and then select **Mail flow**. 
 
-15. In the **Office 365 Security &amp; Compliance** center, scroll down in the left-hand navigation pane and select **Reports,** and then under the **Reports** section, select **Dashboard.** 
+16. In the **Reports > Mail flow** window, select **Inbound messages report** (this report has data to view; none of the other reports have data). Review the information displayed for this report. 
 
-16. In the **Home > Dashboard** window, scroll down to any report that has data displayed (for example, **Top senders and recipients**) and click in the chart area to open the **Report Viewer** for that report. 
+17. On the navigation line at the top of the page (**Reports > Mail flow > Inbound messages report**), select **Mail flow** to return to this reporting page. 
 
-17. After reviewing the report, select **Dashboard** in navigation thread at the top of the page (Home > **Dashboard** > Report Viewer - Security &amp; Compliance) to return to the report dashboard.
+18. In the **Reports > Mail flow** window, review the various reports that are available. 
 
-18. Repeat the prior two steps for any other report that has data displayed.
-
-19. Close the **Security &amp; Compliance center** tab in your Edge browser but leave the other Microsoft 365 admin center tabs open for the next task.
+17. Close the **Exchange admin center** tab in your Edge browser but leave the other Microsoft 365 admin center tabs open for the next task.
  
 
 ### Task 3 – Submit a Help Request to Microsoft Support
@@ -150,9 +150,9 @@ If an organization runs into a situation in Microsoft 365 where it needs assista
 
 2. In the left-hand navigation bar, under the **Support** group, select **New service request**.
 
-3. In the **Support Assistant** pane that appears, select the **Message** line at the bottom of the window (which currently displays **Message e.g. How do I install Office?**) and type the following message: **This is a test of the service request system; a call back is not needed.** When you are done, select the **Send message** arrow icon that appears below the message line.
+3. In the **Support Assistant** pane that appears, select the **Message** line at the bottom of the window (which currently displays **Example: Can't install Office**) and type the following message: **Can't install office**.
 
-4. This initiates an automated bot that asks a clarifying question and provides some optional answers that you can choose from. Select one of the answers to see how the automated bot responds. 
+4. This provides self-help solutions with insights and recommended articles to assist with your request. Select one of the recommended articles. 
 
 5. If you need further assistance and would like to speak to a Microsoft support agent, at the top of the window select the **headset** icon (the middle icon) to get help from one of the support agents. Select the **headset** icon now.
 
