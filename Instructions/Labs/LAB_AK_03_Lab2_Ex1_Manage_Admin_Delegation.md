@@ -160,9 +160,10 @@ In this task, you will begin by examining the administrative properties of two u
 
 27. In the **Reset password** window for Debra, if the **Automatically create a password** check box displays a check mark, then select this box to clear it. Lynne wants to manually assign Debra a password, so enter **P@$$w0rd** in the **Password** field. 
 
+
 	This is just a temporary password because Lynne wants to force Debra to change it the next time she logs in. Therefore, verify the **Require this user to change their password when they first sign in** check box displays a check mark; if the box is clear, then select it so that it displays a check mark.
 
-28. Select **Reset password**.<br/>
+	If you enter multiple email addresses in this field, they must be separated by a semicolon and a space. Therefore, enter a semicolon and a space following Lynne's email address, enter Allan's email address of **AllanD@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the prefix provided by your lab hosting provider), and then select **Send email and close**.
 
 29. On the **Reset password** window, you should receive a message indicating the password was successfully reset. 
 

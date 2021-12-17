@@ -591,6 +591,7 @@ enable you to customize organization management objects.
 21. In the **Threat policies** page, under the **Policies** section, select **Anti-malware**.
 
 22. In the **Policies & rules > Threat policies > Anti-malware** page, on the menu bar at the top
+
     of the window, select **+Create** to add a new malware filter. This starts
     the **Create a new anti-malware policy** wizard.
 
@@ -677,10 +678,12 @@ enable you to customize organization management objects.
     has been created and will go into effect immediately. Select **Done.** <br/>
 
    		**Note**: If a dialog box appears with a message that
+
     indicates your organization settings need to be updated, select **Yes** to
-    continue. It may take a minute for your organization settings to be updated.
+    continue. It may take a minute for your organization settings to be updated.*
 
 31. Leave your browser open for the next task.
+
 
 ### Task 8 – Manage Connection Filters
 

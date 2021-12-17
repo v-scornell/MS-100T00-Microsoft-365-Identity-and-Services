@@ -74,6 +74,8 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 26. Scroll down through the left-hand navigation pane, and under **Admin centers,** select **Exchange**. This will open the Exchange admin center in a new tab.
 
+
+
 27. In the **Exchange admin center**, in the left-hand navigation pane, select **Mail flow**, and then select **Message trace**. 
 
 28. In the **Message trace** window, the **Default queries** tab is displayed by default. In this tab, select **+Start a trace** on the menu bar. 
