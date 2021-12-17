@@ -136,7 +136,7 @@ Creating a calling queue is a two-step process. In this task, you will first cre
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, select **Org-wide Settings** in the left-hand navigation pane and then select **Resource accounts.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Resource accounts.**
 
 3. In the **Resource accounts** window, select **+Add** in the menu bar at the top of the page.
 
@@ -255,11 +255,11 @@ As part of her Microsoft Teams pilot project, Holly Dickson wants to block commu
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, select **Org-wide settings** in the left-hand navigation pane and then select **External access.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **External access.**
 
-3. In the **External access** window, leave the two settings involving Skype for Business/Teams and Skype users set to **On**. Also note that in the list of domains, the domain of the IT Consultant who helped formulate the new Service Request Ticketing system (**xxxxxZZZZZZonmicrosoft.com**) appears in the list, and that communication is Allowed with this domain. You added this domain back in Lab 1. 
+3. In the **External access** window, leave the settings involving Skype users set to **On**. If necessary, set the **Choose which external domains your users have access to** drop-down field to **Block only specific external domains**. 
 
-4. To add the domain in which you want to allow communication, select **+Add a domain** in the menu bar that appears above the list.  
+4. To add the domain in which you want to allow communication, select **Block domains** in the menu bar that appears above the list.  
 
 5. In the **Add a domain** window, enter the following information:
 
@@ -294,7 +294,7 @@ As part of your Microsoft Teams pilot project for Adatum, you will customize a v
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, under **Org-wide settings** in the left-hand navigation pane select **Guest access.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, under **Users** in the left-hand navigation pane select **Guest access.**
 
 3. In the **Guest access** window, verify the **Allow guest access in Teams** setting is set to **On**. If it's turned Off, then change this setting to **On**.  
 
@@ -341,7 +341,7 @@ Microsoft Teams includes a variety of global settings that control performance w
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, under **Org-wide settings** in the left-hand navigation pane select **Teams settings.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, under **Teams** in the left-hand navigation pane select **Teams settings.**
 
 3. In the **Teams settings** window, select the following values for each setting:
 
@@ -400,7 +400,7 @@ In this task, you will open the Microsoft Teams desktop application on LON-CL1 a
 
 1. Switch to **LON-CL1**. You should still be logged into your LON-CL1 VM as the Administrator with a password of **Pa55w.rd**; if not, then do so now. 
 
-2. If the **Microsoft Teams** icon appears on the taskbar, then select it now; otherwise, navigate to the desktop and double-click the **Microsoft Teams** icon. Maximize the Microsoft Teams window (if necessary).
+2. If the **Microsoft Teams** icon appears on the taskbar, then select it now; otherwise, navigate to the desktop and double-click the **Microsoft Teams** icon. Maximize the Microsoft Teams window (if necessary). If Teams is not installed, navigate to **https://teams.microsoft.com** in Microsoft Edge.
 
 3. You want to sign into Microsoft Teams as Adatum’s MOD Administrator. If you receive a log-in screen, then log in as **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and enter your tenant email password as the **Password**.
 
