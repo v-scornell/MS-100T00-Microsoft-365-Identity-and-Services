@@ -16,19 +16,9 @@ Holly Spencer is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**. 
 
-3. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services. 
+3. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services.
 
-4. Since all of Adatum's Microsoft 365 E5 licenses have been assigned, you must begin by removing the license from Christie Cline's account. Christie has taken on a reduced role in the company, so she no longer needs access to Microsoft 365. You will then assign her license to Holly. In the **Active Users** window, select **Christie Cline** from the list of active users.
-
-5. The **Christie Cline** profile pane will open. Select the **Licenses and apps** tab.
-
-6. In the **Licenses and apps** tab, unselect the check boxes next to the **Enterpise Mobilitiy + Security E5** and **Microsoft 365 E5** licenses. This will make these licenses available for Holly's new account.
-
-7. Select the **Save changes** button at the bottom of the **Christie Cline** profile pane.
-
-8. Select the **X** to close the **Christie Cline** profile pane. On the **Active users** window, note how Christie's account is now **Unlicensed**.
-
-9. You are now ready to create a user account for Holly Dickson. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users. 
+4. You are now ready to create a user account for Holly Dickson. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users. 
 
 10. In the **Set up the basics** window, enter the following information:
 
