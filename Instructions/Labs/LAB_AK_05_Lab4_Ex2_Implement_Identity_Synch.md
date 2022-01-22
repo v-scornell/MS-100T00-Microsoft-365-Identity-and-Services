@@ -20,7 +20,7 @@ In this task, you will run the Azure AD Connect setup wizard to enable synchroni
 
 6. In the **Microsoft Download Center**, scroll down to the **Microsoft Azure Active Directory Connect** section and select **Download**. 
 
-7. In the notification bar at the bottom of the screen, once the **AzureADConnect.msi** file has finished downloading, select **Open file**.
+7. In the notification bar at the top of the screen, once the **AzureADConnect.msi** file has finished downloading, select **Open file**.
 
 8. This initiates the installation of the Microsoft Azure Active Directory Connect Tool. 
 
@@ -168,8 +168,10 @@ In this task, you will force a sync between Adatum’s on-premises AD and Azure 
 
 		Start-ADSyncSyncCycle -PolicyType Delta
 	
-	‎**Note:** If for any reason the Domain Controller VM was restarted after the original full synchronization run, the Microsoft Azure AD Sync service may not have restarted. If this occurred, you’ll receive an error when you try to perform the forced sync above. If this occurs, you’ll need to start the Microsoft Azure AD Sync service first and then perform the forced synchronization. 
+	‎**Note:** If for any reason the Domain Controller VM was restarted after the original full synchronization run, the Microsoft Azure AD Sync service may not have restarted. If this occurred, you’ll receive an error when you try to perform the forced sync above. If this occurs, you’ll need to start the Microsoft Azure AD Sync service first and then perform the forced synchronization.
 
+	**Note:** If the Start-ADSyncSyncCycle command is not found, the domain controller will need to be restarted for the PowerShell module complete it's installation.
+	
 4. Once the synchronization process has successfully completed, minimize your PowerShell window (do not close it) and proceed to the next task. You will use PowerShell in the next task to validate some of the results of the directory synchronization.
 
 5. Remain in LON-DC1 and proceed to the next task.
