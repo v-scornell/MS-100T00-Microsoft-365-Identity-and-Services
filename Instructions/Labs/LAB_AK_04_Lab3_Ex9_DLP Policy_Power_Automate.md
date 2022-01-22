@@ -17,11 +17,11 @@ In this task, Holly wants to create a data lost prevention policy for the flows 
 
 1. After having completed the prior exercise in which you created a flow in Power Automate and assigned to it an additional owner, you should still be logged into LON-DC1 as **ADATUM\Administrator** and a password of **Pa55w.rd**; if not, then do so now.
 
-2. You should still have your Edge browser open to the **Microsoft Power Automate** tab, which should still be displaying the **Flows** window and the **Team flows** tab. If not, then repeat the steps you performed in the prior task to get to this tab (from **Power Automate studio**, select **My flows**, and then select the **Team flows** tab).
+2. You should still have your Edge browser open to the **Microsoft Power Automate** tab, which should still be displaying the **Flows** window and the **Shared with me** tab. If not, then repeat the steps you performed in the prior task to get to this tab (from **Power Automate studio**, select **My flows**, and then select the **Shared with me** tab).
 
 3. In the top right corner of the screen, select the **gear (Settings)** icon. In the **Settings** pane that appears, under the **Power Automate** section, select **Admin Center**.
 
-4. A new tab will open in your browser that displays the **Power Platform admin center**. In the left-hand navigation pane select **Data policies**.
+4. A new tab will open in your browser that displays the **Power Platform admin center**. In the left-hand navigation pane expand **Policies** then select **Data policies**.
 
 5. On the **Data policies** page, select the **+New Policy** button. This initiates a **New Policy** wizard, which displays the pages to be completed in the middle pane on the screen. 
 
