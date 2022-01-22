@@ -158,19 +158,13 @@ By the time you get to the Module 4 labs, External Access should be ready so tha
 
 4. A new tab will open in your Edge browser that displays the **Microsoft Teams admin center**. If a **Welcome to the Teams admin center** window appears, select **Skip tour**.
 
-5. In the **Microsoft Teams admin center**, in the left-hand navigation pane, select **Org-wide settings** and then select **External access**.
+5. In the **Microsoft Teams admin center**, in the left-hand navigation pane, select **Users** and then select **External access**.
 
 6. On the **External access** page, confirm that the toggle switches for both external access options are in the **On** position. If either are set to **Off**, then set them to **On** now.
 
-7. Below the toggle switches, select **+Add a domain**.
+7. If you made any chagngs, on the **External access** page, select **Save**..
 
-8. In the **Add a domain** pane that appears, enter **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ **is your fellow student's tenant prefix** that was assigned to you by your instructor) in the **Domain** field. **Do NOT enter your own tenant prefix.** 
-
-9. In the **Action to take on this domain** field, select **Allowed**, and then select **Done**.
-
-10. On the **External access** page, select **Save**.
-
-11. In your Microsoft Edge browser, close the **External access - Microsoft Teams** tab. This should return you to the **Microsoft 365 admin center** tab, which you should leave open as you proceed to the next exercise.
+8. In your Microsoft Edge browser, close the **External access - Microsoft Teams** tab. This should return you to the **Microsoft 365 admin center** tab, which you should leave open as you proceed to the next exercise.
 
 
 # Proceed to Lab 1 - Exercise 2 
