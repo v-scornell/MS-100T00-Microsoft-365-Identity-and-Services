@@ -80,7 +80,7 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 28. In the **Message trace** window, the **Default queries** tab is displayed by default. In this tab, select **+Start a trace** on the menu bar. 
 
-29. In the **New message trace** pane that appears, both the **Senders** and **Recipients** fields are set to **All** be default. Holly wants to configure the trace to just look for email messages that she sent. In the **Senders** field, enter **Holly**. This displays the list of active users whose name starts with Holly. In the list of users that appears, select **Holly Spencer**.
+29. In the **New message trace** pane that appears, both the **Senders** and **Recipients** fields are set to **All** be default. Holly wants to configure the trace to just look for email messages that she sent. In the **Senders** field, enter **Holly**. This displays the list of active users whose name starts with Holly. In the list of users that appears, select **Holly Dickson**.
 
 30. Under the **Time range** section, select the slider bar below **1 day** (don't select the **1 day** heading; you must select on the slider bar itself). Note how the slider circle moved under **1 day**.
 
