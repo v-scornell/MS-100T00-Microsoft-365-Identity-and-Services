@@ -19,7 +19,7 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 
 4. This opens the **Microsoft Download Center** for **Microsoft Power BI**. Scroll down to the **Microsoft Power BI Desktop** section and select **Download.**
 
-5. In the **Choose the download you want** window, select **PBIDesktopSetup_x64.exe** then select **Next** on the bottom of the screen. The status of the download will display on the notification bar at the bottom of the screen.
+5. In the **Choose the download you want** window, select **PBIDesktopSetup_x64.exe** then select **Next** on the bottom of the screen. The status of the download will display on the notification bar at the top of the screen.
 
 6. On the notification bar at the bottom of the screen, select **Open file** once the download of **PBIDesktopSetup_x64.exe** is complete.
 
@@ -274,7 +274,7 @@ Dashboards can only be created in Power BI Online because they are a feature of 
 
 15. On the main screen, under the **All** tab, hover your mouse over the name of the dashboard you created. This will display several icons to the right of the dashboard name, one of which is a **star** icon. You can mark this dashboard as one of your favorites by selecting this icon. Select the **star** icon. 
 
-		Notice that when you select the star, it changes to a solid star rather than the outlined star that it originally appeared as. Select the **star** icon  again so that is no longer a Favorite; notice how it returns to its original unfilled state.   
+	Notice that when you select the star, it changes to a solid star rather than the outlined star that it originally appeared as. Select the **star** icon  again so that is no longer a Favorite; notice how it returns to its original unfilled state.   
 ‎  
 ‎Select the star icon again to make it one of your favorites.
 
@@ -376,9 +376,9 @@ Now that Holly has created a report and dashboard and shared it with another Ada
 ‎  
 ‎After you saved the workspace in the prior step, it took you to the workspaces page for the workspace that you just created (the **Welcome to the Test Workspace** page). You can return back to the **Admin portal** by selecting the back arrow (to the left of the address bar) twice, or by selecting the **gear (Settings)** icon and then selecting **Admin portal**. 
 
-12. Select **Workspaces i**n the **Admin portal’s** navigation pane. **Test Workspace** should appear in the list of Workspaces. Select the **Test Workspace** name, which displays a check mark to the left of the name. In the menu bar that appears above the list, select **Details**. Review the information in the **Details pane** and then close it. 
+12. Select **Workspaces** in the **Admin portal’s** navigation pane. **Test Workspace** should appear in the list of Workspaces. Select the **Test Workspace** name, which displays a check mark to the left of the name. In the menu bar that appears above the list, select **Details**. Review the information in the **Details pane** and then close it. 
 
-13. With the **Test Workspace** still selected, select **Edit** on the menu bar. In the **Edit workspace pane**, note how you can change the workspace name and description even though you could not add a workspace using the **Power BI Admin portal**. Close the **Edit workspace pane**.
+13. With the **Test Workspace** still selected, select **Edit** on the menu bar. In the **Edit workspace pane**, note how you can change the workspace name and description even though you could not add a workspace using the **Power BI Admin portal**. Close the **Edit workspace** pane.
 
 14. With the **Test Workspace** still selected, select **Access** on the menu bar. In the **Access pane**, note how you can add members to this workspace (you can do this through the **Workspaces** option in the **Power BI Service** as well). In the Enter email addresses field, enter **Patti**. In the list of users whose first name starts with Patti, select **Patti Fernandez** and then select **Add**. As you can see in the bottom portion of the pane, Patti now has **Member** permissions to this workspace. Close the **Access pane**. 
 
