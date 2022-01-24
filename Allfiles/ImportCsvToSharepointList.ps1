@@ -48,7 +48,7 @@ Add-PnPField -List "Service Desk Requests" -DisplayName "Location" -InternalName
 
 Add-PnPField -List "Service Desk Requests" -DisplayName "Issue Title" -InternalName "IssueTitle" -Type Text -AddToDefaultView
 
-Add-PnPField -List "Service Desk Requests" -DisplayName "Issue Status" -InternalName "Issue Status" -Type Text -AddToDefaultView
+Add-PnPField -List "Service Desk Requests" -DisplayName "Issue Status" -InternalName "IssueStatus" -Type Text -AddToDefaultView
 
 
 # While the next two commands can technically be run together, they each display a large amount of text, so it's better off running them separately so that 
