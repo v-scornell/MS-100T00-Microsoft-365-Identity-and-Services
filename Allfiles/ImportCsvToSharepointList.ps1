@@ -18,7 +18,7 @@ Install-Module SharePointPnPPowerShellOnline
 # You can select lines 20-21 and run both together at one time.
 
 $Credential= Get-Credential -Message "Please enter the IT Consultant's MOD Administrator credentials."
-$ServiceRequestSystem= Import-Csv "C:\Users\DomainAdmin\Documents\Service Request System.csv"
+$ServiceRequestSystem= Import-Csv "C:\Users\Administrator.Adatum\Documents\Service Request System.csv"
 
 
 # You will be prompted twice for the IT Consultant's MOD Administrator credentials. Please enter it each time.
@@ -48,7 +48,7 @@ Add-PnPField -List "Service Desk Requests" -DisplayName "Location" -InternalName
 
 Add-PnPField -List "Service Desk Requests" -DisplayName "Issue Title" -InternalName "IssueTitle" -Type Text -AddToDefaultView
 
-Add-PnPField -List "Service Desk Requests" -DisplayName "Issue Status" -InternalName "Issue Status" -Type Text -AddToDefaultView
+Add-PnPField -List "Service Desk Requests" -DisplayName "Issue Status" -InternalName "IssueStatus" -Type Text -AddToDefaultView
 
 
 # While the next two commands can technically be run together, they each display a large amount of text, so it's better off running them separately so that 
@@ -72,10 +72,11 @@ $ServiceRequestSystem
 
 foreach($Record in $ServiceRequestSystem){
 Add-PnPListItem -List "Service Desk Requests" -Values @{
+"Title"= $Record.'Issue Status'  This may not be needed. I need to test it further
 "IssueTitle"= $Record.'IssueTitle';
 "Date"= $Record.'Date';
 "Location"= $Record. 'Location';
-"Title"= $Record.'Issue Status';
+"IssueStatus"= $Record.'Issue Status';
 "Description"= $Record.'Description'}}
 
 # Complete
