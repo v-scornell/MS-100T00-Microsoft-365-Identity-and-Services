@@ -54,6 +54,9 @@ A team site includes a group of related web pages, a default document library fo
 	
 14. In the menu bar at the top of the page, select **Delete**. 
 
+    **Tip:** If the **Delete** link is not visible, select the **. . .** (More) link in the menu bar, and then select **Delete**.
+
+
 15. In the **Delete Microsoft 365 group** pop-up window that appears, select the **Delete the group “IT Services” and all its resources** check box and then select **Delete.** Note that the IT Services site disappears from the **Active sites** list. 
 
 16. In the left-hand navigation pane on the **SharePoint admin site**, under **Sites**, select **Deleted sites.** Note how the IT Services site that you just deleted appears in the list of deleted sites (it may take a minute or so to appear in the list). 
@@ -89,7 +92,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 3. In the **IT Services** window that appears, select the URL (**.../sites/ITServices**) that is displayed under **URL.** 
 
-4. A new tab will open in your Edge browser that displays the **IT Services** site. In the upper right-hand corner of the **IT Services** site (to the left of Holly Dickson's name and initials), select the **gear (Settings)** icon.
+4. A new tab will open in your Edge browser that displays the **IT Services** site. In the upper right-hand corner of the **IT Services** site (to the left of Holly Dickson's name and initials), select the **gear (Settings)** icon. If the **Start designing your site** dialog box appears, select **Maybe later**.
 
 5. In the **Settings** pane that appears, select **Site permissions.**
 
@@ -181,7 +184,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 	- Name: **Designer**
 	
-	- About Me: **This level restricts the level of use for web designers**
+	- Description: **This level restricts the level of use for web designers**
 
 	- List Permissions – select the following permission levels:
 

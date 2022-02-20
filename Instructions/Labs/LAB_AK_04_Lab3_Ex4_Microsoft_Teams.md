@@ -185,7 +185,7 @@ Now that you have created the resource account for your calling queue, you will 
 
 		- **Choose which call agents to associate with this call queue:** Select the **Choose users and groups** option, then select **Add users**. In the **Add users** pane that appears on the right-side of the screen, in the **Search by display name or username** field, enter **Allan**. As you type **Allan**, a window appears listing users whose name starts with **Allan**. As you hover your mouse over **Allan Deyoung**, an **Add** button appears to the right of it. Select the **Add** button.
 		
-			**Important:** Note the red error message that appears across the top of the page. The error message indicates that Allan cannot be associated with this call queue because he is not enterprise-voice enabled. Select anywhere in the red error message to close the **Add users** pane, and then select the **X** on the right-side of this error message to close it.
+			**Important:** Note the red error message that appears across the top of the page. The error message indicates that Allan cannot be associated with this call queue because he is not enterprise-voice enabled. Select anywhere in the red error message to close the **Add users** pane, and then select the **X** on the right-side of this error message to close it. Select the **Cancel** button.
 			
 		- **Choose which groups to associate with this call queue:** Select the **Add groups** button. In the **Add call agents** pane on the right-side of the screen, in the **Search by distribution list or group name** field, enter **Inside.** As you type Inside, a window appears listing the groups whose name starts with Inside. As you hover your mouse over **Inside Sales**, an **Add** button appears to the right of it. Select the **Add** button.
 		
@@ -255,19 +255,11 @@ As part of her Microsoft Teams pilot project, Holly Dickson wants to block commu
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **External access.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, select **Users** in the left-hand navigation pane and then select **External access.**
 
 3. In the **External access** window, leave the settings involving Skype users set to **On**. If necessary, set the **Choose which external domains your users have access to** drop-down field to **Block only specific external domains**. 
 
-4. To add the domain in which you want to allow communication, select **Block domains** in the menu bar that appears above the list.  
-
-5. In the **Add a domain** window, enter the following information:
-
-	- Domain: **microsoft.com**
-
-	- Action to take on this domain: **Allowed**
-
-6. Select **Done.** 
+4. To add the domain in which you want to block communication, select **Block domains** in the menu bar that appears above the list.  
 
 7. To add the blocked domain, in the **External access** window, select **Add a domain.**
 
@@ -279,9 +271,9 @@ As part of her Microsoft Teams pilot project, Holly Dickson wants to block commu
 
 9. Select **Done.**
 
-10. In the **External access** window, validate that **microsoft.com** and **spam.com** are represented in the list of domains and that each has the appropriate Status.
+10. In the **External access** window, validate that **spam.com** are represented in the list of domains and thas the appropriate Status.
 
-11. Select **Save.**
+11. Select **Save.*
 
 12. Leave all tabs open in your browser and proceed to the next task. 
 

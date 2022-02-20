@@ -115,9 +115,7 @@ group.
     **Recipients** group, select **Groups**.
 
     **Note:** You should already see the **Inside Sales** group you created in
-    Lab 2. This is a Microsoft 365 group whose email address is associated with
-    the custom, on-premises domain (@xxxUPNxxx.xxxCustomDomainxxx.xxx). In the
-    following steps, you will create a distribution list group and a Microsoft
+        Lab 2. In the following steps, you will create a distribution list group and a Microsoft
     365 group whose email addresses will be in Microsoft 365
     (@xxxxxZZZZZZ.onmicrosoft.com).
 
@@ -194,7 +192,7 @@ group.
     Diego as members of this group. Select the back arrow in the top-left corner
     of the window to return you to the **Sales Department** window.
 
-14. In the **Sales Departmen**t window, the owners and members that you added
+14. In the **Sales Department** window, the owners and members that you added
     should be displayed. Select the **Settings** tab. This tab enables you to
     make advanced settings changes, which you will not do in this lab. However,
     review the settings that can be updated here for future reference. Once you
@@ -674,13 +672,12 @@ enable you to customize organization management objects.
     anti-malware policy. Select **Submit** to resubmit your anti-malware policy.
     This time the policy should be successfully saved.
 
-30.  On the **Created new anti-malware policy** page, it indicates the new policy
-    has been created and will go into effect immediately. Select **Done.** <br/>
+30. On the **Created new anti-malware policy** page, it indicates the new policy
+    has been created and will go into effect immediately. Select **Done.** 
 
-   		**Note**: If a dialog box appears with a message that
-
-    indicates your organization settings need to be updated, select **Yes** to
-    continue. It may take a minute for your organization settings to be updated.*
+   	**Note**: If a dialog box appears with a message that
+	indicates your organization settings need to be updated, select **Yes** to
+	continue. It may take a minute for your organization settings to be updated.
 
 31. Leave your browser open for the next task.
 
