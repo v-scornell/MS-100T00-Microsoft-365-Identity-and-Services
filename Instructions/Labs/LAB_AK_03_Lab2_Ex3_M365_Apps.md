@@ -174,9 +174,9 @@ In the prior task, you logged into Laura Atkins’ client PC, and you verified t
 		
 3. In the **Just a few more steps** window that appears, select **Close**.
 
-4. In the notification bar that appears at the bottom of the page, select **Save** to download the 64-bit Microsoft 365 Apps for enterprise installation wizard to the client PC.
+4. In the notification bar that appears at the top of the page, select **Save** to download the 64-bit Microsoft 365 Apps for enterprise installation wizard to the client PC.
 
-5. Once the Microsoft 365 Apps for enterprise installation file has finished downloading, select **Run** in the notification bar that appears at the bottom of the page.
+5. Once the Microsoft 365 Apps for enterprise installation file has finished downloading, select **Run** in the notification bar that appears at the top of the page.
 
 6. If a **Do you want to allow this app to make changes to your device?** dialog box appears, enter **adatum\administrator** in the **username** box, type **Pa55w.rd** in the **Password** box, and then select **Yes**. 
 

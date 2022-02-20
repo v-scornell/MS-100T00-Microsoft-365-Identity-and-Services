@@ -12,7 +12,7 @@ As Holly Dickson, Adatum’s Enterprise Administrator and Microsoft 365 Global A
 
 3. In the **Active users** list, select **Diego Siciliani**. 
 
-	**Note:** Select Diego’s name; do not select the circle to the left of his name. The circle with the check mark is typically used for selecting multiple users when you want to perform one of the user-related actions on the menu bar that appears above the list of users, such as **Manage product licenses** and **Manage roles**. Selecting a user’s name opens a detail pane specifically for that user.
+	**Note:** Select Diego’s name; do not select the checkbox to the left of his name. The box with the check mark is typically used for selecting multiple users when you want to perform one of the user-related actions on the menu bar that appears above the list of users, such as **Manage product licenses** and **Manage roles**. Selecting a user’s name opens a detail pane specifically for that user.
 
 4. In the **Diego Siciliani** pane that appears, the **Account** tab is displayed by default. In this tab, scroll down to the **Roles** section and select **Manage roles**. 
 
@@ -191,6 +191,8 @@ In this task, you will begin by examining the administrative properties of two u
 
 	The **Pick an account** window should appear, and it should display an error message indicating **Your account has been locked. Contact your support person to unlock it, then try again.** You have just verified that Alex (or someone who has obtained Alex's username and password) cannot log in.
 
+	**Note:** It can take a few minutes for the account block to fully implement. Until that time Alex may be able to log on, but none of the Microsoft 365 services are available to the user, and will not appear in the portal. Once the account is unblocked, the services will become available again.
+	
 39. Switch back to LON-DC1, where you should still be logged into **Microsoft 365** as Holly Dickson. The **Active users** list should be displayed in the **Microsoft 365 admin center** from earlier in this task. 
 
 40. Upon further investigation, Adatum's CTO has determined that Alex Wilber's account has, in fact, not been compromised; therefore, the CTO has asked Holly to remove the block on Alex's sign in. Repeat steps 30 through 33 to unblock his account. Note how the **Block sign-in** window from step 32 now displays the **Unblock sign-in** window instead.  <br/>
