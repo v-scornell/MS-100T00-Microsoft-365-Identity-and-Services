@@ -271,7 +271,7 @@ As part of her Microsoft Teams pilot project, Holly Dickson wants to block commu
 
 9. Select **Done.**
 
-10. In the **External access** window, validate that **spam.com** are represented in the list of domains and thas the appropriate Status.
+10. In the **External access** window, validate that **spam.com** is represented in the list of domains and has the appropriate Status.
 
 11. Select **Save.*
 
