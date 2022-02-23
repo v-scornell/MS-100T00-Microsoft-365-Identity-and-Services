@@ -79,7 +79,7 @@ In your role as Holly Dickson, you will begin the process of creating a canvas a
 ‎  
 ‎Select **File** from the top menu bar of the PowerApps screen, and then select **Save** from the navigation pane that appears on the left side of the screen. Since the app has yet to be saved, a **Save as** screen appears. You want to accept the default setting on this screen that will save it to Power Apps in the cloud, and you want to keep the name that you previously assigned; therefore, simply select the **Save** button. 
 
-20. In the **&lt;app name&gt;** window, it should display a message indicating that all changes were saved. Since you have not finished creating all the necessary screens for your app, you do **NOT** want to publish it at this point in time. **Do NOT** select the **Publish** button. Instead, at the top of the navigation pane, select the back arrow to return to the Power Apps studio.
+20. In the **<app name>** window, it should display a message indicating that all changes were saved. Since you have not finished creating all the necessary screens for your app, you do **NOT** want to publish it at this point in time. **Do NOT** select the **Publish** button. Instead, at the top of the navigation pane, select the back arrow to return to the Power Apps studio.
 
 21. You have now finished creating the browse screen for your new app. Leave the Power Apps tabs open in your browser and proceed to the next task to create the Detail screen.
 
