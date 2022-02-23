@@ -392,7 +392,7 @@ Now that Holly has created a report and dashboard and shared it with another Ada
 
 18. In the **Published!** dialog box, select **OK**. 
 
-19. Select the **Refesh** icon that appears on the address bar and note the color scheme change when the **Power BI Service** page refreshes itself. You can repeat this process until you find a color combination that you prefer.
+19. Select the **Refresh** icon that appears on the address bar and note the color scheme change when the **Power BI Service** page refreshes itself. You can repeat this process until you find a color combination that you prefer.
 
 20. Select any of the other options in the **Admin portal’s** navigation pane that are of interest to you. 
 
