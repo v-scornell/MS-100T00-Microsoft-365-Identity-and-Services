@@ -120,7 +120,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 	‎**Best Practice:** It’s a best practice that you should use Groups to assign access permissions rather than assigning access to individual user accounts for two important reasons: Assigning individual users access to a site makes it difficult to track user access when the user leaves your organization, and direct permissions can override security groups permissions.
 
-14. In the **People and Groups &gt; Create Group** window, enter the following information:   
+14. In the **People and Groups > Create Group** window, enter the following information:   
 
 	- Name: **Information Technology**
 
