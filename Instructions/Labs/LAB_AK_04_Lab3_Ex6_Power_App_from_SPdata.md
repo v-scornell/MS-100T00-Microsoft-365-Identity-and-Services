@@ -63,7 +63,7 @@ You can create a Power App through either the Power App portal or through ShareP
 
 12. You now want to test how to add a record to the list. To create a new item, select the **plus (+)** sign that appears at the top right corner of the **Service Desk Requests** app. This opens a data entry form that contains fields mapping to each of the columns in the Service Desk Requests list. 
 
-13. In the Service Desk Requests data entry form that apears, enter the following information:
+13. In the Service Desk Requests data entry form that appears, enter the following information:
 
 	- Title – **Power App test** (this field only appears if you used PowerShell to create the Service Desk Requests list; it does not appear if you created the list using Excel).
 	
