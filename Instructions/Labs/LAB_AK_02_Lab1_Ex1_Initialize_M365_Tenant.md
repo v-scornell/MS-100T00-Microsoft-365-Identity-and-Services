@@ -162,7 +162,7 @@ By the time you get to the Module 4 labs, External Access should be ready so tha
 
 6. On the **External access** page, confirm that the toggle switches for both external access options are in the **On** position. If either are set to **Off**, then set them to **On** now.
 
-7. If you made any chagngs, on the **External access** page, select **Save**..
+7. If you made any changes, on the **External access** page, select **Save**.
 
 8. In your Microsoft Edge browser, close the **External access - Microsoft Teams** tab. This should return you to the **Microsoft 365 admin center** tab, which you should leave open as you proceed to the next exercise.
 
