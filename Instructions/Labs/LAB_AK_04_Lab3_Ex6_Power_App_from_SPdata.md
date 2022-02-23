@@ -97,7 +97,7 @@ You can create a Power App through either the Power App portal or through ShareP
 
 19. Now that you have added a record into the Service Desk Ticketing system using the Power App, you want to test how the app works in editing an existing record.   
 ‎  
-‎Select the **right arrow (&gt;)** for any item. This displays the **Details** screen for that item. On this screen, you can either edit the record by selecting the **pencil icon** at the top of the form, or you can delete the record by selecting the **trash can icon**.  
+‎Select the **right arrow (>)** for any item. This displays the **Details** screen for that item. On this screen, you can either edit the record by selecting the **pencil icon** at the top of the form, or you can delete the record by selecting the **trash can icon**.  
 ‎  
 ‎For this record, select the **pencil icon** to edit it. Change any of the fields (**Hint:** to easily identify your change in the Service Desk Requests list, change the **Issue Title** value to **Edit Test** or some other easily identifiable text. When you are done, select the **check mark** icon to save your change. 
 
@@ -113,7 +113,7 @@ You can create a Power App through either the Power App portal or through ShareP
 
 24. Now that you have added and changed records in the Service Desk Ticketing system using the Power App, you want to test how the app works in deleting an existing record.   
 ‎  
-‎Scroll down through the list and select the **right arrow (&gt;)** for the record that you added at the start of this task. This displays the **Details** screen for that item. 
+‎Scroll down through the list and select the **right arrow (>)** for the record that you added at the start of this task. This displays the **Details** screen for that item. 
 
 25. To delete this record, select the **trash can** icon.
 
