@@ -148,7 +148,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 27. In the **Members** window that appears, select **+ Add members**. This displays the list of active Microsoft 365 users.
 
-28. In the list of users, select the check boxes for **Isaiah Langer**, **Megan Brown** and **Nestor Wilke**, and then at the bottom of the window select **Add (3)**. 
+28. In the list of users, select the check boxes for **Isaiah Langer**, **Megan Bowen**, and **Nestor Wilke**, and then at the bottom of the window select **Add (3)**. 
 
 29. Verify that the members list has the three users and select the **X** to close the members pane. This displays the list of users for this group. Select **Close** again. 
 
