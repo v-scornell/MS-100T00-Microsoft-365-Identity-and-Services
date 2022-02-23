@@ -20,7 +20,7 @@ Holly Spencer is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 4. You are now ready to create a user account for Holly Dickson. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users. 
 
-10. In the **Set up the basics** window, enter the following information:
+5. In the **Set up the basics** window, enter the following information:
 
 	- First name: **Holly**
 
@@ -42,33 +42,33 @@ Holly Spencer is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
 
-11. Select **Next**.
+6. Select **Next**.
 
-12. In the **Assign product licenses** window, enter the following information:
+7. In the **Assign product licenses** window, enter the following information:
 
 	- Select location: **United States**
 
-	- Licenses: Under **Assign user a product license**, select **Enterpise Mobilitiy + Security E5** and **Office 365 E5** 
+	- Licenses: Under **Assign user a product license**, select **Enterpise Mobility + Security E5** and **Office 365 E5** 
 
-13. Select **Next.**
+8. Select **Next.**
 
-14. In the **Optional settings** window, select the drop-down arrow to the right of **Roles.** 
+9. In the **Optional settings** window, select the drop-down arrow to the right of **Roles.** 
 
-15. In the **Roles** section, select **Admin center access**. By doing so, the most commonly used Microsoft 365 administrator roles are enabled below this option. 
+10. In the **Roles** section, select **Admin center access**. By doing so, the most commonly used Microsoft 365 administrator roles are enabled below this option. 
 
 	**Note:** All the admin roles will be displayed if you select **Show all by category**. For Holly, you do not need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
 
-16. Select **Global admin** and then select **Next**.
+11. Select **Global admin** and then select **Next**.
 
-17. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
+12. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
-18. On the **Holly Dickson added to active users** page, under the **User details** section, verify Holly's password is **Pa55w.rd** and then select **Close.** 
+13. On the **Holly Dickson added to active users** page, under the **User details** section, verify Holly's password is **Pa55w.rd** and then select **Close.** 
 
 	**Note:** If you accidentally entered a different password, then once you return to the **Active Users** page, you will need to select the **Reset a password** icon (the key icon that appears when you hover over Holly's account) to change her password to the correct value.
 
-19. If a window appears asking whether you want to respond to a survey on your experience, select **Cancel**.
+14. If a window appears asking whether you want to respond to a survey on your experience, select **Cancel**.
 
-20. Remain logged into the domain controller VM with the Microsoft 365 admin center open in your browser for the next task.
+15. Remain logged into the domain controller VM with the Microsoft 365 admin center open in your browser for the next task.
 
 ### Task 2 – Create and Manage Groups  
 
