@@ -50,7 +50,7 @@ As Holly Dickson, Adatum’s Microsoft 365 Enterprise Administrator, you use the
 
 3. On the **Meetings settings** page, under the **Email invitation** section, enter the following information:
 
-	- Logo URL: **https://adatum.com/media/adatumlogo.png** (Hint: copy **https://adatum.com/** so that you can paste it into the next two URLs; this will save you from having to type that portion of the URL each time)
+	- Logo URL: **https://adatum.com/media/adatumlogo.png** (Hint: Copy this link to your device's clipboard, then use your lab hosting provider's tool for pasting in text from your clipboard into this field. Do the same for the next two URLs as well.)
 
 	- Legal URL: **https://adatum.com/legal.html**
 
