@@ -157,19 +157,19 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 
 39. In the **Fields** pane, select the **Title** field (this is the Issue Status in the SharePoint list) and drag it into the **Add data fields here** box for the **Legend** box in the **Visualizations** pane.
 
-40. In the **Fields** pane, select the **Title** field again and drag it into the **Add data fields here** box for the **Value** box in the **Visualizations** pane.
+40. In the **Fields** pane, select the **Title** field again and drag it into the **Add data fields here** box for the **Values** box in the **Visualizations** pane.
 
 41. Since the Title field is referred to as the Issue Status in the SharePoint list, you want to rename it here to reflect this name in the chart.
 
 	- In the **Legend** field, select the **drop-down arrow** next to **Title**, and in the menu, select **Rename for this visual**. Enter **Issue Status** as the new name of the **Legend**.
 
-	- In the **Value** field, select the **drop-down arrow** next to **Count of Title**, and in the menu, select **Rename for this visual**. Enter **Count of Issue Status** as the new name of the **Value**.
+	- In the **Values** field, select the **drop-down arrow** next to **Count of Title**, and in the menu, select **Rename for this visual**. Enter **Count of Issue Status** as the new name of the **Values**.
 
 42. To change formatting of the chart, ensure the chart is selected. If the chart is not already selected, click your mouse inside the area of where the chart had previously appeared; this will display the chart outline. 
 
 43. In the **Visualizations** pane, select the **Format** tab (its icon appears to the right of the Values icon).
 
-44. In the **Format** tab, all the objects that you can format (General, Legend, X axis, Y axis, and so on) appear below the **Search** field. Select the **down-arrow** key next to **Legend.** This displays all the values that can be formatted for the **Legend.**
+44. In the **Format** tab, all the objects that you can format (X axis, Y axis, Legend and so on) appear below the **Search** field in the **Visual** tab. Select the **down-arrow** key next to **Legend.** This displays all the values that can be formatted for the **Legend.**
 
 45. The first Legend object is **Position**. In the **Position** field, select the drop-down arrow and select **Right center**. Note how the legend now appears centered on the right side of the chart.
 
@@ -177,23 +177,23 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 
 47. On the **Data labels** option, the toggle button is currently set to **Off**. Select this toggle button to turn it **On.**
 
-48. Scroll down past the **Data labels** option and locate **Title**, then select its **down-arrow** to display the **Title** options. Within the **Title** object, update the following options:
+48. <change from **Format visual** page by selecting the **General** tab. then select the **down-arrow** to display the **Title** options. Within the **Title** object, update the following options:
 
-	- Enter **Ticket Count by Location and Issue Status** in the **Title text** field. 
+	- Enter **Ticket Count by Location and Issue Status** in the **text** field. 
 
-	- Scroll down to the **Font color** option and select the color of your choice for the Title. 
+	- Scroll down to the **Text color** option and select the color of your choice for the Title. 
 
-	- Scroll down to the **Alignment** option. The **Left**-aligned icon is currently selected. Change this by selecting the **Center**-aligned icon.
+	- Scroll down to the **Horizontal alignment** option. The **Left**-aligned icon is currently selected. Change this by selecting the **Center**-aligned icon.
 
 	- Note the changes to the Title – the Title text, the color, and the alignment.
 
 49. Scroll back up in the list of options until you get back to **Title**. Select the **up-arrow** to collapse the **Title** options. 
 
-50. From the **Title** option, scroll down and locate the **Border** option and then update the following settings:
+50. From the **Title** option, scroll down and open the **Effects** section by clicking the **drop-down-arrow**, click on the **drop-down-arrow** near the **Visual Border** option to update the following settings:
 
 	- The toggle button is currently set to **Off**. Select this toggle button to turn it **On**, which will display a border around the chart.
 
-	- Select the down-arrow next to **Border** to see the available border options. In the **Color** option, change the color of the border to the color of your choice.   <br/>
+	- In the **Color** option, change the color of the border to the color of your choice.   <br/>
 	
 	This completes the stacked chart visualization.  
 
