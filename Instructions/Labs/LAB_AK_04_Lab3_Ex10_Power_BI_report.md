@@ -177,7 +177,7 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 
 47. On the **Data labels** option, the toggle button is currently set to **Off**. Select this toggle button to turn it **On.**
 
-48. <change from **Format visual** page by selecting the **General** tab. then select the **down-arrow** to display the **Title** options. Within the **Title** object, update the following options:
+48. Change from the **Format visual** page by selecting the **General** tab. Then select the **down-arrow** to display the **Title** options. Within the **Title** object, update the following options:
 
 	- Enter **Ticket Count by Location and Issue Status** in the **text** field. 
 
