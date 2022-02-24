@@ -109,7 +109,7 @@ However, Adatum does not have an available Microsoft 365 E5 license that Holly c
 11. In the **Active users** list, scroll down to **Laura Atkins**. The value in the **Licenses** column for Laura currently indicates that she is **Unlicensed**. Select **Laura Atkins'** display name (do not select the check mark to the left of her name like you did for Adele).
 
 
-12. By selecting Laura's display name, the **Laura Atkins** account pane appears. In this pane, the **Account** tab is displayed by default. Select the **Licenses and Apps** tab. In the **Licenses** section, select the **Microsoft 365 E5** check box and then select **Save changes**. You can then close Laura’s account pane. In the **Active users** list, note how the value in the **Licenses** column for Laura now displays **Microsoft 365 E5**.
+12. By selecting Laura's display name, the **Laura Atkins** account pane appears. In this pane, the **Account** tab is displayed by default. Select the **Licenses and Apps** tab. In the **Licenses** section, select the **Office 365 E5** check box and then select **Save changes**. You can then close Laura’s account pane. In the **Active users** list, note how the value in the **Licenses** column for Laura now displays **Office 365 E5**.
 
 13. You should now check whether Laura can download Microsoft 365 Apps for enterprise on to her client PC when the global Office download setting has been turned Off. <br/>
 
