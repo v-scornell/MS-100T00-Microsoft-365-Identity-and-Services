@@ -82,7 +82,7 @@ Therefore, you must use one of Adatum's on-premises user accounts that has been 
 
 Holly is now going to test whether users can be prohibited from downloading Microsoft 365 Apps for enterprise if an admin such as herself turns off the global Office download setting that controls the downloading of mobile and desktop apps for all users. In this test, Holly will once again use Laura Atkins as her test case. However, since you just proved in the prior task that Laura can't install Microsoft 365 Apps for enterprise without a proper license, you must first assign her a license. 
 
-However, Adatum does not have an available Microsoft 365 E5 license that Holly can assign to Laura. In an earlier lab, you unassigned a license from Christie Cline, who took on a reduced role within Adatum and no longer required access to Microsoft 365. You assigned that license to Holly's user account. In this task, Holly was just informed that Adele Vance has left the company. Holly will delete Adele's Microsoft 365 user account, which will free up her licenses so they can be assigned to Laura.
+However, Adatum does not have an available Office 365 E5 license that Holly can assign to Laura. In an earlier lab, you unassigned a license from Christie Cline, who took on a reduced role within Adatum and no longer required access to Microsoft 365. You assigned that license to Holly's user account. In this task, Holly was just informed that Adele Vance has left the company. Holly will delete Adele's Microsoft 365 user account, which will free up her licenses so they can be assigned to Laura.
 	
 1. Switch back to **LON-DC1**. You should still be logged into Microsoft 365 as Holly Dickson, Adatum’s Enterprise Administrator.
 
