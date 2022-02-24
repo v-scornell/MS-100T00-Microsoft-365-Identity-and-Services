@@ -164,7 +164,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 30. You now want to test the effect of deleting a group. In the list of **Active groups,** select the **Microsoft 365** tab, then select the vertical ellipsis icon (**More actions**) that appears to the right of the **Inside Sales** group. In the drop-down menu that appears, select **Delete team**. 
 
-31. In the **Delete Inside Sales?** pane that appears, select the **Delete group** button.
+31. In the **Delete Inside Sales?** pane that appears, select the **Delete team** button.
 
 32. Once the group is deleted, select **Close**. 
 
