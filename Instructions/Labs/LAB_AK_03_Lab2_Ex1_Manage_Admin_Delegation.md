@@ -96,17 +96,17 @@ This task is similar to the prior one in that you will assign administrator righ
 
 ### Task 3 - Verify Delegated Administration  
 
-In this task, you will begin by examining the administrative properties of two users, Debra Berger and Lynne Robbins. You will then log into the Office 365 home page on the Client 1 VM (LON-CL1) as each user to confirm several of the changes that you made when managing their administrative delegation in the prior tasks. Finally, as Lynne Robbins, you will perform several user account maintenance tasks, such as resetting passwords and blocking a user account.
+In this task, you will begin by examining the administrative properties of two users, Joni Sherman and Lynne Robbins. You will then log into the Office 365 home page on the Client 1 VM (LON-CL1) as each user to confirm several of the changes that you made when managing their administrative delegation in the prior tasks. Finally, as Lynne Robbins, you will perform several user account maintenance tasks, such as resetting passwords and blocking a user account.
 
-**Password Note:** When logging into Microsoft 365 as any of the existing user accounts that were created for you in the Microsoft 365 tenant (for example, Debra Berger, Lynne Robbins, and so on), you must use the same Tenant Password that you used in Lab 1 when you signed in using the tenant email account (admin@xxxxxZZZZZZ.onmicrosoft.com) to set up your organization profile. All the existing Microsoft 365 user accounts in your tenant have been assigned this same Tenant Password, which your instructor will provide for you.
+**Password Note:** When logging into Microsoft 365 as any of the existing user accounts that were created for you in the Microsoft 365 tenant (for example, Joni Sherman, Lynne Robbins, and so on), you must use the same Tenant Password that you used in Lab 1 when you signed in using the tenant email account (admin@xxxxxZZZZZZ.onmicrosoft.com) to set up your organization profile. All the existing Microsoft 365 user accounts in your tenant have been assigned this same Tenant Password, which your instructor will provide for you.
 
 1. In LON-DC1, you should still be logged into the Microsoft 365 admin center as Holly Dickson. If not, then do so now.
 
 2. In the **Microsoft 365 admin center**, if you are not displaying the **Active Users**, then navigate to there now.  
 
-3. In the **Active users** list, select **Debra Berger**. 
+3. In the **Active users** list, select **Joni Sherman**. 
 
-4. In **Debra Berger's** properties window, the **Account** tab is displayed by default. Under the **Roles** section, it should indicate that Debra has **No administrator access**. Select the **X** in the upper right corner to close Debra's properties window.
+4. In **Joni Sherman's** properties window, the **Account** tab is displayed by default. Under the **Roles** section, it should indicate that Joni has **No administrator access**. Select the **X** in the upper right corner to close Joni's properties window.
 
 5. In the **Active users** list, select **Lynne Robbins**. 
 
@@ -122,17 +122,17 @@ In this task, you will begin by examining the administrative properties of two u
 
 11. In your **Edge** browser navigate to **https://portal.office.com**. 
 
-12. You will begin by signing into Microsoft 365 as **Debra Berger**. In the **Sign-in** window, enter **DebraB@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter the Tenant Password provided by your instructor.  If you are signed in to another account, sign out and sign back in using **Debra Berger's** credentials .
+12. You will begin by signing into Microsoft 365 as **Joni Sherman**. In the **Sign-in** window, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter the Tenant Password provided by your instructor.  If you are signed in to another account, sign out and sign back in using **Joni Sherman's** credentials .
 
 13. On the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**.
 
 14. If a **Get your work done with Office 365** window appears, select the **X** to close it.
 
-15. In the **Office 365 Home** page, note how the **Admin** option is not available in the column of app icons on the left side of the screen since Debra was never assigned an administrator role. 
+15. In the **Office 365 Home** page, note how the **Admin** option is not available in the column of app icons on the left side of the screen since Joni was never assigned an administrator role. 
 
-16. You will now sign out of Microsoft 365 as Debra. In **Microsoft Edge**, at the top right of the **Office 365 home** page, select the user icon for **Debra Berger** (the circle in the upper right-hand corner with Debra's picture in it), and in the **Debra Berger** window that appears, select **Sign out.**   
+16. You will now sign out of Microsoft 365 as Joni. In **Microsoft Edge**, at the top right of the **Office 365 home** page, select the user icon for **Joni Sherman** (the circle in the upper right-hand corner with Joni's picture in it), and in the **Joni Sherman** window that appears, select **Sign out.**   
 
-17. You will now sign into Microsoft 365 as **Lynne Robbins**. In your current **Edge** browser tab, it should display a message indicating **Debra, you're signed out now**. In this window, it gives you the option of signing back in as Debra, or signing in as a different user. Select **Switch to a different account**, and in the **Email address** field that appears, enter **LynneR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Sign in**. In the **Enter password** window, enter the Tenant Password provided by your instructor.
+17. You will now sign into Microsoft 365 as **Lynne Robbins**. In your current **Edge** browser tab, it should display a message indicating **Joni, you're signed out now**. In this window, it gives you the option of signing back in as Joni, or signing in as a different user. Select **Switch to a different account**, and in the **Email address** field that appears, enter **LynneR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Sign in**. In the **Enter password** window, enter the Tenant Password provided by your instructor.
 
 18. If a **Get your work done with Office 365** window appears, select the **X** to close it.
 
@@ -140,7 +140,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 20. In the **Microsoft 365 admin center**, select **Users** on the left-hand navigation pane and then select **Active users**. 
 
-21. As the **User Administrator**, Lynne has permission to change user passwords. Lynne was recently contacted by **Diego Siciliani** and **Debra Berger**, who each reported that their passwords may have been compromised. Per Adatum's company policy, Lynne must reset their passwords to a temporary value, and then force them to reset their password at their next login.   <br/>
+21. As the **User Administrator**, Lynne has permission to change user passwords. Lynne was recently contacted by **Diego Siciliani** and **Joni Sherman**, who each reported that their passwords may have been compromised. Per Adatum's company policy, Lynne must reset their passwords to a temporary value, and then force them to reset their password at their next login.   <br/>
 
 	‎In the **Active users** list, as you move your mouse from one user account to another, notice the **key (Reset a password)** icon that appears to the right of each user's name. Select the key icon that appears to the right of **Diego Siciliani's** name.
 
@@ -156,20 +156,19 @@ In this task, you will begin by examining the administrative properties of two u
 
 25. If a survey request window appears, select **Cancel**.
 
-26. In the **Active users** list, select the **key (Reset a password)** icon for **Debra Berger**. 
+26. In the **Active users** list, select the **key (Reset a password)** icon for **Joni Sherman**. 
 
-27. In the **Reset password** window for Debra, if the **Automatically create a password** check box displays a check mark, then select this box to clear it. Lynne wants to manually assign Debra a password, so enter **P@$$w0rd** in the **Password** field. 
+27. In the **Reset password** window for Joni, if the **Automatically create a password** check box displays a check mark, then select this box to clear it. Lynne wants to manually assign Joni a password, so enter **P@$$w0rd** in the **Password** field. 
 
+	This is just a temporary password because Lynne wants to force Joni to change it the next time she logs in. Therefore, verify the **Require this user to change their password when they first sign in** check box displays a check mark; if the box is clear, then select it so that it displays a check mark.
+	
+28. Select the **Reset password** button.
 
-	This is just a temporary password because Lynne wants to force Debra to change it the next time she logs in. Therefore, verify the **Require this user to change their password when they first sign in** check box displays a check mark; if the box is clear, then select it so that it displays a check mark.
-
-	If you enter multiple email addresses in this field, they must be separated by a semicolon and a space. Therefore, enter a semicolon and a space following Lynne's email address, enter Allan's email address of **AllanD@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the prefix provided by your lab hosting provider), and then select **Send email and close**.
-
-29. On the **Reset password** window, you should receive a message indicating the password was successfully reset. 
+29. On the **Reset password** window, you should receive a message indicating that you successfully reset the password for Joni. 
 
 30. Management has recently discovered that Alex Wilber's username may have been compromised. As a result, Lynne has been asked to block Alex's account so that no one can sign in with his username until management is able to determine the extent of the issue. In the **Active users** list, select the circle to the left of **Alex Wilber's** name (do NOT select Alex’s name itself). 
 
-	**Note:** Since you are going to run a global command on Alex's account rather than a command associated with his account, you only want Alex's account selected in the list of active users. If any other user account is selected, you must unselect that user account before proceeding. Examine Debra Berger's account, since you just reset her password; uncheck her account if necessary (select the check mark to unselect it). Only Alex's account should be selected. 
+	**Note:** Since you are going to run a global command on Alex's account rather than a command associated with his account, you only want Alex's account selected in the list of active users. If any other user account is selected, you must unselect that user account before proceeding. Examine Joni Sherman's account, since you just reset her password; uncheck her account if necessary (select the check mark to unselect it). Only Alex's account should be selected. 
 
 31. In the menu bar at the top of the page, select the **ellipsis icon (...)** to display a drop-down menu of additional options. In the menu that appears, select **Edit sign-in status**.
 
