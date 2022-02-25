@@ -250,7 +250,7 @@ In this task you will return to your role as Holly Dickson. You have just been i
     If this option displays **Edit in grid view**, it means you are not in grid view, so proceed to the next step.
 
     If this option displays **Exit grid view**, then you are currently in grid view, which you do not want to be in. In this case, select **Exit grid view**.
-11. At the end of the column heading row, select **+Add column**, and then in the drop-down menu that appears, select **Person**.
+11. At the end of the column heading row, select **+Add column**, and then in the drop-down menu that appears, select **Person or Group**.
 12. In the **Create a column** window that appears, enter **Customer** in the **Name** field.
 13. In the **Type** field, verify it's already set to **Person or Group**.
 14. Verify the **Allow selection of Groups** check box is NOT selected. Do NOT select this check box.
