@@ -16,7 +16,7 @@ In your role as Holly Dickson, you want to review the Power Platform admin cente
 
 5. In the **Power Platform admin center**, the **Environments** tab in the left-hand navigation pane is displayed by default. In the list of **Environments**, note how there is only one environment, the **Adatum Corporation (default)** environment. Select the **Adatum Corporation (default)** environment and review the information available for this environment. 
 
-6. In the navigation pane at the top of the screen (**Environments > Contoso (default))**, select **Environments**.
+6. In the navigation pane at the top of the screen (**Environments > Adatum (default))**, select **Environments**.
 
 7. You have decided to create a new environment. On the menu bar at the top of the screen, select **+New** to create a new environment.
 
