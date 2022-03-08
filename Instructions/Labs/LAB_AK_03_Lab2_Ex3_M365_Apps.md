@@ -4,7 +4,7 @@ You have taken on the persona of Holly Dickson, Adatum's Enterprise Administrato
 
 In the first two tasks in this exercise, you will verify the following conditions that affect whether a user can be blocked from downloading the Microsoft 365 Apps for enterprise suite: <br/>
 
-- The user does not have an appropriate Microsoft 365 license (which you will verify in Task 1). 
+- The user does not have an appropriate Office 365 license (which you will verify in Task 1). 
 	
 - An admin turns off the global Office download setting that controls the downloading of mobile and desktop apps for all users (which you will verify in Task 2).
 
