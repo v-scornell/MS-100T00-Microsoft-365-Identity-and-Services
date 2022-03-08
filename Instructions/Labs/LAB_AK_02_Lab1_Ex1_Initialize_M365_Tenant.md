@@ -53,9 +53,9 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have bee
 
 12. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** and then select **Settings**. In the **Settings** group, select **Org settings**. 
 
-13. On the **Org settings** page, the **Services** tab at the top of the page is displayed by default. To the right of the **Services** tab is the **Organization profile** tab; select this tab now. 
+13. On the **Org settings** page, the **Services** tab is displayed by default. Select the **Organization profile** tab.
 
-14. On the **Org settings** page, in the **Organization profile** tab, select **Organization information** from the list of profile data.
+14. In the **Organization profile** tab on the **Org settings** page, select **Organization information** from the list of profile data.
 
 15. In the **Organization information** pane that appears, enter the following information:
 
