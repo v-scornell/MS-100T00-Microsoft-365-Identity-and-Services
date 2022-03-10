@@ -68,13 +68,11 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 23. Close both the **Message Header Analyzer** tab and the **Microsoft Remote Connectivity Analyzer** tab in your Edge browser. 
 
-24. If the **Microsoft 365 admin center** tab is still open in your browser, then select that now; otherwise, select the **Microsoft Office Home** tab in your Edge browser and then select the **Admin** icon. 
+24. If the **Microsoft 365 admin center** tab is still open in your browser, then select that now. If you had closed this tab, then select the **Microsoft Office Home** tab in your Edge browser, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen, and then in the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
 
 25. On the **Microsoft 365 admin center** page, in the left-hand navigation pane, select **Show all** (if necessary). 
 
 26. Scroll down through the left-hand navigation pane, and under **Admin centers,** select **Exchange**. This will open the Exchange admin center in a new tab.
-
-
 
 27. In the **Exchange admin center**, in the left-hand navigation pane, select **Mail flow**, and then select **Message trace**. 
 
