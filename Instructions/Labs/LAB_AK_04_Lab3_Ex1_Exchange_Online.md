@@ -30,8 +30,7 @@ involved in creating and managing mail flow recipients.
     center open from the prior lab. If so, proceed to the next step; otherwise,
     open Microsoft Edge, navigate to **https://portal.office.com/**, log in as
     **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
-    provider) and **Pa55w.rd**, and then in the **Microsoft Office Home** page,
-    select **Admin** to open the Microsoft 365 admin center.
+    provider) and **Pa55w.rd**, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen, and then in the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab.
 
 3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane,
     select **Show all** (if necessary), then scroll down to **Admin centers**
