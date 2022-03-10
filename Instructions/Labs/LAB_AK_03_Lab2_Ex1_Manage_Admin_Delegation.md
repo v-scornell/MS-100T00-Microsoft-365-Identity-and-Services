@@ -128,7 +128,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 14. If a **Get your work done with Office 365** window appears, select the **X** to close it.
 
-15. In the **Office 365 Home** page, note how the **Admin** option is not available in the column of app icons on the left side of the screen since Joni was never assigned an administrator role. 
+15. On the **Microsoft Office Home** tab, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, note how the **Admin** option is not available. This is due to the fact that Joni was never assigned an administrator role. 
 
 16. You will now sign out of Microsoft 365 as Joni. In **Microsoft Edge**, at the top right of the **Office 365 home** page, select the user icon for **Joni Sherman** (the circle in the upper right-hand corner with Joni's picture in it), and in the **Joni Sherman** window that appears, select **Sign out.**   
 
@@ -136,7 +136,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 18. If a **Get your work done with Office 365** window appears, select the **X** to close it.
 
-19. In the **Office 365 home** page, note how the **Admin** icon appears in the column of app icons on the left side of the screen; this is because Lynne was assigned to a Microsoft 365 administrator role. Select the **Admin** icon to open the Microsoft 365 admin center.
+19. On the **Microsoft Office Home** tab, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, note how the **Admin** icon appears; this is because Lynne was assigned to a Microsoft 365 administrator role. Select the **Admin** icon to open the Microsoft 365 admin center.
 
 20. In the **Microsoft 365 admin center**, select **Users** on the left-hand navigation pane and then select **Active users**. 
 
