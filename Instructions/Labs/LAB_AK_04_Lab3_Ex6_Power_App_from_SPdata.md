@@ -11,7 +11,7 @@ Start by familiarizing yourself with the SharePoint list which will serve as the
 
 1. You should still be logged into LON-DC1 as **ADATUM\Administrator** and password **Pa55w.rd**; if not, then do so now.
 
-2. You should still have Microsoft Edge and the **Microsoft 365 admin center** open from the prior lab in which you were logged in as Holly Dickson. If so, proceed to the next step; otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd**, and then in the **Microsoft 365 Home** page, select the **Admin** icon to open the Microsoft 365 admin center.
+2. You should still have Microsoft Edge and the **Microsoft 365 admin center** open from the prior lab in which you were logged in as Holly Dickson. If so, proceed to the next step; otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd**, and then in the **Microsoft 365 Home** page, navigate to the **Microsoft 365 admin center**.
 
 3. In the **Microsoft 365 admin center**, select **Show all** (if necessary), then scroll down to **Admin centers** and select **SharePoint**. This will open the **SharePoint admin center.**
 
@@ -258,7 +258,7 @@ However, the IT Consultant has just informed Holly that there’s another way in
 
 2. You will first verify whether Teams is configured to allow the use of PowerApps.   
 ‎  
-‎In your Edge browser, select the **Microsoft 365 admin center** tab if it’s still open; if not, open the **Office 365 home** page and select the **Admin** icon. If required, log into Microsoft 365 as **holly@xxxxxZZZZZZ.onmicosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and a password of **Pa55w.rd**. 
+‎In your Edge browser, select the **Microsoft 365 admin center** tab if it’s still open; if not, open the **Office 365 home** page and navigate to the **Microsoft 365 admin center**. If required, log into Microsoft 365 as **holly@xxxxxZZZZZZ.onmicosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and a password of **Pa55w.rd**. 
 
 3. In the **Microsoft 365 admin center**, select the **…Show all** option in the navigation pane to display the admin centers, and then select **Teams**.
 
