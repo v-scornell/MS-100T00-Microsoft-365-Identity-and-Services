@@ -4,7 +4,7 @@ Adatum Corporation is a subsidiary of Contoso Electronics. Adatum runs its legac
 
 As Adatum's Enterprise administrator, you have been tasked with deploying Microsoft 365 in Adatum’s hybrid deployment using a virtualized lab environment. In this exercise, you will set up Adatum's Microsoft 365 trial tenant, and your instructor will guide you on how to obtain your Microsoft 365 credentials in your lab-hosted environment. You will use these credentials throughout the remaining labs in this course. 
 
-In your lab environment, your lab hosting provider has already obtained a free Microsoft 365 trial tenant for you. Your lab provider has also created two admin accounts that you will use: 
+In your lab environment, your lab hosting provider has already obtained a Microsoft 365 trial tenant for you. Your lab provider has also created two admin accounts that you will use: 
 
 - A local administrator account for Adatum's on-premises environment (Adatum\Administrator).
 - A default tenant admin account in Microsoft 365 (the display name for this user account is MOD Administrator). 
@@ -66,7 +66,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 16. In the **Organization information** pane that appears, enter the following information:
 
-    - Name: **Adatum Corporation** (Note: Contoso is originally displayed as the organization name; this was explained in the Introduction section at the start of this lab. In this step you will change it to Adatum Corporation.)
+    - Name: **Adatum Corporation** (Note: Adatum Corporation is a subsidiary of Contoso Electronics. The Microsoft trial tenant that your lab hosting provider obtained for this lab may have been originally assigned to Contoso. If **Contoso** (or any other value) appears as the organization name, then change it to **Adatum Corporation**.)
 
     - Street Address: **555 Main Street**
 
@@ -96,14 +96,16 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 21. In the **Release preferences** pane, below the list of release options, select the **Select users** option.
 
-22. In the **Choose users for targeted release** pane that appears, select inside the **Who should receive targeted releases?** field. This displays the list of active users (these are the ten Microsoft 365 user accounts created for your tenant by your lab hosting provider). In this list, select each of the following users (Note: You must select each user, one at a time. After selecting a user, you must select inside the field again to re-display the list so that you can select the next user): 
+22. In the **Choose users for targeted release** pane that appears, select inside the **Who should receive targeted releases?** field. This displays the list of active users (these are the Microsoft 365 user accounts created for your tenant by your lab hosting provider). In this list, select each of the following users.
+
+    **Note:** You must select each user, one at a time. After selecting a user, you must select inside the field again to re-display the list so that you can select the next user. 
 
 	- **Alex Wilber**
 	- **Joni Sherman**
 	- **Lynne Robbins**
 	- **MOD Administrator** <br/>
 
-    **Note:** Alex, Joni, and Lynne are administrators who are part of Holly's pilot team. Their accounts will be used throughout the labs for this course.
+    **Note:** Alex, Joni, and Lynne are part of Holly's Microsoft 365 pilot team. Their accounts will be used throughout the labs for this course.
     
 23. Select **Save**.
 
@@ -111,7 +113,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 25. In the list of organization profile data, select **Custom themes**.
 
-26. In the **Customize theme** pane, you can customize the default theme users see when signed into Microsoft 365, and you can add additional, custom themes. Select the **+Add theme** option.
+26. In the **Customize Microsoft 365 for your organization** pane, you can customize the default theme users see when signed into Microsoft 365, and you can add additional, custom themes. Select the **+Add theme** option.
 
 27. In the **Default theme** pane, the **General** tab is displayed by default. Select the **Show the user's display name** check box. 
  
@@ -119,7 +121,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 	**Tip:** Some color patterns aesthetically distract users. If you do change any of the colors, it's recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
 
-29. Select **Save** when you are done and then close the **Custom themes** pane.
+29. Select **Save** when you are done and then close the **Custom themes** pane once your changes are saved.
 
 
 
