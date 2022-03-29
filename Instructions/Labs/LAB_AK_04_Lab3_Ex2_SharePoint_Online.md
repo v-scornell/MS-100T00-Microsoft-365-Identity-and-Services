@@ -18,11 +18,13 @@ A team site includes a group of related web pages, a default document library fo
 
 6.  Depending on the team or company need, there are several templates that can be used when creating a new site. For the purposes of this lab, in the **Create a site** window, select the **Team site** tile.
 
-7. In the **Get a team site connected to Microsoft 365 Groups** window, enter the following information.
+7. In the **Create a team site** window, enter the following information.
 
 	- Site name: **IT Services**
 
-	- Group email address: this is the alias for the group email address. As you typed in **IT Services** in the **Site name** field, the same text automatically prefilled in this field, although the blank space was removed so that it appears as one word. Do not change this default value.
+	- Group email address: this is the alias for the group email address. As you typed in **IT Services** in the **Site name** field, the same text automatically prefilled in this field, although the blank space was removed so that it appears as one word (ITServices). Do not change this default value.
+
+	- Site address: As you typed in **IT Services** in the **Site name** field, the same text automatically prefilled in this field, although the blank space was removed so that it appears as one word (ITServices). Do not change this default value.
 
 	- Group owner: type **Diego**, and in the window that appears displaying the users whose first name starts with Diego, select **Diego Siciliani**.
 
@@ -38,40 +40,37 @@ A team site includes a group of related web pages, a default document library fo
 
 8. Select **Next**.
 
-9. In the **Add group members** window, in the **Add additional owners** field, enter **Holly**. As you enter Holly, a window appears listing users whose first name starts with Holly. Select **Holly Dickson**.
+9. In the **Add site owners and members** window, in the **Add members** field, enter **Patti**. As you enter Patti, a window appears listing users whose first name starts with Patti. Select **Patti Fernandez**. 
 
-10. You now want to add **Patti Fernandez** and **Nestor Wilke** as members of this group. 
+10. Repeat the previous step for **Nestor Wilke** and then **Holly Dickson**.
 
-	In the **Add members** field, enter **Patti**. As you enter Patti, a window appears listing users whose first name starts with Patti. Select **Patti Fernandez**. 
+11. You now want to make Holly an owner of the group, along with Diego. The **Add site owners and members** window currently displays Holly, Nestor, and Patti as members of the group. Below **Holly Dickson**, select the **Member** drop-down arrow. In the drop-down menu that appears, select **Owner**. This changes Holly from a group member to a group owner.
 
-11. Repeat the previous step for **Nestor Wilke**.
+12. Select **Finish**.
+ 
+13. The **IT Services** site should now appear in the list of **Active sites** (it may take a minute or so to appear in the list). Scroll the horizontal scroll bar to the right to view all the information for the IT Services site and all the other sites in the list. When you've finished, scroll the horizontal scroll bar all the way back to the left.
 
-12. Select **Finish**. The **IT Services** site should now appear in the list of **Active sites**. Scroll the horizontal scroll bar to the right to view all the information for the IT Services site and all the other sites in the list. 
-
-13. You’re now going to test the process of deleting a team site and then restoring it. In the list of **Active sites**, hover your mouse to the left of the **IT Services** site name, which should display a circle. Select this circle (do not select the IT Services site name, as this will open a properties window for the site). 
+14. You’re now going to test the process of deleting a team site and then restoring it. In the list of **Active sites**, hover your mouse to the left of the **IT Services** site name, which should display a circle. Select this circle (do not select the IT Services site name, as this will open a properties window for the site). 
 
 	**Tip:** Selecting the circle to the left of an item in a display view enables you to perform any of the tasks on the menu bar for the selected item. Some tasks require you to select multiple items, in which case the task you perform in the menu bar will be performed on all the selected items. 
 	
-14. In the menu bar at the top of the page, select **Delete**. 
+15. In the menu bar at the top of the page, select **Delete**. 
 
-    **Tip:** If the **Delete** link is not visible, select the **. . .** (More) link in the menu bar, and then select **Delete**.
+16. In the **Delete Microsoft 365 Group** pop-up window that appears, select the **Delete the group “IT Services” and all its resources** check box and then select **Delete.** Note that the IT Services site disappears from the **Active sites** list. 
 
+17. In the left-hand navigation pane on the **SharePoint admin site**, under the **Sites** group, select **Deleted sites.** Note how the IT Services site that you just deleted appears in the list of deleted sites (it may take a minute or so to appear in the list). 
 
-15. In the **Delete Microsoft 365 group** pop-up window that appears, select the **Delete the group “IT Services” and all its resources** check box and then select **Delete.** Note that the IT Services site disappears from the **Active sites** list. 
+18. In the **Deleted sites** window, select the circle to the left of the **IT Services** site name (do not select the IT Services site name).
 
-16. In the left-hand navigation pane on the **SharePoint admin site**, under **Sites**, select **Deleted sites.** Note how the IT Services site that you just deleted appears in the list of deleted sites (it may take a minute or so to appear in the list). 
+19. In the menu bar at the top of the page, select **Restore**.
 
-17. In the **Deleted sites** window, select the circle to the left of the **IT Services** site name (do not select the IT Services site name).
+20. In the **Restore Microsoft 365 Group** pop-up window that appears, select **Restore**. Note that the IT Services site disappears from the **Deleted sites** list. 
 
-18. In the menu bar at the top of the page, select **Restore**.
+21. In the left-hand navigation pane on the **SharePoint admin site**, under the **Sites** group, select **Active sites.** The IT Services site should once again appear in the **Active sites** list. 
 
-19. In the **Restore Microsoft 365 group** pop-up window that appears, select **Restore**.  Note that the IT Services site disappears from the **Deleted sites** list. 
+22. In the **Active sites** list, select the circle to the left of the **IT Services** site name to highlight this site. Scroll the horizontal scroll bar to the right to verify that all the information for the IT Services site has been restored. 
 
-20. In the left-hand navigation pane on the **SharePoint admin site**, under **Sites**, select **Active sites.** The IT Services site should once again appear in the **Active sites** list. 
-
-21. In the **Active sites** list, select the circle to the left of the **IT Services** site name to highlight this site. Scroll the horizontal scroll bar to the right to verify that all the information for the IT Services site has been restored. 
-
-22. Remain in the SharePoint admin center for the next task.
+23. Remain in the SharePoint admin center for the next task.
 
  
 ### Task 2 – Hierarchical Permissions
@@ -88,9 +87,9 @@ In this task, you will create the following hierarchical permission structure fo
 
 1. In the **SharePoint admin center**, you should still be displaying **Active sites**.
 
-2. Select the **IT Services** site that you created in the prior task (do not select the circle to the left of it as you did in the prior task; instead, select the site name like you normally would).
+2. Select the **IT Services** site that you created in the prior task (do not select the circle to the left of it as you did in the prior task; instead, select the **IT Services** site name, which is hyperlinked.
 
-3. In the **IT Services** window that appears, select the URL (**.../sites/ITServices**) that is displayed under **URL.** 
+3. In the **IT Services** pane that appears, select the URL (**.../sites/ITServices**) that is displayed under **URL**. 
 
 4. A new tab will open in your Edge browser that displays the **IT Services** site. In the upper right-hand corner of the **IT Services** site (to the left of Holly Dickson's name and initials), select the **gear (Settings)** icon. If the **Start designing your site** dialog box appears, select **Maybe later**.
 
