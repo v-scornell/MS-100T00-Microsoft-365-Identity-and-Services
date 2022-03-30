@@ -8,27 +8,31 @@ As Holly Dickson, Adatum’s Enterprise Administrator and Microsoft 365 Global A
 
 1. If you’re not logged into LON-DC1 as **ADATUM\Administrator** and password **Pa55w.rd**, then please do so now.
 
-2. In the **Microsoft 365 admin center** in your Edge browser, you should still be logged in as Holly Dickson. In the left-hand navigation pane, select **Users** and then select **Active Users**. 
+2. In the **Microsoft 365 admin center** in your Edge browser, you should still be logged in as Holly Dickson. In the navigation pane, select **Users** and then select **Active Users**. 
 
 3. In the **Active users** list, select **Diego Siciliani**. 
 
-	**Note:** Select Diego’s name; do not select the checkbox to the left of his name. The box with the check mark is typically used for selecting multiple users when you want to perform one of the user-related actions on the menu bar that appears above the list of users, such as **Manage product licenses** and **Manage roles**. Selecting a user’s name opens a detail pane specifically for that user.
+	**Note:** Select Diego’s name; do not select the checkbox to the left of his name. The box with the check mark is typically used for selecting multiple users when you want to perform one of the user-related actions on the menu bar that appears above the list of users, such as **Manage product licenses** and **Manage roles**. Selecting a user’s name opens a property pane specifically for that user.
 
 4. In the **Diego Siciliani** pane that appears, the **Account** tab is displayed by default. In this tab, scroll down to the **Roles** section and select **Manage roles**. 
 
-5. In the **Manage roles** window, the **User (no admin center access)** option is currently selected by default. Now that you want to assign Diego an administrator role, select the **Admin center access** option. This enables the admin roles for selection. 
+5. In the **Manage roles** window, the **User (no admin center access)** option is currently selected by default. Now that you want to assign Diego an administrator role, select the **Admin center access** option. This enables the list of common admin roles for selection. 
 
-6. Diego has been promoted to Billing administrator, but since the Billing admin role does not appear in the list of commonly used roles, scroll down and select **Show all by category**. 
+6. Diego has been promoted to Billing Administrator, but since this role does not appear in the list of commonly used roles, scroll down and select **Show all by category**. 
 
-7. In the list of roles that are sorted by category, scroll down to the **Other** category, select **Billing admin**, and then select **Save changes**. 
+7. In the list of roles that are sorted by category, scroll down to the **Other** category, select **Billing Administrator**, and then select **Save changes**. 
 
 8. On the **Manage roles** window, select the **X** in the upper-right corner of the screen to close it. This returns you to the **Active users** list. 
 
-9. Repeat steps 3-8 for **Lynne Robbins.** Assign Lynne to the **User Administrator** role under the **Identity** category.
+9. In the **Active users** list, select **Lynne Robbins**. 
 
-   **Note:** The role is in the list of commonly used admin roles that appear under the **Admin center access** option; therefore, you do not have to select **Show all by category**.
+10. In the **Lynne Robbins** pane that appears, the **Account** tab is displayed by default. In this tab, scroll down to the **Roles** section and select **Manage roles**. 
 
-10. Remain logged into LON-DC1 and the Microsoft 365 admin center as Holly Dickson.
+11. In the **Manage roles** window, select the **Admin center access** option. This enables the list of common admin roles for selection. 
+ 
+12. In the list of common admin roles, select the **User Administrator** role and then select **Save changes**.
+
+13. Remain logged into LON-DC1 and the Microsoft 365 admin center as Holly Dickson.
 
 
 ### Task 2 - Assign Delegated Administrators with Windows PowerShell  
@@ -37,33 +41,28 @@ This task is similar to the prior one in that you will assign administrator righ
 
 1. On LON-DC1, select the Windows PowerShell icon on the taskbar that you left open from the previous lab. If you closed the PowerShell window, then open an elevated instance of it using the same instruction as before. 
 
-2. You should begin by connecting your PowerShell session to the Microsoft Online Service. At the command prompt, type the following command, and then press Enter:  <br/>
+2. Your PowerShell session should still be connected to the Azure Active Directory PowerShell for Graph module (AzureAD) from the prior. However, if you previously closed PowerShell and just repopened it, then connect to Azure AD using the steps from the prior lab exercise. 
 
-		Install-Module MSOnline
-		Connect-MsolService
-	
-3. In the **Sign in** dialog box that appears, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with password **Pa55w.rd**. 
-
-4. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press Enter:   <br/>
+3. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press Enter:   <br/>
 
 		Set-ExecutionPolicy unrestricted
 
 	‎If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.** 
 
-5. To view all the available roles in Microsoft 365, enter the following command in the Windows PowerShell window and then press Enter:
+4. To view all the available roles in Microsoft 365, enter the following command in the Windows PowerShell window and then press Enter:
 	
 	
 		Get-MsolRole |Select-Object -Property Name,Description |Out-GridView
 
-6. This displays a window that shows all the Microsoft 365 roles. Notice how the "official" name of all roles within Microsoft 365 includes the complete spelling of the word "administrator"; whereas, in the Microsoft 365 admin center, "administrator" is abbreviated to "admin" simply for display purposes. When using PowerShell to perform role-related commands in the following steps, you must spell out the entire word "administrator". If you enter "admin" instead of "administrator", the command will return an error indicating that it cannot find the role. <br/>
+5. This displays a window that shows all the Microsoft 365 roles. Notice how the "official" name of all roles within Microsoft 365 includes the complete spelling of the word "administrator"; whereas, in the Microsoft 365 admin center, "administrator" is abbreviated to "admin" simply for display purposes. When using PowerShell to perform role-related commands in the following steps, you must spell out the entire word "administrator". If you enter "admin" instead of "administrator", the command will return an error indicating that it cannot find the role. <br/>
 
 	Close the window displaying the Microsoft 365 roles.
 
-7. Holly now wants to assign **Patti Fernandez** to the **Service support administrator** role. In the Windows PowerShell window, at the command prompt, type the following command (don't forget to replace xxxxxZZZZZZ with the tenant prefix provided by your lab hosting provider), and then press Enter:  <br/>
+6. Holly now wants to assign **Patti Fernandez** to the **Service support administrator** role. In the Windows PowerShell window, at the command prompt, type the following command (don't forget to replace xxxxxZZZZZZ with the tenant prefix provided by your lab hosting provider), and then press Enter:  <br/>
 
 	Add-MsolRoleMember -RoleName "Service support administrator” –RoleMemberEmailAddress PattiF@xxxxxZZZZZZ.onmicrosoft.com  
 
-8. You now want to verify which users have been assigned to certain roles. Displaying the users assigned to a role is a two-step process in PowerShell.<br/>
+7. You now want to verify which users have been assigned to certain roles. Displaying the users assigned to a role is a two-step process in PowerShell.<br/>
 
 	‎**Important:** Do NOT perform the following commands just yet – this is an informational step whose purpose is to describe what you will be doing in the remaining steps in this task. 
 	
@@ -75,23 +74,23 @@ This task is similar to the prior one in that you will assign administrator righ
 	
 		Get-MsolRoleMember -RoleObjectId $role.ObjectId
 			
-9. You should now run the following two commands as described in the previous step to verify that Patti Fernandez was assigned the Service support administrator role:  <br/> 
+8. You should now run the following two commands as described in the previous step to verify that Patti Fernandez was assigned the Service support administrator role:  <br/> 
 
 		$role = Get-MsolRole -RoleName "Service support administrator"
 
 		Get-MsolRoleMember -RoleObjectId $role.ObjectId
 	
-10. Verify that **Patti Fernandez** is in the list of users who have been assigned the **Service support administrator** role. 
+9. Verify that **Patti Fernandez** is in the list of users who have been assigned the **Service support administrator** role. 
 
-11. You should now run the following two commands to verify which Adatum users have been assigned to the **Billing administrator** role.  <br/>
+10. You should now run the following two commands to verify which Adatum users have been assigned to the **Billing administrator** role.  <br/>
 
 		$role = Get-MsolRole -RoleName "Billing administrator"
 
 		Get-MsolRoleMember -RoleObjectId $role.ObjectId
 
-12. Verify that **Diego Siciliani** is in the list of users who have been assigned the **Billing administrator** role (you assigned Diego to this role in the prior task using the Microsoft 365 admin center). 
+11. Verify that **Diego Siciliani** is in the list of users who have been assigned the **Billing administrator** role (you assigned Diego to this role in the prior task using the Microsoft 365 admin center). 
 	
-13. Leave your Windows PowerShell session open for future lab exercises; simply minimize it before going on to the next task.
+12. Leave your Windows PowerShell session open for future lab exercises; simply minimize it before going on to the next task.
 
 
 ### Task 3 - Verify Delegated Administration  
