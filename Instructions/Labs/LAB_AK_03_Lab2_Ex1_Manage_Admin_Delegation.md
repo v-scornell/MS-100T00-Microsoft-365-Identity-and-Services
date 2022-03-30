@@ -37,11 +37,15 @@ As Holly Dickson, Adatum’s Enterprise Administrator and Microsoft 365 Global A
 
 ### Task 2 - Assign Delegated Administrators with Windows PowerShell  
 
-This task is similar to the prior one in that you will assign administrator rights to users; however, in this case, you will use Windows PowerShell to perform this function rather than the Microsoft 365 Admin Center. This will give you experience performing this management function in PowerShell, since some administrators prefer performing maintenance such as this using PowerShell. In addition, PowerShell enables you to display all the users assigned to a specific role, which can be very important when auditing your Microsoft 365 deployment. In this task, you will learn how to use PowerShell to display all the users assigned to a specific role. 
+This task is similar to the prior one in that you will assign administrator rights to users; however, in this case, you will use Windows PowerShell to perform this function rather than the Microsoft 365 Admin Center. This will give you experience performing this management function in PowerShell, since some administrators prefer performing maintenance such as this using PowerShell. 
+
+To add a user to an admin role using the Azure Active Directory PowerShell for Graph module (AzureAD), you must first obtain the Object ID of the user and the Object ID of the role. If the role has not yet been enabled (meaning that it hasn't been assigned to a user or it hasn't been physically enabled), then you must enable the role first before you can assign it to a user using PowerShell. In this task, you will enable the Service Support Administrator role first before assigning it to Patti Fernandez.
+
+PowerShell also enables you to display all the users assigned to a specific role, which can be very important when auditing your Microsoft 365 deployment. In this task, you will learn how to use PowerShell to display all the users assigned to a specific role. 
 
 1. On LON-DC1, select the Windows PowerShell icon on the taskbar that you left open from the previous lab. If you closed the PowerShell window, then open an elevated instance of it using the same instruction as before. 
 
-2. Your PowerShell session should still be connected to the Azure Active Directory PowerShell for Graph module (AzureAD) from the prior. However, if you previously closed PowerShell and just repopened it, then connect to Azure AD using the steps from the prior lab exercise. 
+2. Your PowerShell session should still be connected to the Azure Active Directory PowerShell for Graph module (AzureAD) from the prior lab. However, if you previously closed PowerShell and just repopened it, then connect to the AzureAD modle using the steps from the prior lab exercise. 
 
 3. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press Enter:   <br/>
 
@@ -49,20 +53,54 @@ This task is similar to the prior one in that you will assign administrator righ
 
 	‎If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.** 
 
-4. To view all the available roles in Microsoft 365, enter the following command in the Windows PowerShell window and then press Enter:
+4. Holly wants to assign **Patti Fernandez** to the **Service Support Administrator** role. To assign a role using the AzureAD PowerShell module, you must first obtain the Object ID of the user and the Object ID of the role. To obtain the Object ID of the user, type the following command and then press Enter:
+
+		Get-AzureADUser -ObjectID "PattiF@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
+
+5. To view all the enabled roles in Microsoft 365 (which are roles that were actually enabled, or they're roles that have been assigned to users), enter the following command in the Windows PowerShell window and then press Enter:
 	
+		Get-AzureADDirectoryRole
+
+	**Note:** This command displays the three roles that have been enabled thus far in Microsoft 365 - the Global admin, the User admin, and the Billing admin. These roles were enabled when you manually assigned them to users in the Microsoft 365 admin center in prior labs. If the Service Support Administrator role appeared in this list, you could proceed directly to step 10 to assign the role to Patti. 
+
+	However, since the Service Support Administrator is not included in this list of enabled roles, you must perform steps 6-9 to enable the role before you can assign it to Patti in step 10.
+
+6. To enable a role in the AzureAD PowerShell module, you must first locate the role template to verify its Display Name. You need to know the exact spelling of the role template in order to assign it to the role. To view the list of role templates, type in the following command and then press Enter:
+
+		Get-AzureADDirectoryRoleTemplate
 	
-		Get-MsolRole |Select-Object -Property Name,Description |Out-GridView
+7. In the list of role templates, locate the template record for the **Service Support Administrator** role. Verify you have the correct spelling of the role (Note: the word Administrator must be spelled out. It can't be abbreviated to "admin" as we often times do in our documentation).
 
-5. This displays a window that shows all the Microsoft 365 roles. Notice how the "official" name of all roles within Microsoft 365 includes the complete spelling of the word "administrator"; whereas, in the Microsoft 365 admin center, "administrator" is abbreviated to "admin" simply for display purposes. When using PowerShell to perform role-related commands in the following steps, you must spell out the entire word "administrator". If you enter "admin" instead of "administrator", the command will return an error indicating that it cannot find the role. <br/>
+	You should then retrieve the role template object for the Service Support Administrator role. To do so, type in the following command, which retrieves this template in the **$ServiceSupportRole** variable, and then press Enter: 
 
-	Close the window displaying the Microsoft 365 roles.
+		$ServiceSupportRole = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.DisplayName -eq "Service Support Administrator"}
 
-6. Holly now wants to assign **Patti Fernandez** to the **Service support administrator** role. In the Windows PowerShell window, at the command prompt, type the following command (don't forget to replace xxxxxZZZZZZ with the tenant prefix provided by your lab hosting provider), and then press Enter:  <br/>
+8. You now want to verify that you captured the correct role template by verifying the contents of the $ServiceSupportRole variable. To do so, type the following command and press Enter:
 
-	Add-MsolRoleMember -RoleName "Service support administrator” –RoleMemberEmailAddress PattiF@xxxxxZZZZZZ.onmicrosoft.com  
+		$ServiceSupportRole
 
-7. You now want to verify which users have been assigned to certain roles. Displaying the users assigned to a role is a two-step process in PowerShell.<br/>
+9. You now want to enable the Service Support Administrator role by basing it on its predefined template, which is stored in the $ServiceSupportRole variable. To do so, type the following command and press Enter:
+
+		Enable-AzureADDirectoryRole -RoleTemplateId $ServiceSupportRole.ObjectId
+
+	**Note:** This command enables the Service Support Administrator role and displays the role's ObjectID. You will need to copy and paste in this ObjectID in the next command, along with the ObjectID of Patti's user account.
+
+10. Now that you know the ObjectID of the recently enabled Service Support Administrator role and the ObjectID of Patti's user account, you can assign the role to Patti. Here's the format of the command that you will eventually run:
+
+	**Important:** Do NOT perform the following command just yet – this is an informational step whose purpose is to describe what you will be doing later in this step. 
+		Add-AzureADDirectoryRoleMember -ObjectID <ObjectID of the role> -RefObjectId <ObjectID of the user>
+
+	To run this Add-AzureADDirectoryRoleMember command, you must copy  the ObjectID of the Service Support Administrator role (not the ObjectID of the template, but the ObjectID of the role you enabled) and paste it in the command following the **-ObjectID** parameter. You should then copy the ObjectID of Patti's user account and paste it in the command following the **-RefObjectID** parameter. **Both ObjectID values must appear within quotations marks.** 
+
+	For example (these are NOT actual ObjectID values - this example is simply displayed here to give you an idea as to what the command should look like):
+
+	Add-AzureADDirectoryRoleMember -ObjectID "03618579-3c16-4765-9539-86d9163ee3d9" -RefObjectId "a4a9ed46-369c-4b69-9e47-d2ac6029485d"
+
+	**Note:** To copy an ObjectID, highlight the ObjectID and select Ctrl-C to copy it. Then place your cursor in the appropriate spot in the command and press Ctrl-V to paste it.
+	
+	Now that you know where each ObjectID goes, type in the **Add-AzureADDirectoryRoleMember** command, copy each ObjectID and paste it within quotation marks in its appropriate location within the command, and then press Enter.
+
+11. You now want to verify which users have been assigned to certain roles. Displaying the users assigned to a role is a two-step process in PowerShell.<br/>
 
 	‎**Important:** Do NOT perform the following commands just yet – this is an informational step whose purpose is to describe what you will be doing in the remaining steps in this task. 
 	
@@ -74,23 +112,23 @@ This task is similar to the prior one in that you will assign administrator righ
 	
 		Get-MsolRoleMember -RoleObjectId $role.ObjectId
 			
-8. You should now run the following two commands as described in the previous step to verify that Patti Fernandez was assigned the Service support administrator role:  <br/> 
+12. You should now run the following two commands as described in the previous step to verify that Patti Fernandez was assigned the Service support administrator role:  <br/> 
 
 		$role = Get-MsolRole -RoleName "Service support administrator"
 
 		Get-MsolRoleMember -RoleObjectId $role.ObjectId
 	
-9. Verify that **Patti Fernandez** is in the list of users who have been assigned the **Service support administrator** role. 
+13. Verify that **Patti Fernandez** is in the list of users who have been assigned the **Service support administrator** role. 
 
-10. You should now run the following two commands to verify which Adatum users have been assigned to the **Billing administrator** role.  <br/>
+14. You should now run the following two commands to verify which Adatum users have been assigned to the **Billing administrator** role.  <br/>
 
 		$role = Get-MsolRole -RoleName "Billing administrator"
 
 		Get-MsolRoleMember -RoleObjectId $role.ObjectId
 
-11. Verify that **Diego Siciliani** is in the list of users who have been assigned the **Billing administrator** role (you assigned Diego to this role in the prior task using the Microsoft 365 admin center). 
+15. Verify that **Diego Siciliani** is in the list of users who have been assigned the **Billing administrator** role (you assigned Diego to this role in the prior task using the Microsoft 365 admin center). 
 	
-12. Leave your Windows PowerShell session open for future lab exercises; simply minimize it before going on to the next task.
+16. Leave your Windows PowerShell session open for future lab exercises; simply minimize it before going on to the next task.
 
 
 ### Task 3 - Verify Delegated Administration  
