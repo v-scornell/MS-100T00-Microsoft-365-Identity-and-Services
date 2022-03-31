@@ -10,7 +10,7 @@ As Holly Dickson, Adatum’s Enterprise Administrator and Microsoft 365 Global A
 
 2. In the **Microsoft 365 admin center** in your Edge browser, you should still be logged in as Holly Dickson. In the navigation pane, select **Users** and then select **Active Users**. 
 
-3. In the **Active users** list, select **Diego Siciliani**. 
+3. In the **Active users** list, select **Diego Siciliani**.  <br/>
 
 	**Note:** Select Diego’s name; do not select the checkbox to the left of his name. The box with the check mark is typically used for selecting multiple users when you want to perform one of the user-related actions on the menu bar that appears above the list of users, such as **Manage product licenses** and **Manage roles**. Selecting a user’s name opens a property pane specifically for that user.
 
@@ -53,59 +53,59 @@ PowerShell also enables you to display all the users assigned to a specific role
 
 	‎If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.** 
 
-4. Holly wants to assign **Patti Fernandez** to the **Service Support Administrator** role. To assign a role using the AzureAD PowerShell module, you must first obtain the Object ID of the user and the Object ID of the role. To obtain the Object ID of the user, type the following command and then press Enter:
+4. Holly wants to assign **Patti Fernandez** to the **Service Support Administrator** role. To assign a role using the AzureAD PowerShell module, you must first obtain the Object ID of the user and the Object ID of the role. To obtain the Object ID of the user, type the following command and then press Enter: <br/>
 
 		Get-AzureADUser -ObjectID "PattiF@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
 
-5. To view all the enabled roles in Microsoft 365 (which are roles that were actually enabled, or they're roles that have been assigned to users), enter the following command in the Windows PowerShell window and then press Enter:
+5. To view all the enabled roles in Microsoft 365 (which are roles that were actually enabled, or they're roles that have been assigned to users), enter the following command in the Windows PowerShell window and then press Enter: <br/>
 	
 		Get-AzureADDirectoryRole
 
-	**Note:** This command displays the three roles that have been enabled thus far in Microsoft 365 - the Global admin, the User admin, and the Billing admin. These roles were enabled when you manually assigned them to users in the Microsoft 365 admin center in prior labs. If the Service Support Administrator role appeared in this list, you could proceed directly to step 10 to assign the role to Patti. 
+	**Note:** This command displays the three roles that have been enabled thus far in Microsoft 365 - the Global admin, the User admin, and the Billing admin. These roles were enabled when you manually assigned them to users in the Microsoft 365 admin center in prior labs. If the Service Support Administrator role appeared in this list, you could proceed directly to step 10 to assign the role to Patti.  <br/>
 
 	However, since the Service Support Administrator is not included in this list of enabled roles, you must perform steps 6-9 to enable the role before you can assign it to Patti in step 10.
 
-6. To enable a role in the AzureAD PowerShell module, you must first locate the role template to verify its Display Name. You need to know the exact spelling of the role template in order to assign it to the role. To view the list of role templates, type in the following command and then press Enter:
+6. To enable a role in the AzureAD PowerShell module, you must first locate the role template to verify its Display Name. You need to know the exact spelling of the role template in order to assign it to the role. To view the list of role templates, type in the following command and then press Enter: <br/>
 
 		Get-AzureADDirectoryRoleTemplate
 	
-7. In the list of role templates, locate the template record for the **Service Support Administrator** role. Verify you have the correct spelling of the role (Note: the word Administrator must be spelled out. It can't be abbreviated to "admin" as we often times do in our documentation).
+7. In the list of role templates, locate the template record for the **Service Support Administrator** role. Verify you have the correct spelling of the role (Note: the word Administrator must be spelled out. It can't be abbreviated to "admin" as we often times do in our documentation). <br/>
 
-	You should then retrieve the role template object for the Service Support Administrator role. To do so, type in the following command, which retrieves this template in the **$ServiceSupportRole** variable, and then press Enter: 
+	You should then retrieve the role template object for the Service Support Administrator role. To do so, type in the following command, which retrieves this template in the **$ServiceSupportRole** variable, and then press Enter:  <br/>
 
 		$ServiceSupportRole = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.DisplayName -eq "Service Support Administrator"}
 
-8. You now want to verify that you captured the correct role template by verifying the contents of the $ServiceSupportRole variable. To do so, type the following command and press Enter:
+8. You now want to verify that you captured the correct role template by verifying the contents of the $ServiceSupportRole variable. To do so, type the following command and press Enter: <br/>
 
 		$ServiceSupportRole
 
-9. You now want to enable the Service Support Administrator role by basing it on its predefined template, which is stored in the $ServiceSupportRole variable. To do so, type the following command and press Enter:
+9. You now want to enable the Service Support Administrator role by basing it on its predefined template, which is stored in the $ServiceSupportRole variable. To do so, type the following command and press Enter: <br/>
 
 		Enable-AzureADDirectoryRole -RoleTemplateId $ServiceSupportRole.ObjectId
 
 	**Note:** This command enables the Service Support Administrator role and displays the role's ObjectID. You will need to copy and paste in this ObjectID in the next command, along with the ObjectID of Patti's user account.
 
-10. Now that you know the ObjectID of the recently enabled Service Support Administrator role and the ObjectID of Patti's user account, you can assign the role to Patti. Here's the format of the command that you will eventually run:
+10. Now that you know the ObjectID of the recently enabled Service Support Administrator role and the ObjectID of Patti's user account, you can assign the role to Patti. Here's the format of the command that you will eventually run: <br/>
 
-	**Important:** Do NOT perform the following command just yet – this is an informational step whose purpose is to describe what you will be doing later in this step. 
+	**Important:** Do NOT perform the following command just yet – this is an informational step whose purpose is to describe what you will be doing later in this step.  <br/>
 	
-	Add-AzureADDirectoryRoleMember -ObjectID "paste in the role's ObjectID here" -RefObjectId "paste in Patti's object ID here"	
+	Add-AzureADDirectoryRoleMember -ObjectID "paste in the role's ObjectID here" -RefObjectId "paste in Patti's object ID here" <br/>
 
-	To run this Add-AzureADDirectoryRoleMember command, you must copy  the ObjectID of the Service Support Administrator role (not the ObjectID of the template, but the ObjectID of the role you enabled) and paste it in the command following the **-ObjectID** parameter. You should then copy the ObjectID of Patti's user account and paste it in the command following the **-RefObjectID** parameter. **Both ObjectID values must appear within quotations marks.** 
+	To run this Add-AzureADDirectoryRoleMember command, you must copy  the ObjectID of the Service Support Administrator role (not the ObjectID of the template, but the ObjectID of the role you enabled) and paste it in the command following the **-ObjectID** parameter. You should then copy the ObjectID of Patti's user account and paste it in the command following the **-RefObjectID** parameter. **Both ObjectID values must appear within quotations marks.**  <br/>
 
-	For example (these are NOT actual ObjectID values - this example is simply displayed here to give you an idea as to what the command should look like):
+	For example (these are NOT actual ObjectID values - this example is simply displayed here to give you an idea as to what the command should look like): <br/>
 
-	Add-AzureADDirectoryRoleMember -ObjectID "03618579-3c16-4765-9539-86d9163ee3d9" -RefObjectId "a4a9ed46-369c-4b69-9e47-d2ac6029485d"
+	Add-AzureADDirectoryRoleMember -ObjectID "03618579-3c16-4765-9539-86d9163ee3d9" -RefObjectId "a4a9ed46-369c-4b69-9e47-d2ac6029485d" <br/>
 
-	**Note:** To copy an ObjectID, highlight the ObjectID and select Ctrl-C to copy it. Then place your cursor in the appropriate spot in the command and press Ctrl-V to paste it.
+	**Note:** To copy an ObjectID, highlight the ObjectID and select Ctrl-C to copy it. Then place your cursor in the appropriate spot in the command and press Ctrl-V to paste it. <br/>
 	
-	Now that you know where each ObjectID goes, type in the following command, copy each ObjectID and paste it within quotation marks in its appropriate location within the command, and then press Enter:
+	Now that you know where each ObjectID goes, type in the following command, copy each ObjectID and paste it within quotation marks in its appropriate location within the command, and then press Enter: <br/>
 
 		Add-AzureADDirectoryRoleMember -ObjectID "paste in the role's ObjectID here" -RefObjectId "paste in Patti's object ID here"
 
-11. You now want to verify which users have been assigned to certain roles. Displaying the users assigned to a role is a two-step process in PowerShell. You will begin by creating a macro command ($role) that states that anytime $role is used in a cmdlet, it should retrieve all users assigned to whichever role name you are validating. 
+11. You now want to verify which users have been assigned to certain roles. Displaying the users assigned to a role is a two-step process in PowerShell. You will begin by creating a macro command ($role) that states that anytime $role is used in a cmdlet, it should retrieve all users assigned to whichever role name you are validating.  <br/>
 
-	You will create this $role variable for the Service Support Administrator role. To do so, type the following command and then press Enter: 
+	You will create this $role variable for the Service Support Administrator role. To do so, type the following command and then press Enter:  <br/>
 
 		$role = Get-AzureADDirectoryRole | Where-Object {$_.DisplayName -eq "Service Support Administrator"}
 		
@@ -117,7 +117,9 @@ PowerShell also enables you to display all the users assigned to a specific role
 
 14. Repeat steps 11-12 to verify which Adatum users have been assigned to the **Global Administrator** role.  <br/>
 
-15. Verify that there are multiple user accounts that have been assigned the Global Administrator role. In a real world scenario, you would use these two PowerShell commands to monitor how many global admins exist in your Microsoft 365 deployment. You would then remove the Global Administrator role from any users who truly shouldn't have it (remember, the best practice guideline is to have between 2 to 4 global admins). In the case of this lab, while your lab hosting provider assigned the Global Administrator role to users other than the MOD Administrator (remember, you assigned it to Holly Dickson), you'll just leave these users as is. In this fictitious Adatum deployment, there's no point in wasting your time removing this role from their accounts. Plus, some of the future lab tasks are based on these users being assigned the Global Administrator role. Just remember that in your real world deployments, the Enterprise Administrator should monitor this role on a periodic basis to keep the number of assigned users between 2 and 4.
+15. Verify that there are multiple user accounts that have been assigned the Global Administrator role. In a real world scenario, you would use these two PowerShell commands to monitor how many global admins exist in your Microsoft 365 deployment. You would then remove the Global Administrator role from any users who truly shouldn't have it (remember, the best practice guideline is to have between 2 to 4 global admins).  <br/>
+
+	In the case of this lab, while your lab hosting provider assigned the Global Administrator role to users other than the MOD Administrator (and you assigned it to Holly Dickson), you'll just leave these users as is. In this fictitious Adatum deployment, there's no point in wasting your time removing this role from their accounts. Plus, some of the future lab tasks are based on these users being assigned the Global Administrator role. Just remember that in your real world deployments, the Enterprise Administrator should monitor this role on a periodic basis to keep the number of assigned Global Administrator accounts between 2 and 4.
 	
 16. Leave your Windows PowerShell session open for future lab exercises; simply minimize it before going on to the next task.
 
@@ -172,9 +174,9 @@ In this task, you will begin by examining the administrative properties of two u
 
 	‎In the **Active users** list, as you move your mouse from one user account to another, notice the **key (Reset a password)** icon that appears to the right of each user's name. Select the key icon that appears to the right of **Diego Siciliani's** name.
 
-22. In the **Reset password** window for Diego, if the **Automatically create a password** check box displays a check mark, then select this box to clear it. This will enable Lynne to manually assign Diego a temporary password. Enter **diego** in the **Password** field. Note to the right of the password, the system displays a message indicating this is a **Weak** password. Also note the message that appears below the field indicating the requirements for a strong password. Finally, note how the **Reset password** button at the bottom of the pane is not enabled; **this button will only be enabled once you enter a strong password**. 
+22. In the **Reset password** window for Diego, if the **Automatically create a password** check box displays a check mark, then select this box to clear it. This will enable Lynne to manually assign Diego a temporary password. Enter **diego** in the **Password** field. Note to the right of the password, the system displays a message indicating this is a **Weak** password. Also note the message that appears below the field indicating the requirements for a strong password. Finally, note how the **Reset password** button at the bottom of the pane is not enabled; **this button will only be enabled once you enter a strong password**.  <br/>
 
-	To correct this situation, enter **P@$$w0rd** in the **Password** field. Note how **Strong** now appears next to this password, and the **Reset password** button at the bottom of the pane is now enabled.
+	To correct this situation, enter **P@$$w0rd** in the **Password** field. Note how **Strong** now appears next to this password, and the **Reset password** button at the bottom of the pane is now enabled. <br/>
 	
 	**Note:** This is just a temporary password because Lynne wants to force Diego to change it the next time he logs in. Therefore, verify the **Require this user to change their password when they first sign in** check box displays a check mark; if the box is clear, then select it so that it displays a check mark.
 
@@ -186,7 +188,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 26. In the **Active users** list, select the **key (Reset a password)** icon for **Joni Sherman**. 
 
-27. In the **Reset password** window for Joni, if the **Automatically create a password** check box displays a check mark, then select this box to clear it. Lynne wants to manually assign Joni a temporary password, so enter **P@$$w0rd** in the **Password** field. 
+27. In the **Reset password** window for Joni, if the **Automatically create a password** check box displays a check mark, then select this box to clear it. Lynne wants to manually assign Joni a temporary password, so enter **P@$$w0rd** in the **Password** field.  <br/>
 
 	This is just a temporary password because Lynne wants to force Joni to change it the next time she logs in. Therefore, verify the **Require this user to change their password when they first sign in** check box displays a check mark; if the box is clear, then select it so that it displays a check mark.
 	
@@ -194,7 +196,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 29. On the **Password has been reset** window, you should receive a message indicating that you successfully reset the password for Joni. Select **Close**.
 
-30. Management has recently discovered that Alex Wilber's username may have been compromised. As a result, Lynne has been asked to block Alex's account so that no one can sign in with his username until management is able to determine the extent of the issue. In the **Active users** list, select the check box to the left of **Alex Wilber's** name (do NOT select Alex’s name itself). 
+30. Management has recently discovered that Alex Wilber's username may have been compromised. As a result, Lynne has been asked to block Alex's account so that no one can sign in with his username until management is able to determine the extent of the issue. In the **Active users** list, select the check box to the left of **Alex Wilber's** name (do NOT select Alex’s name itself).  <br/>
 
 	**Important:** Since you are going to run a global command on Alex's account rather than a command associated with his account, you only want Alex's account selected in the list of active users. If any other user account is selected, you must unselect that user account before proceeding. Examine Joni Sherman's account, since you just reset her password. If the check box to the left of **Joni Sherman** is selected, then select this check box to unselect Joni's account. **Only Alex Wilber's account should be selected.**
 
@@ -216,9 +218,9 @@ In this task, you will begin by examining the administrative properties of two u
 
 38. In the **Pick an account** window, select **Use another account**. In the **Sign in** window, enter **AlexW@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter the Tenant Password provided by your instructor.  <br/>
 
-	The **Pick an account** window should appear, and it should display an error message indicating **Your account has been locked. Contact your support person to unlock it, then try again.** You have just verified that Alex (or someone who has obtained Alex's username and password) cannot log in.
+	The **Pick an account** window should appear, and it should display an error message indicating **Your account has been locked. Contact your support person to unlock it, then try again.** You have just verified that Alex (or someone who has obtained Alex's username and password) cannot log in. <br/>
 
-	**Note:** It can take a few minutes for the account block to fully implement. Until that time Alex may be able to log on, but none of the Microsoft 365 services are available to the user, and will not appear in the portal. Once the account is unblocked, the services will become available again.
+	**Note:** It can take a few minutes for the account block to fully implement. Until that time Alex may be able to log on, but none of the Microsoft 365 services are available to the user, and will not appear in the portal. Once the account is unblocked, the services will become available again. <br/>
 
 	If you are able to sign in as Alex, sign back out and wait a few minutes. Then attempt to sign back in as Alex. By this time, you should hopefully receive the error message that indicates Alex's account has been blocked from signing in. 
 	
