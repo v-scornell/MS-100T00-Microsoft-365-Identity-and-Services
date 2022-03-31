@@ -64,7 +64,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 15. In the **Organization profile** tab, select **Organization information** from the list of profile data.
 
-16. In the **Organization information** pane that appears, enter the following information:
+16. In the **Organization information** pane that appears, enter the following information: <br/>
 
     - Name: **Adatum Corporation** (Note: Adatum Corporation is a subsidiary of Contoso Electronics. The Microsoft trial tenant that your lab hosting provider obtained for this lab may have been originally assigned to Contoso. If **Contoso** (or any other value) appears as the organization name, then change it to **Adatum Corporation**.)
 
@@ -96,7 +96,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 21. In the **Release preferences** pane, below the list of release options, select the **Select users** option.
 
-22. In the **Choose users for targeted release** pane that appears, select inside the **Who should receive targeted releases?** field. This displays the list of active users (these are the Microsoft 365 user accounts created for your tenant by your lab hosting provider). In this list, select each of the following users.
+22. In the **Choose users for targeted release** pane that appears, select inside the **Who should receive targeted releases?** field. This displays the list of active users (these are the Microsoft 365 user accounts created for your tenant by your lab hosting provider). In this list, select each of the following users. <br/>
 
     **Note:** You must select each user, one at a time. After selecting a user, you must select inside the field again to re-display the list so that you can select the next user. 
 
@@ -131,11 +131,11 @@ Azure Active Directory is required to perform several configuration steps when i
 
 1. On LON-DC1, you must open an elevated instance of **Windows PowerShell**. Select the magnifying glass (Search) icon on the taskbar at the bottom of the screen and type **powershell** in the Search box that appears. In the list of search results, right-click on **Windows PowerShell** (do not select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu. 
 
-2. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command to install the Azure AD PowerShell module from the PowerShell Gallery and then press Enter:
+2. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command to install the Azure AD PowerShell module from the PowerShell Gallery and then press Enter: <br/>
 
 		Install-Module AzureAD
 
-3. It may take a minute or two, but you will eventually be prompted to confirm whether you want to install the module from an untrusted repository (PSGallery). Enter **A** to select **[A] Yes to All.** 
+3. It may take a minute or two, but you will eventually be prompted to confirm whether you want to install the module from an untrusted repository (PSGallery). Enter **A** to select **[A] Yes to All.**  <br/>
 
     **Note:** If you receive a warning message indicating version 2.0.2.130 of the AzureAD module is already installed in your VM environment and that you can install the next version using the -force parameter, ignore this message.
 
