@@ -21,7 +21,7 @@ Therefore, you must use one of Adatum's on-premises user accounts that has been 
 
 2. The **Microsoft 365 admin center** should still be open in your Edge browser from the prior lab, where you should be logged into Microsoft 365 as Holly Spencer. In the navigation pane, select **Users** and then select **Active users**. 
 
-3. You will begin by testing whether a user **without** an appropriate Microsoft 365 license can install Microsoft 365 Apps for enterprise. For this test, you will use **Laura Atkins**. Your lab hosting provider has already created an on-premises user account for Laura, but she does not have a Microsoft 365 user account. You will create a Microsoft 365 account for Laura, but you will NOT assign her a Microsoft 365 license. 
+3. You will begin by testing whether a user **without** an appropriate Microsoft 365 license can install Microsoft 365 Apps for enterprise. For this test, you will use **Laura Atkins**. Your lab hosting provider has already created an on-premises user account for Laura, but she does not have a Microsoft 365 user account. You will create a Microsoft 365 account for Laura, but you will NOT assign her a Microsoft 365 license.  <br/>
 
 	At the top of the **Active users** window, select **Add a user** on the menu bar.
 
@@ -31,7 +31,7 @@ Therefore, you must use one of Adatum's on-premises user accounts that has been 
 	- Display name: When you tab into this field, Laura Atkins will appear.
 	- Username: **Laura**
 
-	**IMPORTANT:** To the right of the Username field is the domain field. You want this value to be Adatum's **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). However, if the custom domain that you added in a prior lab is set as the default domain, then this field will be prefilled with the custom **xxxUPNxxx.xxxCustomDomainxxx.xxx** on-premises domain (where xxxUPNxxx is your UPN number and xxxCustomDomainxxx.xxx is the custom domain). If the custom domain is displayed in this field, you must select the drop-down arrow and select the **xxxxxZZZZZZ.onmicrosoft.com** cloud domain instead. 
+	**IMPORTANT:** To the right of the Username field is the domain field. You want this value to be Adatum's **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). However, if the custom domain that you added in a prior lab is set as the default domain, then this field will be prefilled with the custom **xxxUPNxxx.xxxCustomDomainxxx.xxx** on-premises domain (where xxxUPNxxx is your UPN number and xxxCustomDomainxxx.xxx is the custom domain). If the custom domain is displayed in this field, you must select the drop-down arrow and select the **xxxxxZZZZZZ.onmicrosoft.com** cloud domain instead.  <br/>
 
 	After configuring this field, Laura’s **Username** should appear as: **Laura@xxxxxZZZZZZ.onmicrosoft.com**
 
@@ -59,7 +59,7 @@ Therefore, you must use one of Adatum's on-premises user accounts that has been 
 
 13. Select the **Microsoft Edge** icon on the taskbar.
 
-14. In **Microsoft Edge**, maximize your browser if necessary. If you receive a **Welcome to Microsoft Edge** diaglog box, select the **Start without your data** button on the first screen, and then on the second page, unselect (clear) the **Make your Microsoft experience more useful to you** check box and select the **Confirm and start browsing** button. 
+14. In **Microsoft Edge**, maximize your browser if necessary. If you receive a **Welcome to Microsoft Edge** diaglog box, select the **Start without your data** button on the first screen, and then on the second page, unselect (clear) the **Make your Microsoft experience more useful to you** check box and select the **Confirm and start browsing** button.  <br/>
 
 	On the Edge browser, go to the **Microsoft Office Home** page by entering the following URL in the address bar: **https://portal.office.com/**
 
@@ -96,7 +96,7 @@ Microsoft 365 includes a global Office download setting that controls the downlo
 
 6. At the top of the **Office installation options** pane, select the **X** in the upper-right corner of this window to close it. 
 
-7. You should now test whether turning off this global download setting affects a **licensed** user from installing Microsoft 365 Apps for enterprise. In this case, you’re once again going to use **Laura Atkins**, so you must first assign Laura a Microsoft 365 license. 
+7. You should now test whether turning off this global download setting affects a **licensed** user from installing Microsoft 365 Apps for enterprise. In this case, you’re once again going to use **Laura Atkins**, so you must first assign Laura a Microsoft 365 license.  <br/>
 	
 	In the **Microsoft 365 admin center**, under the **Users** group in the navigation pane, select **Active users**.
 	
@@ -142,7 +142,7 @@ Microsoft 365 includes a global Office download setting that controls the downlo
 
 	Select the **Refresh icon** that appears to the left of the address bar at the top of your browser. 
 
-22. In the **My account** window that appears, under the **Office apps &amp; devices** tile, an **Install Office** button appears along with a message indicating you can install Office on up to 5 PCs or Macs, 5 tablets, and 5 smartphones. 
+22. In the **My account** window that appears, under the **Office apps &amp; devices** tile, an **Install Office** button appears along with a message indicating you can install Office on up to 5 PCs or Macs, 5 tablets, and 5 smartphones.  <br/>
 	
 	‎**Important:** You have just verified that a user with an Office license is able to download Microsoft 365 Apps for enterprise if the global Office download setting is turned On. Do NOT select the **Install Office** button at this time. You will do that in the next task.
 
@@ -203,7 +203,7 @@ In the prior task, you logged into Laura Atkins’ client PC, and you verified t
 	
 18. On the desktop menu, select **Switch user**. 
 
-19. On the desktop, the **Administrator** is selected by default. Enter **Pa55w.rd** in the **Password** field and then select the forward arrow. 
+19. On the desktop, the **Administrator** is selected by default. Enter **Pa55w.rd** in the **Password** field and then select the forward arrow.  <br/>
 
 	The desktop should now display the logged on user as **adatum\administrator**. LON-CL1 is now ready for the next lab.
 
