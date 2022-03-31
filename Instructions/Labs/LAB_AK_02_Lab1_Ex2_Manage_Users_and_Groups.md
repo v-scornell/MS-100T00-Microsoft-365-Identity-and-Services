@@ -17,7 +17,7 @@ That being said, you will not turn on MFA for Holly's account because time is li
 
 2. In the **Microsoft 365 admin center** navigation pane, select **Users** and then select **Active users**. 
 
-3. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are still logged in as the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services.
+3. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are still logged in as the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services. <br/>
 
 	In the **Active Users** window, select the **Add a user** option that appears on the menu bar above the list of active users. 
 
@@ -45,7 +45,7 @@ That being said, you will not turn on MFA for Holly's account because time is li
 
 6. Select **Next**. If a **Save password** dialog box appears, select **Never**.
 
-7. In the **Assign product licenses** window, enter the following information:
+7. In the **Assign product licenses** window, enter the following information: <br/>
 
 	- Select location: **United States**
 
@@ -55,7 +55,7 @@ That being said, you will not turn on MFA for Holly's account because time is li
 
 9. In the **Optional settings** window, select the drop-down arrow to the right of **Roles.** 
 
-10. In the **Roles** section, select the **Admin center access** option. By selecting this option, the most commonly used Microsoft 365 administrator roles are enabled below it. 
+10. In the **Roles** section, select the **Admin center access** option. By selecting this option, the most commonly used Microsoft 365 administrator roles are enabled below it.  <br/>
 
 	**Note:** All the admin roles will be displayed if you select **Show all by category**, which appears after the last common role. For Holly, you don't need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
 
@@ -67,7 +67,7 @@ That being said, you will not turn on MFA for Holly's account because time is li
 
 13. On the **Review and finish** window, review your selections. If anything must be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
-14. On the **Holly Dickson added to active users** page, under the **User details** section, select the **Show** option to verify Holly's password is **Pa55w.rd**. 
+14. On the **Holly Dickson added to active users** page, under the **User details** section, select the **Show** option to verify Holly's password is **Pa55w.rd**.  <br/>
 
 	**Note:** If you accidentally entered a different password, then once you return to the **Active Users** page, you will need to select the **Reset a password** icon (the key icon that appears when you hover over Holly's account) to change her password to the correct value.
 
@@ -103,7 +103,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 9. In the **Microsoft 365 admin center**, select **Teams & groups** in the navigation pane, and then under it, select **Active teams & groups**. 
 
-10. In the **Active teams and groups** page, there's a tab for viewing each of the group types. The **Microsoft 365** tab is displayed by default; this tab displays the existing Microsoft 365 groups. 
+10. In the **Active teams and groups** page, there's a tab for viewing each of the group types. The **Microsoft 365** tab is displayed by default; this tab displays the existing Microsoft 365 groups.  <br/>
 
     Select the **Add a group** option that appears on the menu bar above the list of groups. This initiates the **Add a group** wizard. 
 
@@ -135,7 +135,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 	Select **Close**. This returns you to the **Active teams and groups** page, which should display the **Microsoft 365** group tab. Since the Inside Sales group was a Microsoft 365 group, it should eventually display on this tab.
 
-22. Repeat steps 10-21 to add a new group with the following information:
+22. Repeat steps 10-21 to add a new group with the following information: <br/>
 
 	- Group type: **Security**
 
@@ -145,9 +145,9 @@ In this task, you will create two new groups and then manage the groups by assig
 
 	**Note:** There is no owner, email address, or privacy setting for Security groups.
 
-23. This returns you to the **Active teams and groups** page, which should still be displaying the **Microsoft 365** group tab. Since the IT Admins group was a Security group, select the **Security** tab. 
+23. This returns you to the **Active teams and groups** page, which should still be displaying the **Microsoft 365** group tab. Since the IT Admins group was a Security group, select the **Security** tab.  <br/>
 
-	**Note:** If either of the two new groups do not appear in their respective tabs on the **Active teams and groups** page, wait a minute or so and then select the **Refresh** option on the menu bar (to the right of **Add a group**). You may need to wait an additional minute or two for each group to appear.
+	**Note:** If either of the two new groups do not appear in their respective tabs on the **Active teams and groups** page, wait a minute or so and then select the **Refresh** option on the menu bar (to the right of **Add a group**). You may need to wait an additional minute or two for each group to appear. <br/>
 
 	**Note:** The IT admins group does not have a group email address because it's a Security group. Two additional group types are Mail-enabled Security groups and Distribution groups. Neither of these group types were used in this lab because it can take up to an hour for these two types of groups to appear in the Groups list; whereas Microsoft 365 groups and Security groups usually take just a matter of minutes to appear. 
 
@@ -198,7 +198,7 @@ In this task, you will use Windows PowerShell to recover the Inside Sales group 
 	
 		Get-AzureADMSDeletedGroup   
 
-6. At the command prompt, either type or copy and paste in the following command; however, do not press Enter yet as you must first replace {objectId} with the actual Object ID of the deleted Inside Sales group. 
+6. At the command prompt, either type or copy and paste in the following command; however, do not press Enter yet as you must first replace {objectId} with the actual Object ID of the deleted Inside Sales group.  <br/>
 
 		Restore-AzureADMSDeletedDirectoryObject -Id {objectId}
 
@@ -206,7 +206,7 @@ In this task, you will use Windows PowerShell to recover the Inside Sales group 
 	
 	After pasting in the Object ID, press Enter to run the command. This will retrieve and restore the deleted group whose Object ID matches the value you entered. <br/>
 
-	**NOTE:** If nothing happens when you hit Enter, then extraneous hidden characters may have been pasted in following the object ID. If this occurs, retype the command and then after pasting in the object ID, hit the Delete key a couple of times to delete any extraneous characters that may have been pasted in following the object ID, and then press Enter again.  <br/>
+	**NOTE:** If nothing happens when you hit Enter, then extraneous hidden characters may have been pasted in following the object ID. If this occurs, retype the command and then after pasting in the object ID, hit the Delete key a couple of times to delete any extraneous characters that may have been pasted in following the object ID, and then press Enter again.  
 		
 7. Leave your Windows PowerShell window open for the next exercise; simply minimize the PowerShell window for now.
 
