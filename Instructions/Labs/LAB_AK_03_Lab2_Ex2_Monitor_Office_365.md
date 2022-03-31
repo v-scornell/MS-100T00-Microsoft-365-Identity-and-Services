@@ -12,7 +12,7 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 3. In the **Office 365 Home** page, select the **Outlook** icon in the column of app icons on the left. <br/>
 
-4. If a **Pick an account** window appears, select Holly's account of **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZis the tenant prefix provided by your lab hosting provider). Or, you may be automatically signed into Outlook using Holly's account. In either case, enter **Pa55w.rd** in the **Enter password** window and select **Sign in**.
+4. If a **Pick an account** window appears, select Holly's account of **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZis the tenant prefix provided by your lab hosting provider). Or, you may be automatically signed into Outlook using Holly's account. In either case, enter **Pa55w.rd** in the **Enter password** window and select **Sign in**. <br/>
 
 	On the **Stay signed in?** window, select the **Don't show this again** check box and select **Yes**.
 
@@ -36,7 +36,7 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 13. In the **Message Analyzer Header** window, paste the NDR diagnostic data (right-click and select **Paste**, or press **Ctrl+V**) in the field that appears below the **-Insert the message header you would like to analyze** row. Then select the **Analyze headers** button. 
 
-14. SMTP message headers contain a wealth of information that allow you to determine the origins of a message and how it made its way through one or more SMTP servers to its destination. Here’s a quick summary of the information found in this header analysis:
+14. SMTP message headers contain a wealth of information that allow you to determine the origins of a message and how it made its way through one or more SMTP servers to its destination. Here’s a quick summary of the information found in this header analysis: <br/>
 
 	- **Summary section**: Displays the most important properties and total delivery time at a quick glance. Depending on the diagnostic data (for example, if a message was even sent), this section may or may not appear.
 
@@ -54,9 +54,9 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 18. Enter a subject and some body text and then send the email. 
 
-19. Wait for the non-delivery report (NDR) message to appear in Holly’s Inbox, then double-click the message to open it in a new window. 
+19. Wait for the non-delivery report (NDR) message to appear in Holly’s Inbox, then double-click the message to open it in a new window. <br/>
 	
-	**Note:** When this lab was originally written, it asked the student to enter **difflop8675399@outlook.com** in the **To** field. The lab author never assumed anyone would ever create a mailbox called **difflop8675399** in the outlook.com domain. This worked fine for several months, until someone actually created this mailbox in outlook.com. This broke the lab, since it stopped returning an NDR reply. So the previous instruction was changed to ask you to send this email to an email address consisting of a random series of numbers followed by your name. Hopefully, the combination you choose is not a valid mailbox. **If you do not receive an NDR reply within a minute (or less) after sending the email, then you can assume someone has created that mailbox in the outlook.com domain.** If this occurs, then send another email to a different mailbox address that you feel is completely bogus. 
+	**Interesting Note:** When this lab was originally written, it asked the student to enter  the bogus mailbox of **difflop8675399@outlook.com** in the **To** field. The lab author never assumed anyone would ever create a mailbox called **difflop8675399** in the outlook.com domain. This worked fine for several months, until someone, somewhere around the world, actually created this mailbox in outlook.com. This broke the lab, since it stopped returning an NDR reply. So the previous instruction was changed to ask you to send this email to an email address consisting of a random series of numbers followed by your name. Hopefully, the combination you choose is not a valid mailbox. **If you do not receive an NDR reply within a minute (or less) after sending the email, then you can assume someone has created that mailbox in the outlook.com domain.** If this occurs, then send another email to a different mailbox address that you feel is completely bogus. 
 
 20. In the window for the NDR reply, scroll down through the message until you reach the body of text that says **Diagnostic information for administrators**. Select the text in the body of the message starting after **Diagnostic information for administrators** through the end of the message. With this text selected, press **Ctrl+C** to copy it to the clipboard, and then close the message window. 
 
@@ -82,7 +82,7 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 30. Under the **Time range** section, select the slider bar below **1 day** (don't select the **1 day** heading; you must select on the slider bar itself). Note how the slider circle moved under **1 day**.
 
-31. The drop-down arrow to the right of **Detailed search options** should be selected by default. This displays options such as Delivery status, Messatge ID, Direction, and others. If this information isn't displayed under **Detailed search options**, then select the drop-down arrow to expand this section. 
+31. The drop-down arrow to the right of **Detailed search options** should be selected by default. This displays options such as Delivery status, Messatge ID, Direction, and others. If this information isn't displayed under **Detailed search options**, then select the drop-down arrow to expand this section.  <br/>
 
 	Holly wants to customize the trace to look for failed messages. Select the **Delivery status** field, and in the drop-down menu that appears, select **Failed**.
 
