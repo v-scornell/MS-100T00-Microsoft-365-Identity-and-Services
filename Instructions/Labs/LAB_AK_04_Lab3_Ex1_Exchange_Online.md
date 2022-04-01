@@ -32,10 +32,11 @@ involved in creating and managing mail flow recipients.
     **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
     provider) and **Pa55w.rd**, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen, and then in the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab.
 
-3.  In the **Microsoft 365 admin center**, in the navigation pane,
-    select **Show all** (if necessary), then scroll down to **Admin centers**
+3.  In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the navigation pane, then scroll down to **Admin centers**
     and select **Exchange**. This will open the **Exchange admin center** in a
-    new tab. This is the Exchange admin center for Microsoft Exchange Online.
+    new tab. This is the Exchange admin center for Microsoft Exchange Online. <br/>
+
+	**Note:** If a **Learn about the new menu** window appears, select the **X** to close it.
 
 4.  In the **Exchange admin center**, select **Recipients** in the navigation pane to expand the Recipients group.
 
@@ -46,7 +47,7 @@ involved in creating and managing mail flow recipients.
     365 user accounts in previous labs. <br/>
 
     Select the mailbox for **Joni Sherman** by selecting her **Display name**
-    This will open the **user mailbox** window with Joni’s data pre-filled. By
+    This will open Joni's **User mailbox** window. By
     default, the window displays the **Mailbox** tab (the tabs appear at the top
     under Joni’s name).
 
@@ -61,7 +62,7 @@ involved in creating and managing mail flow recipients.
     mailbox identification, such as a cost center number for the mailbox or
     other information such as an HR personnel number.
 
-8.  This returns you to the **Mailbox** tab in Joni's properties pane. Select the **Account** tab, which
+8.  This returns you to the **Mailbox** tab in Joni's User mailbox pane. Select the **Account** tab, which
     enables you to maintain additional information for this mailbox. While you
     won’t enter any of this optional information for this lab, take a few
     minutes now and select the following links to see what additional
@@ -79,9 +80,11 @@ involved in creating and managing mail flow recipients.
 
 	The **Manage mailbox delegation for Joni Sherman** window enables the admin to
     assign a user to this mailbox’s **Send as** and **Send on behalf**
-    permissions, as well as **Read and manage**.  
+    permissions, as well as **Read and manage (Full Access**.  
 
-10. In the **Manage mailbox delegation for Joni Sherman** window, select the **Edit** button that appears below the **Read and manage (Full Access)** section.
+10. For this lab, you will assign **Read and manage (Full Access)** permission to Holly Dickson. This will enable Holly to open Joni's mailbox and perform all mailbox functions, just as if she were Joni. <br/>
+
+	In the **Manage mailbox delegation for Joni Sherman** window, select the **Edit** button that appears below the **Read and manage (Full Access)** section.
 
 11. In the **Manage Mailbox delegation** window, select **+Add members**.
 
