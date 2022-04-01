@@ -193,7 +193,7 @@ In the prior task, you logged into Laura Atkins’ client PC, and you verified t
 
 16. Close Word.
 
-17. Now that you have completed this lab exercise by installing Microsoft 365 Apps for enterprise, you should log out of Microsoft 365 as Laura Atkins. Select Laura"s icon in the upper-right corner of the screen (the circle with LA in it), and then in Laura's property window, select **Sign out**.
+17. Now that you have completed this lab exercise by installing Microsoft 365 Apps for enterprise, you should log out of Microsoft 365 as Laura Atkins. Select Laura's icon in the upper-right corner of the screen (the circle with LA in it), and then in Laura's property window, select **Sign out**.
 
 18. Once Laura is signed out, close your Microsoft Edge browser. 
 
