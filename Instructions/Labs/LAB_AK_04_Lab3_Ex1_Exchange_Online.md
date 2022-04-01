@@ -317,30 +317,31 @@ organization based on the following format: **{Department} Group: {Group Name} {
 
 	So the prefix that you will define in this section will be the values displayed BEFORE **{Group Name}**. This will be the Department and the text string "Group:". <br/>
 
-	The Department is an attribute of the group. The first prefix field is prefilled with **Attribute**, so do NOT change this field. However, you need to select the Department attribute, so select the **Select one** field and then select
+	The Department is a tenant attribute. The first prefix field is prefilled with **Attribute**, so do NOT change this field. However, you need to select the Department attribute, so select the **Select one** field and then select
     **Department** from the drop-down list.
 
-3.  The second portion of the prefix that will appear before the group name is the word "Group:". To define this portion of the prefix, select **Add prefix**, which appears below the **Attribute** field. This option displays another set of prefix fields. In this
-    second set of prefix fields, the first field is again set to Attribute by default.
-    However, this time you should select this **Attribute** field and then select **Text** from the drop-down list. The reason for this is that you want to display **"Group:"** prior to displaying the group name. This Text attribute allows you to enter **Group:**. <br/>
+3.  The second portion of the prefix that will appear before the **{Group Name}** is the text "Group:". To define this portion of the prefix, select **Add prefix**, which appears below the **Attribute** field. This option displays another set of prefix fields. 
 
-	In the **Add text** field, enter **Group:**.
+4.  In this second set of prefix fields, the first field is again set to **Attribute** by default.
+    However, this second portion or the prefix won't be an attribute, but rather a text string. So select this **Attribute** field and then select **Text** from the drop-down list that appears. <br/>
 
-4.  In the **Select a suffix to add to the end of group names** section,
-    **Attribute** is selected by default in the suffix field. Do NOT change this
-    field. Instead, select the **Select one** field and then select **City** from the
-    drop-down list.
+	Then in the **Add text** field that appears to the right of the **Text** field, enter **Group:**.
 
-5.  Scroll down if necessary and review the **Preview policy** example that is
+5.  You're now ready to define the suffix portion of your group naming policy. The suffix is what appears AFTER the **{Group Name}**. For your group naming policy, this will be the City attribute. <br/>
+
+	The first suffix field is prefilled with **Attribute**, so do NOT change this field. However, you need to select the City attribute, so select the **Select one** field and then select
+    **City** from the drop-down list.
+
+6.  At the bottom of the **Edit group naming policy** pane, review the **Preview policy** example that is
     based on the parameters you selected. The format should appear as: <br/>
     
-    	**<Department>Group<GroupName><City>**  <br/>
+    	**<Department>Group:<GroupName><City>**  <br/>
 
 	If any portion of this rule in incorrect and must be fixed, select the
     correct values now. When everything is correct, select the **Save**
-    button at the bottom of the window.
+    button at the bottom of the pane.
 
-6.  Once the group naming policy changes have been saved, close the **Edit group
+7.  Once the group naming policy changes have been saved, close the **Edit group
     naming policy** pane. Leave all your browser tabs open for the next task.
 
 ### Task 5 – Manage Resources
@@ -388,7 +389,7 @@ meetings, you can select the room from the Global Address List (GAL).
 6.  In the **Booking options** page, select the **Allow scheduling only during
     working hours** check box.
 
-7.  Uncheck the **Auto-accepts meeting request** check box.
+7.  Uncheck (clear) the **Auto-accepts meeting request** check box.
 
 8.  In the **Booking delegates** field, enter **Holly** and then select **Holly
     Dickson**. Then enter **Nestor** and select **Nestor Wilke**. <br/>
@@ -440,7 +441,7 @@ introduced to mail contacts and mail users.
     -   Contact type: select **Mail contact** from the drop-down menu  <br/>
 
         ‎**Note:** This option enables external people from outside your
-        organization to be added to your Exchange Online distribution lists. <br/>
+        organization to be added to your Exchange Online distribution lists. This is what you will do in this step - add Hai Chu from Fabrikam as a mail contact.<br/>
 
     -   First name: **Hai**
 
@@ -463,20 +464,20 @@ introduced to mail contacts and mail users.
 
 6.  Hai Chu’s contact record was for a Mail Contact. Holly now wants to create a
     second contact, but this time for a Mail User. On the menu bar above the
-    Contacts list, select **+Add a contact** to add another contact.
-
-7.  In the **Add contact** pane that appears on the right, enter the following
-    information: <br/>
-
-    -   Contact type: **Mail user** (this should be selected by default) <br/>
-
-        **Note:** The Mail User option is for individuals who need to use the company
-        domain even though they are not a full-time employee (for example, contractors, advisors, and selective temporary staff). This option will
+    Contacts list, select **+Add a contact** to add another contact. <br/>
+    
+    	**Note:** A Mail User is an individual who needs to use the company
+        domain even though they are not a full-time employee (for example, contractors, advisors, and selective temporary staff). Defining a Mail User will
         forward email to the individual’s external email when mail is sent to
         the contact’s internal company account.  <br/>
 
         ‎**WARNING**: A Mail User does not need a license to access SharePoint
         Online; the user simply needs to be given access to it.  <br/>
+
+7.  In the **Add contact** pane that appears on the right, enter the following
+    information: <br/>
+
+    -   Contact type: **Mail user** (this should be selected by default) <br/>
 
     -   First name: **Bill**
 
@@ -504,12 +505,14 @@ introduced to mail contacts and mail users.
 8.  Select **Add.**
 
 9.  Once the Contact record has been successfully created, a message indicating the **Contact created
-    successfully** will appear. Select the **X** in the upper right corner to close the pane. Select **Close**. Bill Norman should now
+    successfully** will appear. Select the **X** in the upper right corner to close the pane. Select **Close**. 
+
+10. Bill Norman should now
     appear in the **Contacts** window. If Bill Norman doesn’t appear, select
     **Refresh** on the menu bar to refresh the Contacts list until his record
-    appears. After a minute or two of selecting **Refresh**, if Bill's record still doesn't appear, try selecting **Resources** in the navigation pane, and then selecting **Contacts**. 
+    appears. 
 
-10. Leave the Exchange admin center tab open and proceed to the next task.
+11. Leave the Exchange admin center tab open and proceed to the next task.
 
 ### Task 7 – Configure Messaging Protection
 
@@ -536,9 +539,9 @@ You will perform this task in LON-CL1.
 1.  Switch to **LON-CL1** in your VM environment.   
 
 2.  You should still be logged into LON-CL1 as the **Administrator** with a
-    password of **Pa55w.rd** from the prior lab that used LON-CL1. You must then sign into Microsoft 365 as the MOD Administrator, who will later assign Holly the Organization Management role. <br/>
+    password of **Pa55w.rd** from the prior lab that used LON-CL1. If a Microsoft Teams window appers, close it now. <br/>
 
-	To sign in to Microsoft 365 as the MOD Administrator, begin by selecting the **Edge** browser icon on the taskbar. In your **Edge** browser, navigate to the **Office 365 home** page by entering **https://portal.office.com**, sign-in as the MOD Administrator account (**admin@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and enter the tenant admin password provided by the lab hosting provider. <br/>
+	 You must sign into Microsoft 365 as the MOD Administrator, who will later assign Holly the Organization Management role.To sign in to Microsoft 365 as the MOD Administrator, begin by selecting the **Edge** browser icon on the taskbar. In your **Edge** browser, navigate to the **Office 365 home** page by entering **https://portal.office.com**, sign-in as the MOD Administrator account (**admin@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and enter the tenant admin password provided by the lab hosting provider. <br/>
 
 	In the **Office 365 Home** page, navigate to the **Microsoft 365 admin center**.
 
@@ -547,9 +550,9 @@ You will perform this task in LON-CL1.
 4.  In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the 
     navigation pane and select **Permissions & roles**.
 
-5.  In the **Permissions & roles** page, under the **Email & collaboration roles** group, select **Roles**. 
+5.  In the **Permissions & roles** page, there are two groups - Azure AD, and Email & collaboration roles. Under the **Email & collaboration roles** group, select **Roles**. 
 
-6. In the **Permissions & roles > Permissions** page, locate the **Search** field on the menu bar, to the right of the **Refresh** option. Enter **org** in the **Search** field
+6. In the **Permissions & roles > Permissions** page, locate the **Search** field on the menu bar (it appears to the right of the **Refresh** option). Enter **org** in the **Search** field
     and then select the magnifying glass icon. This is a quick way to display
     the Organization Management role group so that you don’t have to scroll
     through a list of roles to find it. <br/>
@@ -566,10 +569,10 @@ You will perform this task in LON-CL1.
 
 9.  On the **Choose members** page, select the **+Add** button.
 
-10. In the **Choose which members to add from the list below** field, enter **Holly**. This will display all accounts starting with Holly. Select the check box next to **Holly Dickson** and then select the **Add** button.
+10. On the **Choose members** page, you will choose which users will be added as members of this role. In the list of users that appears under **Members**, select the check box next to **Holly Dickson** and then select **Add**.
 
 11. On the **Choose members** page, Holly should appear in the list of members
-    who have been assigned to this role group. Select **Done**.
+    for this role. Select **Done**.
 
 12. On the **Editing Choose members** page, select **Save**.
 
@@ -577,16 +580,17 @@ You will perform this task in LON-CL1.
 
 14. On **LON-CL1**, you must log out of Microsoft 365 as the MOD Administrator and log back in as Holly Dickson. On the **Microsoft 365 Defender** portal, select the **MA** circle in the upper-right corner of the screen, and in the **MOD Administrator** window that appears, select **Sign out**.
 
-15.  Once you're signed out, close all the browser tabs EXCEPT for the **Microsoft Office Home** tab. This tab will be replaced with an **Office 365 Login** tab. Under the **MOD, you're signed out now** message, select **Switch to a different account**.
+15.  Once you're signed out, close your Edge browser. This will ensure that when you reopen Edge and sign into Microsoft 365, the Microsoft 365 admin center will use the newly signed in credentials for Holly rather than opening it for the MOD Administrator, which was stored in the browser's cache.
 
-16.  In the **Email address** field that appears, enter Holly's email address (**Holly@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and select **Sign in**. Enter **Pa55w.rd** as Holly's password and select **Sign in**. If the **Stay signed in?** window appears, select the **Don't show this again** check box and then select **Yes**.
+16.  Select the **Edge** icon on your taskbar to re-open the Edge browser. Enter **https://portal.office.com** in the address bar to open the Office 365 home page.
 
-17.  On the **Microsoft Office Home** page, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
+17.  In the **Pick an account** window that appears, select Holly's email address (**Holly@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**. If the **Stay signed in?** window appears, select the **Don't show this again** check box and then select **Yes**.
+
+17.  On the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**. 
 
 18.  In the **Microsoft 365 admin center**, select **Show all** in the navigation pane, and then under the **Admin centers** section, select **Security**. This opens the Microsoft 365 Defender portal in a new tab.
 
-19. In the **Microsoft 365 Defender** portal, in the 
-    navigation pane, under the **Email & collaboration** section, select **Policies & rules**.
+19. In the **Microsoft 365 Defender** navigation pane, under the **Email & collaboration** section, select **Policies & rules**.
 
 20. In the **Policies & rules** page, select **Threat policies**.
 
@@ -601,7 +605,7 @@ You will perform this task in LON-CL1.
 
 24. In the **Description** field, enter **This policy has been created to protect Adatum’s messaging environment** and then select **Next**.
 
-25. In the **Users and domains** page, enter **onmicrosoft.com** in the
+25. In the **Users and domains** page, enter **onmicrosoft** in the
     **Domains** field. This will display the list of Adatum domains containing
     **onmicrosoft.com**. Select the **M365xZZZZZZ.onmicrosoft.com** domain
     that’s displayed and then select **Next**.
@@ -614,7 +618,7 @@ You will perform this task in LON-CL1.
     -   **Enable zero-hour auto purge for malware (recommended)**.
 
 27. In the **Notification** section, do not select any of the notification
-    options since this filter will not generate any notifications. Select **Next**.
+    options since you don't want to generate any notifications with this policy. Select **Next**.
 
 28. On the **Review** page, review all the information for this malware policy.
     If anything needs to be changed, select the **Back** button and make the
@@ -699,7 +703,7 @@ spammers) that you never want to receive email messages from.
 
 1.  You should still be logged into Microsoft 365 as Holly Dickson after completing the prior task. Your Edge browser should still be in the **Microsoft 365 Defender** portal on the **Policies & rules > Threat policies > Anti-malware** window. 
 
-2.  In the **Policies & rules > Threat policies > Anti-malware** thread at the top of the page, select **Threat policies**.
+2.  In the **Policies & rules > Threat policies > Anti-malware** navigation thread at the top of the page, select **Threat policies**.
 
 3.  In the **Threat policies** window, under the **Policies** section, select
     **Anti-spam**.
@@ -787,24 +791,26 @@ email’s origin.
    
     -   Contains specific languages: **On**  
 
-        You should already know the languages that you want to filter. In the
+        If you plan to use this setting, you should already know the languages that you want to filter. In the
         blank field that appears below the **Contains specific languages**
         field, enter the first letter of a language that you want to filter.
         This will display all languages that start with that letter (as well as
         any languages that contain that letter within the name of the language).
                 
         Enter a letter and then select a language with the letter in it that you
-        want to filter. Repeat this step for a couple of languages.
+        want to filter. Repeat this step for a couple of languages. 
+
+	**Important:** We obviously can't implement this feature in this lab, but this exercise enables to see where this setting can be implemented (which is the same for the next setting as well). 
 
     -   From these countries: **On**
 
-		You should already know the countries/regions that you want to filter. In the
+	Again, if you plan to use this setting, you should already know the countries/regions that you want to filter. In the
         blank field that appears below the **From these countries** field, enter
         the first letter of a country/region that you want to filter. This will display
         all countries/regions that start with that letter (as well as any countries/regions that
         contain that letter within the name of the country/region).
 
-		Enter a letter and then select a country/region with the letter in it that you
+	Enter a letter and then select a country/region with the letter in it that you
         want to filter. Repeat this step for a couple of countries/regions.
 
 6.  Select **Save**.
@@ -832,7 +838,7 @@ email’s origin.
 9.  Select **Save** to update the settings, and then select **Close** to close
     the **Anti-spam inbound policy (Default)** pane.
 
-10. In your Edge browser, close the **Microsoft 365 Defender** tab (the tab name is **Anti-spam policies - Microsoft 365 security**), but
+10. In your Edge browser, close the **Microsoft 365 Defender** tab (the tab name in your browser is **Anti-spam policies - Microsoft 365 security**), but
     leave all other tabs open.
 
 ### Task 10 – Manage Mail Flow Rules
@@ -853,26 +859,20 @@ environment - users who send extremely large email messages. She has decided
 that her first task will be to create a mail flow rule that restricts email
 size.
 
-1.  On LON-CL1, select the **Microsoft 365 admin center** tab in your Edge
-    browser.
+1.  On LON-CL1, in the **Microsoft 365 admin center**, select **Exchange** in the navigation pane. This opens the Exchange admin center for Exchange Online.
 
-2.  In the **Microsoft 365 admin center**, in the left-hand navigation pane,
-    select **Exchange**.
-
-3.  In the **Exchange admin center**, in the left-hand navigation pane, select
+2.  In the **Exchange admin center** navigation pane, select
     **Mail flow** to expand this group. Under this group, select **Rules**.
 
-4.  In this **Rules** page, you will be presented with a variety of options to
-    protect against emails being sent from Adatum that have sensitive
-    information, as well as creating custom rules to prevent or track
-    messaging-related issues from recipients in your environment. For this lab,
-    you will only update the email size restriction rule.   <br/>
+3.  In this **Rules** page, you can create rules based on a variety of options to
+    protect against emails being sent from Adatum users. You can also create custom rules to prevent or track
+    messaging-related issues from recipients in your environment. For this lab, you will create an email size restriction rule. <br/>
     
-    In the menu bar that appears over the list of mail flow rules, select the
-    **plus (+)** sign, and in the menu that appears, select **Filter messages by
+    In the menu bar that appears over the list of mail flow rules (there are no rules at this point), select the
+    **plus (+)** sign. In the menu that appears, select **Filter messages by
     size.**
 
-5.  In the **new rule** window that appears, enter the following information.
+4.  In the **new rule** window that appears, enter the following information.
 
     -   Name: **Email size restriction**
 
@@ -880,7 +880,7 @@ size.
 
         -   To the right of this drop-down field, select **Enter text**.
 
-        -   In the **specify size (KB)** window that appears, enter **1024** and
+        -   In the **specify size (KB)** window that appears, 512 appears by default. Change this value to **1024** and
             then select **OK**.
 
     -   Do the following: Select in this field, which displays a drop-down menu
@@ -889,17 +889,15 @@ size.
         an explanation**.
 
         -   In the **specify rejection reason** window, enter the following
-            text: **Your message exceeds the size limit. Please adjust the
-            message size or compress the email content and send it as a zipped
-            file.**
+            text: **Your message exceeds the size limit. Please adjust the message size or compress the email content and send it as a zipped file.**
 
         -   Select **OK.**
 
     -   Under **Choose a mode for this rule** setting, select **Enforce.**
 
-6.  Select **Save**. This may take a minute or so to create the new rule.
+5.  Select **Save**. This may take a minute or so to create the new rule.
 
-7.  Leave your Edge browser open as well as all the tabs.
+6.  Leave your Edge browser open as well as all the tabs.
 
 ### Task 11 – Validate Accepted Domains
 
