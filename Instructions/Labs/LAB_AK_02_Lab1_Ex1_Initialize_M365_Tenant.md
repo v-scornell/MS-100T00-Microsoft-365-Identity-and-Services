@@ -58,7 +58,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 	On the **Microsoft Office Home** page, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
 
-13. In the **Microsoft 365 admin center**, in the navigation pane, select **Show all** and then select **Settings**. In the **Settings** group, select **Org settings**. 
+13. In the **Microsoft 365 admin center**, select **Show all** in the navigation pane and then select **Settings**. In the **Settings** group, select **Org settings**. 
 
 14. On the **Org settings** page, the **Services** tab is displayed by default. Select the **Organization profile** tab.
 
