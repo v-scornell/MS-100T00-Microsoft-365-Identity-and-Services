@@ -110,17 +110,17 @@ group.
 1.  Your browser should still be open to the **Exchange admin center** from the
     prior task. In the navigation pane, under the **Recipients** group, select **Groups**.  <br/>
 
-	**Note:** The list of groups that's displayed in the **Groups** page should include the **Inside Sales** group that you created in
+	**Note:** The **Groups** page displays a tab for each type of group that can be
+    maintained. The **Microsoft 365** tab is displayed by default, which
+    displays all the Microsoft 365 groups. This list should include the **Inside Sales** group that you created in
         Lab 2. In the following steps, you will create a distribution list group and a Microsoft
     365 group whose email addresses will be in Microsoft 365 (@xxxxxZZZZZZ.onmicrosoft.com).
 
-2.  The **Groups** page displays a tab for each type of group that can be
-    maintained. The **Microsoft 365** tab is displayed by default, which
-    displays all the Microsoft 365 groups. Select **Add a group**, which
+2.  On the **Groups** page, select **Add a group**, which
     initiates the **Add a group** wizard.
 
 3.  In the **Add a group** wizard, the steps to add a group are displayed in the
-    middle column. In the **Choose a group type** page, select
+    middle pane. In the **Choose a group type** pane on the right, select
     **Distribution** and then select **Next**.
 
 4.  In the **Set up the basics** page, enter **Sales Department** in the
@@ -159,18 +159,18 @@ group.
 8.  This should return you to the **Groups** page, which is currently displaying
     the **Microsoft 365** tab. Select the **Distribution list** tab to see the
     distribution group that you just created. If **Sales Department** does not
-    appear in the list of distribution groups, refresh the page every 5 minutes
+    appear in the list of distribution groups, refresh the page every few minutes
     until the group appears.
 
 9.  Once the **Sales Department** group appears in the list, select the **Sales
     Department** name. This opens a detail pane for the Sales Department group.
-    The **General** tab is displayed by default. Since you want to now add
-    members to this group, select the **Members** tab.
+    The **General** tab is displayed by default. You now want to add
+    members to this group, so select the **Members** tab.
 
 10. On the **Members** tab, under the **Owners** section, select **View all and manage owners**, which opens
     the **Owners** window. Since you are logged into the Exchange admin center
-    using Holly Dickson, her account is displayed as the default Owner. However,
-    Holly wants Alex Wilber to co-own the group, so select **+Add owners**.
+    using Holly Dickson, her account was assigned as the default Owner when you created the group. However,
+    Holly wants Alex Wilber to co-own the group along with her, so select **+Add owners**.
 
 11. In the **Add owners** window, select **Alex Wilber**, and then select the
     **Add (1)** button. This returns you to the **Owners** window and displays
@@ -197,25 +197,23 @@ group.
     the window to close it.
 
 15. This should return you to the **Groups** page, which is currently displaying
-    the **Distribution list** tab. You will now add a dynamic distribution group, so select the **Dynamic distribution list** tab.
+    the **Distribution list** tab. You will now add a dynamic distribution group, so select **Add a group**. This initiates the **Add a group** wizard.
 
-16. In the **Dynamic distribution list** tab, select **Add a group**. This initiates the **Add a group** wizard.
-
-17. In the **Add a group** wizard, the steps to add a group are displayed in the
-    middle column. In the **Choose a group type** page, select
+16. In the **Add a group** wizard, the steps to add a group are displayed in the
+    middle pane. In the **Choose a group type** pane, select
     **Dynamic distribution** and then select **Next**.
 
-18. On the **Set up the basics** page, enter the following information and
+17. On the **Set up the basics** page, enter the following information and
     then select **Next**: <br/>
 
     -   Name: **Dynamics CRM project team**
 
     -   Description: **Adatum users working on the Microsoft Dynamics CRM project**
 
-19. On the **Assign users** page, enter the following information and then
+18. On the **Assign users** page, enter the following information and then
     select **Next**: <br/>
 
-    -   Owner: **Holly Dickson**
+    -   Owner: select **Holly Dickson**
 
     -   Members: select **Only the following recipient types**
 
@@ -225,9 +223,9 @@ group.
 
         -   Select condition: **Department**
 
-        -   Enter words, separate with commas: **Sales**
+        -   Enter words, separate with commas: type the word **Sales**
 
-20. On the **Edit settings** page, enter the following information then select
+19. On the **Edit settings** page, enter the following information then select
     **Next:** <br/>
 
     -   Group email address: **DynCRM**
@@ -237,25 +235,24 @@ group.
         **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix
         provided by your lab hosting provider.
 
-21. On the **Review and finish adding group** page, review the information that
+20. On the **Review and finish adding group** page, review the information that
     you entered for this group. If anything needs to be changed, select the
     appropriate **Edit** link and make your corrections. When everything is
     correct, select the **Create group** button.
 
-22. Once the group is created, the **Dynamics CRM Project Team is created, but it isn't ready to use yet** page
+21. Once the group is created, the **Dynamics CRM Project Team is created, but it isn't ready to use yet** page
     appears. Note the message that it may take up to 2 hours until you can send a message to this group. Select **Close**.
 
-23. This should return you to the **Groups** page, which is currently displaying
-    the **Dynamic Distribution list** tab. If **Dynamics
+21. This should return you to the **Groups** page. Select the **Dynamic Distribution list** tab. If **Dynamics
     CRM Project Team** does not appear in the list of dynamic distribution
     groups, refresh the list (select the **Refresh** option on the menu bar) every few minutes until the group appears.
 
-24. Holly now wants to add Nestor Wilke as a co-owner of this Dynamics CRM project team group. Perform the
+23. Holly now wants to add Nestor Wilke as an owner of this Dynamics CRM project team group. Perform the
     same steps that you completed earlier when you added an owner to the Sales
     Department group. In this case, add **Nestor Wilke** as a co-owner of the
     **Dynamics CRM Project Team** group.
 
-25. This should return you to the **Groups** page, which is currently displaying
+24. This should return you to the **Groups** page, which is currently displaying
     the **Dynamic Distribution list** tab. Select the **Dynamics
     CRM Project Team**, and in the detail pane that opens for the group, select the **Members** tab. <br/>
 
@@ -271,7 +268,7 @@ Organizations have typically relied on distribution groups in Exchange to
 communicate and collaborate with groups of people both inside and outside the
 company. However, Microsoft 365 groups offer a more powerful solution for
 collaboration, and Adatum’s CTO wants to take advantage of this feature. He has
-asked you to upgrade the company’s Sales Department distribution list to a
+asked Holly to upgrade the company’s Sales Department distribution list to a
 Microsoft 365 group so that Adatum’s Sales staff can choose the people they want
 to collaborate with and easily set up a collection of resources for those people
 to share.
@@ -291,7 +288,9 @@ to share.
 4.  Select the **Microsoft 365** tab. This may take up to 5 minutes for the
     upgrade to complete, at which time the Sales Department group will appear in
     the list of Microsoft 365 groups. You may need to select **Refresh** on the
-    menu bar every couple of minutes before the Sales Department group appears.
+    menu bar every few minutes before the Sales Department group appears. <br/>
+
+	If necessary, continue with the next task while you wait for the Sales Department to appear in the list of Microsoft 365 groups.
 
 ### Task 4 - Configure a Group Naming Policy
 
@@ -302,7 +301,7 @@ created, and you can also block specific words from being used. This helps
 organizations minimize the use of inappropriate words in group names.
 
 Adatum’s CTO wants Holly to implement a standard group naming policy throughout the
-organization based on the following format: **{Department} {Group Name} {City}**
+organization based on the following format: **{Department} Group: {Group Name} {City}**
 
 1.  Your browser should still be open to the **Exchange admin center** from the
     prior task, and it should still be displaying the **Groups** window and the
@@ -314,14 +313,18 @@ organization based on the following format: **{Department} {Group Name} {City}**
     select a prefix and a suffix. <br/>
 
     In the **Choose a prefix to add to the beginning of the group names**
-    section, **Attribute** is selected by default in the prefix field. Do NOT
-    change this field. Instead, select the **Select one** field and then select
+    section, you will define the prefix values that will be displayed BEFORE the group name. Remember, the group naming policy will be: **{Department} Group: {Group Name} {City}** <br/>
+
+	So the prefix that you will define in this section will be the values displayed BEFORE **{Group Name}**. This will be the Department and the text string "Group:". <br/>
+
+	The Department is an attribute of the group. The first prefix field is prefilled with **Attribute**, so do NOT change this field. However, you need to select the Department attribute, so select the **Select one** field and then select
     **Department** from the drop-down list.
 
-3.  Select **Add prefix**, which appears below the **Attribute** field. This option displays another set of prefix fields. In this
-    second set of fields, the prefix field is again set to Attribute by default.
-    However, this time you should select this **Attribute** field and then select **Text** from the drop-down list. In the
-    **Add text** field, enter **Group**.
+3.  The second portion of the prefix that will appear before the group name is the word "Group:". To define this portion of the prefix, select **Add prefix**, which appears below the **Attribute** field. This option displays another set of prefix fields. In this
+    second set of prefix fields, the first field is again set to Attribute by default.
+    However, this time you should select this **Attribute** field and then select **Text** from the drop-down list. The reason for this is that you want to display **"Group:"** prior to displaying the group name. This Text attribute allows you to enter **Group:**. <br/>
+
+	In the **Add text** field, enter **Group:**.
 
 4.  In the **Select a suffix to add to the end of group names** section,
     **Attribute** is selected by default in the suffix field. Do NOT change this
