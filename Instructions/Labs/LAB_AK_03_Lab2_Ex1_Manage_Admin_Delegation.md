@@ -53,11 +53,13 @@ PowerShell also enables you to display all the users assigned to a specific role
 
 	‎If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.** 
 
-4. Holly wants to assign **Patti Fernandez** to the **Service Support Administrator** role. To assign a role using the AzureAD PowerShell module, you must first obtain the Object ID of the user and the Object ID of the role. To obtain the Object ID of the user, type the following command and then press Enter: <br/>
+4. Holly wants to assign **Patti Fernandez** to the **Service Support Administrator** role. To assign a role using the AzureAD PowerShell module, you must first obtain the Object ID of the user and the Object ID of the role. <br/>
 
-		Get-AzureADUser -ObjectID "PattiF@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
+	To obtain Patti's Object ID, type the following command and then press Enter: <br/>
 
-5. To view all the enabled roles in Microsoft 365 (which are roles that were actually enabled, or they're roles that have been assigned to users), enter the following command in the Windows PowerShell window and then press Enter: <br/>
+		Get-AzureADUser -ObjectID "PattiF@xxxxxZZZZZZ.onmicrosoft.com" (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
+
+5. You must now obtain the ObjectID of the Service Support Administrator role so that you can assign it to Patti using the role's ObjectID. However, in the AzureAD PowerShell module, you can only assign roles that have been "enabled". Enabled roles are roles that were either enabled from a role template, or they're roles that have already been assigned to users through PowerShell or the Microsoft 365 admin center. To view all the enabled roles in Microsoft 365, enter the following command at the command prompt and then press Enter: <br/>
 	
 		Get-AzureADDirectoryRole
 
@@ -69,7 +71,7 @@ PowerShell also enables you to display all the users assigned to a specific role
 
 		Get-AzureADDirectoryRoleTemplate
 	
-7. In the list of role templates, locate the template record for the **Service Support Administrator** role. Verify you have the correct spelling of the role (Note: the word Administrator must be spelled out. It can't be abbreviated to "admin" as we often times do in our documentation). <br/>
+7. This command displayed the templates for all the possible Microsoft 365 roles. In the list of role templates, locate the template record for the **Service Support Administrator** role. Verify you have the correct spelling of the role (Note: the word Administrator must be spelled out. It can't be abbreviated to "admin" as we often times do in our documentation). <br/>
 
 	You should then retrieve the role template object for the Service Support Administrator role. To do so, type in the following command, which retrieves this template in the **$ServiceSupportRole** variable, and then press Enter:  <br/>
 
@@ -79,7 +81,7 @@ PowerShell also enables you to display all the users assigned to a specific role
 
 		$ServiceSupportRole
 
-9. You now want to enable the Service Support Administrator role by basing it on its predefined template, which is stored in the $ServiceSupportRole variable. To do so, type the following command and press Enter: <br/>
+9. You're now ready to enable the Service Support Administrator role by basing it on its predefined template, which is stored in the $ServiceSupportRole variable. To do so, type the following command and press Enter: <br/>
 
 		Enable-AzureADDirectoryRole -RoleTemplateId $ServiceSupportRole.ObjectId
 
@@ -91,19 +93,21 @@ PowerShell also enables you to display all the users assigned to a specific role
 	
 	Add-AzureADDirectoryRoleMember -ObjectID "paste in the role's ObjectID here" -RefObjectId "paste in Patti's object ID here" <br/>
 
-	To run this Add-AzureADDirectoryRoleMember command, you must copy  the ObjectID of the Service Support Administrator role (not the ObjectID of the template, but the ObjectID of the role you enabled) and paste it in the command following the **-ObjectID** parameter. You should then copy the ObjectID of Patti's user account and paste it in the command following the **-RefObjectID** parameter. **Both ObjectID values must appear within quotations marks.**  <br/>
+	To run this Add-AzureADDirectoryRoleMember command, you must copy  the ObjectID of the Service Support Administrator role (not the ObjectID of the template, but the ObjectID of the role you enabled, which was displayed when you ran step 9) and paste it in the command following the **-ObjectID** parameter. <br/>
+
+	You should then copy the ObjectID of Patti's user account (which was displayed when you ran step 4) and paste it in the command following the **-RefObjectID** parameter. **NOTE: Both ObjectID values must appear within quotations marks.**  <br/>
 
 	For example (these are NOT actual ObjectID values - this example is simply displayed here to give you an idea as to what the command should look like): <br/>
 
 	Add-AzureADDirectoryRoleMember -ObjectID "03618579-3c16-4765-9539-86d9163ee3d9" -RefObjectId "a4a9ed46-369c-4b69-9e47-d2ac6029485d" <br/>
 
-	**Note:** To copy an ObjectID, highlight the ObjectID and select Ctrl-C to copy it. Then place your cursor in the appropriate spot in the command and press Ctrl-V to paste it. <br/>
+	**Note:** To copy an ObjectID, highlight the ObjectID and select Ctrl+C to copy it. Then place your cursor in the appropriate spot in the command and press Ctrl+V to paste it. <br/>
 	
 	Now that you know where each ObjectID goes, type in the following command, copy each ObjectID and paste it within quotation marks in its appropriate location within the command, and then press Enter: <br/>
 
 		Add-AzureADDirectoryRoleMember -ObjectID "paste in the role's ObjectID here" -RefObjectId "paste in Patti's object ID here"
 
-11. You now want to verify which users have been assigned to certain roles. Displaying the users assigned to a role is a two-step process in PowerShell. You will begin by creating a macro command ($role) that states that anytime $role is used in a cmdlet, it should retrieve all users assigned to whichever role name you are validating.  <br/>
+11. You now want to verify that Patti has been assigned to the Service Support Administrator role. Displaying the users assigned to a role is a two-step process in PowerShell. You will begin by creating a macro command ($role) that states that anytime $role is used in a cmdlet, it should retrieve all users assigned to whichever role name you are validating.  <br/>
 
 	You will create this $role variable for the Service Support Administrator role. To do so, type the following command and then press Enter:  <br/>
 
@@ -113,13 +117,15 @@ PowerShell also enables you to display all the users assigned to a specific role
 	
 		Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
 				
-13. Verify that **Patti Fernandez** is in the list of users who have been assigned the **Service Support Administrator** role. 
+13. Verify that **Patti Fernandez** is in the list of users who have been assigned the **Service Support Administrator** role. As you can see, Patti is the only user assigned to the role. Let's now repeat this process to see all the users assigned to the Global admin role.
 
 14. Repeat steps 11-12 to verify which Adatum users have been assigned to the **Global Administrator** role.  <br/>
 
-15. Verify that there are multiple user accounts that have been assigned the Global Administrator role. In a real world scenario, you would use these two PowerShell commands to monitor how many global admins exist in your Microsoft 365 deployment. You would then remove the Global Administrator role from any users who truly shouldn't have it (remember, the best practice guideline is to have between 2 to 4 global admins).  <br/>
+15. Verify that there are multiple user accounts that have been assigned the Global Administrator role. In a real world scenario, you would use these two PowerShell commands to monitor how many global admins exist in your Microsoft 365 deployment. You would then remove the Global Administrator role from any users who truly shouldn't have it (remember, the best practice guideline is to have between 2 to 4 global admins in a Microsoft 365 deployment - depending on the size of the organization).  <br/>
 
-	In the case of this lab, while your lab hosting provider assigned the Global Administrator role to users other than the MOD Administrator (and you assigned it to Holly Dickson), you'll just leave these users as is. In this fictitious Adatum deployment, there's no point in wasting your time removing this role from their accounts. Plus, some of the future lab tasks are based on these users being assigned the Global Administrator role. Just remember that in your real world deployments, the Enterprise Administrator should monitor this role on a periodic basis to keep the number of assigned Global Administrator accounts between 2 and 4.
+	In the case of this lab, while your lab hosting provider assigned the Global Administrator role to users other than the MOD Administrator (and you assigned it to Holly Dickson), you'll leave these users as is. In this fictitious Adatum deployment, there's no point in wasting your time removing this role from their accounts. Plus, some of the future lab tasks are based on these users being assigned the Global Administrator role. <br/>
+
+	**Important:** Just remember that in your real world deployments, the Enterprise Administrator should monitor the Global Administrator role on a periodic basis to keep the number of assigned users between 2 and 4.
 	
 16. Leave your Windows PowerShell session open for future lab exercises; simply minimize it before going on to the next task.
 
