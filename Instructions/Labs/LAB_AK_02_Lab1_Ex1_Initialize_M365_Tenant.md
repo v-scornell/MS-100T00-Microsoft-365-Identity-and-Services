@@ -139,9 +139,13 @@ Azure Active Directory is required to perform several configuration steps when i
 
     **Note:** If you receive a warning message indicating version 2.0.2.130 of the AzureAD module is already installed in your VM environment and that you can install the next version using the -force parameter, ignore this message.
 
-4. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. You have now installed the Windows Azure Active Directory PowerShell Module.
+4. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. You have now installed the Windows Azure Active Directory PowerShell Module. <br/>
 
-5. Leave the Windows PowerShell window open but minimize it for now.
+	You now must connect to the AzureAD module that you just installed. Type the following command and then press Enter: <br/>
+
+		Connect-AzureAD
+
+5. You have installed the AzureAD module and connected to it for your current lab session, so do NOT close your PowerShell window. Leave the Windows PowerShell window open but minimize it for now. 
 
 6. Remain logged into LON-DC1 and keep your Edge browser open.
 
