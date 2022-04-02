@@ -1,6 +1,6 @@
 # Learning Path 4 - Lab 3 - Exercise 2 - Review Key Features of SharePoint Online
 
-Adatum's CTO has heard a lot about Microsoft SharePoint and is interested in implementing it at Adatum. However, security is of the utmost concern to the CTO, who is concerned whether new sites created within the company can be kept secure. The CTO has tasked Holly with reviewing some of the basic administrative functions in SharePoint Online to determine whether it can meet their security requirements.
+Adatum's CTO has heard a lot about Microsoft SharePoint Online and is interested in implementing it at Adatum. However, security is of the utmost concern to the CTO, who is worried whether new sites created within the company can be kept secure. The CTO has tasked Holly with reviewing some of the basic administrative functions in SharePoint Online to determine whether it can meet their security requirements.
 
 ### Task 1 – Site Management
 
@@ -10,9 +10,9 @@ A team site includes a group of related web pages, a default document library fo
 
 2. You should still have Microsoft Edge and the **Microsoft 365 admin center** open from the prior lab, and you should be logged in as Holly Dickson. If so, proceed to the next step; otherwise, open Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd**, and then on the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**.
 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), then scroll down to **Admin centers** and select **SharePoint.** This will open the SharePoint admin center.
+3. In the **Microsoft 365 admin center**, select **Show all** in the navigation pane (if necessary), then scroll down to **Admin centers** and select **SharePoint.** This will open the SharePoint admin center.
 
-4. In the **SharePoint admin center**, in the left-hand navigation pane, select **Sites**, and then select **Active sites.** 
+4. In the **SharePoint admin center** navigation pane, select **Sites** and then select **Active sites.** 
 
 5. In the **Active sites** window, select the **+Create** option on the menu bar.   
 
@@ -58,7 +58,7 @@ A team site includes a group of related web pages, a default document library fo
 
 16. In the **Delete Microsoft 365 Group** pop-up window that appears, select the **Delete the group “IT Services” and all its resources** check box and then select **Delete.** Note that the IT Services site disappears from the **Active sites** list. 
 
-17. In the left-hand navigation pane on the **SharePoint admin site**, under the **Sites** group, select **Deleted sites.** Note how the IT Services site that you just deleted appears in the list of deleted sites (it may take a minute or so to appear in the list). 
+17. In the **SharePoint admin site** navigation pane, under the **Sites** group, select **Deleted sites.** Note how the IT Services site that you just deleted appears in the list of deleted sites (it may take a minute or so to appear in the list). 
 
 18. In the **Deleted sites** window, select the circle to the left of the **IT Services** site name (do not select the IT Services site name).
 
@@ -66,7 +66,7 @@ A team site includes a group of related web pages, a default document library fo
 
 20. In the **Restore Microsoft 365 Group** pop-up window that appears, select **Restore**. Note that the IT Services site disappears from the **Deleted sites** list. 
 
-21. In the left-hand navigation pane on the **SharePoint admin site**, under the **Sites** group, select **Active sites.** The IT Services site should once again appear in the **Active sites** list. 
+21. In the **SharePoint admin site** navigation pane, under the **Sites** group, select **Active sites.** The IT Services site should once again appear in the **Active sites** list. 
 
 22. In the **Active sites** list, select the circle to the left of the **IT Services** site name to highlight this site. Scroll the horizontal scroll bar to the right to verify that all the information for the IT Services site has been restored. 
 
@@ -79,21 +79,21 @@ SharePoint Online uses hierarchical permissions to set authorization and access 
 
 In this task, you will create the following hierarchical permission structure for Adatum:
 
-- When you created the IT Services team site in the prior task, you assigned Diego Siciliani as the group owner of the site, and you assigned Patti Fernandez and Nestor Wilke as group members for the site. In doing so, the default team site permission levels were assigned to Diego, Patti, and Nestor. Diego was assigned Full Control permission (as site owner), and Patti and Nestor were assigned Edit permissions (as site members). In this task, you will verify these default team site permission levels were automatically assigned to Diego, Patti, and Nestor.
+- When you created the IT Services team site in the prior task, you assigned Diego Siciliani as group owner of the site, and you assigned Patti Fernandez and Nestor Wilke as group members for the site. In doing so, the default team site permission levels were assigned to Diego, Patti, and Nestor. Diego was assigned Full Control permission (as site owner), and Patti and Nestor were assigned Edit permissions (as site members). In this task, you will verify these default team site permission levels were automatically assigned to Diego, Patti, and Nestor.
 
-- You want to assign a different set of permissions for a different group of users, so you will follow best practices by creating a group of users and assigning the group a custom permission level (as opposed to assigning custom permissions to each individual user). In this case, you will create a new **Information Technology** group, you will assign Isaiah Langer and Joni Sherman to this group, and will you assign the group Full Control permissions. 
+- You want to assign a different set of permissions for a different group of users, so you will follow best practices by creating a group of users and assigning the group a custom permission level (as opposed to assigning custom permissions to each individual user). In this case, you will create a new **Information Technology** group. You will then assign Isaiah Langer and Joni Sherman to this group, and will you assign the group Full Control permissions. 
 
-- You will then create a permission level titled **Designer**, which will be used for Adatum’s web specialists who will design SharePoint sites upon request. They need to be assigned permission levels that provide complete editing and administrative capabilities. While you will not do it in this lab, you can later create a group for your web designers and assign that group this Designer permission level.  
+- You will then create a permission level titled **Designer**, which will be used for Adatum’s web specialists who will design SharePoint sites upon request. They need to be assigned permission levels that provide complete editing and administrative capabilities. Although you won't do this in this lab, you can later create a group for your web designers and assign that group this Designer permission level.  
 
 1. In the **SharePoint admin center**, you should still be displaying **Active sites**.
 
-2. Select the **IT Services** site that you created in the prior task (do not select the circle to the left of it as you did in the prior task; instead, select the **IT Services** site name, which is hyperlinked.
+2. Select the **IT Services** site that you created in the prior task (do not select the circle to the left of it as you did in the prior task; instead, select the **IT Services** site name, which is hyperlinked).
 
 3. In the **IT Services** pane that appears, select the URL (**.../sites/ITServices**) that is displayed under **URL**. 
 
-4. A new tab will open in your Edge browser that displays the **IT Services** site. In the upper right-hand corner of the **IT Services** site (to the left of Holly Dickson's name and initials), select the **gear (Settings)** icon. If the **Start designing your site** dialog box appears, select **Maybe later**.
+4. A new tab will open in your Edge browser that displays the **IT Services** site. If a **Start designing your site** dialog box appears, select **Maybe later**.
 
-5. In the **Settings** pane that appears, select **Site permissions.**
+5. In the upper right-hand corner of the **IT Services** site (to the left of the circle containing Holly Dickson's initials), select the **gear (Settings)** icon. In the **Settings** pane that appears, select **Site permissions.**
 
 6. In the **Permissions** pane that appears, select **Advanced permissions settings**, which opens a new **Permissions: IT Services** tab in your Edge browser.
 
@@ -105,7 +105,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 	**Note:** This option enables you to check access permissions for users and groups. In this case, you will check the permissions that were assigned to Holly Dickson. In the prior task, you assigned Holly as an owner of the IT Services site. The following steps will enable you to check what default team site permissions were assigned in this role. 
 
-9. In the **IT Services: Check Permissions** dialog box that appears, in the **User/Group** field, type **Holly**. As you type Holly, a window appears listing users whose first name starts with Holly. Select **Holly Dickson** and then select **Check now**. Since Holly is an owner of this site, this confirms that she was automatically assigned **Full Control** permissions.
+9. In the **IT Services: Check Permissions** dialog box that appears, in the **User/Group** field, type **Holly**. As you type Holly, a window appears listing users whose first name starts with Holly. Select **Holly Dickson** and then select **Check now**. Since Holly is an owner of this site, this confirms that she was automatically assigned **Full Control** permissions through the IT Services Owners group.
 
 10. In the **User/Group** field, select the **X** next to Holly’s name to remove it from the field. In the **User/Group** field, type **Nestor**. As you type Nestor, a window appears listing users whose first name starts with Nestor. Select **Nestor Wilke** and then select **Check now.** Since Nestor is member of this site, this confirms that he was automatically assigned **Edit** permissions.
 
