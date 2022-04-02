@@ -12,15 +12,15 @@ In this task, you will run the Azure AD Connect setup wizard to enable synchroni
 
 2. After finishing the previous lab exercise, you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson.  
 
-3. In your **Edge** browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane, select **Users**, and then select **Active Users**. <br/>
+3. In your **Edge** browser, select the **Microsoft 365 admin center** tab, and then in the navigation pane, select **Users**, and then select **Active Users**. <br/>
 
-4. In the **Active users** window, on the menu bar, select the **ellipsis** icon (to the right of **Add multiple users**), and then in the drop-down menu, select **Directory synchronization**. 
+4. In the **Active users** window, select the **ellipsis** icon that appears at the end of the menu bar, and then in the drop-down menu, select **Directory synchronization**. 
 
 5. In the **Azure Active Directory preparation** window, select **Go to the Download center to get the Azure AD Connect tool**. This opens a new tab in your browser and takes you to the Microsoft Download Center.
 
 6. In the **Microsoft Download Center**, scroll down to the **Microsoft Azure Active Directory Connect** section and select **Download**. 
 
-7. In the notification bar at the top of the screen, once the **AzureADConnect.msi** file has finished downloading, select **Open file**.
+7. In the **Downloads** window that appears at the top of the screen, once the **AzureADConnect.msi** file has finished downloading, select **Open file**.
 
 8. This initiates the installation of the Microsoft Azure Active Directory Connect Tool. 
 
@@ -42,7 +42,7 @@ In this task, you will run the Azure AD Connect setup wizard to enable synchroni
 
 15. Wait for the configuration to complete (which may take several minutes) and then select **Exit**. 
 
-16. Select the **Windows (Start)** icon in the lower left corner of the taskbar. In the **Start** menu that appears, select **Azure AD Connect** to expand the group, and then select **Synchronization Service** to start this desktop application. <br/>
+16. Select the **Windows (Start)** icon in the lower left corner of the taskbar. In the **Start** menu that appears, select the icon to display all apps. Select **Azure AD Connect** to expand the group, and then select **Synchronization Service** to start this desktop application. <br/>
 
 	**Note:** If you selected **Azure AD Connect** in the **Start** menu and it expanded and you were able to select **Synchronization Service**, then proceed to the next step. However, if **Azure AD Connect** did not expand when you selected it in the **Start** menu, then you will need to close all applications and then restart LON-DC1. The remaining instruction in this step is what to do if you needed to restart LON-DC1. <br>
 
@@ -53,7 +53,7 @@ In this task, you will run the Azure AD Connect setup wizard to enable synchroni
 
 17. Maximize the **Synchronization Service Manager on LON-DC1** window. The **Operations** tab at the top of the screen is displayed by default so that you can monitor the synchronization process, which automatically started when you selected this program. 
 
-18. Wait for the **Export** profile to complete for **xxxxxZZZZZZ.onmicrosoft.com**; when it finishes, its **Status** should be **completed-export-errors**. Once it's complete and you see this status, select this row.  
+18. Wait for the **Export** profile to complete for **xxxxxZZZZZZ.onmicrosoft.com**. When it finishes, its **Status** should be **completed-export-errors**. Once it's complete and you see this status, select this row.  
 
 19. In the bottom portion of the screen, a detail pane appears showing the detailed information for this operation. 
 
@@ -69,12 +69,11 @@ In this task, you will run the Azure AD Connect setup wizard to enable synchroni
 22. Leave LON-DC1 open as it will be used in the next exercise.
 
 
-
 ### Task 2 - Create Group Accounts to Test Synchronization  
 
 To test the manual, forced synchronization process, you will also set up several group scenarios to verify whether the forced synchronization function is working in Azure AD Connect. You will create a new security group, and you will update the group members in an existing, built-in security group, all within Adatum’s on-premises environment. 
 
-Each group will be assigned several members. After the forced synchronization, you will validate that you can see the new security group in Microsoft 365 and that its members were synced up from the on-premises group to the cloud group. You will also validate that you can NOT see the built-in security group in Microsoft 365, even though you added members to it in Adatum's on-premises environment. Built-in groups are predefined security groups that are located under the Builtin container in Active Directory Users and Computers. They are created automatically when you create an Active Directory domain, and you can use these groups to control access to shared resources and delegate specific domain-wide administrative roles. However, they are not synchronized to Microsoft 365, even after adding members to them within their on-premises AD group. You will validate this functionality in this task.
+Each group will be assigned several members. After the forced synchronization, you will validate that you can see the new security group in Microsoft 365 and that its members were synced up from the on-premises group to the cloud group. You will also validate that you can NOT see the built-in security group in Microsoft 365, even though you added members to it in Adatum's on-premises environment. Built-in groups are predefined security groups that are located under the Builtin container in Active Directory Users and Computers. They are created automatically when you create an Active Directory domain, and you can use these groups to control access to shared resources and delegate specific domain-wide administrative roles. **However, they are NOT synchronized to Microsoft 365, even after adding members to them within their on-premises AD group.** You will validate this functionality in this task.
 
 1. You should still be logged into **LON-DC1** as the **Administrator** from the prior task. 
 
@@ -82,7 +81,7 @@ Each group will be assigned several members. After the forced synchronization, y
 
 3. In **Server Manager**, select **Tools** at the top right side of the screen, and then in the drop-down menu select **Active Directory Users and Computers.**
 
-4. You will begin by adding members to one of the built-in security groups. In the **Active Directory Users and Computers** console tree, under **Adatum.com**, select the **Builtin** folder. This will display all the built-in security group folders that were automatically created at the time the **Adatum.com** domain was created.
+4. You will begin by adding members to one of the built-in security groups. Maximize the **Active Directory Users and Computers** window. In the console tree in the left-hand pane, under **Adatum.com**, select the **Builtin** folder. This will display all the built-in security group folders that were automatically created at the time the **Adatum.com** domain was created.
 
 5. In the detail pane on the right, double-click the **Print Operators** security group.
 
@@ -96,7 +95,7 @@ Each group will be assigned several members. After the forced synchronization, y
 
 	- **Morgan Brooks**  
 
-8. Select **Check Names** and once they are all validated, select **OK** to return to the **Print Operators Properties** window.
+8. Select **Check Names**. Once they are all validated, select **OK** to return to the **Print Operators Properties** window.
 
 9. In the **Print Operators Properties** window, select **OK** to return to the **Active Directory Users and Computers** window.
 
@@ -145,7 +144,7 @@ This task sets up another scenario for testing whether the sync process is worki
 
 	- **Tia Zecirevic**  
 	
-	While you can remove each user individually, the quickest way is to remove all three at one time. Select the first user, then hold the **Ctrl** key down while selecting the other two. With all three users selected, select the **Remove** button and then select **Yes** to confirm the removal. Verify the three users have been removed, and then select **OK.**
+	While you can remove each user individually, the quickest way is to remove all three at one time. Select the first user, then hold the **Ctrl** key down while scrolling down and selecting the other two. With all three users selected, select the **Remove** button and then select **Yes** to confirm the removal. Verify the three users have been removed, and then select **OK.**
 
 4. Close the **Active Directory Users and Computers** window.
   
@@ -187,7 +186,7 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 	Otherwise, enter **https://portal.office.com/** in the address bar to open the **Microsoft Office Home** page, log in as **holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**, and then on the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**. 
 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Teams & groups**, and then select **Active teams & groups**. 
+3. In the **Microsoft 365 admin center**, select **Teams & groups** in the navigation pane, and then select **Active teams & groups**. 
 
 4. In the **Active teams and groups** window, the **Microsoft 365** tab is displayed by default. Select the **Security** tab. Verify the **Print Operators** group does NOT appear in the list of security groups. As mentioned previously, built-in groups such as the **Print Operators** security group are not synced from the on-premises AD to Azure AD, even when you add members to the group as you did in the earlier task.
 
@@ -195,7 +194,7 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 	**Note:** You may need to wait up to 10 minutes before the **Manufacturing** group appears. Continue to refresh the list until you see the group.  
 
-6. For the **Manufacturing** group, verify the group email address was changed during directory synchronization from **manufacturing@adatum.com** to **manufacturing@xxxxxZZZZZZ.onmicrosoft.com**, which is the group's mailbox in Exchange Online. <br/>
+6. For the **Manufacturing** group, check the value displayed in the **Email** column. Verify the group email address was changed during directory synchronization from **manufacturing@adatum.com** to **manufacturing@xxxxxZZZZZZ.onmicrosoft.com**, which is the group's mailbox in Exchange Online. <br/>
 
 	Hover your mouse over the icon in the **Sync status** column and verify that it indicates **Synced from on-premises**. 
 
@@ -217,7 +216,7 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 		Get-MsolGroup
 
-13. In the list of groups that’s displayed, you should verify that you can see the **Research** and **Manufacturing** groups, and that you do not see the  **Print Operators** group (this is the built-in group that did not synchronize from on-premises to Microsoft 365).
+13. In the list of groups that’s displayed, you should verify that you can see the **Research** and **Manufacturing** groups, and that you do not see the  **Print Operators** group (this is the built-in security group that did not synchronize from on-premises to Microsoft 365).
 
 14. To verify that the group membership changes that you made in your on-premises Active Directory were synced to the **Research** group in Microsoft 365, you should copy the **ObjectID** for the **Research** group to your clipboard by dragging your mouse over the ObjectId string and then pressing **Ctrl-C**.   <br/>
 
