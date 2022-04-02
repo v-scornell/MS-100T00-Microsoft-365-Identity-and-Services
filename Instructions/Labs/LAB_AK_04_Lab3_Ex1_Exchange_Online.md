@@ -903,24 +903,24 @@ size.
 
 A domain that’s added to an organization’s on-premises environment is called an
 accepted, or custom domain. You can create mailboxes with accepted domains to
-receive and send email. In Lab 1, you created a domain for Adatum Corporation
+receive and send email. In Lab 1, you created a custom, on-premises domain for Adatum Corporation
 based on the unique UPN name assigned to your tenant
 (xxxUPNxxx.xxxCustomDomainxxx.xxx, where xxxUPNxxx is your unique UPN Name) and
 the custom domain name provided by your lab hosting provider
-(xxxCustomDomainxxx.xxx).
+(xxxCustomDomainxxx.xxx). You also created the three DNS records that are required to connect this custom, on-premises domain with Adatum's Microsoft Exchange Online service. This accepted domain was automatically flagged as Adatum's default domain.
 
-In this task, you will use the Exchange Admin Center to view the accepted domain
-that you previously created and configure its domain type. Each domain can be
+In this task, you will use the Exchange admin center (for Exchange Online) to view this accepted domain
+and configure its domain type. Each domain can be
 changed to either authoritative (which accepts all inbound or outbound mail) or
 internal relay (which only accepts internal email). By default, all domains
-should be set to authoritative. You want to ensure that your custom domain’s
-type is set to authoritative.
+should be set to authoritative. You want to ensure the domain
+type for your custom, on-premises domain is set to authoritative.
 
 1.  The **Exchange admin center** should still be displayed following the
-    previous task. In the **Mail flow** group in the left-hand navigation pane,
+    previous task. In the **Mail flow** group in the navigation pane,
     select **Accepted domains.**
 
-2.  In the **Accepted domains** page, see Adatum’s two domains – its custom
+2.  On the **Accepted domains** page, see Adatum’s two domains – its custom
     on-premises domain **(xxxUPNxxx.xxxCustomDomainxxx.xxx)** that you added in Lab
     1, and its Microsoft 365 cloud domain **(xxxxxZZZZZZ.onmicrosoft.com)**.
 
@@ -943,11 +943,19 @@ type is set to authoritative.
         **Save**.   
         
         However, since this domain is already set to **Authoritative** and you
-        did not make any changes, select **Cancel** to close this window.
+        did not make any changes, select the **X** in the upper-right corner to close this pane.
 
-5.  This concludes the exercise on reviewing Exchange Online features. You can
-    close the **Exchange admin center** tab in your Edge browser. This will
-    return you to the **Microsoft 365 admin center** tab, which you will access
-    in the next exercise.
+5.  Close the **Exchange admin center** tab in your Edge browser. This will
+    return you to the **Microsoft 365 admin center** tab. 
+
+6. On the **Microsoft 365 admin center**, under the **Settings** group in the navigation pane, select **Domains**. 
+
+7. On the **Domains** page, select the custom **xxxUPNxxx.xxxCustomDomainxxx.xxx** that you created in Lab 1, which is flagged as the default domain.
+
+8. On the **xxxUPNxxx.xxxCustomDomainxxx.xxx** page, the **Overview** tab is displayed by default. Select the **DNS records** tab. This displays the three DNS records that you created in lab 1 that will enable this custom, on-premises domain to connect with Adatum's Microsoft Exchange Online service. 
+
+9. Select the **MX** record to open its properties page. Note how the pane display the expected DNS record values and the actual DNS record values that you entered. Since the values are in sync, a message is displayed indicating the record is set up correctly for your domain in Azure. Select **Done**. If you select any of the other DNS records, you should see a similar result. 
+
+9. You have now completed the validation of the custom, on-premises domain that you created in Lab 1. Leave your browser and all tabs open for the next lab exercise. 
 
 ### Proceed to Lab 3 - Exercise 2
