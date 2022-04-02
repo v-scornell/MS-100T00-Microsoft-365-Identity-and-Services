@@ -70,9 +70,9 @@ In this task you will download and use the IdFix tool to fix the on-premises use
 
 2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar to access the Microsoft Download Center page for the IdFix Directory Synchronization Error Remediation Tool: <br/>
 
-	**https://microsoft.github.io/idfix/installation/**
+	**https://microsoft.github.io/idfix/**
 	
-3. On the **Microsoft - IdFix** window, under the **Step 2: Install** section at the top of the page, the instructions direct you to run **setup.exe** to install the IdFix application on your machine. Select **setup.exe** to download the file to LON-DC1. 
+3. On the **Microsoft - IdFix** window, select **Step 2: Install IdFix** in the navigation pane on the left. At the top of the page, the instructions direct you to run **setup.exe** to install the IdFix application on your machine. Select **setup.exe** to download the file to LON-DC1. 
 
 4. Once the **setup.exe** file is downloaded, it will appear in the notification bar at the top of the screen. Select **Open file**. 
 
