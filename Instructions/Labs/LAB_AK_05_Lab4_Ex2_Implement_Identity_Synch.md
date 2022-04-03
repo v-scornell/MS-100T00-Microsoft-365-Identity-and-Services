@@ -206,15 +206,15 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 9. Now let’s examine this group using Windows PowerShell. If **Windows PowerShell** is already open on the taskbar, then select the PowerShell icon and proceed to the next step; otherwise, type **PowerShell** in the **Search** field on the taskbar and then right-click on the **Windows PowerShell** application and select **Run as administrator**. 
 
-10. You should begin by running the following command that connects your PowerShell session to the Microsoft Online Service:  <br/>
+10. You should begin by running the following command that connects your PowerShell session to the Azure Active Directory PowerShell for Graph module (AzureAD):  <br/>
 
-		Connect-MsolService
+		Connect-AzureAD
 
 11. In the **Sign in** dialog box, log in as **holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.   
 
 12. Run the following command that displays a list of all the Microsoft 365 groups:   <br/>
 
-		Get-MsolGroup
+		Get-AzureADGroup
 
 13. In the list of groups that’s displayed, you should verify that you can see the **Research** and **Manufacturing** groups, and that you do not see the  **Print Operators** group (this is the built-in security group that did not synchronize from on-premises to Microsoft 365).
 
@@ -222,7 +222,7 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 	‎Then run the following command to display the members of this group. In the command, replace **<ObjectId>** with the value that you copied in the prior step by pressing **Ctrl-V** to paste in the value. <br/>
 	
-		Get-MsolGroupMember -GroupObjectId <ObjectID>
+		Get-AzureADGroupMember -ObjectId <ObjectID>
 
 15. Verify the membership of the Research group does **NOT** contain the following users that you earlier removed from the group in AD DS:  
 
