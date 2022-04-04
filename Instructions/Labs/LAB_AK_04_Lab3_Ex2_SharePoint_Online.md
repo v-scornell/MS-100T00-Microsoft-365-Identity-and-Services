@@ -26,7 +26,7 @@ A team site includes a group of related web pages, a default document library fo
 
 	- Site address: As you typed in **IT Services** in the **Site name** field, the same text automatically prefilled in this field, although the blank space was removed so that it appears as one word (ITServices). Do not change this default value.
 
-	- Group owner: type **Diego**, and in the window that appears displaying the users whose first name starts with Diego, select **Diego Siciliani**.
+	- Group owner: type **Holly**, and in the window that appears displaying the users whose first name starts with Holly, select **Holly Dickson**.
 
 	- Select a language: Leave this as **English**
 
@@ -42,9 +42,9 @@ A team site includes a group of related web pages, a default document library fo
 
 9. In the **Add site owners and members** window, in the **Add members** field, enter **Patti**. As you enter Patti, a window appears listing users whose first name starts with Patti. Select **Patti Fernandez**. 
 
-10. Repeat the previous step for **Nestor Wilke** and then **Holly Dickson**.
+10. Repeat the previous step for **Nestor Wilke** and then **Diego Siciliani**.
 
-11. You now want to make Holly an owner of the group, along with Diego. The **Add site owners and members** window currently displays Holly, Nestor, and Patti as members of the group. Below **Holly Dickson**, select the **Member** drop-down arrow. In the drop-down menu that appears, select **Owner**. This changes Holly from a group member to a group owner.
+11. You now want to make Diego an owner of the group, along with Holly. The **Add site owners and members** window currently displays Patti, Nestor, and Diego as members of the group. Below **Diego Siciliani**, select the **Member** drop-down arrow. In the drop-down menu that appears, select **Owner**. This changes Diego from a group member to a group owner.
 
 12. Select **Finish**.
  
@@ -111,13 +111,13 @@ In this task, you will create the following hierarchical permission structure fo
 
 	**Note:** At the time of this writing, the application was displaying **None** as Nestor's permission level, which is typically attributed to someone who is not a site member. The same thing occurred when checking Diego Siciliani and Patti Fernandez. You can try checking their permissions to see if this issue has been resolved and it displays their actual permission level.
 	
-11. Repeat the prior step and check the permission for **Alex Wilber**. You will see that Alex's permission level is set to **None**, which means he does not have permission to access or update the site since he has not been assigned as a site member.
+11. Repeat the prior step and check the permission for **Alex Wilber**, who is not a site member. You will see that Alex's permission level is set to **None**, which means he does not have permission to access or update the site since he has not been assigned as a site member.
 
 12. In the **IT Services: Check Permissions** window, select **Close.**
 
 13. You are now back in the **Permissions: IT Services** tab in your browser. You have been asked to create a new group of users and assign them permission to access the IT Services site. In the ribbon that appears at the top of the page, under the **Grant** section, select **Create Group.**  
 
-	‎**Best Practice:** It’s a best practice that you should use Groups to assign access permissions rather than assigning access to individual user accounts for two important reasons: Assigning individual users access to a site makes it difficult to track user access when the user leaves your organization, and direct permissions can override security groups permissions.
+	‎**Best Practice:** It’s a best practice that you should use Groups to assign access permissions rather than assigning access to individual user accounts for two important reasons: 1) Assigning individual users access to a site makes it difficult to track user access when the user leaves your organization, and 2) Idirect permissions can override security groups permissions.
 
 14. In the **People and Groups > Create Group** window, enter the following information:   
 
@@ -127,7 +127,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 	- Group owner: If Holly Dickson appears as the owner, select the **X** to the right of her name to remove her, and then enter **MOD**. As you type MOD, a window appears listing users whose first name starts with MOD. Select **MOD Administrator**.  
 	
-		‎**Best Practice:** When you create groups make sure the group owner is either a generic Administrator account or an Administrator group. Giving ownership of groups to individuals can cause editing issues because only the owners can make changes to groups.
+		‎**Best Practice:** When you create groups make sure the group owner is either a generic Administrator account (such as the MOD Administrator) or an Administrator group. Giving ownership of groups to individuals can cause editing issues because only the owners can make changes to groups.
 
 	- Group Settings:
 
@@ -139,11 +139,11 @@ In this task, you will create the following hierarchical permission structure fo
 
 		- Auto-accept requests: **No**
 
-		- Send membership requests to the following e-mail address: If Holly Dickson’s email appears, replace her email with the MOD Administrator's email, which is **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
+		- Send membership requests to the following e-mail address: If Holly Dickson’s email appears, replace her email with the MOD Administrator's email, which is **admin@xxxxxZZZZZZ.onmicrosoft.com** (simply replace **admin** with **holly** in the email address)
 
 		- Choose the permission level group members get on this site: **Full Control – Has full control**
 
-15. Select **Create**. 
+15. Select the **Create** button that appears at the  bottom of the screen. 
 
 16. This displays the **Information Technology** group information. The users displayed in the list are the members of this group. Since Holly Dickson created the group, she is listed as the sole member.
 
@@ -179,7 +179,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 30. In the **Permission Levels** window, in the menu bar at the top of the page, select **Add a Permission Level.**
 
-31. You want to create a permission level for your team’s web specialists who will be designing SharePoint sites upon request. They need to be assigned permission levels that provide complete editing and administrative capabilities. In the window that appears, enter the following information:
+31. You want to create a permission level for your team’s web specialists who will be designing SharePoint sites upon request. Adatum's CTO wants them to be assigned permission levels that provide complete editing and administrative capabilities. In the window that appears, enter the following information:
 
 	- Name: **Designer**
 	
@@ -227,7 +227,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 33. The **Permission Levels** window now displays the **Designer** permission level that you just added.
 
-34. In your Edge browser session, close the **Permission Levels** tab. Leave the **SharePoint admin center** tab open as you will use it in the next lab exercise.
+34. In your Edge browser, close the **Permission Levels** tab. Leave the **SharePoint admin center** tab open as you will use it in the next lab exercise.
 
 
 # Proceed to Lab 3 - Exercise 3
