@@ -187,13 +187,13 @@ In this task, you will create the following hierarchical permission structure fo
 
 	- List Permissions – select the following permission levels:
 
-		- **Add Items**
+		- **Add Items** 
 
 		- **Edit Items**
 
 		- **Delete Items**
 
-		- **View Items**
+		- **View Items** - this permission was automatically selected when you selected Add Items
 
 		- **Open Items**
 
@@ -209,23 +209,23 @@ In this task, you will create the following hierarchical permission structure fo
 
 		- **Apply Style Sheets**
 
-		- **Browse Directories**
+		- **Browse Directories** - this permission was automatically selected when you selected Add and Customize Pages
 
-		- **View Pages**
+		- **View Pages** - this permission was automatically selected when you selected Add Items
 
 		- **Enumerate Permissions** 
 
-		- **Browse User Information**
+		- **Browse User Information** - this permission was automatically selected when you selected Create Subsites
 
 		- **Use Remote Interfaces**
 
 		- **Use Client Integration Features**
 
-		- **Open**
+		- **Open** - this permission was automatically selected when you selected Add Items
 
-32. Scroll to the bottom of the page and select the **Create** button to save your changes.
+32. Select the **Create** button at the bottom of the page to save your changes.
 
-33. The **Permission Levels** window now displays the permission level that you just added.
+33. The **Permission Levels** window now displays the **Designer** permission level that you just added.
 
 34. In your Edge browser session, close the **Permission Levels** tab. Leave the **SharePoint admin center** tab open as you will use it in the next lab exercise.
 
