@@ -8,7 +8,7 @@ Because Holly is busy with running the Microsoft 365 pilot project along with he
 
 In Lab 1, your instructor assigned you the tenant suffix ID of a fellow student in your class. Your fellow student's tenant ID will represent the IT Consultant who will partner with Holly Dickson in building Adatum's new service request ticketing system. In this lab, you will provide your fellow student's tenant ID with access to the new ticketing system. In a lab 1 exercise, you authorized external access to your tenant from this student’s tenant ID. By providing external access to this tenant suffix ID, you and your fellow student will be able to collaborate through Microsoft Teams as you set up this new service request ticketing system (you will do this in the next lab that deals with Teams).
 
-In the previous lab exercise, you created a SharePoint team site called IT Services. As you develop this site, you will employ good security practices by limiting site access to Holly and your fellow student's tenant ID (this tenant ID represents the IT consultant). As you set up the new service request ticketing system, you will access the site using your fellow student's tenant ID to prove that the IT consultant can access the system. In the next lab involving Microsoft Teams, you will actually chat with your fellow student concerning the new ticketing system. Keep in mind that the student who was assigned as your IT consultant will also be taking on the role of Holly Dickson in his or her own lab, and you will be taking on the IT consultant role with another student. Therefore, each student in the class will take on dual roles – that of Holly Dickson in the student’s own lab, and that of the IT consultant for a fellow student’s lab.
+In the previous lab exercise, you created a SharePoint team site called IT Services. As you develop this site, you will employ good security practices by limiting site access to Holly and your fellow student's tenant ID (this tenant ID represents the IT consultant). As you set up the new service request ticketing system, you will access the site using your fellow student's tenant ID to prove that the IT consultant can access the system. In the next lab involving Microsoft Teams, you will actually chat with your fellow student concerning the new ticketing system. Keep in mind that the student who was assigned as your IT consultant will also be taking on the role of Holly Dickson in their own lab, and you will be taking on the IT consultant role with another student. Therefore, each student in the class will take on dual roles – that of Holly Dickson in the student’s own lab, and that of the IT consultant for a fellow student’s lab.
 
 ### Task 1 - Assign site permissions to your IT consultant
 
@@ -23,7 +23,7 @@ Instead, in your role as Holly Dickson, you will perform the following steps in 
 1. You should meet with the student who your instructor assigned to your lab to play the role of the IT consultant. During this meeting you should exchange the tenant admin accounts **(admin@xxxxxZZZZZZ.onmicrosoft.com)** from each of your tenants along with the tenant admin's password.
 2. You should still be logged into LON-DC1 as **ADATUM\\Administrator** and password **Pa55w.rd**; if not, then do so now.
 3. You should still have your Edge browser and the SharePoint admin center open from the prior lab in which you were logged in as Holly Dickson. If so, proceed to the next step; otherwise, navigate to the SharePoint admin center just as you did in the prior lab exercise.
-4. In the **SharePoint admin center**, you will begin by creating a new permission level for the IT Services site. In the left-hand navigation pane, select **Sites**, and then select **Active sites**.
+4. In the **SharePoint admin center**, you will begin by creating a new permission level for the IT Services site. In the navigation pane, select **Sites**, and then select **Active sites**.
 5. In the list of **Active sites**, locate the **IT Services** site and then select the **…/sites/ITServices** value that appears in the URL column for this site.
 6. A new tab will open in your Edge browser that displays the **IT Services** site. In the upper right-hand corner of the **IT Services** site, select the **gear (Settings)** icon.
 7. In the **Settings** pane that appears, select **Site permissions.**
@@ -34,23 +34,23 @@ Instead, in your role as Holly Dickson, you will perform the following steps in 
 
     - Name: **Restricted Use**
     - Description: **This level restricts the level of use inside the IT Services site.**
-    - When selecting the permissions, do NOT select the **Select All** Instead, select the following limited set of permissions under the **List Permissions** section:
+    - When selecting the permissions, do NOT select the **Select All** option. Instead, select the following limited set of permissions under the **List Permissions** section:
 
-        - **Manage lists** (which selects **View Items**)
-        - **Add items**
-        - **Edit items**
-        - **View versions** (which selects **Open Items**)
+        - **Manage Lists** (which selects **View Items**)
+        - **Add Items**
+        - **Edit Items**
+        - **View Versions** (which selects **Open Items**)
         - **View Application Pages**
 
     - Select the following permissions under the **Site Permissions** section:
 
         - **Add and Customize Pages** (which selects **Browse Directories, View Pages**, and **Open**)
-        - **Use Self-Service Site Creation** (which selects **Browse User information**)
-        - **Use Remote interfaces**
-        - **Use Client integration features**
+        - **Use Self-Service Site Creation** (which selects **Browse User Information**)
+        - **Use Remote Interfaces**
+        - **Use Client Integration Features**
 
 12. Scroll to the bottom of the page and select the **Create** button to create the new **Restricted Use** permission level.
-13. Once the permission level is created you will be redirected to the **Permissions** \> **Permission Levels** page. Verify the new **Restricted Use** permission level appears in the list of permission levels for this IT Services site.
+13. Once the permission level is created you will be redirected to the **Permissions** \> **Permission Levels** page. Verify the new **Restricted Use** permission level appears in the list of permission levels for this IT Services site. <br/>
 
     On this **Permissions** \> **Permission Levels** heading line, select the **Permissions** link to return to the **Permissions: IT Services** page.
 14. In the ribbon displayed at the top of the screen, the **PERMISSIONS** tab is displayed by default. In this tab, under the **Grant** section, select **Create Group**.
@@ -65,7 +65,7 @@ Instead, in your role as Holly Dickson, you will perform the following steps in 
 
         **Note:** This setting includes the **Designer** permission level that you created in the prior lab and the **Restricted Use** permission level that you just created in this task. You will only assign this group the **Restricted Use** permission level.
 16. Select **Create**. You will be redirected to the **People and Groups** \> **Consultants** page for this **Consultants** group.
-17. On the menu bar that appears above the list of consultants, select the drop-down arrow next to **New**. In the menu that appears, select **Add Users.**
+17. ON the **People and Groups** \> **Consultants** page, on the menu bar that appears above the list of consultants, select the drop-down arrow next to **New**. In the menu that appears, select **Add Users.**
 18. In the **Share ‘IT Services’** window that appears, in the **Enter names or email addresses** field, enter your fellow student’s tenant admin account, which will be **admin@xxxxxZZZZZZ.onmicrosoft.com** (**IMPORTANT:** replace xxxxxZZZZZZ with your fellow student’s tenant prefix that was assigned to you by your instructor; do **NOT** use your tenant prefix).
 
     This same address will be displayed below the field in a menu. Select this address.
@@ -76,16 +76,16 @@ Instead, in your role as Holly Dickson, you will perform the following steps in 
 21. Because you selected the option to **Send an email invitation**, your fellow student will receive an email invitation in his or her MOD Administrator’s Inbox. To verify this email was received, you must open an InPrivate browsing session to impersonate your fellow student’s tenant. This enables you to access your fellow student’s MOD Administrator account within the student’s tenant, and therefore access this MOD Administrator’s Outlook Inbox.
 
     On your taskbar, right-click on the **Microsoft Edge** icon and select **New InPrivate window** in the menu that appears.
-22. This opens an InPrivate browsing session. Maximize the InPrivate browser window, and then enter the following URL in the address bar: **<https://outlook.office365.com/mail/inbox>**
+22. This opens an InPrivate browsing session. Maximize the InPrivate browser window and then enter the following URL in the address bar: **https://outlook.office365.com/mail/inbox**
 23. In the **Sign in** window, enter your fellow student’s MOD Administrator email address of **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is your fellow student’s tenant prefix that was assigned to you by your instructor). In the **Enter password** window, enter your fellow student's tenant email password and select **Sign in**.
-24. In the **Stay signed in?** dialog box, select **Yes**.
-25. This will open your fellow student’s MOD Administrator’s Inbox in Outlook. In the Inbox you should see an email from **no-reply@sharepointonline.com.** Open the email.
-26. In the email, it will display **Go To** **IT Services**. The **IT Services** portion of this message is hyperlinked. Select **IT Services**.
+24. In the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes**.
+25. This will open your fellow student’s MOD Administrator’s Inbox in Outlook. In the Inbox you should see an email from **Holly Dickson <no-reply@sharepointonline.com>**. Open the email.
+26. In the email, it will display **Go To IT Services**. The **IT Services** portion of this message is hyperlinked. Select **IT Services**.
 27. A new tab will open in your InPrivate browsing session that displays **Welcome to SharePoint Online.** On this webpage, select **Organizational account.**
 28. This will open the **IT Services** site that you created in your tenant. In other words, by using an InPrivate browsing session, you are impersonating your fellow student by being signed into his or her tenant, and from your fellow student’s browser (i.e. in the InPrivate browsing session), you are accessing the **IT Services** site that Holly created in Adatum’s Microsoft 365 tenant.
-29. On the **IT Services** site, in the left-hand navigation pane, select **Documents**.
+29. On the **IT Services** site, in the navigation pane, select **Documents**.
 30. On the **Documents** page, select **+New** on the menu bar. In the drop-down menu that appears, you should see all the objects the IT Consultant can create in this site.
-31. Select the X in the upper right corner of the screen to close the InPrivate Browsing session in Microsoft Edge.
+31. Select the **X** in the upper right corner of the screen to close the InPrivate Browsing session in Microsoft Edge.
 32. Close the Microsoft Outlook mail message that you opened earlier.
 33. This will return you to the **People and Groups \> Consultants** site in your normal Edge browser session. If your fellow student's MOD Administrator account does not appear in the list of consultants, select the **Refresh** icon on the left-side of the address bar at the top of the page to refresh the list. Your fellow student's **MOD Administrator** account should now appear.
 34. Leave the browser open and proceed to the next task.
@@ -101,14 +101,14 @@ As the IT Consultant in this task, you will perform two primary steps:
 - You will connect to Adatum’s IT Services team site to validate that you can access the site and authenticate your credentials.
 - You will export the existing ticket data from the spreadsheet on LON-CL1 and upload it to a SharePoint list in the IT Services site that Adatum (Holly) created in the prior task. When the data is uploaded to the IT Services site, it will be uploaded as a SharePoint list (titled “Service Desk Requests”) on the site.
 
-    **IMPORTANT:** There are two ways in which you can export the data from the spreadsheet and upload it to the SharePoint list on the IT Services site: through commands in the Excel spreadsheet, or by running a PowerShell script. Both options are presented in this task and you are free to choose whichever method you prefer. Using the Excel spreadsheet commands is probably the more common method, but for those of you who prefer to work in PowerShell, using the PowerShell script provides another experience to add to your personal repository of PowerShell tools.
+    **IMPORTANT:** There are two ways in which you can export the data from the spreadsheet and upload it to the SharePoint list on the IT Services site: 1) Through commands in the Excel spreadsheet, or 2) By running a PowerShell script. Both options are presented in this task and you are free to choose whichever method you prefer. Using the Excel spreadsheet commands is probably the more common method, but for those of you who prefer to work in PowerShell, using the PowerShell script provides another experience to add to your personal repository of PowerShell tools.
 
 **CAUTION:** In this task, whenever you access the URL of the IT Services site, you will use ***your*** tenant prefix (xxxxxZZZZZZ) in the URL (**<https://xxxxxZZZZZZ.sharepoint.com/sites/ITServices>**), since you created the site in your Adatum tenant in the prior task. When you access this site in your role as the IT Consultant, you will sign in using your fellow student's tenant admin username and password (which represents the IT Consultant); the username will be **admin@xxxxxZZZZZZ.onmicrosoft.com**, where the tenant prefix (xxxxxZZZZZZ) will be ***your fellow student’s*** tenant prefix that was assigned to you by your instructor.
 
 1. Switch to **LON-CL1**.
-2. On **LON-CL1**, you should still be logged in as the **Administrator** (Adatum\\Administrator) from the earlier lab in which you installed Microsoft 365 Apps for enterprise. If you did not log out of LON-CL1 as Laura Atkins and log back in as the Administrator at the end of the earlier lab, then do so now.
+2. On **LON-CL1**, you should still be logged in as the **Administrator** (Adatum\\Administrator) from the earlier lab in which you installed Microsoft 365 Apps for enterprise. If your Edge browser is displayed, minimize it to display the LON-CL1 desktop so that you can verify which user account you're logged in as. If you did not log out of LON-CL1 as Laura Atkins and log back in as the Administrator at the end of the earlier lab, then do so now.
 3. Select the **File Explorer** icon that is located on the taskbar at the bottom of the screen.
-4. Maximize the **File Explorer** window, and then select the **Documents**.
+4. Maximize the **File Explorer** window. In the tree pane on the left, under **This PC**, select **Documents** (this folder provides a shortcut that points to the actual path of C:\Users\Administrator.ADATUM\Documents).
 5. If you will recall from the task description, you will be presented with two options for completing this task: through commands in the Excel spreadsheet, or by running a PowerShell script.
       - If you prefer to use Excel to accomplish this task, then proceed to **step 6**.
       - If you prefer to use PowerShell, then proceed to **step 25**.
@@ -116,7 +116,7 @@ As the IT Consultant in this task, you will perform two primary steps:
 
     Since you are at this step, you have chosen to use Excel to export the table data into a SharePoint list in the IT Services site.
 
-    Open **File Explorer** and under **This PC**, select **Documents** (this provides a shortcut that points to the actual path of C:\\Users\\Administrator.ADATUM\\Documents). Confirm the **Service Request System.xlsx** and **BackupFile.xlsx** files are present in the Documents folder. The **Service Request System** spreadsheet contains copies of the service request tickets from Adatum’s old ticketing system. The **Backup File** spreadsheet, which is simply a copy of the Service Request System file, was created for precautionary purposes (it will come into play in the next task). Note that there are two files with the name **Service Request System**; one is an Excel spreadsheet file with a .xlsx extension, and the other is a comma separated value file with a .csv extension. The Excel spreadsheet file is used in this section, whereas students that chose to use PowerShell will use the .csv file.
+    In **File Explorer**, the **Documents** folder should be displayed. Confirm the **Service Request System.xlsx** and **BackupFile.xlsx** files are present in the Documents folder. The **Service Request System** spreadsheet contains copies of the service request tickets from Adatum’s old ticketing system. The **Backup File** spreadsheet, which is simply a copy of the Service Request System file, was created for precautionary purposes (it will come into play in the next task). Note that there are two files with the name **Service Request System**; one is an Excel spreadsheet file with a .xlsx extension, and the other is a comma separated value file with a .csv extension. The Excel spreadsheet file is used in this section, whereas students that chose to use PowerShell will use the .csv file.
 
     Double-click the **Service Request System.xlsx** file to open it. Make sure you open the .xlsx file and not the .csv file.
 7. If a **Sign in to set up Office** window appears, sign in using the tenant admin account (admin@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and tenant admin password. On the Manage device screen, click **No, sign in to this app only**.
@@ -177,14 +177,14 @@ As the IT Consultant in this task, you will perform two primary steps:
 
     Since you are at this step, you have chosen to use Windows PowerShell to export the table data into a SharePoint list in the IT Services site rather than using Excel to accomplish this task.
 
-    Open **File Explorer** and under **This PC**, select **Documents** (this provides a shortcut that points to the actual path of C:\\Users\\Administrator.ADATUM\\Documents). Confirm the **Service Request System.csv** file is present in the Documents folder. This file contains copies of the service request tickets from Adatum’s old ticketing system. Note that there are two files with the name **Service Request System**; one is this comma separated value file with a .csv extension, and the other is an Excel spreadsheet file with a .xlsx extension. The .csv file is used in this section, whereas students that chose to use Excel to complete this task will use the .xlsx file. The **Backupfile.xlsx** spreadsheet, which is simply a copy of the Service Request System.xlsx file, was created for precautionary purposes (it will come into play in the next task).
+    In **File Explorer**, the **Documents** folder should be displayed. Confirm the **Service Request System.csv** file is present in the Documents folder. This file contains copies of the service request tickets from Adatum’s old ticketing system. Note that there are two files with the name **Service Request System**; one is this comma separated value file with a .csv extension, and the other is an Excel spreadsheet file with a .xlsx extension. The .csv file is used in this section, whereas students that chose to use Excel to complete this task will use the .xlsx file. The **Backupfile.xlsx** spreadsheet, which is simply a copy of the Service Request System.xlsx file, was created for precautionary purposes (it will come into play in the next task).
 
     Confirm the **ImportCsvToSharepointList.ps1** script is also present in the **Documents** folder. This script contains the PowerShell commands you will run to export the table data from the **Service Request System.csv** file and import it into a SharePoint list in the IT Services site.
 26. In the **Search** field on the taskbar at the bottom of the desktop, enter **PowerShell**.
 
     **Important:** Because you MUST run several of the commands within this script individually rather than running the entire script at once, you should select **Windows PowerShell ISE** (not Windows PowerShell); therefore, right-click on **Windows PowerShell ISE** and select **Run as administrator**.
 27. If a **User Account Control** dialog box appears, select **Yes** to allow this app to make changes to your device.
-28. In **Windows PowerShell ISE**, in the menu bar, select **File** and then select **Open**. In the **File Explorer** window, navigate to **This PC** and then to the **Documents** folder. Select the **ImportCsvFileToSharepointList.ps1** script and then select **Open**.
+28. In **Windows PowerShell ISE**, in the menu bar, select **File** and then select **Open**. In the **File Explorer** window that appears, navigate to **This PC** and then to the **Documents** folder. Select the **ImportCsvFileToSharepointList.ps1** script and then select **Open**.
 29. In the script, you will run the commands in lines **11-13** together; therefore, select these three lines in the script and then select the **Run Selection (F8)** icon on the menu bar. These lines will set your execution policy as Remote Signed and install both the SharePoint Online module as well as the SharePoint PNP module. The PNP module enables you to remotely sign into your SharePoint Online environment and manage your SharePoint lists.
 30. If you are prompted to confirm an **Execution Policy Change**, select **Yes to All.**
 31. If you are prompted to confirm a **NuGet provider is required to continue**, select **Yes**.
