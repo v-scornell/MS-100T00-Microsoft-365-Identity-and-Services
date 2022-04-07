@@ -154,7 +154,7 @@ Azure Active Directory is required to perform several configuration tasks when i
 
 ### Task 4 – Prepare for External Access using Microsoft Teams 
 
-When you get to Module 4, you will perform a lab in which you will create a new service request ticketing system. One of the tasks within that lab requires you to collaborate with one of your fellow student's Microsoft 365 tenant through Microsoft Teams. To enable this communication between your tenant and your fellow student's tenant, you must turn on the **External Access** functionality within Microsoft Teams so that you can communicate with your fellow student's domain. By default, the system is set to allow access to all external domains. However, Adatum's CTO wants to limit exposure to just the domain of your fellow student, who will take on the role of an external IT consultant who is working with Adatum. 
+When you get to Module 4, you will perform a lab in which you will create a new service request ticketing system. One of the tasks within that lab requires you to collaborate with one of your fellow student's Microsoft 365 tenant through Microsoft Teams. To enable this communication between your Microsoft 365 tenant and your fellow student's tenant, you must turn on the **External Access** functionality within Microsoft Teams so that you can communicate with your fellow student's domain. By default, the system is set to allow access to all external domains. However, for security reasons, Adatum's CTO wants to limit exposure to just the domain of your fellow student, who will take on the role of an external IT consultant who is working with Adatum in the Module 4 lab exercises. 
 
 **Important:** When you modify the External Access feature to limit access to a specific domain, it can take a couple of hours for your system to propagate the change through your tenant. Therefore, you will configure this External Access feature in this task so that the internal changes made by the system have time to propagate through your tenant by the time you eventually get to the Module 4 lab.
 
@@ -178,9 +178,9 @@ By the time you get to the Module 4 labs, External Access should be ready so tha
 
 7. Select the **Allow domains** button that appears. 
 
-8. In the **Add external domain** pane that appears on the right side of the screen, enter in the **Domain** field the **xxxxxZZZZZZ.onmicrosoft.com** domain for your fellow student's tenant ID (where ZZZZZZ is your fellow student's tenant ID that was assigned to you by your instructor). This will enable you to communicate with your fellow student once you get to the exercises in Lab 4. Select **Done**. 
+8. In the **Add external domain** pane that appears on the right side of the screen, enter in the **Domain** field the **xxxxxZZZZZZ.onmicrosoft.com** domain for your fellow student's tenant ID (where ZZZZZZ is your fellow student's tenant ID that was assigned to you by your instructor). This will enable you to communicate with your fellow student once you get to the exercises in the Module 4 labs. Do NOT enter your domain. When you've finished entering your fellow student's domain, select **Done**. 
 
-9. Under the **Teams accounts not managed by an organization** section, verify the toggle switch is set to **On**. If it's set to **Off**, then set it to **On** now. <br/>
+9. On the **External access** page, under the **Teams accounts not managed by an organization** section, verify the toggle switch is set to **On**. If it's set to **Off**, then set it to **On** now. <br/>
 
 	Below the toggle switch, verify the check box is selected for the option titled: **External users with Teanms accounts not managed by an organization can contact users in my organization**.
 
