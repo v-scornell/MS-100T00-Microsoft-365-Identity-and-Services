@@ -73,21 +73,23 @@ Instead, in your role as Holly Dickson, you will perform the following steps in 
     **Note:** A message should appear below this field that says: **admin@xxxxxZZZZZZ.onmicrosoft.com is outside of your organization.**
 19. Select **SHOW OPTIONS.** Note that the **Send an email invitation** option is selected by default. Leave this option selected.
 20. Select **Share**.
-21. Because you selected the option to **Send an email invitation**, your fellow student will receive an email invitation in his or her MOD Administrator’s Inbox. To verify this email was received, you must open an InPrivate browsing session to impersonate your fellow student’s tenant. This enables you to access your fellow student’s MOD Administrator account within the student’s tenant, and therefore access this MOD Administrator’s Outlook Inbox.
+21. Because you selected the option to **Send an email invitation**, your fellow student will receive an email invitation in their MOD Administrator’s Inbox. To verify this email was received, you must open an InPrivate browsing session to impersonate your fellow student’s tenant. This enables you to access your fellow student’s MOD Administrator account within the student’s tenant, and therefore access this MOD Administrator’s Outlook Inbox.
 
     On your taskbar, right-click on the **Microsoft Edge** icon and select **New InPrivate window** in the menu that appears.
 22. This opens an InPrivate browsing session. Maximize the InPrivate browser window and then enter the following URL in the address bar: **https://outlook.office365.com/mail/inbox**
 23. In the **Sign in** window, enter your fellow student’s MOD Administrator email address of **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is your fellow student’s tenant prefix that was assigned to you by your instructor). In the **Enter password** window, enter your fellow student's tenant email password and select **Sign in**.
 24. In the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes**.
-25. This will open your fellow student’s MOD Administrator’s Inbox in Outlook. In the Inbox you should see an email from **Holly Dickson <no-reply@sharepointonline.com>**. Open the email.
+25. This will open your fellow student’s MOD Administrator’s Inbox in Outlook. In the Inbox you should see an email from **Holly Dickson <no-reply@sharepointonline.com>**. Open the email. <br/>
+
+    **Note:** If the email doesn't appear in the MOD Administrator's Inbox, check the **Junk Email** folder. If the message appears there, drag and drop it into the Inbox and then open the email.
 26. In the email, it will display **Go To IT Services**. The **IT Services** portion of this message is hyperlinked. Select **IT Services**.
-27. A new tab will open in your InPrivate browsing session that displays **Welcome to SharePoint Online.** On this webpage, select **Organizational account.**
-28. This will open the **IT Services** site that you created in your tenant. In other words, by using an InPrivate browsing session, you are impersonating your fellow student by being signed into his or her tenant, and from your fellow student’s browser (i.e. in the InPrivate browsing session), you are accessing the **IT Services** site that Holly created in Adatum’s Microsoft 365 tenant.
+27. A new tab will open in your InPrivate browsing session that displays **Welcome to SharePoint Online.** To accept the invitation to access the IT Services site, select **Organizational account** on this **Welcome to SharePoint Online** webpage.
+28. This will open the **IT Services** site that you created in your tenant. In other words, by using an InPrivate browsing session, you are impersonating your fellow student by being signed into their tenant, and from your fellow student’s browser (i.e. in the InPrivate browsing session), you are accessing the **IT Services** site that Holly created in Adatum’s Microsoft 365 tenant.
 29. On the **IT Services** site, in the navigation pane, select **Documents**.
 30. On the **Documents** page, select **+New** on the menu bar. In the drop-down menu that appears, you should see all the objects the IT Consultant can create in this site.
 31. Select the **X** in the upper right corner of the screen to close the InPrivate Browsing session in Microsoft Edge.
-32. Close the Microsoft Outlook mail message that you opened earlier.
-33. This will return you to the **People and Groups \> Consultants** site in your normal Edge browser session. If your fellow student's MOD Administrator account does not appear in the list of consultants, select the **Refresh** icon on the left-side of the address bar at the top of the page to refresh the list. Your fellow student's **MOD Administrator** account should now appear.
+32. This returns you to the Microsoft Outlook mail message that you opened earlier. Select the **X** in the upper right corner of the screen to close the message.
+33. This returns you to the **People and Groups \> Consultants** site in your normal Edge browser session. If your fellow student's MOD Administrator account does not appear in the list of consultants, select the **Refresh** icon on the left-side of the address bar at the top of the page to refresh the list. Your fellow student's **MOD Administrator** account should now appear.
 34. Leave the browser open and proceed to the next task.
 
 ### Task 2 - Upload existing ticket request data (**IT Consultant steps**)
