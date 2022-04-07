@@ -50,7 +50,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 9. On the **Stay signed in?** dialog box, select the **Don’t show this again** check box and then select **Yes.** On the **Save password** diaglog box that appears, select **Never**.
 
-10. If a **Welcom to your new Office, MOD** window appears, there's no option to close it. Instead, select the right arrow icon (**>**) three times to page through this messaging window. 
+10. If a **Welcom to your new Office, MOD** window appears, there's no option to close it. Instead, select the right arrow icon (**>**) three times (actually, two times and then the final time it's a check mark) to page through this messaging window. 
 
 11. In the **Find more apps** window that appears, select the **X** in the upper right-hand corner of the window to close it. 
 
