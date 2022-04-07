@@ -127,7 +127,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 ### Task 3 – Prepare for Microsoft Azure Active Directory 
 
-Azure Active Directory is required to perform several configuration steps when installing Microsoft 365. Because several of these steps must be performed using Windows PowerShell, you should begin by installing the Azure Active Directory PowerShell module. This module can simply be installed through PowerShell itself. It allows you to perform many of the Microsoft 365 user and organization administration tasks through PowerShell. It’s great for bulk tasks such as password resets, password policies, license management and reporting, and so on.  
+Azure Active Directory is required to perform several configuration tasks when installing Microsoft 365. Because future lab exercises will perform several of these tasks using Windows PowerShell, you should begin by installing the Azure Active Directory PowerShell module. This module allows you to perform many of the Microsoft 365 user and organization administration tasks through PowerShell. It’s great for bulk tasks such as password resets, password policies, license management and reporting, and so on.  
 
 1. On LON-DC1, you must open an elevated instance of **Windows PowerShell**. Select the magnifying glass (Search) icon on the taskbar at the bottom of the screen and type **powershell** in the Search box that appears. In the list of search results, right-click on **Windows PowerShell** (do not select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu. 
 
@@ -145,9 +145,11 @@ Azure Active Directory is required to perform several configuration steps when i
 
 		Connect-AzureAD
 
-5. You have installed the AzureAD module and connected to it for your current lab session, so do NOT close your PowerShell window. Leave the Windows PowerShell window open but minimize it for now. 
+5. If a **Sign in** window appears, enter the Microsoft 365 tenant admin username and password provided by your lab hosting provider (this is the MOD Administrator account you used to sign into Microsoft 365).
 
-6. Remain logged into LON-DC1 and keep your Edge browser open.
+6. You have installed the AzureAD module and connected to it for your current lab session, so do **NOT** close your PowerShell window. Leave the Windows PowerShell window open but minimize it for now. 
+
+7. Remain logged into LON-DC1 and keep your Edge browser open.
 
 
 ### Task 4 – Prepare for External Access using Microsoft Teams 
@@ -158,7 +160,7 @@ When you get to Module 4, you will perform a lab in which you will create a new 
 
 **Instructor/Student Note:** To facilitate this lab, your instructor should collect each student's tenant ID (ZZZZZZ) from each of their domains (this would be each student's xxxxxZZZZZZ.onmicrosoft.com domain, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider; ZZZZZZ is the tenant ID portion of the tenant prefix that is unique to each student). The instructor will then assign to each student the tenant ID (ZZZZZZ) from another student (you can NOT be assigned your own tenant ID). When you enable External Access in this task, you will enter the domain associated with the assigned tenant ID from your fellow student (in other words, you will enter the **xxxxxZZZZZZ.onmicrosoft.com** domain, where ZZZZZZ is your fellow student's tenant ID).
 
-By the time you get to the Module 4 labs, External Access should be ready so that you can collaborate with the student whose domain you set up in this task. Conversely, you should also be able to collaborate with the student who entered your domain in his or her External Access setup.
+By the time you get to the Module 4 labs, External Access should be ready so that you can collaborate with the student whose domain you set up in this task. Conversely, you should also be able to collaborate with the student who entered your domain in their External Access setup.
 
 1. On LON-DC1, in your Microsoft Edge browser, you should still be logged into the Microsoft 365 admin center as the MOD Administrator from the earlier task in which you updated Adatum's organizational profile. <br/>
 
@@ -166,13 +168,15 @@ By the time you get to the Module 4 labs, External Access should be ready so tha
 	
 2. If necessary, in the **Microsoft 365 admin center** navigation pane, select **...Show All** to display the full navigation menu.
 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin Centers** group, select **Teams**.
+3. In the **Microsoft 365 admin center**, under the **Admin Centers** group in the navigation pane, select **Teams**.
 
 4. A new tab will open in your Edge browser that displays the **Microsoft Teams admin center**. If a **Welcome to the Teams admin center** window appears, select **Skip tour**.
 
-5. In the **Microsoft Teams admin center**, in the navigation pane, select **Users** and then select **External access**.
+5. In the **Microsoft Teams admin center** navigation pane, select **Users** and then select **External access**.
 
-6. On the **External access** page, confirm that the toggle switches for both external access options are in the **On** position. If either are set to **Off**, then set them to **On** now.
+6. On the **External access** page, confirm that the toggle switches for both external access options are in the **On** position. If either are set to **Off**, then set them to **On** now. <br/>
+
+	Under the **Teams accounts not managed by an organization** section, below the toggle switch (that should be set to **On**), verify the check box is selected for the option titled: **External users with Teanms accounts not managed by an organization can contact users in my organization**.
 
 7. If you made any changes on the **External access** page, scroll to the bottom and select **Save**.
 
