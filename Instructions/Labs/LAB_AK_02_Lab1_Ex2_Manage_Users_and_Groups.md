@@ -81,15 +81,15 @@ That being said, you will not turn on MFA for Holly's account because time is li
 
 After completing the previous task, you should still be signed into the **Microsoft 365 admin center** as the **MOD Administrator** account. In this task, you will begin implementing Adatum’s Microsoft 365 pilot project as Holly Dickson, Adatum’s new Enterprise Administrator. Therefore, you will begin this task by logging out of Microsoft 365 as the MOD Administrator and you will log back in as Holly.<br/>
 
+**Important:** When signing out of Microsoft 365 as one user account and signing in as another, you should close your browser once you're signed out, then reopen your browser and sign back into Microsoft 365 as the new user. This is not only a best practice that helps to avoid any confusion by closing the Microsoft 365 tabs that were signed in under the prior user, but it also avoids having the Microsoft 365 admin center open as the old user. If you don't close and then reopen your browser, sometimes when you sign back into Microsoft 365 as the new user, the Office 365 home page will open as the new user, but when you open the Microsoft 365 admin center, it will sign you in there as the old user. Closing and reopening your browser will avoid this confusing situation.
+
 In this task, you will create two new groups and then manage the groups by assigning users to them. One group will be a Microsoft 365 group and the other a Security group; this will enable you to see some of the differences in the two types of groups. After creating the groups, you will then delete one of them. This will set up the next task, which examines how to recover a deleted group using Windows PowerShell.
 
-1. On LON-DC1, on the **Microsoft 365 admin center** tab in your Edge browser, select the user icon for the **MOD Administrator** (the **MA** circle) in the upper right-hand corner of your browser, and in the **MOD Administrator** window that appears, select **Sign out.** <br/>
+1. On LON-DC1, on the **Microsoft 365 admin center** tab in your Edge browser, select the user icon for the **MOD Administrator** (the **MA** circle) in the upper right-hand corner of your browser, and in the **MOD Administrator** window that appears, select **Sign out.** 
 	
-	**Important:** When signing out of Microsoft 365 as one user account and signing in as another, you should close all the browser tabs except for your current tab (which will be the **Sign out** tab). This is a best practice that helps to avoid any confusion by closing the windows associated with the prior user. Take a moment now and close all other browser tabs except for the **Sign out** tab. 
-	
-2. In your Microsoft Edge browser, in the **Sign out** tab, enter the following URL in the address bar to sign back into Microsoft 365: **https://portal.office.com** 
+2. Once you're signed out, close your Microsoft Edge browser.
 
-3. In the **Pick an account** window, only the MOD Administrator account (the admin@xxxxxZZZZZZ.onmicrosoft.com account) that you just logged out from appears. Select **Use another account**. 
+3. Select the **Edge** icon on your taskbar to reopen your Microsoft Edge browser. Then enter the following URL in the address bar to sign back into Microsoft 365: **https://portal.office.com** 
 
 4. In the **Sign in** window, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
 
