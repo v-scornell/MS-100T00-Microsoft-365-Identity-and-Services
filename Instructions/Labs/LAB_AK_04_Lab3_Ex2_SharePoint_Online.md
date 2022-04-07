@@ -99,7 +99,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 	Select the **BROWSE** tab and note how the Permissions ribbon disappears. This also reveals the name of this page, which is **Site Settings > Permissions**.
 
-7 Select the **PERMISSIONS** tab, which displays the Permissions ribbon. In the ribbon, under the **Check** section, select **Check Permissions.**  
+7. Select the **PERMISSIONS** tab, which displays the Permissions ribbon. In the ribbon, under the **Check** section, select **Check Permissions.**  <br/>
 
 	**Note:** This option enables you to check access permissions for users and groups. In this case, you will check the permissions that were assigned to Holly Dickson. In the prior task, you assigned Holly as an owner of the IT Services site. The following steps will enable you to check what default team site permissions were assigned in this role. 
 
@@ -137,7 +137,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 		- Auto-accept requests: **No**
 
-		- Send membership requests to the following e-mail address: If Holly Dickson’s email appears, replace her email with the MOD Administrator's email, which is **admin@xxxxxZZZZZZ.onmicrosoft.com** (simply replace **admin** with **holly** in the email address)
+		- Send membership requests to the following e-mail address: If Holly Dickson’s email appears, replace her email with the MOD Administrator's email, which is **admin@xxxxxZZZZZZ.onmicrosoft.com** (simply replace **holly** with **admin** in the email address)
 
 		- Choose the permission level group members get on this site: **Full Control – Has full control**
 
@@ -161,7 +161,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 22. Close this **Peoples and Groups** tab in your Edge browser. This will return you to the **SharePoint admin center** and the **Active sites** list, with the **IT Services** pane open on the right-hand side. 
 
-23. In the **IT Services** window that appears, select the URL (**.../sites/ITServices**) that is displayed under **URL.** 
+23. In the **IT Services** pane, select the URL (**.../sites/ITServices**) that is displayed under **URL.** 
 
 24. A new tab will open in your Edge browser that displays the **IT Services** site.
 
@@ -185,13 +185,11 @@ In this task, you will create the following hierarchical permission structure fo
 
 	- List Permissions – select the following permission levels:
 
-		- **Add Items** 
+		- **Add Items** (which automatically selects the View Items, Browse Directories, View Pages, and Open permissions)
 
 		- **Edit Items**
 
 		- **Delete Items**
-
-		- **View Items** - this permission was automatically selected when you selected Add Items
 
 		- **Open Items**
 
@@ -199,27 +197,19 @@ In this task, you will create the following hierarchical permission structure fo
 
 	- Site Permissions – select the following permission levels:
 
-		- **Create Subsites**
+		- **Create Subsites** (which automatically selects the Browse User Information permission)
 
-		- **Add and Customize Pages**
+		- **Add and Customize Pages** (which automatically selects the Browse Directories permission)
 
 		- **Apply Themes and Borders**
 
 		- **Apply Style Sheets**
 
-		- **Browse Directories** - this permission was automatically selected when you selected Add and Customize Pages
-
-		- **View Pages** - this permission was automatically selected when you selected Add Items
-
 		- **Enumerate Permissions** 
-
-		- **Browse User Information** - this permission was automatically selected when you selected Create Subsites
 
 		- **Use Remote Interfaces**
 
 		- **Use Client Integration Features**
-
-		- **Open** - this permission was automatically selected when you selected Add Items
 
 31. Select the **Create** button at the bottom of the page to save your changes.
 
