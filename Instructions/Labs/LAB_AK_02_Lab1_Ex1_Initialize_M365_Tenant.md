@@ -50,7 +50,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 9. On the **Stay signed in?** dialog box, select the **Don’t show this again** check box and then select **Yes.** On the **Save password** diaglog box that appears, select **Never**.
 
-10. If a **Welcom to your new Office, MOD** window appears, there's no option to close it. Instead, select the right arrow icon (**>**) three times (actually, two times and then the final time it's a check mark) to page through this messaging window. 
+10. If a **Welcom to your new Office, MOD** window appears, there's no option to close it. Instead, select the right arrow icon (**>**) three times (actually, two times and then the third time it's a check mark) to page through this messaging window. 
 
 11. In the **Find more apps** window that appears, select the **X** in the upper right-hand corner of the window to close it. 
 
@@ -154,13 +154,13 @@ Azure Active Directory is required to perform several configuration tasks when i
 
 ### Task 4 – Prepare for External Access using Microsoft Teams 
 
-When you get to Module 4, you will perform a lab in which you will create a new service request ticketing system. One of the tasks within that lab requires you to collaborate with one of your fellow student's Microsoft 365 tenant through Microsoft Teams. To enable this communication between your tenant and your fellow student's tenant, you must turn on the **External Access** functionality within Microsoft Teams. 
+When you get to Module 4, you will perform a lab in which you will create a new service request ticketing system. One of the tasks within that lab requires you to collaborate with one of your fellow student's Microsoft 365 tenant through Microsoft Teams. To enable this communication between your tenant and your fellow student's tenant, you must turn on the **External Access** functionality within Microsoft Teams so that you can communicate with your fellow student's domain. By default, the system is set to allow access to all external domains. However, Adatum's CTO wants to limit exposure to just the domain of your fellow student, who will take on the role of an external IT consultant who is working with Adatum. 
 
-**Important:** When you turn on this External Access feature, it can take a couple of hours for your system to propagate the changes through your tenant. Therefore, you will turn on this External Access feature in this task so that the internal changes made by the system have time to propagate through your tenant by the time you eventually get to the Module 4 lab.
+**Important:** When you modify the External Access feature to limit access to a specific domain, it can take a couple of hours for your system to propagate the change through your tenant. Therefore, you will configure this External Access feature in this task so that the internal changes made by the system have time to propagate through your tenant by the time you eventually get to the Module 4 lab.
 
-**Instructor/Student Note:** To facilitate this lab, your instructor should collect each student's tenant ID (ZZZZZZ) from each of their domains (this would be each student's xxxxxZZZZZZ.onmicrosoft.com domain, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider; ZZZZZZ is the tenant ID portion of the tenant prefix that is unique to each student). The instructor will then assign to each student the tenant ID (ZZZZZZ) from another student (you can NOT be assigned your own tenant ID). When you enable External Access in this task, you will enter the domain associated with the assigned tenant ID from your fellow student (in other words, you will enter the **xxxxxZZZZZZ.onmicrosoft.com** domain, where ZZZZZZ is your fellow student's tenant ID).
+**Instructor/Student Note:** To facilitate this lab, your instructor should collect each student's tenant ID (ZZZZZZ) from each of their domains (this would be each student's xxxxxZZZZZZ.onmicrosoft.com domain, where xxxxxZZZZZZ is the tenant prefix assigned to your fellow student by your lab hosting provider; ZZZZZZ is the tenant ID portion of the tenant prefix that is unique to each student). The instructor will then assign to each student the tenant ID (ZZZZZZ) from another student (you can NOT be assigned your own tenant ID). In this task, you will limit external access to the domain associated with the assigned tenant ID from your fellow student (in other words, you will enter the **xxxxxZZZZZZ.onmicrosoft.com** domain, where ZZZZZZ is your fellow student's tenant ID).
 
-By the time you get to the Module 4 labs, External Access should be ready so that you can collaborate with the student whose domain you set up in this task. Conversely, you should also be able to collaborate with the student who entered your domain in their External Access setup.
+By the time you get to the Module 4 labs, External Access should be ready so that you can collaborate with the student whose domain you set up in this task. 
 
 1. On LON-DC1, in your Microsoft Edge browser, you should still be logged into the Microsoft 365 admin center as the MOD Administrator from the earlier task in which you updated Adatum's organizational profile. <br/>
 
@@ -174,13 +174,21 @@ By the time you get to the Module 4 labs, External Access should be ready so tha
 
 5. In the **Microsoft Teams admin center** navigation pane, select **Users** and then select **External access**.
 
-6. On the **External access** page, confirm that the toggle switches for both external access options are in the **On** position. If either are set to **Off**, then set them to **On** now. <br/>
+6. On the **External access** page, under the **Teams and Skype for Business users in external organizations** section, select the **Choose which external domains your users have access to** field. In the drop-down menu that appears, select **Allow only specific external domains**. 
 
-	Under the **Teams accounts not managed by an organization** section, below the toggle switch (that should be set to **On**), verify the check box is selected for the option titled: **External users with Teanms accounts not managed by an organization can contact users in my organization**.
+7. Select the **Allow domains** button that appears. 
 
-7. If you made any changes on the **External access** page, scroll to the bottom and select **Save**.
+8. In the **Add external domain** pane that appears on the right side of the screen, enter in the **Domain** field the **xxxxxZZZZZZ.onmicrosoft.com** domain for your fellow student's tenant ID (where ZZZZZZ is your fellow student's tenant ID that was assigned to you by your instructor). This will enable you to communicate with your fellow student once you get to the exercises in Lab 4. Select **Done**. 
 
-8. In your Microsoft Edge browser, close the **External access - Microsoft Teams** tab. This should return you to the **Microsoft 365 admin center** tab, which you should leave open as you proceed to the next exercise.
+9. Under the **Teams accounts not managed by an organization** section, verify the toggle switch is set to **On**. If it's set to **Off**, then set it to **On** now. <br/>
+
+	Below the toggle switch, verify the check box is selected for the option titled: **External users with Teanms accounts not managed by an organization can contact users in my organization**.
+
+10. Under the **Skype users** section, verify the toggle switch uis set to **On**. If it's set to **Off**, then set it to **On** now. 
+
+11. Select the **Save** button at the bottom of the page.
+
+12. In your Microsoft Edge browser, close the **External access - Microsoft Teams** tab. This should return you to the **Microsoft 365 admin center** tab, which you should leave open as you proceed to the next exercise.
 
 
 # Proceed to Lab 1 - Exercise 2 
