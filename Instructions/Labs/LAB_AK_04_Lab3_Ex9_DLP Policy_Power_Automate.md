@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 3 - Exercise 9 - Create a DLP Policy using Power Automate
+# Module 4 - Lab 3 - Exercise 9 - Create a DLP Policy using Power Automate
 
 For security reasons, administrators oftentimes want to ensure that certain data is kept protected. Power Platform allows you to create data loss prevention policies that define which connectors can share specific business data. For example, you may not want business data that is stored in SharePoint to be automatically published to its Twitter feed by a Power Automate flow. 
 
