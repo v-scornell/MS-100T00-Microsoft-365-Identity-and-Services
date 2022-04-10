@@ -1,4 +1,4 @@
-# Learning Path 5 - Lab 4 - Exercise 1 - Prepare for Identity Synchronization  
+# Module 5 - Lab 4 - Exercise 1 - Prepare for Identity Synchronization  
 
 As in the previous lab exercises you will take on the role of Holly Dickson, Adatum Corporation’s Enterprise Administrator. Adatum has recently subscribed to Microsoft 365, and you have been tasked with deploying the application in Adatum’s virtualized lab environment. In this lab, you will perform the tasks necessary to manage your Microsoft 365 identity environment using both the Microsoft 365 admin center and Windows PowerShell. 
 
