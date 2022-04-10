@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 3 - Exercise 8 - Create a flow using Power Automate
+# Module 4 - Lab 3 - Exercise 8 - Create a flow using Power Automate
 
 In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have built a new service desk ticketing system in SharePoint that consists of a team site titled **IT Services** and a SharePoint list titled **Service Desk Requests**. In your effort to implement Microsoft’s Power Platform at Adatum, you then created a Power App that enables users to enter service tickets using the app rather than SharePoint, and you also added the app to Microsoft Teams so that users can access the Power App through Teams. 
 
