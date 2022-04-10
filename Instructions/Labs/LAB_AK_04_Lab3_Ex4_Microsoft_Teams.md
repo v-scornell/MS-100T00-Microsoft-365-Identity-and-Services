@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 3 - Exercise 4 - Review Key Features of Microsoft Teams
+# Module 4 - Lab 3 - Exercise 4 - Review Key Features of Microsoft Teams
 
 In this exercise you will learn how to manage and configure teams through the Microsoft Teams admin center.
 
