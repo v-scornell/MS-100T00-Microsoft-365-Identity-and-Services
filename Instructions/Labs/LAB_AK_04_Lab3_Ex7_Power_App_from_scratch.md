@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 3 - Exercise 7 - Create a Power App from scratch  
+# Module 4 - Lab 3 - Exercise 7 - Create a Power App from scratch  
 
 In the previous exercise, you used Power Apps to automatically build a canvas app from the SharePoint data source. In this exercise you will build a similar app from scratch, using the same SharePoint list as the data source. The purpose of this exercise is for you to learn how to build an app from scratch. 
 
