@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 3 - Exercise 3 - Create a Ticketing System in SharePoint
+# Module 4 - Lab 3 - Exercise 3 - Create a Ticketing System in SharePoint
 
 As Adatum begins its transition to Microsoft 365 as their hosted cloud solution, they want to use this opportunity to reduce the amount of third-party software products they currently use. This will help them achieve their goal of reducing their overall IT expenses. The CTO has asked Holly Dickson, Adatum’s Enterprise Administrator, to design a solution that uses Microsoft 365 services to replace the third-party IT service request system that Adatum currently uses.
 
