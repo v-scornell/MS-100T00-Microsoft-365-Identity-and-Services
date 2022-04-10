@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 3 - Exercise 2 - Review Key Features of SharePoint Online
+# Module 4 - Lab 3 - Exercise 2 - Review Key Features of SharePoint Online
 
 Adatum's CTO has heard a lot about Microsoft SharePoint and is interested in implementing it at Adatum. However, security is of the utmost concern to the CTO, who is concerned whether new sites created within the company can be kept secure. The CTO has tasked Holly with reviewing some of the basic administrative functions in SharePoint Online to determine whether it can meet their security requirements.
 
