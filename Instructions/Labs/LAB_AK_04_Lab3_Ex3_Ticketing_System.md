@@ -102,47 +102,41 @@ As the IT Consultant in this task, you will perform two primary steps:
 - You will connect to Adatum’s IT Services team site to validate that you can access the site and authenticate your credentials.
 - You will export the existing ticket data from the spreadsheet on LON-CL1 and upload it to a SharePoint list in the IT Services site that Adatum (Holly) created in the prior task. When the data is uploaded to the IT Services site, it will be uploaded as a SharePoint list (titled “Service Desk Requests”) on the site.
 
-    **IMPORTANT:** There are two ways in which you can export the data from the spreadsheet and upload it to the SharePoint list on the IT Services site: 1) Through commands in the Excel spreadsheet, or 2) By running a PowerShell script. Both options are presented in this task and you are free to choose whichever method you prefer. Using the Excel spreadsheet commands is probably the more common method, but for those of you who prefer to work in PowerShell, using the PowerShell script provides another experience to add to your personal repository of PowerShell tools.
-
 **CAUTION:** In this task, whenever you access the URL of the IT Services site, you will use ***your*** tenant prefix (xxxxxZZZZZZ) in the site's URL (**<https://xxxxxZZZZZZ.sharepoint.com/sites/ITServices>**), since you created the site in your Adatum tenant in the prior task. When you access this site in your role as the IT Consultant, you will sign in using your fellow student's tenant admin username and password (which represents the IT Consultant); the username will be **admin@xxxxxZZZZZZ.onmicrosoft.com**, where the tenant prefix (xxxxxZZZZZZ) will be ***your fellow student’s*** tenant prefix that was assigned to you by your instructor.
 
 1. Switch to **LON-CL1**.
-2. On **LON-CL1**, you should still be logged in as the **Administrator** (Adatum\\Administrator) from the earlier lab in which you installed Microsoft 365 Apps for enterprise. If your Edge browser is displayed, minimize it to display the LON-CL1 desktop so that you can verify which user account you're logged in as. If you did not log out of LON-CL1 as Laura Atkins and log back in as the Administrator at the end of the earlier lab, then do so now.
+2. On **LON-CL1**, you should still be logged in as the **Administrator** (Adatum\\Administrator) from the earlier lab in which you installed Microsoft 365 Apps for enterprise. If your Edge browser is displayed, minimize it to display the LON-CL1 desktop so that you can verify which user account you're logged in as. If you did not log out of LON-CL1 as Laura Atkins and log back in as the Administrator at the end of the earlier lab, then do so now. <br/>
+
+    **Note:** In this role-playing task, you will use LON-CL1 as the IT Consultant's PC.
 3. Select the **File Explorer** icon that is located on the taskbar at the bottom of the screen.
-4. Maximize the **File Explorer** window. In the tree pane on the left, under **This PC**, select **Documents** (this folder provides a shortcut that points to the actual path of C:\Users\Administrator.ADATUM\Documents).
-5. If you will recall from the task description, you will be presented with two options for completing this task: through commands in the Excel spreadsheet, or by running a PowerShell script.
-      - If you prefer to use Excel to accomplish this task, then proceed to **step 6**.
-      - If you prefer to use PowerShell, then proceed to **step 25**.
-6. **START HERE TO PERFORM THIS TASK USING EXCEL.**
+4. Maximize the **File Explorer** window. In the tree pane on the left, under **This PC**, select **Documents** (this folder provides a shortcut that points to the actual path of C:\Users\Administrator.ADATUM\Documents). Confirm the **Service Request System.xlsx** and **BackupFile.xlsx** files are present in the Documents folder. <br/>
 
-    Since you are at this step, you have chosen to use Excel to export the table data into a SharePoint list in the IT Services site.
+    The **Service Request System** spreadsheet contains copies of the service request tickets from Adatum’s old ticketing system. The **Backup File** spreadsheet, which is simply a copy of the Service Request System file, was created for precautionary purposes (it will come into play in the next task). 
 
-    In **File Explorer**, the **Documents** folder should be displayed. Confirm the **Service Request System.xlsx** and **BackupFile.xlsx** files are present in the Documents folder. The **Service Request System** spreadsheet contains copies of the service request tickets from Adatum’s old ticketing system. The **Backup File** spreadsheet, which is simply a copy of the Service Request System file, was created for precautionary purposes (it will come into play in the next task). Note that there are two files with the name **Service Request System**; one is an Excel spreadsheet file with a .xlsx extension, and the other is a comma separated value file with a .csv extension. The Excel spreadsheet file is used in this section, whereas students that chose to use PowerShell will use the .csv file.
-
-    Double-click the **Service Request System.xlsx** file to open it. Make sure you open the .xlsx file and not the .csv file.
-7. If a **Sign in to set up Office** window appears, sign in using the tenant admin account (admin@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and tenant admin password. On the Manage device screen, click **No, sign in to this app only**.
-8. If an **Accept the license agreement** window appears, select the **Accept** button.
-9. If a **Your privacy option** window appears, select the **Close** button at the bottom of the window.
-10. In the next several steps, you will verify that in your role as the IT Consultant, you can connect to the IT Services site and that you can authenticate access to the site using your tenant admin’s credentials. Even though you will use the Excel command to **Get Data** from another source and import it into your spreadsheet, you will actually NOT being doing that since you already have the data in the spreadsheet. You will simply use this **Get Data** command to verify that you can successfully access the IT Services site from your PC.
+5. Double-click the **Service Request System.xlsx** file to open it. 
+6. If a **Sign in to set up Office** window appears, sign in using the tenant admin account (admin@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and tenant admin password. On the Manage device screen, click **No, sign in to this app only**.
+7. If an **Accept the license agreement** window appears, select the **Accept** button.
+8. If a **Your privacy option** window appears, select the **Close** button at the bottom of the window.
+9. In the next several steps, you will verify that in your role as the IT Consultant, you can connect to the IT Services site and that you can authenticate access to the site using your tenant admin’s credentials. Even though you will use the Excel command to **Get Data** from another source and import it into your spreadsheet, you will actually NOT being doing that since you already have the data in the spreadsheet. You will simply use this **Get Data** command to verify that you can successfully access the IT Services site from your PC.
 
     In **Excel,** in the menu bar at the top of the screen, select **Data**.
-11. In the ribbon, under the **Get and Transform Data** section, select the **Get Data** drop-down arrow. In the menu that appears, select **From Online Services**, and then in its menu, select **From SharePoint Online list**.
-12. A new **SharePoint Online lists** window will open. In the **Site URL** field, enter **<https://xxxxxZZZZZZ.sharepoint.com/sites/ITServices>** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider, since the IT Services site is on your tenant).
+10. In the ribbon, under the **Get and Transform Data** section, select the **Get Data** drop-down arrow. In the menu that appears, select **From Online Services**, and then in its menu, select **From SharePoint Online list**.
+11. A new **SharePoint Online lists** window will open. In the **Site URL** field, enter **<https://xxxxxZZZZZZ.sharepoint.com/sites/ITServices>** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider, since the IT Services site is on your tenant).
 
     **Note:** Before you select **OK**, copy the site URL that you just entered as you will need to enter this in future steps. Copying it now will save you from having to manually enter it later.
 
     Select **OK**.
-13. If a dialog box appears that allows you to select the type of authentication you want to use to access the IT Services site, it will display three options in the left-hand pane: Anonymous, Windows, and Microsoft account. Anonymous is displayed by default. However, in this case, select **Microsoft account**.
+12. If a dialog box appears that allows you to select the type of authentication you want to use to access the IT Services site, it will display three options in the left-hand pane: Anonymous, Windows, and Microsoft account. Anonymous is displayed by default. However, in this case, select **Microsoft account**.
 
     The dialog box displays a message indicating **You aren’t signed in**. Select the **Sign in** button.
 
     On the **Pick an account** window, select **Use another account** because you want to sign in as the IT Consultant's tenant admin account (**admin@xxxxxZZZZZZ.onmicrosoft.com** where xxxxxZZZZZZ is **your fellow student’s tenant prefix that was assigned to you by your instructor**). In the **Enter password** window, enter your fellow student's tenant password and then select **Sign in**. If your sign in is successful, a message will be displayed in the window indicating you are signed in.
 
     Once you are signed in, select **Connect**.
-14. When the **Navigator** window appears, this is your indication that you have established a connection between the IT Consultant’s external user account and Adatum’s IT Services site that Holly created in the prior task. Even though you used the **Get Data** command in Excel to do this, you will NOT import any data locally to the Excel spreadsheet (the data is already in the spreadsheet).
+13. When the **Navigator** window appears, this is your indication that you have established a connection between the IT Consultant’s external user account and Adatum’s IT Services site that Holly created in the prior task. Even though you used the **Get Data** command in Excel to do this, you will NOT import any data locally to the Excel spreadsheet (the data is already in the spreadsheet).
 
     Select **Cancel** to close the **Navigator** window.
-15. Now that you have verified that the IT Consultant's external user account can access the IT Services site, you will export Adatum’s existing ticketing system data from the spreadsheet and upload it as a SharePoint list into the IT Services site.
+14. Now that you have verified that the IT Consultant's external user account can access the IT Services site, you will export Adatum’s existing ticketing system data from the spreadsheet and upload it as a SharePoint list into the IT Services site.
 
     If you are already familiar with the use of table objects in Excel, **select a cell in the table and proceed to the next step.**
 
@@ -153,75 +147,25 @@ As the IT Consultant in this task, you will perform two primary steps:
     Because you have now selected the Excel table, note how the new menu bar option titled **Table Design** appears after **Help**.
 
     **Note:** If you select a cell outside of the table, note how the **Table Design** menu bar option disappears. If you once again select a cell inside the table, note how it reappears.
-16. On the menu bar, select **Table Design**.
-17. In the ribbon, under the **External Table Data** section, select the **Export** drop-down arrow. In the menu that appears, select **Export Table to SharePoint List**.
-18. An **Export Table to SharePoint List – Step 1 of 2** window will appear. Enter the following information:
+15. On the menu bar, select **Table Design**.
+16. In the ribbon, under the **External Table Data** section, select the **Export** drop-down arrow. In the menu that appears, select **Export Table to SharePoint List**.
+17. An **Export Table to SharePoint List – Step 1 of 2** window will appear. Enter the following information:
       - **Address:** If you copied the IT Services site URL from the earlier step, then paste that in now; otherwise, enter **<https://xxxxxZZZZZZ.sharepoint.com/sites/ITservices>** (where xxxxxZZZZZZ is **your tenant prefix** provided by your lab hosting provider).
 
         **Important:** By default, the Address field is prefilled with “http://”. If you manually enter the URL, you must change this to “https://”; otherwise, your connection to the IT Services site will fail.
       - **Name:** This is the name of the new distribution list that will be created in this site. For Adatum's new ticketing system, enter **Service Desk Requests**.
       - **Description:** (optional) – leave blank
-19. Select **Next**.
-20. An **Export Table to SharePoint List – Step 2 of 2** window will appear. Review the information and then select **Finish**.
-21. A **Microsoft SharePoint Foundation** dialog box will appear that indicates the table was successfully published.
+18. Select **Next**.
+19. An **Export Table to SharePoint List – Step 2 of 2** window will appear. Review the information and then select **Finish**.
+20. A **Microsoft SharePoint Foundation** dialog box will appear that indicates the table was successfully published.
 
-    **Important:** Do NOT select OK; instead, select the **link** to the site in which the table was published. This will take you to the IT Services site where it will display a list showing the data that was exported from the spreadsheet and uploaded into the site.
+    **Important:** Do NOT select OK; instead, select the **link** to the site in which the table was published. This will take you to the **IT Services** site where it will display a list showing the data that was exported from the spreadsheet and uploaded into the site.
 
-    **Note:** If a **Sign in** window appears, enter the MOD Administrator’s account for the IT Consultant’s tenant. In this case, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is your fellow student's tenant prefix that was assigned to you by your instructor). Select **Next**, and then in the **Enter password** window, enter your fellow student's tenant password and then select **Sign in**.
-22. On the taskbar at the bottom of the screen, select the **Excel** icon. In the **Microsoft SharePoint Foundation** dialog box that displayed the link to the published list in the IT Services site, select **OK** to close the window.
-23. Close Excel. Select **Don't Save** if prompted to save changes to the file.
-24. Close your Edge browser.
+    **Note:** If a **Sign in** window appears, enter the MOD Administrator’s account **for the IT Consultant’s tenant**. In this case, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is your fellow student's tenant prefix that was assigned to you by your instructor). Select **Next**, and then in the **Enter password** window, enter your fellow student's tenant password and then select **Sign in**.
+21. On the taskbar at the bottom of the screen, select the **Excel** icon. In the **Microsoft SharePoint Foundation** dialog box that displayed the link to the published list in the IT Services site, select **OK** to close the window.
+22. Close Excel. Select **Don't Save** if prompted to save changes to the file.
+23. Close your Edge browser and proceed to the next task.
 
-    **Important:** This completes the steps involved in using Excel to export the table data into a SharePoint list (Service Desk Requests) in the IT Services site. **You should SKIP the remaining steps in this task and proceed to the next task.**
-
-25. **START HERE TO PERFORM THIS TASK USING POWERSHELL.**
-
-    Since you are at this step, you have chosen to use Windows PowerShell to export the table data into a SharePoint list in the IT Services site rather than using Excel to accomplish this task.
-
-    In **File Explorer**, the **Documents** folder should be displayed. Confirm the **Service Request System.csv** file is present in the Documents folder. This file contains copies of the service request tickets from Adatum’s old ticketing system. Note that there are two files with the name **Service Request System**; one is this comma separated value file with a .csv extension, and the other is an Excel spreadsheet file with a .xlsx extension. The .csv file is used in this section, whereas students that chose to use Excel to complete this task will use the .xlsx file. The **Backupfile.xlsx** spreadsheet, which is simply a copy of the Service Request System.xlsx file, was created for precautionary purposes (it will come into play in the next task).
-
-    Confirm the **ImportCsvToSharepointList.ps1** script is also present in the **Documents** folder. This script contains the PowerShell commands you will run to export the table data from the **Service Request System.csv** file and import it into a SharePoint list in the IT Services site.
-26. In the **Search** field on the taskbar at the bottom of the desktop, enter **PowerShell**.
-
-    **Important:** Because you MUST run several of the commands within this script individually rather than running the entire script at once, you should select **Windows PowerShell ISE** (not Windows PowerShell); therefore, right-click on **Windows PowerShell ISE** and select **Run as administrator**.
-27. If a **User Account Control** dialog box appears, select **Yes** to allow this app to make changes to your device.
-28. In **Windows PowerShell ISE**, in the menu bar, select **File** and then select **Open**. In the **File Explorer** window that appears, navigate to **This PC** and then to the **Documents** folder. Select the **ImportCsvFileToSharepointList.ps1** script and then select **Open**.
-29. In the script, you will run the commands in lines **11-13** together; therefore, select these three lines in the script and then select the **Run Selection (F8)** icon on the menu bar. These lines will set your execution policy as Remote Signed and install both the SharePoint Online module as well as the SharePoint PNP module. The PNP module enables you to remotely sign into your SharePoint Online environment and manage your SharePoint lists.
-30. If you are prompted to confirm an **Execution Policy Change**, select **Yes to All.**
-31. If you are prompted to confirm a **NuGet provider is required to continue**, select **Yes**.
-32. If you are prompted to confirm an **Untrusted repository**, select **Yes to All.**
-33. If you are prompted a second time to confirm an **Untrusted repository** dialog box, select **Yes to All.**
-34. At the command prompt, you will run the commands in lines **20-21** together; therefore, select these two lines in the script and then select the **Run Selection (F8)** icon on the menu bar.
-35. In the **Windows PowerShell credential request** dialog box that appears, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** in the **User name** field (where xxxxxZZZZZZ is the tenant prefix ***from your fellow student*** that was assigned to you by your instructor); this is the IT Consultant’s MOD Administrator (tenant admin) account.
-
-    **Note:** Copy the value (Ctrl+C) that you entered in the **User name** field as you will have to enter it again in a couple of steps. By copying the value here, you can simply paste it in later on rather than re-entering it.
-
-    Enter your fellow student's tenant admin password in the **Password** field, and then select **OK**.
-36. On line **32** in the script, you MUST update the URL before you can run this command. In the URL, you must replace the xxxxxZZZZZZ with ***your tenant ID*** provided by your lab hosting provider (this is your Adatum tenant where the IT Services site was created earlier by Holly).
-37. At the command prompt, you will run the command in line **32** by itself; therefore, select this line in the script and then select the **Run Selection (F8)** icon on the menu bar.
-38. In the **Enter your credentials** dialog box, paste into the **User name** field the value that you copied in the earlier step. If you did not copy the User name value, then enter in the **User name** field **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix ***from your fellow student*** that was assigned to you by your instructor); this is the IT Consultant’s MOD Administrator (tenant admin) account.
-
-    Enter your fellow student's tenant admin password in the **Password** field, and then select **OK**.
-39. The commands in lines 41-51 in the script MUST be run individually. If you select all six commands and run them all together at one time, the commands will fail.
-
-    Therefore, at the command prompt, select line **41** in the script and then select the **Run Selection (F8)** icon on the menu bar. **Note:** This command in row 41 creates a new column in the distribution list that does not exist in the Excel spreadsheet. For each record imported from the spreadsheet into this distribution list, the value of this column will be blank. The reason you must run this command is that this specific column is required to successfully import the data and create the distribution list using PowerShell. That being said, when you create new filtered views later on in Task 4, you will ignore this column and not include it in any of the views you create.
-
-    Then select line **43** in the script and select the **Run Selection (F8)** icon on the menu bar.
-
-    Repeat this process for the commands in lines **45, 47, 49,** and **51**.
-40. At the command prompt, you will run the command in line **60** by itself; therefore, select this line in the script and then select the **Run Selection (F8)** icon on the menu bar.
-
-    **Note:** This command displays the list of sites in the IT Services site. Verify the Service Desk Requests list appears in this list.
-41. At the command prompt, you will run the command in line **66** by itself; therefore, select this line in the script and then select the **Run Selection (F8)** icon on the menu bar. This command displays all the records in the .csv file that were imported into the terminal.
-42. In the script, lines **73-79** represent one command; therefore, all these lines must be selected together and run as one selection.
-
-    At the command prompt, select lines **73-79** in the script and then select the **Run Selection (F8)** icon on the menu bar. This command will display a summary each of the rows that were imported from the .csv file.
-43. At the command prompt, you have finished running the commands in this script. Close Windows PowerShell ISE. Select **No** when prompted to change the file. 
-44. Open your Edge browser and enter the following URL in the address bar to navigate to the **IT Services** site: **<https://xxxxxZZZZZZ.sharepoint.com/sites/ITServices>** (where xxxxxZZZZZZ is ***your tenant prefix*** provided by your lab hosting provider).
-45. In the **IT Services** site, in the left-hand pane, select **Site contents**. In the list of Site contents, select the **Service Desk Requests** item.
-46. This displays the **Service Desk Requests** list. Review the 30 items in the list, which should match the 30 items in the .csv file.
-47. Close Windows PowerShell.
-48. Close your Edge browser and proceed to the next task.
 
 ### Task 3 - Add Additional Columns to the SharePoint list
 
