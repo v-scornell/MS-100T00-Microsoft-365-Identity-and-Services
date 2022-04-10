@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 3 - Exercise 10 - Build a Power BI report and dashboard
+# Module 4 - Lab 3 - Exercise 10 - Build a Power BI report and dashboard
 
 Holly Dickson is nearing the end of her excursion into the Microsoft Power Platform environment. She has built two Power Apps and a Power Automate Flow, all based on the Service Desk Ticketing system she created earlier in SharePoint. 
 
