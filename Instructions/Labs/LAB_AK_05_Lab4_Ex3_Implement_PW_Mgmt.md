@@ -1,4 +1,4 @@
-# Learning Path 5 - Lab 4 - Exercise 3 - Implement Password Management 
+# Module 5 - Lab 4 - Exercise 3 - Implement Password Management 
 
 As Holly Dickson, Adatum’s Enterprise Administrator, you have been asked by Adatum’s CTO to deploy Pass-through Authentication (PTA) and Azure AD Smart Lockout as a means of strengthening password management throughout the organization. 
 
