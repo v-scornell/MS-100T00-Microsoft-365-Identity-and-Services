@@ -105,7 +105,7 @@ Adatum's CTO is concerned with the service health issues that have recently come
 
 2. In the left-hand navigation pane, you previously selected the **Show all** option in the prior task. Select the **Health** group that displayed when you selected **Show all**, and then select **Service health**. 
 
-3. On the **Service health** page, the **All services** tab is displayed by default across the top of the page. Select the **History** tab.  
+3. On the **Service health** page, the **All services** tab is displayed by default across the top of the page. Select the **Issue history** tab.  
 
 4. In the **History** tab on the **Service health** window, the default option is to display a list of items from the past 7 days (see the right side of the menu bar above the list of items; **Past 7 days** displays as the default option). Select any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it. 
 
