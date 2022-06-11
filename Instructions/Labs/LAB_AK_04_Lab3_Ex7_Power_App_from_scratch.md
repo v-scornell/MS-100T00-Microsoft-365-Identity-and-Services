@@ -21,7 +21,7 @@ In your role as Holly Dickson, you will begin the process of creating a canvas a
 
 2. In your Microsoft Edge browser, open a new tab and enter the following URL in the address bar: **https://make.powerapps.com**
 
-3. This will open the **Power Apps studio**. On the main body of the **Home** page, under the **Make your own app** section, select **Canvas app from blank**.
+3. This will open the **Power Apps studio**. On the main body of the **Home** page, under the **Start from** section, select **Blank app**.
 
 4. On the **Canvas app from blank** window that appears, enter a name for your app (anything that you want) in the **App name** field, and in the **Format** section, select the **Phone** option. 
 
