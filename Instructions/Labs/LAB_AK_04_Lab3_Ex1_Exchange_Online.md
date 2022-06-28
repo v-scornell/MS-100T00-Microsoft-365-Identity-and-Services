@@ -550,7 +550,7 @@ You will perform this task in LON-CL1.
 4.  In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the 
     navigation pane and select **Permissions & roles**.
 
-5.  In the **Permissions & roles** page, there are two groups - Azure AD, and Email & collaboration roles. Under the **Email & collaboration roles** group, select **Roles**. 
+5.  In the **Permissions** page, there are two groups - Azure AD, and Email & collaboration roles. Under the **Email & collaboration roles** group, select **Roles**. 
 
 6. In the **Permissions & roles > Permissions** page, locate the **Search** field on the menu bar (it appears to the right of the **Refresh** option). Enter **org** in the **Search** field
     and then select the magnifying glass icon. This is a quick way to display
