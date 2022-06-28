@@ -109,7 +109,7 @@ Adatum's CTO is concerned with the service health issues that have recently come
 
 3. On the **Service health** page, the **All services** tab is displayed by default across the top of the page. Select the **History** tab.  
 
-4. In the **History** tab on the **Service health** window, the default option is to display a list of items from the past 7 days (this option displays to the right of the **Search** field). Select the **Title** for any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it. 
+4. In the **Issue history** tab on the **Service health** window, the default option is to display a list of items from the past 7 days (this option displays to the right of the **Search** field). Select the **Title** for any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it. 
 
 5. In the **Microsoft 365 admin center**, in the navigation pane, select **Reports**, and then select **Usage.** 
 
