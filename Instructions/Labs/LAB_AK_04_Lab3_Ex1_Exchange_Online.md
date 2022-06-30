@@ -48,11 +48,10 @@ involved in creating and managing mail flow recipients.
 
     Select the mailbox for **Joni Sherman** by selecting her **Display name**
     This will open Joni's **User mailbox** window. By
-    default, the window displays the **Mailbox** tab (the tabs appear at the top
+    default, the window displays the **General** tab (the tabs appear at the top
     under Joni’s name).
 
-6.  Towards the bottom of the **Mailbox** tab, under the **More actions** section, select
-    **Custom attributes**.
+6.  On the tab, select the **Others** tab, and then select **Custom attributes**.
 
 7.  This opens the **Custom attributes** window for Joni. You can enter up to 15
     attributes. You will not be entering any attributes in this lab exercise,
@@ -62,7 +61,7 @@ involved in creating and managing mail flow recipients.
     mailbox identification, such as a cost center number for the mailbox or
     other information such as an HR personnel number.
 
-8.  This returns you to the **Mailbox** tab in Joni's User mailbox pane. Select the **Account** tab, which
+8.  This returns you to the **Others** tab in Joni's User mailbox pane. Select the **General** tab, which
     enables you to maintain additional information for this mailbox. While you
     won’t enter any of this optional information for this lab, take a few
     minutes now and select the following links to see what additional
@@ -75,8 +74,7 @@ involved in creating and managing mail flow recipients.
     -   **Manage Organization information.** This window enables you to add
         company-specific information such as Title, Department, and Company.
 
-9.  Select the **Mailbox** tab again, and then under the **Mailbox permissions**
-    group, select **Manage mailbox delegation.**  <br/>
+9.  Select the **Delegation** tab.  <br/>
 
 	The **Manage mailbox delegation for Joni Sherman** window enables the admin to
     assign a user to this mailbox’s **Send as** and **Send on behalf**
