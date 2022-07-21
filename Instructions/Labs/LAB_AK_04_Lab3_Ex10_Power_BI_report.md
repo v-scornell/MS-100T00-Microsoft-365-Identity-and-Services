@@ -153,11 +153,11 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 
 37. In the **Visualizations** pane, select the **Stacked column chart** icon (top row, second from left; verify by hovering your mouse over the icon to see its name). Note the visualization of the chart that appears on the report canvas. Increase the size of the chart by dragging its bottom-right corner down diagonally.
 
-38. You now want to define the chart’s horizontal axis. In the **Fields** pane, select the **Location** field, and holding your left mouse button down, drag the field into the **Add data fields here** box for the **Axis** option in the **Visualizations** pane.
+38. You now want to define the chart’s horizontal axis. In the **Fields** pane, select the **Location** field, and holding your left mouse button down, drag the field into the **Add data fields here** box for the **X-Axis** option in the **Visualizations** pane.
 
 39. In the **Fields** pane, select the **Title** field (this is the Issue Status in the SharePoint list) and drag it into the **Add data fields here** box for the **Legend** box in the **Visualizations** pane.
 
-40. In the **Fields** pane, select the **Title** field again and drag it into the **Add data fields here** box for the **Values** box in the **Visualizations** pane.
+40. In the **Fields** pane, select the **Title** field again and drag it into the **Add data fields here** box for the **Y-Axis** box in the **Visualizations** pane.
 
 41. Since the Title field is referred to as the Issue Status in the SharePoint list, you want to rename it here to reflect this name in the chart.
 
