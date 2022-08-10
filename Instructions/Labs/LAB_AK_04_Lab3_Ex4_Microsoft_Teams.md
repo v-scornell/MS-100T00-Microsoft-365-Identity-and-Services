@@ -203,7 +203,7 @@ Now that you have created the resource account for your calling queue, you will 
 
 		- Call time out handling: **leave all settings to their default values**
 
-9. Select **Save**. A Saved message will appear across the top of the page once the changes have been saved. This message will eventually disappear, and **Call Queue 1** will appear in the list of Call queues.
+9. Select **Submit**. A Saved message will appear across the top of the page once the changes have been saved. This message will eventually disappear, and **Call Queue 1** will appear in the list of Call queues.
 
 10. Leave all tabs open in your browser and proceed to the next task. 
 
