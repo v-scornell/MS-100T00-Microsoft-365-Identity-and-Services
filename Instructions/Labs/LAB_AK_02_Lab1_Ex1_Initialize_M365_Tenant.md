@@ -4,7 +4,7 @@ Adatum Corporation is a subsidiary of Contoso Electronics. Adatum runs its legac
 
 As Adatum's Enterprise administrator, you have been tasked with deploying Microsoft 365 in Adatum’s hybrid deployment using a virtualized lab environment. In this exercise, you will set up Adatum's Microsoft 365 trial tenant, and your instructor will guide you on how to obtain your Microsoft 365 credentials in your lab-hosted environment. You will use these credentials throughout the remaining labs in this course. 
 
-In your lab environment, your lab hosting provider has already obtained a Microsoft 365 trial tenant for you. Your lab provider has also created two admin accounts that you will use: 
+In your lab environment, your lab hosting provider has already obtained a Microsoft 365 trial tenant for you. Your lab provider has also created two admin accounts that you will use in your VM lab environment: 
 
 - A local administrator account for Adatum's on-premises environment (Adatum\Administrator).
 - A default tenant admin account in Microsoft 365 (the display name for this user account is MOD Administrator). 
@@ -50,7 +50,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 9. On the **Stay signed in?** dialog box, select the **Don’t show this again** check box and then select **Yes.** On the **Save password** diaglog box that appears, select **Never**.
 
-10. If a **Welcom to your new Office, MOD** window appears, there's no option to close it. Instead, select the right arrow icon (**>**) three times to page through this messaging window. 
+10. If a **Welcom to your new Office, MOD** window appears, there's no option to close it. Instead, select the right arrow icon (**>**) three times (actually, two times and then the third time it's a check mark) to page through this messaging window. 
 
 11. In the **Find more apps** window that appears, select the **X** in the upper right-hand corner of the window to close it. 
 
@@ -58,13 +58,13 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 	On the **Microsoft Office Home** page, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
 
-13. In the **Microsoft 365 admin center**, in the navigation pane, select **Show all** and then select **Settings**. In the **Settings** group, select **Org settings**. 
+13. In the **Microsoft 365 admin center**, select **Show all** in the navigation pane and then select **Settings**. In the **Settings** group, select **Org settings**. 
 
 14. On the **Org settings** page, the **Services** tab is displayed by default. Select the **Organization profile** tab.
 
 15. In the **Organization profile** tab, select **Organization information** from the list of profile data.
 
-16. In the **Organization information** pane that appears, enter the following information:
+16. In the **Organization information** pane that appears, enter the following information: <br/>
 
     - Name: **Adatum Corporation** (Note: Adatum Corporation is a subsidiary of Contoso Electronics. The Microsoft trial tenant that your lab hosting provider obtained for this lab may have been originally assigned to Contoso. If **Contoso** (or any other value) appears as the organization name, then change it to **Adatum Corporation**.)
 
@@ -96,7 +96,7 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 21. In the **Release preferences** pane, below the list of release options, select the **Select users** option.
 
-22. In the **Choose users for targeted release** pane that appears, select inside the **Who should receive targeted releases?** field. This displays the list of active users (these are the Microsoft 365 user accounts created for your tenant by your lab hosting provider). In this list, select each of the following users.
+22. In the **Choose users for targeted release** pane that appears, select inside the **Who should receive targeted releases?** field. This displays the list of active users (these are the Microsoft 365 user accounts created for your tenant by your lab hosting provider). In this list, select each of the following users. <br/>
 
     **Note:** You must select each user, one at a time. After selecting a user, you must select inside the field again to re-display the list so that you can select the next user. 
 
@@ -127,56 +127,68 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 ### Task 3 – Prepare for Microsoft Azure Active Directory 
 
-Azure Active Directory is required to perform several configuration steps when installing Microsoft 365. Because several of these steps must be performed using Windows PowerShell, you should begin by installing the Azure Active Directory PowerShell module. This module can simply be installed through PowerShell itself. It allows you to perform many of the Microsoft 365 user and organization administration tasks through PowerShell. It’s great for bulk tasks such as password resets, password policies, license management and reporting, and so on.  
+Azure Active Directory is required to perform several configuration tasks when installing Microsoft 365. Because future lab exercises will perform several of these tasks using Windows PowerShell, you should begin by installing the Azure Active Directory PowerShell module. This module allows you to perform many of the Microsoft 365 user and organization administration tasks through PowerShell. It’s great for bulk tasks such as password resets, password policies, license management and reporting, and so on.  
 
 1. On LON-DC1, you must open an elevated instance of **Windows PowerShell**. Select the magnifying glass (Search) icon on the taskbar at the bottom of the screen and type **powershell** in the Search box that appears. In the list of search results, right-click on **Windows PowerShell** (do not select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu. 
 
-2. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command and then press Enter:
+2. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command to install the Azure AD PowerShell module from the PowerShell Gallery and then press Enter: <br/>
 
-		Install-Module MSOnline
-	
-3. If you are prompted to install the **NuGet provider,** enter **Y** to select **[Y] Yes**. 
+		Install-Module AzureAD
 
-4. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
+3. It may take a minute or two, but you will eventually be prompted to confirm whether you want to install the module from an untrusted repository (PSGallery). Enter **A** to select **[A] Yes to All.**  <br/>
 
-5. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. You must then run the following command to install the Azure AD PowerShell module that you just retrieved in the earlier step:
+    **Note:** If you receive a warning message indicating version 2.0.2.130 of the AzureAD module is already installed in your VM environment and that you can install the next version using the -force parameter, ignore this message.
 
-		Install-Module AzureADPreview
-	
-6. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
+4. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. You have now installed the Windows Azure Active Directory PowerShell Module. <br/>
 
-7. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. You have now installed the Windows Azure Active Directory PowerShell Module.
+	You now must connect to the AzureAD module that you just installed. Type the following command and then press Enter: <br/>
 
-8. Leave the Windows PowerShell window open but minimize it for now.
+		Connect-AzureAD
 
-9. Remain logged into LON-DC1 and keep your Edge browser open.
+5. If a **Sign in** window appears, enter the Microsoft 365 tenant admin username and password provided by your lab hosting provider (this is the MOD Administrator account you used to sign into Microsoft 365).
+
+6. You have installed the AzureAD module and connected to it for your current lab session, so do **NOT** close your PowerShell window. Leave the Windows PowerShell window open but minimize it for now. 
+
+7. Remain logged into LON-DC1 and keep your Edge browser open.
 
 
 ### Task 4 – Prepare for External Access using Microsoft Teams 
 
-When you get to Module 4, you will perform a lab in which you will create a new service request ticketing system. One of the tasks within that lab requires you to collaborate with one of your fellow student's Microsoft 365 tenant through Microsoft Teams. To enable this communication between your tenant and your fellow student's tenant, you must turn on the **External Access** functionality within Teams. When you turn on this External Access feature, it can take a couple of hours for your system to propagate the changes through your tenant. Therefore, you will turn on this External Access feature in this task so that the internal changes made by the system have time to propagate through your tenant by the time you eventually get to the Module 4 lab.
+When you get to Module 4, you will perform a lab in which you will create a new service request ticketing system. One of the tasks within that lab requires you to collaborate with one of your fellow student's Microsoft 365 tenant through Microsoft Teams. To enable this communication between your Microsoft 365 tenant and your fellow student's tenant, you must turn on the **External Access** functionality within Microsoft Teams so that you can communicate with your fellow student's domain. By default, the system is set to allow access to all external domains. However, for security reasons, Adatum's CTO wants to limit exposure to just the domain of your fellow student, who will take on the role of an external IT consultant who is working with Adatum in the Module 4 lab exercises. 
 
-**Instructor/Student Note:** To facilitate this lab, your instructor should collect each student's tenant ID (ZZZZZZ) from each of their domains (this would be each student's xxxxxZZZZZZ.onmicrosoft.com domain, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider; ZZZZZZ is the tenant ID portion of the tenant prefix that is unique to each student). The instructor will then assign to each student the tenant ID (ZZZZZZ) from another student (you can NOT be assigned your own tenant ID). When you enable External Access in this task, you will enter the domain associated with the assigned tenant ID from your fellow student (in other words, you will enter the **xxxxxZZZZZZ.onmicrosoft.com** domain, where ZZZZZZ is your fellow student's tenant ID).
+**Important:** When you modify the External Access feature to limit access to a specific domain, it can take a couple of hours for your system to propagate the change through your tenant. Therefore, you will configure this External Access feature in this task so that the internal changes made by the system have time to propagate through your tenant by the time you eventually get to the Module 4 lab.
 
-By the time you get to the Module 4 labs, External Access should be ready so that you can collaborate with the student whose domain you set up in this task. Conversely, you should also be able to collaborate with the student who entered your domain in his or her External Access setup.
+**Instructor/Student Note:** To facilitate this lab, your instructor should collect each student's tenant ID (ZZZZZZ) from each of their domains (this would be each student's xxxxxZZZZZZ.onmicrosoft.com domain, where xxxxxZZZZZZ is the tenant prefix assigned to your fellow student by your lab hosting provider; ZZZZZZ is the tenant ID portion of the tenant prefix that is unique to each student). The instructor will then assign to each student the tenant ID (ZZZZZZ) from another student (you can NOT be assigned your own tenant ID). In this task, you will limit external access to the domain associated with the assigned tenant ID from your fellow student (in other words, you will enter the **xxxxxZZZZZZ.onmicrosoft.com** domain, where ZZZZZZ is your fellow student's tenant ID).
+
+By the time you get to the Module 4 labs, External Access should be ready so that you can collaborate with the student whose domain you set up in this task. 
 
 1. On LON-DC1, in your Microsoft Edge browser, you should still be logged into the Microsoft 365 admin center as the MOD Administrator from the earlier task in which you updated Adatum's organizational profile. <br/>
 
 	If you closed the Microsoft 365 admin center, then perform the same steps as before to open it and sign in as **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider) with the tenant admin password provided by your lab hosting provider.
 	
-2. If necessary, in the **Microsoft 365 admin center**, in the left-hand navigation pane, select **...Show All** to display all the navigation menu options.
+2. If necessary, in the **Microsoft 365 admin center** navigation pane, select **...Show All** to display the full navigation menu.
 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin Centers** group, select **Teams**.
+3. In the **Microsoft 365 admin center**, under the **Admin Centers** group in the navigation pane, select **Teams**.
 
 4. A new tab will open in your Edge browser that displays the **Microsoft Teams admin center**. If a **Welcome to the Teams admin center** window appears, select **Skip tour**.
 
-5. In the **Microsoft Teams admin center**, in the left-hand navigation pane, select **Users** and then select **External access**.
+5. In the **Microsoft Teams admin center** navigation pane, select **Users** and then select **External access**.
 
-6. On the **External access** page, confirm that the toggle switches for both external access options are in the **On** position. If either are set to **Off**, then set them to **On** now.
+6. On the **External access** page, under the **Teams and Skype for Business users in external organizations** section, select the **Choose which external domains your users have access to** field. In the drop-down menu that appears, select **Allow only specific external domains**. 
 
-7. If you made any changes, on the **External access** page, select **Save**.
+7. Select the **Allow domains** button that appears. 
 
-8. In your Microsoft Edge browser, close the **External access - Microsoft Teams** tab. This should return you to the **Microsoft 365 admin center** tab, which you should leave open as you proceed to the next exercise.
+8. In the **Add external domain** pane that appears on the right side of the screen, enter in the **Domain** field the **xxxxxZZZZZZ.onmicrosoft.com** domain for your fellow student's tenant ID (where ZZZZZZ is your fellow student's tenant ID that was assigned to you by your instructor). This will enable you to communicate with your fellow student once you get to the exercises in the Module 4 labs. Do NOT enter your domain. When you've finished entering your fellow student's domain, select **Done**. 
+
+9. On the **External access** page, under the **Teams accounts not managed by an organization** section, verify the toggle switch is set to **On**. If it's set to **Off**, then set it to **On** now. <br/>
+
+	Below the toggle switch, verify the check box is selected for the option titled: **External users with Teanms accounts not managed by an organization can contact users in my organization**.
+
+10. Under the **Skype users** section, verify the toggle switch uis set to **On**. If it's set to **Off**, then set it to **On** now. 
+
+11. Select the **Save** button at the bottom of the page.
+
+12. In your Microsoft Edge browser, close the **External access - Microsoft Teams** tab. This should return you to the **Microsoft 365 admin center** tab, which you should leave open as you proceed to the next exercise.
 
 
 # Proceed to Lab 1 - Exercise 2 
