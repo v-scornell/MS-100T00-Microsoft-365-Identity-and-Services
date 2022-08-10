@@ -548,7 +548,7 @@ You will perform this task in LON-CL1.
 3. In the **Microsoft 365 admin center**, select **Show all** in the navigation pane, and then under **Admin centers**, select **Security**. This opens the **Microsoft 365 Defender** portal in a new tab.
 
 4.  In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the 
-    navigation pane and select **Permissions & roles**.
+    navigation pane and select **Permissions**.
 
 5.  In the **Permissions** page, there are two groups - Azure AD, and Email & collaboration roles. Under the **Email & collaboration roles** group, select **Roles**. 
 
