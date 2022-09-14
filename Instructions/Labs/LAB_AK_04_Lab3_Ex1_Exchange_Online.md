@@ -1,4 +1,4 @@
-# Module 4 - Lab 3 - Exercise 1 - Review Key Features of Exchange Online
+# Learning Path 4 - Lab 3 - Exercise 1 - Review Key Features of Exchange Online
 
 Holly Dickson is Adatum’s Enterprise Administrator. She has recently deployed
 Microsoft 365 in a virtualized lab environment. Now that she has a tenant
