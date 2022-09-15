@@ -9,7 +9,7 @@ In your lab environment, your lab hosting provider has already obtained a Micros
 - A local administrator account for Adatum's on-premises environment (Adatum\Administrator).
 - A default tenant admin account in Microsoft 365 (the display name for this user account is MOD Administrator). 
 
-You will log into the Domain Controller VM (LON-DC1) using the local Adatum\Administrator account. When you access Microsoft 365 for the first time, you will initially log in using the Microsoft 365 tenant admin account (MOD Adminitrator). You will then update Adatum's Microsoft 365 organizational profile, and you'll prepare your tenant for Microsoft Azure Active Directory and for a future lab using Microsoft Teams.
+You will log into the Domain Controller VM (LON-DC1) using the local Adatum\Administrator account. When you access Microsoft 365 for the first time, you will initially log in using the Microsoft 365 tenant admin account (MOD Administrator). You will then update Adatum's Microsoft 365 organizational profile, and you'll prepare your tenant for Microsoft Azure Active Directory and for a future lab using Microsoft Teams.
 
 
 ### Task 1 - Obtain Your Microsoft 365 Credentials
