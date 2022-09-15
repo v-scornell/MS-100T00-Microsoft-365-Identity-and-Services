@@ -59,9 +59,9 @@ That being said, you will not turn on MFA for Holly's account because time is li
 
 	**Note:** All the admin roles will be displayed if you select **Show all by category**, which appears after the last common role. For Holly, you don't need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
 
-11. Select the **Global administrator** check box.
+11. Select the **Global Administrator** check box.
 
-    **Note:** A warning message will be displayed indicating that you now have 5 global admins. In a normal environment, this would be excessive and not recommended. For the purposes of this lab, the lab hosting provider assigned the Global admin role to the MOD Administrator and three of the other user accounts. Therefore, four of the 11 user accounts in your tenant are global admins, which is not something you would see in a real-world deployment. However, for the pupose of this lab in our fictitious Adatum lab environment, ignore this message. That being said, keep this guideline in mind for your real-world Microsoft 365 deployments. The best practice guideline that you should follow is to have from two to four Global admins.
+    **Note:** A warning message will be displayed indicating that you now have 5 global admins. In a normal environment, this would be excessive and not recommended. For the purposes of this lab, the lab hosting provider assigned the Global admin role to the MOD Administrator and three of the other user accounts. Therefore, four of the 11 user accounts in your tenant are global admins, which is not something you would see in a real-world deployment. However, for the pupose of this lab in your fictitious Adatum lab environment, ignore this message. That being said, keep this guideline in mind for your real-world Microsoft 365 deployments. The best practice guideline that you should follow is to have from two to four Global admins.
 
 12. Select **Next**.
 
@@ -91,11 +91,11 @@ In this task, you will create two new groups and then manage the groups by assig
 
 3. Select the **Edge** icon on your taskbar to reopen your Microsoft Edge browser. Then enter the following URL in the address bar to sign back into Microsoft 365: **https://portal.office.com** 
 
-4. In the **Sign in** window, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
+4. In the **Pick an account** window, select **+Use another account**. In the **Sign in** windows that appears, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
 
 5. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 
-6. If a **Welcome to your new Office, Holly** window appears, there's no option to close it. Instead, select the right arrow icon (>) three times to page through this messaging window.
+6. If a **Welcome to your new Office, Holly** window appears, there's no option to close it. Instead, to the right of the window, select the right arrow icon (>) two times and then select the check mark icon to advance through the slides in this messaging window.
 
 7. In the **Find more apps** window that appears, select the **X** in the upper right-hand corner of the window to close it.
 
