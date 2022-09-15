@@ -99,7 +99,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 7. In the **Find more apps** window that appears, select the **X** in the upper right-hand corner of the window to close it.
 
-8. On the **Microsoft Office Home** page, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab.
+8. On the **Microsoft Office Home** page, select the **Admin** icon in the left-hand navigation pane; this opens the **Microsoft 365 admin center** in a new browser tab.
 
 9. In the **Microsoft 365 admin center**, select **Teams & groups** in the navigation pane, and then under it, select **Active teams & groups**. 
 
