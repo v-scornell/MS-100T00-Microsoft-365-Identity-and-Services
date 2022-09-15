@@ -50,13 +50,13 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 9. On the **Stay signed in?** dialog box, select the **Don’t show this again** check box and then select **Yes.** On the **Save password** diaglog box that appears, select **Never**.
 
-10. If a **Welcom to your new Office, MOD** window appears, there's no option to close it. Instead, select the right arrow icon (**>**) three times (actually, two times and then the third time it's a check mark) to page through this messaging window. 
+10. If a **Welcome to your new Office, MOD** window appears, there's no option to close it. Instead, to the right of the window, select the right arrow icon (**>**) two times and then select the check mark icon to advance through the pages in this messaging window. 
 
-11. In the **Find more apps** window that appears, select the **X** in the upper right-hand corner of the window to close it. 
+11. If a **Find more apps** window appears, select the **X** in the upper right-hand corner of the window to close it. 
 
 12. The **Microsoft Office Home** page appears in your Edge browser. Notice the initials **MA** that appear in a circle in the top-right corner of the screen. These are the initials of the **MOD Administrator** account, which is the tenant admin account created by your lab hosting provider that you just signed in as. The other existing Microsoft 365 user accounts that were created by your lab hosting provider have a picture associated with each of their accounts; therefore, when you sign in as any of these users in later labs, the user's picture will be displayed rather than the user's initials. However, when a user such as the MOD Administrator has no picture assigned to it, the user's initials are displayed in place of the picture. <br/>
 
-	On the **Microsoft Office Home** page, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
+	On the **Microsoft Office Home** page, in the list of application icons that appear in the left-hand pane, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
 
 13. In the **Microsoft 365 admin center**, select **Show all** in the navigation pane and then select **Settings**. In the **Settings** group, select **Org settings**. 
 
@@ -113,11 +113,11 @@ Throughout the labs in this course, you will role-play by taking on the persona 
 
 25. In the list of organization profile data, select **Custom themes**.
 
-26. In the **Customize Microsoft 365 for your organization** pane, you can customize the default theme users see when signed into Microsoft 365, and you can add additional, custom themes. Select the **+Add theme** option.
+26. In the **Customize Microsoft 365 for your organization** pane, you can customize the default theme that users see when signed into Microsoft 365, and you can add additional custom themes. Select the **+Add theme** option.
 
 27. In the **Default theme** pane, the **General** tab is displayed by default. Select the **Show the user's display name** check box. 
  
-28. Take some time and review the **Logos** and **Colors** tabs. Note the various theme and branding options that are available for you to update. For the purpose of this lab, you can change any of the options or leave the default values as is. For example, in your real-world environment, you can add the logo of your company and set the background image as the default for all your users. For the purpose of this lab, you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
+28. Select the **Logos** and **Colors** tabs and take some time to review their options. Note the various theme and branding options that are available for you to update. For the purpose of this lab, you can change any of the options or leave the default values as is. For example, in your real-world environment, you can add the logo of your company and set the background image as the default for all your users. For the purpose of this lab, you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
 
 	**Tip:** Some color patterns aesthetically distract users. If you do change any of the colors, it's recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
 
@@ -176,7 +176,7 @@ By the time you get to the Module 4 labs, External Access should be ready so tha
 
 6. On the **External access** page, under the **Teams and Skype for Business users in external organizations** section, select the **Choose which external domains your users have access to** field. In the drop-down menu that appears, select **Allow only specific external domains**. 
 
-7. Select the **Allow domains** button that appears. 
+7. Select the **Allow domains** button that appears to add the external domain you want to allow. 
 
 8. In the **Add external domain** pane that appears on the right side of the screen, enter in the **Domain** field the **xxxxxZZZZZZ.onmicrosoft.com** domain for your fellow student's tenant ID (where ZZZZZZ is your fellow student's tenant ID that was assigned to you by your instructor). This will enable you to communicate with your fellow student once you get to the exercises in the Module 4 labs. Do NOT enter your domain. When you've finished entering your fellow student's domain, select **Done**. 
 
