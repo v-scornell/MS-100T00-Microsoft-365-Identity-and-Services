@@ -657,7 +657,7 @@ You will perform this task in LON-CL1.
 
     5.  A **Microsoft 365 Sign in** window will appear. Enter the username for
     the **Mod Administrator** account, which is the Microsoft 365 tenant admin account provided by your learning provider
-    (admin@M365xZZZZZZ.onmicrosoft.com) and then select **Next**.
+    (admin@xxxxxZZZZZZ.onmicrosoft.com) and then select **Next**.
 
     6.  In the **Enter password** window, enter the password provided by your learning provider for this tenant admin account, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
