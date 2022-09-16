@@ -224,6 +224,17 @@ Now that you have created the resource account for your calling queue, you will 
 25. Leave all tabs open in your browser and proceed to the next task. 
 
 
+### Task 6 - Create an Auto Attendant
+
+Auto attendants let people call your organization and navigate a menu system to speak to the right department, call queue, person, or an operator. You can create auto attendants for your organization with the Microsoft Teams admin center or with PowerShell. You'll use the Microsoft Teams admin center in this task. 
+
+
+
+1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
+
+2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Calling policies.**
+
+
 ### Task 6 - Create a Calling Policy 
 
 In Microsoft Teams, calling policies control which calling and call forwarding features are available to users. Calling policies determine whether a user can make private calls, use call forwarding or simultaneous ringing to other users or external phone numbers, route calls to voicemail, send calls to Call Groups, use delegation for inbound and outbound calls, and so on. A default global policy is created automatically, but admins can also create and assign custom calling policies. 
