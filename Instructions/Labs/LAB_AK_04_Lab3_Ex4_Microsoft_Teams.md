@@ -18,22 +18,22 @@ As Holly Dickson, Adatum's Enterprise Administrator, you want to customize the c
 
 5. In the **Microsoft Teams admin center**, in the left-hand navigation pane, select **Meetings** to expand the **Meetings** group. In this group, select **Meeting policies**.
 
-6. In the **Meeting policies** window, scroll down to the list of meeting policies and select **Global (Org-wide default)**. 
+6. In the **Meeting policies** window, in the list of policies, select **Global (Org-wide default)**. 
 
-7. In the **Global** window that appears, under the **General** section, review each setting. All settings in this section should be turned **On**.
+7. In the **Global (Org-wide default)** window that appears, under the **General** section, review each setting. All settings in this section should be turned **On**.
 
-8. Under the **Recording & transcription** section, review each setting. Select the **Allow transcription** toggle switch to turn it **On**.
+8. Under the **Recording & transcription** section, review each setting. Select the **Transcription** toggle switch to turn it **On**.
 
 9. Under the **Content Sharing** section, review each setting and make the following changes: 
 
 	Set the **Screen sharing mode** to **Single application**.
-	Set the **Allow an external participant to give or request control** setting to **On**.
+	Set the **External participants can give or request control** setting to **On**.
 
-10. Under the **Participants &amp; guests** section, review each setting. 
+10. Under the **Participants & guests** section, review each setting. 
 
-	Because Adatum has had issues in the past with non-invited external users dialing into meetings, you have been asked to verify the **Allow dial-in users to bypass the lobby** option is set to **Off**; if this option is turned On, then change it to Off. This setting controls whether people who dial in by phone will automatically join the meeting or must wait in the lobby until they are admitted to the call. 
+	Because Adatum has had issues in the past with non-invited external users dialing into meetings, you have been asked to verify the **Dial-in users can bypass the lobby** option is set to **Off**; if this option is turned On, then change it to Off. This setting controls whether people who dial in by phone will automatically join the meeting or must wait in the lobby until they are admitted to the call. 
 	
-	Because the **Automatically admit people** setting is set to **Everyone in your organization**, anyone who dials-in will wait in the lobby until admitted; this includes both Adatum and non-Adatum participants. You may decide to turn this setting **On** if it proves to be problematic in practice, but for now, you want to begin with this level of control. 
+	Because the **Automatically admit people** setting is set to **People in my organization and guests**, anyone from outside Adatum who is not a guest to a meeting will wait in the lobby until admitted. You may decide to turn this setting **On** if it proves to be problematic in practice, but for now, you want to begin with this level of control. 
 
 11. Scroll to the bottom of the page and select **Save**.
 
@@ -83,7 +83,7 @@ As part of her Microsoft Teams pilot project for Adatum, Holly wants to create a
 
 3. In the **Messaging policies** window, only the **Global (Org-wide default)** policy exists. Select **+Add** in the menu bar that appears above the list of policies.
 
-4. Select the **New messaging policy** field at the top of the page and enter **Chat and Channel Messaging Policy** as the name of the policy.
+4. In the **Messaging policies\Add** window, select the **Add a name for your messaging policy** field at the top of the page and enter **Chat and Channel Messaging Policy** as the name of the policy.
 
 5. Select the following values for each setting:
 
@@ -97,19 +97,19 @@ As part of her Microsoft Teams pilot project for Adatum, Holly wants to create a
 
 	- Chat: **On** 
 
-	- Use Giphy in conversations: **Off**
+	- Giphy in conversations: **Off**
 
 	- Giphy content rating: **Strict**
 
-	- Use Memes in conversations: **Off**
+	- Memes in conversations: **Off**
 
-	- User Stickers in conversations: **Off**
+	- Stickers in conversations: **Off**
 
-	- Allow URL previews: **On**
+	- URL previews: **On**
 
 	- Translate messages: **On**
 
-	- Allow immersive reader for viewing messages: **On**
+	- Immersive reader for messages: **On**
 
 	- Send urgent messages using priority notifications: **On** 
 
@@ -120,6 +120,10 @@ As part of her Microsoft Teams pilot project for Adatum, Holly wants to create a
 	- Remove users from a group chat: **Off**
 	
 	- Suggested replies: **Off**
+
+	- Chat permissions role: **Restricted permissions**
+
+	- Users with full change permissions can delete any message: **Off**
 
 6. Select **Save.** 
 
@@ -136,7 +140,7 @@ Creating a calling queue is a two-step process. In this task, you will first cre
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Resource accounts.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane. Scroll to the bottom of the **Voice** group and select **Resource accounts.**
 
 3. In the **Resource accounts** window, select **+Add** in the menu bar at the top of the page.
 
@@ -161,51 +165,63 @@ Now that you have created the resource account for your calling queue, you will 
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Call queues.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, under the **Voice** group in the left-hand navigation pane, select **Call queues.**
 
 3. In the **Call queues** window, select **+Add** in the menu bar at the top of the page.
 
-4. Select the **Call queue name** field at the top of the page and enter **Call Queue 1** as the name of the queue.
+4. In the **Call queues\Add a call queue** window, select the **Add a name for your call queue** field at the top of the page and enter **Call Queue 1** as the name of the queue.
 
-5. The page displays a message indicating **You haven’t added any resource accounts yet.** Below this message, select the **Add accounts** button.
+5. In the **Resource accounts** section, a message should be displayed indicating **You haven’t added any resource accounts yet.** Below this message, select the **Add** button.
 
-6. In the **Add account** pane that appears on the right-side of the screen, in the **Search by display or username** field, enter **Calling.** As you type **Calling**, a window appears that displays resource accounts whose title starts with **Calling**. **Calling Queue 1** is displayed. As you hover your mouse over **Calling Queue 1**, an **Add** button appears to the right of it. Select the **Add** button.
+6. In the **Add accounts** pane that appears on the right-side of the screen, in the **Search by display or username** field, enter **Calling.** As you type **Calling**, a window appears that displays resource accounts whose title starts with **Calling**. **Calling Queue 1** is displayed. As you hover your mouse over **Calling Queue 1**, an **Add** button appears to the right of it. Select the **Add** button.
 
 7. At the bottom of the **Add accounts** pane, select **Add.** This returns you to the **Call Queue 1** window, which now displays **Calling Queue 1** in the list of Resource accounts associated with this call queue.
 
-8. In the **Call Queue 1** window, scroll down the page and select the following values for each option:
-	
-	- Language: **English (United States)**
+8. In the **Call Queue 1** window, in the **Language** section, select the drop-down arrow in the language field. In the list of languages, select **English (United States)**.
 
-	- Greeting: **No greeting**
+9. Select the **Next** button.
 
-	- Music on hold: **Play default music**
+10. On the **Greeting and music** page, under the **Greeting** section, select **No greeting**.
 
-	- Call answering: 
+11. Under the **Music on hold** section, select **Play default music**.
 
-		- **Choose which call agents to associate with this call queue:** Select the **Choose users and groups** option, then select **Add users**. In the **Add users** pane that appears on the right-side of the screen, in the **Search by display name or username** field, enter **Allan**. As you type **Allan**, a window appears listing users whose name starts with **Allan**. As you hover your mouse over **Allan Deyoung**, an **Add** button appears to the right of it. Select the **Add** button.
+12. Select the **Next** button.
+
+13. On the **Call answering** page, you want to choose which call agents to associate with this call queue. Select the **Choose users and groups** option.
+
+14. Under the **Choose users and groups** option, select **Add users**. 
+
+15. In the **Add users** pane that appears on the right-side of the screen, in the **Search by display name or username** field, enter **Allan**. As you type **Allan**, a window appears listing users whose name starts with **Allan**. As you hover your mouse over **Allan Deyoung**, an **Add** button appears to the right of it. Select the **Add** button.
 		
-			**Important:** Note the red error message that appears across the top of the page. The error message indicates that Allan cannot be associated with this call queue because he is not enterprise-voice enabled. Select anywhere in the red error message to close the **Add users** pane, and then select the **X** on the right-side of this error message to close it. Select the **Cancel** button.
+	**Important:** Note the red error message that appears across the top of the page. The error message indicates that Allan cannot be associated with this call queue because he is not enterprise-voice enabled. Select the **X** on the right-side of this error message to close it. Select the **Cancel** button to close the **Add users** pane.
 			
-		- **Choose which groups to associate with this call queue:** Select the **Add groups** button. In the **Add call agents** pane on the right-side of the screen, in the **Search by distribution list or group name** field, enter **Inside.** As you type Inside, a window appears listing the groups whose name starts with Inside. As you hover your mouse over **Inside Sales**, an **Add** button appears to the right of it. Select the **Add** button.
-		
-			In the **Add call agents** pane, the Inside Sales group appears under **Selected groups**. Select the **Add** button at the bottom of the pane.
+16. Under the **Choose users and groups** option, select **Add groups**.
 
-		- Routing Method: **Round Robin**   
+17. In the **Add call agents** pane that appears on the right-side of the screen, in the **Search by distribution list or group name** field, enter **Inside.** As you type Inside, a window appears listing the groups whose name starts with Inside. As you hover your mouse over **Inside Sales**, an **Add** button appears to the right of it. Select the **Add** button.
+
+18. In the **Add call agents** pane, the Inside Sales group appears under **Selected (1) groups**. Select the **Add** button at the bottom of the pane.
+
+19. On the **Call answering** page, select the **Next** button.
+
+20. On the **Agent selection** page, update the following settings:
+
+	- Routing method: **Round Robin**   
 		
-		- Presence-based routing - **Off**
+	- Presence-based routing - **Off**
 	
-		- Agents can opt out of taking calls: **On**
+	- Call agents can opt out of taking calls: **On**
 		
-		- Agent alert time (in seconds) - **45** (Hint: Entering the value in the field is easier than dragging the slider icon)
+	- Call agent alert time (seconds) - **45** (Hint: Entering the value in the field is easier than dragging the slider icon)
 
-		- Call overflow handling: **leave all settings to their default values**
+21. Select the **Next** button.
 
-		- Call time out handling: **leave all settings to their default values**
+22. On the **Call overflow handling** page, leave all settings to their default values and select the **Next** button.
 
-9. Select **Submit**. A Saved message will appear across the top of the page once the changes have been saved. This message will eventually disappear, and **Call Queue 1** will appear in the list of Call queues.
+23. On the **Call timeout handling** page, leave all settings to their default values and select the **Submit** button. 
 
-10. Leave all tabs open in your browser and proceed to the next task. 
+24. On the **Call queues** page, a Saved message will appear across the top of the page once the changes have been saved. This message will eventually disappear, and **Call Queue 1** will appear in the list of Call queues.
+
+25. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 6 - Create a Calling Policy 
