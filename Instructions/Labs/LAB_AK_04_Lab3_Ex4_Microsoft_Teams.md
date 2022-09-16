@@ -130,13 +130,13 @@ As part of her Microsoft Teams pilot project for Adatum, Holly wants to create a
 7. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 4 – Create a Resource Account
+### Task 4 – Create Resource Accounts for the calling queue and auto attendant
 
 A resource account, which is referred to as a disabled user object in Azure Active Directory, can be used to represent resources in general. For example, a resource account in Exchange can be used to represent conference rooms, and in Microsoft Teams, resource accounts can be used to represent Phone System call queues and auto attendants. 
 
-As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dickson has been asked to create a resource account for a cloud call queue, which is a service that accepts customer calls, plays a greeting message, and then places the customer calls in a wait queue while searching a pre-configured list of agents to answer each call. 
+As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dickson has been asked to create a resource account for a cloud call queue, which is a service that accepts customer calls, plays a greeting message, and then places the customer calls in a wait queue while searching a pre-configured list of agents to answer each call. Holly must also create a resource account for the auto attendant that she plans to create.
 
-Creating a calling queue is a two-step process. In this task, you will first create a resource account that represents the call queue. In the next task, you will create the actual call queue and associate it with this resource account. 
+Creating a calling queue and an auto attendant are both two-step processes. In this task, you will first create a resource account that represents the call queue and another that represents the auto attendant. In the next two tasks, you will create the actual call queue and auto attendant, and you'll assign each to their respective resource accounts. 
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
@@ -156,12 +156,22 @@ Creating a calling queue is a two-step process. In this task, you will first cre
 
 5. Select **Save**. **Calling Queue 1** will now appear in the list of **Resource accounts**. 
 
-6. Leave all tabs open in your browser and proceed to the next task. 
+6. Repeat steps 3-5 to create a resource account for the auto attendant. For this resource account, enter the following information:
+
+	- Display name: **Auto Attendant 1**
+
+	- Username: **AA1**
+
+	- Domain name: In the domain name field to the right of the username, select the drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
+
+	- Resource account type: **Auto attendant**
+
+7. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 5 - Create a Call Queue
 
-Now that you have created the resource account for your calling queue, you will create the call queue itself and assign it the resource account.
+Now that you have created the resource account for your calling queue, you will create the call queue itself and assign it the calling queue resource account.
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
@@ -228,14 +238,64 @@ Now that you have created the resource account for your calling queue, you will 
 
 Auto attendants let people call your organization and navigate a menu system to speak to the right department, call queue, person, or an operator. You can create auto attendants for your organization with the Microsoft Teams admin center or with PowerShell. You'll use the Microsoft Teams admin center in this task. 
 
-
+As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dickson has been asked to create an auto attendant. Holly will then assign the auto attendant resource account that was created in the earlier task to the auto attendant. Holly won't be setting up an operator at this time. Doing so requires setting up a number of additional parameters that are outside the scope of this training.
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Calling policies.**
+2. **Step 1 - Set up the general information.** In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Auto attendants.**
+
+3. On the **Auto attendants** page, select **+Add** in the menu bar.
+
+4. In the **Auto attendant\Add auto attendant** page, enter the following information:
+
+	- Add a name for your auto attendant - **Auto attendant 1** 
+
+	- Operator (optional) - **No operator**. 
+
+	- Time zone - **(UTC-08:00) Pacific Time (US & Canada)**
+
+	- Language - **English (United States)**
+
+	- Voice inputs - **Off**
+
+5. Select **Next**.
+
+6. On the **Call flow** page, enter the following information:
+
+	- Greeting options - **Add a greeting message**; in the text message field that appears, enter **Welcome to Adatum Corporation.**
+
+	- Call routing options - **Disconnect**; Note: it's more common for organizations to select either the **Redirect call** or **Play menu options** option. However, these options take additional setup that's outside the scope of this training. For this lab, we'll simply select the Disconnect option. 
+
+7. Select **Next**.
+
+8. On the **Set business hours** page, note that the default business hours are set to 24/7, Monday through Sunday. For the pilot project, Holly wants to set the business hours from 8:00 am to 5:00 pm, Monday through Friday.
+
+	On the menu bar, select **Clear all hours**. For **Monday** through **Friday**, select **8:00 AM** as the **Start time** and **5:00 PM** as the **End time**. Do not set any times for Saturday or Sunday.
+	
+9. In the Set up after hours call flow section, enter the following information:
+
+	- Greeting options - **Add a greeting message**; in the text message field that appears, enter **We're sorry, but Adatum Corporation is closed. Standard business hours are Monday through Friday, 8:00 AM to 5:00 PM.**
+
+	- Call routing options - **Disconnect**
+
+10. Select **Next**.
+
+11. On the **Holiday call settings** page, select **Next**.
+
+12. On the **Dial Scope** page, accept all default options by selecting **Next**.
+
+13. On the **Resource accounts** page, select the **Add** button.
+
+14. In the **Add accounts** pane that appears on the right-side of the screen, enter **auto** in the **Search by display or username** field. Hover your mouse over the **Auto attendant 1** resource account that's displayed and then select the **Add** button.
+
+15. Select the **Add** button at the bottom of the **Add accounts** pane.
+
+16. On the **Resource accounts** page, select the **Submit** button.
+
+17. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 6 - Create a Calling Policy 
+### Task 7 - Create a Calling Policy 
 
 In Microsoft Teams, calling policies control which calling and call forwarding features are available to users. Calling policies determine whether a user can make private calls, use call forwarding or simultaneous ringing to other users or external phone numbers, route calls to voicemail, send calls to Call Groups, use delegation for inbound and outbound calls, and so on. A default global policy is created automatically, but admins can also create and assign custom calling policies. 
 
@@ -274,7 +334,7 @@ As part of her Microsoft Teams pilot project, Holly Dickson has been tasked with
 7. Leave all tabs open in your browser and proceed to the next task. 
  
 
-### Task 7 – Manage External Access
+### Task 8 – Manage External Access
 
 With Microsoft Teams’ external access feature, Teams users from other domains can participate in your chats and calls. You can also block the users in specific domains from joining chats and calls. 
 
@@ -305,7 +365,7 @@ As part of her Microsoft Teams pilot project, Holly Dickson wants to block commu
 12. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 8 – Manage Guest Access
+### Task 9 – Manage Guest Access
 
 Microsoft Teams’ guest access feature enables you to configure settings for guests. IT admins can add guests at the tenant level, set and manage guest user policies and permissions, and generate reports on guest user activity. Guest access is turned On by default.
 
@@ -354,7 +414,7 @@ As part of your Microsoft Teams pilot project for Adatum, you will customize a v
 6. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 9 – Manage Teams Settings
+### Task 10 – Manage Teams Settings
 
 Microsoft Teams includes a variety of global settings that control performance within Teams. As part of her Microsoft Teams pilot project, Holly Dickson will configure a number of these settings as determined by Adatum’s project team.
 
@@ -411,7 +471,7 @@ Microsoft Teams includes a variety of global settings that control performance w
 5. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 10 – Configure Chat functionality for the Ticketing System
+### Task 11 – Configure Chat functionality for the Ticketing System
 
 In this task, you will open the Microsoft Teams desktop application on LON-CL1 and log in as Adatum’s MOD Administrator. You will then conduct a brief chat session with the IT Consultant (your fellow student whose tenant ID was assigned to you by your instructor). This will validate that you can use Teams to chat with the IT Consultant whenever necessary to discuss matters concerning the new Service Request Ticketing system.
 
