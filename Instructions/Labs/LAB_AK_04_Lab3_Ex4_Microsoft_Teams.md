@@ -236,9 +236,7 @@ Now that you have created the resource account for your calling queue, you will 
 
 ### Task 6 - Create an Auto Attendant
 
-Auto attendants let people call your organization and navigate a menu system to speak to the right department, call queue, person, or an operator. You can create auto attendants for your organization with the Microsoft Teams admin center or with PowerShell. You'll use the Microsoft Teams admin center in this task. 
-
-As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dickson has been asked to create an auto attendant. Holly will then assign the auto attendant resource account that was created in the earlier task to the auto attendant. Holly won't be setting up an operator at this time. Doing so requires setting up a number of additional parameters that are outside the scope of this training.
+Auto attendants let people call your organization and navigate a menu system to speak to the right department, call queue, person, or an operator. As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dickson has been asked to create an auto attendant. When doing so, you will assign the auto attendant resource account that you created earlier to the auto attendant record. Holly won't be setting up an operator at this time. Doing so requires setting up a number of additional parameters that are outside the scope of this training.
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
