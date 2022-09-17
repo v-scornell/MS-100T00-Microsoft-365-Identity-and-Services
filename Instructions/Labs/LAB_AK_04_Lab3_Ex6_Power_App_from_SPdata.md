@@ -41,9 +41,9 @@ You can create a Power App through either the Power App portal or through ShareP
 
 3. In the **Power Apps** studio, in the left-hand navigation pane, select **+Create**.
 
-4. On the **Three ways to make an app** page, scroll down to the **Start from data** section and select **SharePoint**. 
+4. On the **Create your app** page, under the **Start from** section, select **SharePoint**. 
 
-5. A new browser tap opens that displays the available Connections. A **Hi Holly** dialog box will appear over top of this page. Leave the default country/region and select **Get started**.
+5. A new browser tab opens that displays the available Connections. A **Hi Holly** dialog box will appear over top of this page. Leave the default country/region and select **Get started**.
 
 6. In the **Power Apps** studio, on the **Connections** page, the details pane displays the **SharePoint** connection page. Under the **How do you want to connect to your data?** option, select **Connect directly (cloud services)** and then select the **Create** button.
 
