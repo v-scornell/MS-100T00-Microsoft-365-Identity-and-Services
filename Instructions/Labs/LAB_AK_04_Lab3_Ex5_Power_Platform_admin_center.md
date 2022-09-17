@@ -22,7 +22,7 @@ In your role as Holly Dickson, you want to review the Power Platform admin cente
 
 8. In the **Welcome to the Power Platform admin center** window, select the **X** in the upper right-hand corner to close it.
 
-9. In the **Power Platform admin center**, select **Environments** tab in the left-hand navigation pane. 
+9. In the **Power Platform admin center**, select **Environments** in the left-hand navigation pane. 
 
 10. On the **Environments** page, note how there is only one environment - the **Adatum Corporation (default)** environment. Select the **Adatum Corporation (default)** environment and review the information available for this environment. 
 
@@ -44,13 +44,35 @@ In your role as Holly Dickson, you want to review the Power Platform admin cente
 
 13. Select **Save.** <br/>
 
-	**Note:** Trying to save this new environment record will result in an error message at the top of the window. This message indicates you need at least 1 Gb of database capacity, which is not available in your VM lab environment. Close the **New environment** window. 
+	**Note:** Trying to save this new environment record will result in an error message at the top of the window. This message indicates you need at least 1 Gb of database capacity, which is not available in your VM lab environment. 
 
-14. Explore other areas of the **Power Platform admin center**, as desired. 
+14. Select **Cancel** to close the **New environment** window. 
 
-15. When you are finished, close the **Power Platform admin center** tab in your browser.
+15. An organization's data is critical to its success. Its data needs to be readily available for decision-making, but the data needs to be protected so that it isn't shared with audiences who shouldn't have access to it. To protect this data, you can use Power Apps to create and enforce data loss prevention (DLP) policies that define the consumer connectors that specific business data can be shared with. For example, an organization that uses Power Apps may not want the business data that's stored in SharePoint to be automatically published to its Twitter feed. <br/>
 
-16. In your browser, leave the **Power Apps** tab open for the next lab exercise.
+	You can create DLP policies for the data used within the Power Platform module. In the next several steps, you'll walk through the New Policy wizard to see what information is captured in a DLP policy. You won't actually create a policy, but you'll experience the process and see what information makes up a Power Platform DLP policy. <br/>
+
+	In the **Power Platform admin center**, select **Policies** in the left-hand navigation pane, and then select **Data policies**.
+
+16. On the **Data policies** page, select **+New Policy** that appears at the top of the page. This initiates the New Policy wizard.
+
+17. On the **Name your policy** page, enter **Test** in the policy name field, and then select **Next**.
+
+18. On the **Assign connectors** page, the **Non-business** tab is displayed by default. Note there are 821 non-business connectors at the time of this writing. These connectors are for non-sensitive data.
+
+19. Select the **Business** tab. This tab displays existing connectors (there are none) for sensitive data. 
+
+20. Select **Next**.
+
+21. On the **Custom connector patterns** page, you can create a list of rules to limit access to custom connectors (in order of priority). Select **Next**.
+
+22. On the **Define scope** page, you can define the environments that will be added to this policy. Do NOT select **Next**. Instead, select **Cancel** to cancel out of the New Policy wizard.
+
+23. Explore other areas of the **Power Platform admin center**, as desired. 
+
+24. When you are finished, close the **Power Platform admin center** tab in your browser.
+
+25. In your browser, leave the **Power Apps** tab open for the next lab exercise.
 
  
 
