@@ -130,13 +130,13 @@ As part of her Microsoft Teams pilot project for Adatum, Holly wants to create a
 7. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 4 – Create Resource Accounts for the calling queue and auto attendant
+### Task 4 – Create Resource Accounts
 
 A resource account, which is referred to as a disabled user object in Azure Active Directory, can be used to represent resources in general. For example, a resource account in Exchange can be used to represent conference rooms, and in Microsoft Teams, resource accounts can be used to represent Phone System call queues and auto attendants. 
 
-As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dickson has been asked to create a resource account for a cloud call queue, which is a service that accepts customer calls, plays a greeting message, and then places the customer calls in a wait queue while searching a pre-configured list of agents to answer each call. Holly must also create a resource account for the auto attendant that she plans to create.
+As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dickson has been asked to create a resource account for a cloud call queue, which is a service that accepts customer calls, plays a greeting message, and then places the customer calls in a wait queue while searching a pre-configured list of agents to answer each call. Holly must also create a resource account for the auto attendant that she plans to create later in this exercise.
 
-Creating a calling queue and an auto attendant are both two-step processes. In this task, you will first create a resource account that represents the call queue and another that represents the auto attendant. In the next two tasks, you will create the actual call queue and auto attendant, and you'll assign each to their respective resource accounts. 
+Creating a calling queue and an auto attendant are both two-step processes. In this task, you will complete the first step by creating resource accounts for the call queue and the auto attendant, respectively. In the next two tasks, you will create the actual call queue and auto attendant, and you'll assign each to their respective resource account that you created in this task. 
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
