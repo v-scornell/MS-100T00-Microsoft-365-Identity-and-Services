@@ -375,11 +375,11 @@ As part of your Microsoft Teams pilot project for Adatum, you will customize a v
 
 	- Meeting
 
-		- Allow IP video: **On**
+		- IP video: **On**
 
 		- Screen sharing mode: **Entire screen**
 
-		- Allow Meet Now: **On**
+		- Meet Now: **On**
 
 	- Messaging
 
@@ -389,15 +389,15 @@ As part of your Microsoft Teams pilot project for Adatum, you will customize a v
 
 		- Chat: **On**
 
-		- Use Giphy in conversations: **Off**
+		- Giphy in conversations: **Off**
 
 		- Giphy content rating: **Strict**
 	
-		- Use Memes in conversations: **Off**
+		- Memes in conversations: **Off**
 
-		- User Stickers in conversations: **Off**
+		- Stickers in conversations: **Off**
 
-		- Allow immersive reader for viewing messages: **On**
+		- Immersive reader for messages: **On**
 	
 5. Select **Save.** Note the message that displays indicating it can take a couple of hours for the changes to take effect. This message does not automatically disappear, so close this message by selecting the **X** that appears at the right-side of the message; otherwise, the message will remain at the top of your screen even as you navigate to other pages.
 
