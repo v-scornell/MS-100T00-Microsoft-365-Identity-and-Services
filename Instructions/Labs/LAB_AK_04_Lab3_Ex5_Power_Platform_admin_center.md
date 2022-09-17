@@ -12,33 +12,45 @@ In your role as Holly Dickson, you want to review the Power Platform admin cente
 
 3. In your Edge browser, close all tabs except for the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab. Open a new tab in your Edge browser and enter the following URL in the address bar: **https://make.powerapps.com/home** 
 
-4. This opens the **PowerApps** studio. Select the **gear (Settings)** icon on the top right corner of the screen. In the **Settings** pane that appears, select **Admin center**. This opens a new tab that displays the **Power Platform admin center.** <br/>
+4. This opens the **PowerApps** studio. In the **Welcome to Power Apps** window, select **Get started**.
 
-5. In the **Power Platform admin center**, the **Environments** tab in the left-hand navigation pane is displayed by default. In the list of **Environments**, note how there is only one environment, the **Adatum Corporation (default)** environment. Select the **Adatum Corporation (default)** environment and review the information available for this environment. 
+5. In the Contact information window, Holly's email address and country should be filled in. If the Phone number field is blank, enter **425-555-1234**. Select **Submit**.
 
-6. In the navigation pane at the top of the screen (**Environments > Adatum (default))**, select **Environments**.
+6. On the **Make your job easier** window, select **Skip**.
 
-7. You have decided to create a new environment. On the menu bar at the top of the screen, select **+New** to create a new environment.
+7. On the **Power Apps** portal, select the **gear (Settings)** icon on the top right corner of the screen. In the **Settings** pane that appears, select **Admin center**. This opens a new tab that displays the **Power Platform admin center.** 
 
-8. In the **New environment** pane that appears, enter the following information:
+8. In the **Welcome to the Power Platform admin center** window, select the **X** in the upper right-hand corner to close it.
+
+9. In the **Power Platform admin center**, select **Environments** tab in the left-hand navigation pane. 
+
+10. On the **Environments** page, note how there is only one environment - the **Adatum Corporation (default)** environment. Select the **Adatum Corporation (default)** environment and review the information available for this environment. 
+
+10. In the navigation pane at the top of the screen (**Environments > Adatum (default))**, select **Environments** to return back to the **Environments** page.
+
+11. You have decided to create a new environment. On the menu bar at the top of the screen, select **+New** to create a new environment.
+
+12. In the **New environment** pane that appears, enter the following information:
 
 	- Name: **Adatum-Test**
 
-	- Type: **Sandbox**
-
 	- Region: **United States - Default**
+
+	- Type: **Sandbox**
 
 	-  Create a database for this environment: **No**
 
-9. Select **Save.** <br/>
+	-  Pay-as-you-go with Azure: **No**
+
+13. Select **Save.** <br/>
 
 	**Note:** Trying to save this new environment record will result in an error message at the top of the window. This message indicates you need at least 1 Gb of database capacity, which is not available in your VM lab environment. Close the **New environment** window. 
 
-10. Explore other areas of the **Power Platform admin center**, as desired. 
+14. Explore other areas of the **Power Platform admin center**, as desired. 
 
-11. When you are finished, close the **Power Platform admin center** tab in your browser.
+15. When you are finished, close the **Power Platform admin center** tab in your browser.
 
-12. In your browser, leave the **Power Apps** tab open for the next lab exercise.
+16. In your browser, leave the **Power Apps** tab open for the next lab exercise.
 
  
 
