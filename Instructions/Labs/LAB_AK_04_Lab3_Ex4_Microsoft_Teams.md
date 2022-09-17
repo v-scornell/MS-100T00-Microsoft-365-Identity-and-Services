@@ -420,13 +420,13 @@ Microsoft Teams includes a variety of global settings that control performance w
 		
 	- Tagging
 		
-		- Tags are managed by: **Not enabled**
+		- Who can manage tags: **Not enabled**
 
 	- Email integration
 
-		- Allow users to send emails to a channel email address: **On**
+		- Users can send emails to a channel email address: **On**
 
-		- Accept channel email from these SMTP Domains: **microsoft.com**
+		- Accept channel email from these SMTP domains: **microsoft.com**
 
 	- Files
 
@@ -442,7 +442,7 @@ Microsoft Teams includes a variety of global settings that control performance w
 
 	- Organization
 
-		- Show Organization tab in chats: **On**
+		- Show Organization tab for users: **On**
 
 	- Devices
 
@@ -450,11 +450,15 @@ Microsoft Teams includes a variety of global settings that control performance w
 
 		- Set content PIN: **Required for outside scheduled meeting**
 
-		- Resource accounts can send messages: **On**
+		- Surface Hub accounts can send emails: **On**
 
 	- Search by name
 
 		- Scope directory search using an Exchange address book policy: **On**
+
+	- Safety and communications
+
+		- Role-based chat permissions: **Off**
 
 4. Select **Save**. Note the message that displays indicating it can take a few hours for the changes to take effect. This message will eventually disappear.
 
