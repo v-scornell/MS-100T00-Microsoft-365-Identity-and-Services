@@ -1,4 +1,4 @@
-# Learning Path 5 - Lab 4 - Exercise 3 - Implement Password Management 
+# Learning Path 3 - Lab 3 - Exercise 4 - Implement Password Management 
 
 As Holly Dickson, Adatum’s Enterprise Administrator, you have been asked by Adatum’s CTO to deploy Pass-through Authentication (PTA) and Azure AD Smart Lockout as a means of strengthening password management throughout the organization. 
 
@@ -132,6 +132,6 @@ The CTO is anxious to implement Smart Lockout because it will lock out the attac
 22. Once you've been locked out, wait 90 seconds and then verify that you can sign back in as **laura@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix assigned to you by your lab hosting provider) and the password **Pa55w.rd**. If your log in is successful, you should return to the Azure Active Directory admin center.
  
 
-# End of Lab 4
+# End of Lab 3
 
 
