@@ -336,31 +336,23 @@ As part of her Microsoft Teams pilot project, Holly Dickson has been tasked with
 
 With Microsoft Teams’ external access feature, Teams users from other domains can participate in your chats and calls. You can also block the users in specific domains from joining chats and calls. 
 
-As part of her Microsoft Teams pilot project, Holly Dickson wants to block communication with users from a specific domain (spam.com) that has been the source of multiple spam attacks within Adatum over the past year. At the same time, Holly wants to allow communication with the users from another domain (microsoft.com) that is one of Adatum's key business partners.
+As part of her Microsoft Teams pilot project, Holly Dickson wants to block communication with users from a specific domain (spam.com) that has been the source of multiple spam attacks within Adatum over the past year. 
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
 2. In your Edge browser, in the **Microsoft Teams admin center**, select **Users** in the left-hand navigation pane and then select **External access.**
 
-3. In the **External access** window, leave the settings involving Skype users set to **On**. If necessary, set the **Choose which external domains your users have access to** drop-down field to **Block only specific external domains**. 
+3. In the **External access** window, under the **Teams and Skype for Business users in external organization** section, select the drop-down arrow in the **Choose which external domains your users have access to** field. In the drop-down menu that appears, select **Block only specific external domains**.
 
-4. To add the domain in which you want to block communication, select **Block domains** in the menu bar that appears above the list.  
+4. Select the **Block domains** button that appears.
 
-7. To add the blocked domain, in the **External access** window, select **Add a domain.**
+5. In the **Add external domain** pane that appears, enter **spam.com** in the **Domain** field, and then select the **Done** button.
 
-8. In the **Add a domain** pane that appears on the right, enter the following information:
+6. In the **External access** window, validate that **spam.com** is displayed in the list of blocked domains.
 
-	- Domain: **spam.com**
+7. No changes need to be made to the default settings in the **Teams accounts not managed by an organization** section and the **Skype users** section. Select **Save.**
 
-	- Action to take on this domain: **Blocked**
-
-9. Select **Done.**
-
-10. In the **External access** window, validate that **spam.com** is represented in the list of domains and has the appropriate Status.
-
-11. Select **Save.**
-
-12. Leave all tabs open in your browser and proceed to the next task. 
+8. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 9 – Manage Guest Access
@@ -469,7 +461,7 @@ Microsoft Teams includes a variety of global settings that control performance w
 5. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 11 – Configure Chat functionality for the Ticketing System
+### Task 11 – Test chat functionality with an external user
 
 In this task, you will open the Microsoft Teams desktop application on LON-CL1 and log in as Adatum’s MOD Administrator. You will then conduct a brief chat session with the IT Consultant (your fellow student whose tenant ID was assigned to you by your instructor). This will validate that you can use Teams to chat with the IT Consultant whenever necessary to discuss matters concerning the new Service Request Ticketing system.
 
@@ -493,7 +485,7 @@ In this task, you will open the Microsoft Teams desktop application on LON-CL1 a
 
 7. Teams will perform an external search on this user account. It should display the result of this search below the **To:** field. Select this value. 
 
-8. This will open a new chat session with the IT Consultant (your fellow student). Send a message to this person and conduct a brief chat session to verify that you can communicate with him or her using the Chat functionality within Teams.
+8. This will open a new chat session with the IT Consultant (your fellow student). Send a message to this person and conduct a brief chat session to verify that you can communicate with them using the Chat functionality within Teams.
 
 9. When you have finished chatting, leave Teams open and proceed to the next task. 
 
