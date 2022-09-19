@@ -25,7 +25,7 @@ Instead, in your role as Holly Dickson, you will perform the following steps in 
 3. You should still have your Edge browser and the SharePoint admin center open from the prior lab in which you were logged in as Holly Dickson. If so, proceed to the next step; otherwise, navigate to the SharePoint admin center just as you did in the prior lab exercise.
 4. In the **SharePoint admin center**, you will begin by creating a new permission level for the IT Services site. In the navigation pane, select **Sites**, and then select **Active sites**.
 5. In the list of active sites, for the **IT Services** site that you created in the prior task, select the site's URL value (**.../sites/ITServices**) that appears under the **URL** column.
-6. A new tab will open in your Edge browser that displays the **IT Services** site. In the upper right-hand corner of the **IT Services** site, select the **gear (Settings)** icon.
+6. A new tab will open in your Edge browser that displays the **IT Services** site. In the upper right-hand corner of the **IT Services** site, select the **gear (Settings)** icon (it may take a minute or so to display).
 7. In the **Settings** pane that appears, select **Site permissions.**
 8. At the bottom of the **Site permissions** pane, select **Advanced permissions settings**, which opens a **Permissions: IT Services** page.
 9. In the ribbon that appears at the top of the screen, the **PERMISSIONS** tab is displayed by default. Under the **Manage** section, select **Permission Levels.**
@@ -55,7 +55,7 @@ Instead, in your role as Holly Dickson, you will perform the following steps in 
     On this **Permissions** \> **Permission Levels** heading line, select the **Permissions** link to return to the **Permissions: IT Services** page.
 14. In the ribbon displayed at the top of the screen, the **PERMISSIONS** tab is displayed by default. In this tab, under the **Grant** section, select **Create Group**.
 15. On the **People and Groups \> Create Group** page, enter the following information:
-      - Name: **Consultants**
+      - Name: **Consultants** (select the X in the dialog box that appears below this field to close it)
       - About Me: **This group is used for allowing consultants to modify work products only**.
       - Who can view the Membership of the Group: **Everyone**
       - Who can edit the membership of the Group: **Group Owner**
