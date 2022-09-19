@@ -21,29 +21,29 @@ In your role as Holly Dickson, you will begin the process of creating a canvas a
 
 2. In your Microsoft Edge browser, open a new tab and enter the following URL in the address bar: **https://make.powerapps.com**
 
-3. This will open the **Power Apps studio**. On the main body of the **Home** page, under the **Start from** section, select **Blank app**. In the pop-up, in the **Blank canvas app** section, select **Create**.
+3. This will open the **Power Apps** studio. On the main body of the **Home** page, under the **Start from** section, select **Blank app**. In the **Create** window that appears, under the **Blank canvas app** section, select **Create**.
 
 4. On the **Canvas app from blank** window that appears, enter a name for your app (anything that you want) in the **App name** field, and in the **Format** section, select the **Phone** option. 
 
 5. Select the **Create** button at the bottom of the window. If a **Welcome to Power Apps studio** dialog box appears, select **Skip**.
 
-6. In the **Power Apps** studio, notice how in the **Tree view** pane, none of the browse, detail, or edit screens appear under the **Screens** tab. Those screens were automatically created when you created an app from an existing data source, as you did in the prior lab exercise. But when creating a canvas app from scratch, as you are doing here, you must manually create those screens.   
+6. In the **Power Apps** studio, notice how in the **Tree view** pane on the left side of the monitor, none of the browse, detail, or edit screens appear under the **Screens** tab. Those screens were automatically created when you created an app from an existing data source, as you did in the prior lab exercise. But when creating a canvas app from scratch, as you are doing here, you must manually create those screens.   
 ‎  
-‎**Screen1** is the only screen in the Tree view pane since it is the name of the blank screen that appears on the canvas. By default, the font size on the screen is so small (20%) that it is difficult to read. Use the slider to increase the font size. While the text on the screen says **Add an item from the insert pane or connect to data**, do not select either of these options at this time. You will eventually configure the properties of this screen from the **Insert** pane, but for now, let’s begin by renaming this app screen.   
+‎**Screen1** (which appears in the right-hand pane) is the only screen in the Tree view pane since it is the name of the blank screen that appears on the canvas. By default, the font size on the screen is so small (20%) that it is difficult to read. Use the slider to increase the font size. While the text on the screen says **Add an item from the insert pane or connect to data**, do not select either of these options at this time. You will eventually configure the properties of this screen from the **Insert** pane, but for now, let’s begin by renaming this app screen.   
 ‎  
-‎In the **Tree view** pane, select the **ellipses** icon that appears to the right of **Screen1**. In the menu that appears, select **Rename**, and then enter **BrowseScreen1** as the new screen name (this will keep the screen name consistent with the naming convention that is used when Power Apps automatically creates screens for an app).
+‎In the **Tree view** pane, select the **ellipses** icon that appears to the right of **Screen1**. In the menu that appears, select **Rename**, enter **BrowseScreen1** as the new screen name and then hit Enter (this will keep the screen name consistent with the naming convention that is used when Power Apps automatically creates screens for an app).
 
-7. Now you will access the **Insert** pane to configure screen properties. On the menu bar at the top of the Power Apps Studio screen, select **Insert**.
+7. Now you will access the **Insert** pane to configure screen properties. On the menu bar at the top of the Power Apps Studio screen, select **+Insert**.
 
-8. On the **Insert ribbon** that appears below the menu bar, select **Gallery**, and in the menu that appears, select **Vertical**.
+8. In the drop-down menu that appears, select **Vertical gallery**.
 
-9. On the canvas pane, you will see the vertical gallery and a **Select a data source** window. Note that in the **Tree view** pane, the default name of the vertical gallery you just added is **Gallery1.** Gallery1 represents the list of records that will be displayed in BrowseScreen1 from your data source. Since you have yet to define a data source, you can see that it simply fills in sample records. Once you select your data source, you will see the actual records from your data source in the gallery of the Browse screen.   
+9. On the canvas pane, you will see the vertical gallery and a **Select a data source** window. Note that in the **Tree view** pane, the default name of the vertical gallery you just added is **Gallery1.** Gallery1 represents the list of records that will be displayed in BrowseScreen1 from your data source. Since you have yet to define a data source, you can see that it simply fills in sample records in the main body of the screen (Lorem ipsum 1, Lorem ipsum 2, and so on). Once you select your data source, you will see the actual records from your data source in the gallery of the Browse screen.   
 ‎  
 ‎In the **Select a data source** window, enter **Share** (short for SharePoint) in the **Search** field. This will display a list of data sources starting with **Share**. In the list, select **SharePoint**. Alternatively, you could select the down arrow next to **Connectors** and select **SharePoint**.  
 ‎  
 ‎**Important:** If you happened to click somewhere else on the screen before you performed the prior step of entering **Share** in the Search box, the **Select a data source** window will disappear. **Do not worry!** You will simply perform this step using the **Properties pane**. First, in the **Tree view** pane, select **Gallery1** if it is not already selected. In the **Gallery1 Properties pane** on the right, in the **Data source** field, select the drop-down arrow. In the window that appears, select **Connectors** and then select **SharePoint**. 
 
-10. In the **SharePoint** window that appears, select the **SharePoint** connection that is listed (this displays the administrator’s email associated with the SharePoint connection). 
+10. In the **SharePoint** pane that appears on the right-side of the screen, the **Connect directly (cloud services)** option should be selected by default (if not, select this option now). Select the **Connect** button at the bottom of the **Sharepoint** pane.
 
 11. A **Connect to a SharePoint site** window opens on the right side of the screen that lists the available SharePoint sites at the bottom of the window. Select **IT services** **– https://xxxxxZZZZZZ.sharepoint.com/sites/ITServices** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
 
