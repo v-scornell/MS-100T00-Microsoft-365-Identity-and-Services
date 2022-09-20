@@ -31,11 +31,11 @@ That being said, you will not turn on MFA for Holly's account because time is li
 
 	- Username: **Holly** <br/>
 	
-		‎**IMPORTANT:** To the right of the **Username** field is the domain field. It will be prefilled with the **M365xZZZZZZ.onmicrosoft.com** cloud domain (where ZZZZZZ is your tenant ID provided by your lab hosting provider).<br/>
+		‎**IMPORTANT:** To the right of the **Username** field is the domain field. It will be prefilled with the **xxxxxZZZZZZ.onmicrosoft.com** cloud domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).<br/>
 	
 		After configuring this field, Holly’s username should appear as:<br/>
 
-		**Holly@M365xZZZZZZ.onmicrosoft.com**  
+		**Holly@xxxxxZZZZZZ.onmicrosoft.com**  
 	
 	- Clear (uncheck) the **Automatically create a password** check box, which will display a new field for entering an administrator defined password.
 
