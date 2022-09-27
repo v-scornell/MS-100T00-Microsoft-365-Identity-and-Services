@@ -39,7 +39,7 @@ That being said, you will not turn on MFA for Holly's account because time is li
 	
 	- Clear (uncheck) the **Automatically create a password** check box, which will display a new field for entering an administrator defined password.
 
-	- In the new **Password** field that appears, enter: **Pa55w.rd** (**Hint**: Select the eye icon at the right side of the field to verify the password that you entered)
+	- In the new **Password** field that appears, enter: **User.pw1** (**Hint**: Select the eye icon at the right side of the field to verify the password that you entered)
 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
 
@@ -67,7 +67,7 @@ That being said, you will not turn on MFA for Holly's account because time is li
 
 13. On the **Review and finish** window, review your selections. If anything must be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
-14. On the **Holly Dickson added to active users** page, under the **User details** section, select the **Show** option to verify Holly's password is **Pa55w.rd**.  <br/>
+14. On the **Holly Dickson added to active users** page, under the **User details** section, select the **Show** option to verify Holly's password is **User.pw1**.  <br/>
 
 	**Note:** If you accidentally entered a different password, then once you return to the **Active Users** page, you will need to select the **Reset a password** icon (the key icon that appears when you hover over Holly's account) to change her password to the correct value.
 
@@ -93,7 +93,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 4. In the **Pick an account** window, select **+Use another account**. In the **Sign in** windows that appears, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
 
-5. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
+5. In the **Enter password** window, enter **User.pw1** and then select **Sign in**.
 
 6. If a **Welcome to your new Office, Holly** window appears, there's no option to close it. Instead, to the right of the window, select the right arrow icon (>) two times and then select the check mark icon to advance through the slides in this messaging window.
 
@@ -192,7 +192,7 @@ In this task, you will use Windows PowerShell to recover the Inside Sales group 
 
 		Connect-AzureAD   
 
-4. A new window will appear requesting your credentials. Sign in using Holly's Microsoft 365 account of **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd** as the Password.  
+4. A new window will appear requesting your credentials. Sign in using Holly's Microsoft 365 account of **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **User.pw1** as the Password.  
 
 5. At the command prompt, type the following command and then press Enter to display the repository of deleted groups (this should display the **Inside Sales** group that you earlier deleted):<br/>  
 	
