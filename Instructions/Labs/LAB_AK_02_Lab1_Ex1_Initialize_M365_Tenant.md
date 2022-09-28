@@ -186,9 +186,11 @@ By the time you get to the Module 4 labs, External Access should be ready so tha
 
 10. Under the **Skype users** section, verify the toggle switch uis set to **On**. If it's set to **Off**, then set it to **On** now. 
 
-11. Select the **Save** button at the bottom of the page.
+11. Select the **Save** button at the bottom of the page.<BR/>
 
-12. In your Microsoft Edge browser, close the **External access - Microsoft Teams** tab. This should return you to the **Microsoft 365 admin center** tab, which you should leave open as you proceed to the next exercise.
+13. If a prompt warning that **Changes will take time to take effect** is displayed, select **Confirm**
+
+14. In your Microsoft Edge browser, close the **External access - Microsoft Teams** tab. This should return you to the **Microsoft 365 admin center** tab, which you should leave open as you proceed to the next exercise.
 
 
 # Proceed to Lab 1 - Exercise 2 
