@@ -8,11 +8,11 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 1. You should still be logged into LON-DC1 after having completed the prior exercise, and you should still be logged into Microsoft 365 as Holly Dickson.
 
-2. In your **Microsoft Edge** browser, select the **Microsoft Office Home** tab to display the Office 365 Home page, which should still be open (if not, navigate to **https://portal.office.com** and log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd**).
+2. In your **Microsoft Edge** browser, select the **Microsoft Office Home** tab to display the Office 365 Home page, which should still be open (if not, navigate to **https://portal.office.com** and log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **User.pw1**).
 
 3. In the **Office 365 Home** page, select the **Outlook** icon in the column of app icons on the left. <br/>
 
-4. If a **Pick an account** window appears, select Holly's account of **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZis the tenant prefix provided by your lab hosting provider). Or, you may be automatically signed into Outlook using Holly's account. In either case, enter **Pa55w.rd** in the **Enter password** window and select **Sign in**. <br/>
+4. If a **Pick an account** window appears, select Holly's account of **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZis the tenant prefix provided by your lab hosting provider). Or, you may be automatically signed into Outlook using Holly's account. In either case, enter **User.pw1** in the **Enter password** window and select **Sign in**. <br/>
 
 	On the **Stay signed in?** window, select the **Don't show this again** check box and select **Yes**.
 
@@ -103,11 +103,11 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 Adatum's CTO is concerned with the service health issues that have recently come to light throughout the organization. He has asked Holly to review several of the key service health queries and reports so that she becomes aware of the information that's available to help Adatum monitor its service health.
 
-1. On the LON-DC1 VM, select the **Active users - Microsoft 365 admin center** tab within your Edge browser. 
+1. On the LON-DC1 VM, select the **User Details Panel - Microsoft 365 admin center** tab within your Edge browser. 
 
 2. In the **Microsoft 365 admin center** navigation pane, you previously selected the **Show all** option in the prior task. Select **Health**, and then select **Service health**. 
 
-3. On the **Service health** page, the **All services** tab is displayed by default across the top of the page. Select the **Issue history** tab.  
+3. On the **Service health** page, the **Overview** tab is displayed by default across the top of the page. Select the **Issue history** tab.  
 
 4. In the **Issue history** tab on the **Service health** window, the default option is to display a list of items from the past 7 days (this option displays to the right of the **Search** field). Select the **Title** for any entry in the list to see further details about the incident. Close the incident window when you’re done reviewing it. 
 
