@@ -8,7 +8,7 @@ A team site includes a group of related web pages, a default document library fo
 
 1. You should still be logged into LON-DC1 as **Administrator** and password **Pa55w.rd**; if not, then do so now.
 
-2. You should still have Microsoft Edge and the **Microsoft 365 admin center** open from the prior lab, and you should be logged in as Holly Dickson. If so, proceed to the next step; otherwise, open Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd**, and then on the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**.
+2. You should still have Microsoft Edge and the **Microsoft 365 admin center** open from the prior lab, and you should be logged in as Holly Dickson. If so, proceed to the next step; otherwise, open Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **User.pw1**, and then on the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**.
 
 3. In the **Microsoft 365 admin center**, select **Show all** in the navigation pane (if necessary), then scroll down to **Admin centers** and select **SharePoint.** This will open the SharePoint admin center.
 

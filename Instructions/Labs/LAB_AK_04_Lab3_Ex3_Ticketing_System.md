@@ -175,7 +175,7 @@ In this task you will return to your role as Holly Dickson. You have just been i
 2. Since Holly will be using her PC to perform this task, you will use LON-CL1 in this role-playing exercise as Holly’s PC rather than the IT Consultant's PC as you did in the prior task.
 
     Select the **Microsoft Edge** icon on the taskbar to open your browser, and then enter the following URL in the address bar: **<https://portal.office.com>**.
-3. In the **Pick an account** window, select Holly’s account if it appears; otherwise, select **Use another account** and then enter **holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix assigned to you by your lab hosting provider). In the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
+3. In the **Pick an account** window, select Holly’s account if it appears; otherwise, select **Use another account** and then enter **holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix assigned to you by your lab hosting provider). In the **Enter password** window, enter **User.pw1** and select **Sign in**.
 4. After reviewing the data that was imported into the Service Desk Requests list, you noticed that the **Customer** field and the **Assign to** fields were missing. However, after reviewing the spreadsheet, you realized the missing data wasn’t an upload issue because the **Customer** and **Assign To** columns were missing from the spreadsheet.
 
     While you cannot explain what caused this, you remember making a backup of the original spreadsheet. If these missing columns are in your backup file, you plan to add the two columns from your backup file to the **Service Desk Requests** list that is displayed in the IT Services site.

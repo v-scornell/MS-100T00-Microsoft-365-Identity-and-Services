@@ -10,7 +10,7 @@ As Holly Dickson, Adatum's Enterprise Administrator, you want to customize the c
 
 1. Switch to **LON-DC1** where you should still be logged in as **ADATUM\Administrator** and password **Pa55w.rd**; if not, then do so now.
 
-2. On LON-DC1, you should still have your Edge browser and the **Microsoft 365 admin center** open from the prior lab. If so, proceed to the next step; otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd**, and then in the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**.
+2. On LON-DC1, you should still have your Edge browser and the **Microsoft 365 admin center** open from the prior lab. If so, proceed to the next step; otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **User.pw1**, and then in the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**.
 
 3. To start fresh in this Teams lab exercise, close all SharePoint-related tabs in your Edge browser that were left open from the previous SharePoint lab exercise. Only leave the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open. 
 
@@ -37,7 +37,9 @@ As Holly Dickson, Adatum's Enterprise Administrator, you want to customize the c
 
 11. Scroll to the bottom of the page and select **Save**.
 
-12. Leave all tabs open in your browser and proceed to the next task. 
+12.	Select **Confirm** when prompted that **Changes will take time to take effect**.
+
+13. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 2 – Manage Meeting Settings
@@ -68,7 +70,9 @@ As Holly Dickson, Adatum’s Microsoft 365 Enterprise Administrator, you use the
 
 7. Scroll to the bottom of the page and select **Save**.
 
-8. Leave all tabs open in your browser and proceed to the next task. 
+9. Select **Confirm** when prompted that **Changes will take time to take effect**.
+
+10. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 3 – Manage Messaging Policies
@@ -240,7 +244,7 @@ Auto attendants let people call your organization and navigate a menu system to 
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. **Step 1 - Set up the general information.** In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Auto attendants.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Auto attendants.**
 
 3. On the **Auto attendants** page, select **+Add** in the menu bar.
 
@@ -352,7 +356,9 @@ As part of her Microsoft Teams pilot project, Holly Dickson wants to block commu
 
 7. No changes need to be made to the default settings in the **Teams accounts not managed by an organization** section and the **Skype users** section. Select **Save.**
 
-8. Leave all tabs open in your browser and proceed to the next task. 
+8.	Select **Confirm** when prompted that **Changes will take time to take effect**.
+
+9. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 9 – Manage Guest Access
@@ -399,9 +405,11 @@ As part of your Microsoft Teams pilot project for Adatum, you will customize a v
 
 		- Immersive reader for messages: **On**
 	
-5. Select **Save.** Note the message that displays indicating it can take a couple of hours for the changes to take effect. This message does not automatically disappear, so close this message by selecting the **X** that appears at the right-side of the message; otherwise, the message will remain at the top of your screen even as you navigate to other pages.
+5. On the **Guest access** window, Select **Save.** 
 
-6. Leave all tabs open in your browser and proceed to the next task. 
+6. Select **Confirm** when prompted that **Changes will take time to take effect**. Note the message that displays indicating your changes to guess access settings were saved. This message does not automatically disappear, so close this message by selecting the X that appears at the right-side of the message; otherwise, the message will remain at the top of your screen even as you navigate to other pages.
+
+7. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 10 – Manage Teams Settings
@@ -460,9 +468,11 @@ Microsoft Teams includes a variety of global settings that control performance w
 
 		- Role-based chat permissions: **Off**
 
-4. Select **Save**. Note the message that displays indicating it can take a few hours for the changes to take effect. This message will eventually disappear.
+4. On the **Team settings** window, Select **Save.** 
 
-5. Leave all tabs open in your browser and proceed to the next task. 
+5. Select **Confirm** when prompted that **Changes will take time to take effect**. Note the message that displays indicating your changes to team settings were saved. This message will eventually disappear.
+
+6. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 11 – Test chat functionality with an external user
