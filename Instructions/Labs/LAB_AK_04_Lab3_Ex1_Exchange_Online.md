@@ -25,7 +25,7 @@ involved in creating and managing mail flow recipients.
 
     Switch to **LON-DC1**, where you should still be logged in as the
     **Administrator** with a password of **Pa55w.rd**; if not, then do so now.
-
+ 
 2.  You should still have an Edge browser session and the Microsoft 365 admin
     center open from the prior lab. If so, proceed to the next step; otherwise,
     open Microsoft Edge, navigate to **https://portal.office.com/**, log in as
