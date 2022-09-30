@@ -11,7 +11,7 @@ Start by familiarizing yourself with the SharePoint list which will serve as the
 
 1. You should still be logged into LON-DC1 as **ADATUM\Administrator** and password **Pa55w.rd**; if not, then do so now.
 
-2. You should still have Microsoft Edge and the **Microsoft 365 admin center** open from the prior lab in which you were logged in as Holly Dickson. If so, proceed to the next step; otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd**, and then in the **Microsoft 365 Home** page, navigate to the **Microsoft 365 admin center**.
+2. You should still have Microsoft Edge and the **Microsoft 365 admin center** open from the prior lab in which you were logged in as Holly Dickson. If so, proceed to the next step; otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **User.pw1**, and then in the **Microsoft 365 Home** page, navigate to the **Microsoft 365 admin center**.
 
 3. In the **Microsoft 365 admin center**, select **Show all** (if necessary), then scroll down to **Admin centers** and select **SharePoint**. This will open the **SharePoint admin center.**
 
@@ -29,7 +29,7 @@ Start by familiarizing yourself with the SharePoint list which will serve as the
 
  
 
-## Task 2:  Create a Power App from a Data Source
+### Task 2:  Create a Power App from a Data Source
 
 Adatum’s IT Consultant has informed Holly that by building a Power App from a data source, she will see how easy it is to create a fully functioning app because Power Apps will do all the work for her. In this task, Holly wants to test this out by creating a Power App for entering and managing service tickets using the existing Service Desk Requests SharePoint list as the app’s data source. 
 
@@ -93,7 +93,7 @@ You can create a Power App through either the Power App portal or through ShareP
 
 17. You should now verify that the record has been added in the Service Desk Requests list in the IT Services site. In your Edge browser, select the **IT Services – Service Desk Requests** tab in your browser, and then select the **Refresh** icon on the left side of the address bar. Scroll to the bottom of the list and verify the record appears.
 
-18. Switch back to the **App – Power Apps** tab in your brows. The app should still be running in preview mode; if not, press **F5** on your keyboard to run the app. 
+18. Switch back to the **Power Apps** tab in your brows. The app should still be running in preview mode; if not, press **F5** on your keyboard to run the app. 
 
 19. Now that you have added a record into the Service Desk Ticketing system using the Power App, you want to test how the app works in editing an existing record.   
 ‎  
@@ -105,7 +105,7 @@ You can create a Power App through either the Power App portal or through ShareP
 
 21. You should now verify that the record has been updated in the Service Desk Requests list in the IT Services site. Select the **IT Services – Service Desk Requests** tab in your browser, and then select the **Refresh** icon on the left side of the address bar. Scroll down through the list and verify the record has been updated.
 
-22. Switch back to the **App – Power Apps** tab in your browser. The app should still be running in preview mode; if not, press **F5** on your keyboard to run the app. 
+22. Switch back to the **Power Apps** tab in your browser. The app should still be running in preview mode; if not, press **F5** on your keyboard to run the app. 
 
 23. You should still be on the **Details** screen for the record that you just updated. Select the **left arrow (&lt;)** that appears at the top of the form. This will return you to the browse screen for the app.   
 ‎  
@@ -121,7 +121,7 @@ You can create a Power App through either the Power App portal or through ShareP
 
 27. You should now verify that the record has been deleted from the Service Desk Requests list in the IT Services site. Select the **IT Services – Service Desk Requests** tab in your browser, and then select the **Refresh** icon on the left side of the address bar. Scroll down through the list and verify the record no longer appears.
 
-28. Switch back to the **App – Power Apps** tab in your browser. The app should still be running in preview mode; if not, press **F5** on your keyboard to run the app. 
+28. Switch back to the **Power Apps** tab in your browser. The app should still be running in preview mode; if not, press **F5** on your keyboard to run the app. 
 
 29. You should still be on the browse screen for the app. To stop running the app and return to preview mode, select the **X** in the circle that appears in the upper right corner of the screen. 
 
@@ -141,9 +141,11 @@ You can create a Power App through either the Power App portal or through ShareP
 
 	- Description – **This app maintains service request tickets in Adatum’s new Service Request Ticketing system** 
 
-33. In the left-hand navigation pane (to the left of the Settings pane), select **Save.**
+33. Close the **Settings** window by selecting the X in the upper right corner of the window.
 
-34. In the **Save as** window that appears, select the **Save** button that appears at the bottom of the screen. 
+34. On the **Service Request Ticketing** app page, select the **Save** button on the right hand side of the menu bar (Or hit Ctrl +S). 
+
+35. In the **Save as** window that appears, select **Save**.
 
 35. On the **Service Request Ticketing** app page, select the **Share** button so that you can share this app with the IT Consultant. 
 
@@ -258,7 +260,7 @@ However, the IT Consultant has just informed Holly that there’s another way in
 
 2. You will first verify whether Teams is configured to allow the use of PowerApps.   
 ‎  
-‎In your Edge browser, select the **Microsoft 365 admin center** tab if it’s still open; if not, open the **Office 365 home** page and navigate to the **Microsoft 365 admin center**. If required, log into Microsoft 365 as **holly@xxxxxZZZZZZ.onmicosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and a password of **Pa55w.rd**. 
+‎In your Edge browser, select the **Microsoft 365 admin center** tab if it’s still open; if not, open the **Office 365 home** page and navigate to the **Microsoft 365 admin center**. If required, log into Microsoft 365 as **holly@xxxxxZZZZZZ.onmicosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and a password of **User.pw1**. 
 
 3. In the **Microsoft 365 admin center**, select the **…Show all** option in the navigation pane to display the admin centers, and then select **Teams**.
 
@@ -278,7 +280,7 @@ However, the IT Consultant has just informed Holly that there’s another way in
 ‎  
 ‎If the **Teams** app is not open on your taskbar, then enter **Teams** in the **Search** box on the taskbar, select **Microsoft Teams** from the menu, and if prompted, sign in as **holly@xxxxxZZZZZZ.onmicosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). Alternately, navigate to **https://teams.microsoft.com** using Microsoft Edge.   
 ‎  
-‎If you are not prompted to sign in, then check to see who the Teams apps is signed in under. If the user icon is **Holly Dickson**, then skip to the next step; otherwise, select the user icon and in the menu, select **Sign out**, sign back in as **holly@xxxxxZZZZZZ.onmicosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**, and then select **OK** if a **Stay signed in to all your apps** window appears.
+‎If you are not prompted to sign in, then check to see who the Teams apps is signed in under. If the user icon is **Holly Dickson**, then skip to the next step; otherwise, select the user icon and in the menu, select **Sign out**, sign back in as **holly@xxxxxZZZZZZ.onmicosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **User.pw1**, and then select **OK** if a **Stay signed in to all your apps** window appears.
 
 10. If an **Enjoy the team and the teamwork!** window appears, select **Let's go!**. 
 
