@@ -41,7 +41,7 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 
 	Assuming you must sign in, select the **Sign in** option. On the **Enter your email address** dialog box, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the email address field and then select **Continue**. 
 	
-	In the **Pick an account** window that appears (which may take a minute or so to appear), select **Holly@xxxxxZZZZZZ.onmicrosoft.com**. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.  
+	In the **Pick an account** window that appears (which may take a minute or so to appear), select **Holly@xxxxxZZZZZZ.onmicrosoft.com**. In the **Enter password** window, enter **User.pw1** and then select **Sign in**.  
 
 14. In the **Power BI Desktop**, you want to create a new report based on the Service Desk Ticketing system you created earlier. You must begin by naming the report, so select **File** from the menu bar, select **Save as,** and enter **ServiceRequestPowerBI** in the **File name** field. By default, the file will be saved in the **Documents** folder as a Power BI file (.pbix). Select **Save**.
 
@@ -234,9 +234,9 @@ Dashboards can only be created in Power BI Online because they are a feature of 
 
 1. After having completed the prior task, you should still be logged into LON-DC1 as the **Administrator** and a password of **Pa55w.rd**; if not, then do so now.
 
-2. In your Edge browser, open a new tab and then enter the following URL in the address bar: **https://powerbi.microsoft.com** 
+2. In your Edge browser, open a new tab and then enter the following URL in the address bar: **https://app.powerbi.com** 
 
-3. This opens the **Microsoft Power BI service**, which is required to create a dashboard. On the right-hand side of the top row, select **Sign in**. In the **Pick an account** window, select Holly’s account (**holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**. In the **Stay signed in?** window, select **Yes**.
+3. This opens the **Microsoft Power BI service**, which is required to create a dashboard. On the right-hand side of the top row, select **Sign in**. In the **Pick an account** window, select Holly’s account (**holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **User.pw1** and then select **Sign in**. In the **Stay signed in?** window, select **Yes**.
 
 4. In the left-hand navigation pane, select **My workspace.**  
 ‎  
@@ -278,7 +278,7 @@ Dashboards can only be created in Power BI Online because they are a feature of 
 ‎  
 ‎Select the star icon again to make it one of your favorites.
 
-16. In the left-hand navigation pane, select **Favorites**. You should see this dashboard in your list of favorites. Select the **ServiceRequestDashboard** to open it. 
+16. In the left-hand navigation pane, select **Home**. Underneath **Recommended**, the **Recent** tab is selected by default. Select **Favorites** to the right and you should see this dashboard in your list of favorites. Select the **ServiceRequestDashboard** to open it. 
 
 17. **THE REMAINING STEPS IN THIS TASK ARE OPTIONAL.**   
 ‎  
@@ -317,7 +317,7 @@ As part of her pilot project, Holly wants to share the dashboard that she just c
 
 5. In the **Share dashboard** pane that appears, under the **Share** tab, you will enter the name of the person with whom you want to share the dashboard.  
 ‎  
-‎In the **Enter email addresses** field, enter **Laura**, and then in the list of Adatum users whose first name starts with Allan, select **Laura Atkins.**
+‎In the **Enter name email addresses** field, enter **Laura**, and then in the list of Adatum users whose first name starts with Laura, select **Laura Atkins.**
 
 6. Towards the bottom of the Share dashboard pane, review the options that are already selected with a check mark. Leave the boxes checked and select **Grant access**. Once the dashboard is shared, you will see a message that says **Success!! Access has been granted.**
 
@@ -327,21 +327,17 @@ As part of her pilot project, Holly wants to share the dashboard that she just c
 
 9. Open your Edge browser and enter the following URL in the address bar: **https://app.powerbi.com**
 
-10. In the **Sign in** window, scroll down on the page until you reach the **Sign up and get started today** pane, enter **Laura@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the **Enter your work email address** field, and then select **USE IT FREE**.
+10. In the **Enter email** field, enter Laura@xxxxxZZZZZZ.onmicrosoft.com (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Submit**
 
-11. If a **You have an account with us** window appears that indicates Laura is already using another Microsoft service, then select **Sign in** to enter your existing password. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
+11. In the **Enter password** window, enter User.pw1 and then select **Sign in**.
 
-12. In the **Almost there** window, leave the check box blank so that Microsoft does not share Laura’s information with partners, and then select **Get started**.
+12. On the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes**..
 
-13. In the **Invite more people** window, scroll to the bottom and select **Skip**.
+13. In the **Power BI** window, in the left-hand navigation pane, select **Browse** and then **Shared with me.** Verify that the shared **ServiceRequestDashboard** is listed. Select the dashboard to verify that it opens and displays the report information.  
 
-14. If the **Pick an account** window reappears, select Laura’s account.
+	**Note:** You would perform similar steps if you shared a report with another user; sharing within Power BI is not limited to just dashboards.
 
-15. In the **Power BI** window, in the left-hand navigation pane, select **Shared with me.** Verify that the shared **ServiceRequestDashboard** is listed. Select the dashboard to verify that it opens and displays the report information.  
-
-**Note:** You would perform similar steps if you shared a report with another user; sharing within Power BI is not limited to just dashboards.
-
-16. Leave your Edge browser open and do NOT close the Power BI Service tab.
+14. Leave your Edge browser open and do NOT close the Power BI Service tab.
 
 
 ### Task 4:  Explore the Power BI Admin Portal
@@ -354,7 +350,7 @@ Now that Holly has created a report and dashboard and shared it with another Ada
 
 3. In your **Edge** browser, you should still have the **Power BI Service** tab open; if not, open a new tab and enter the following URL in the address bar: **https://app.powerbi.com** 
 
-4. At the top side of the **Power BI** **service screen**, to the right of the **Search** field, select the **gear (Settings)** icon, and in the menu that appears, select **Admin portal**.
+4. At the top side of the **Power BI** **service screen**, to the right of the **Search** field, select the Ellipses (...) icon. in the menu that opens, select the **gear (Settings)** icon then select **Admin portal**.
 
 5. In the navigation pane for the **Power BI Admin portal**, select **Tenant Settings**. Under **Workspace settings,** select **Create workspaces (new workspace experience)**. Under this option it should display a message that says: **Unapplied changes**. This indicates that you have settings that have not been applied towards creating new workspaces.   
 ‎  
@@ -374,17 +370,17 @@ Now that Holly has created a report and dashboard and shared it with another Ada
 
 11. You just created the workspace using the Power BI Service, so now let’s see what workspace functionality is available in the Power BI Admin Portal.  
 ‎  
-‎After you saved the workspace in the prior step, it took you to the workspaces page for the workspace that you just created (the **Welcome to the Test Workspace** page). You can return back to the **Admin portal** by selecting the back arrow (to the left of the address bar) twice, or by selecting the **gear (Settings)** icon and then selecting **Admin portal**. 
+‎After you saved the workspace in the prior step, it took you to the workspaces page for the workspace that you just created (the **Welcome to the Test Workspace** page). You can return back to the **Admin portal** by selecting the back arrow (to the left of the address bar) twice, or by selecting the Ellipses (...) icon > **gear (Settings)** icon and then selecting **Admin portal**. 
 
 12. Select **Workspaces** in the **Admin portal’s** navigation pane. **Test Workspace** should appear in the list of Workspaces. Select the **Test Workspace** name, which displays a check mark to the left of the name. In the menu bar that appears above the list, select **Details**. Review the information in the **Details pane** and then close it. 
 
-13. With the **Test Workspace** still selected, select **Edit** on the menu bar. In the **Edit workspace pane**, note how you can change the workspace name and description even though you could not add a workspace using the **Power BI Admin portal**. Close the **Edit workspace** pane.
+13. With the **Test Workspace** still selected, select **Edit** on the menu bar. In the **Edit workspace pane**, note how you can change the workspace name and description even though you could not add a workspace using the **Power BI Admin portal**. Close the **Edit workspace** pane by selecting **Cancel**.
 
 14. With the **Test Workspace** still selected, select **Access** on the menu bar. In the **Access pane**, note how you can add members to this workspace (you can do this through the **Workspaces** option in the **Power BI Service** as well). In the Enter email addresses field, enter **Patti**. In the list of users whose first name starts with Patti, select **Patti Fernandez** and then select **Add**. As you can see in the bottom portion of the pane, Patti now has **Member** permissions to this workspace. Close the **Access pane**. 
 
-15. In the **Admin portal’s** navigation pane, select **Tenant settings**. Scroll down through the **Settings** page and review the settings that are available.
+15. In the **Admin portal’s** navigation pane, select **Custom Branding**.
 
-16. Scroll to the **Custom Branding** section at the very bottom of the **Settings** page. The **Theme Color** field controls the color scheme for the **Power BI Service**, which by default is set to black and gold. Go ahead and change the color to see the color scheme change in the Power BI Service.   
+16. The **Theme Color** field controls the color scheme for the **Power BI Service**, which by default is set to black and gold. Go ahead and change the color to see the color scheme change in the Power BI Service.   
 ‎  
 ‎To change the color scheme, select the **black box** in the **Theme color** field to display the color palette. Drag the circle in the slider bar to the right until you locate a color combination that you like. Locate the circle that appears in the large colored square. Select this circle and drag it around the gradient colors. Note how the hex color codes change as you drag the circle. Once you find a color that you prefer, release your left-mouse button and select anywhere on the screen outside the color box to change the **Theme color**. Then scroll to the bottom of the page and select **Publish**.
 
