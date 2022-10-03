@@ -14,7 +14,7 @@ Pass-through Authentication allows users to sign-in to cloud-based services usin
 
 3. On the **Additional tasks** page, select the **Change user Sign-in** task and then select **Next**. 
 
-4. On the **Connect to Azure AD** page, sign into Azure AD. The **USERNAME** field is already filled with **Holly@xxxUPNxxx.xxxCustomDomainxxx.xxx.** Enter **Pa55w.rd** in the **PASSWORD** field, and then select **Next**.
+4. On the **Connect to Azure AD** page, sign into Azure AD. The **USERNAME** field is already filled with **Holly@xxxUPNxxx.xxxCustomDomainxxx.xxx.** Enter **User.pw1** in the **PASSWORD** field, and then select **Next**.
 
 5. On the **User sign-in** page, under **Select the Sign On method**, select **Pass-through authentication** and then select **Next**. 
 
@@ -109,7 +109,7 @@ The CTO is anxious to implement Smart Lockout because it will lock out the attac
 
 15. You should now test the banned password functionality. Select Holly Dickson's user icon in the upper right corner of the screen, and in the menu that appears select **Change password**.
 
-16. A new tab will open displaying the **change password** window. Enter **Pa55w.rd** in the **Old password** field, enter **Never4get!!** in the **Create new password** and **Confirm new password** fields, and then select **Submit**. Note the error message that you receive.
+16. A new tab will open displaying the **change password** window. Enter **User.pw1** in the **Old password** field, enter **Never4get!!** in the **Create new password** and **Confirm new password** fields, and then select **Submit**. Note the error message that you receive.
 
 17. In your browser, close the **Change password** tab. 
 
@@ -129,7 +129,7 @@ The CTO is anxious to implement Smart Lockout because it will lock out the attac
 
 	**Note:** You will be prohibited from logging in as Laura until after the **90 second lockout duration** that you set earlier. 
 
-22. Once you've been locked out, wait 90 seconds and then verify that you can sign back in as **laura@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix assigned to you by your lab hosting provider) and the password **Pa55w.rd**. If your log in is successful, you should return to the Azure Active Directory admin center.
+22. Once you've been locked out, wait 90 seconds and then verify that you can sign back in as **laura@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix assigned to you by your lab hosting provider) and the password **User.pw1**. If your log in is successful, you should return to the Azure Active Directory admin center.
  
 
 # End of Lab 2
