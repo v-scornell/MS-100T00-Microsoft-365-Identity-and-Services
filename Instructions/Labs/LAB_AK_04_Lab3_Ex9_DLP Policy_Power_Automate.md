@@ -36,23 +36,25 @@ In this task, Holly wants to create a data lost prevention policy for the flows 
    Before you select the SharePoint connector, note how nothing appears above the **Assign connectors** heading at the top of the page. Now, in the list of filtered **Non-business** connectors, select the **SharePoint** connector. Once you selected the SharePoint connector, notice how the **Move to Business** option now appears at the top of the page.
 
 8. Since Adatum wants the connector for this policy to share data with connectors in other groups, you must move the SharePoint connector from the **Non-business** group to the **Business** group. 
-9. On the Custom connectors page, select **Next**.
 
       To do so, select the **Move to Business** option at the top of the page. Once the connector has been moved, note how the **Business** tab now displays **(1)** next to it (indicating there is now one Business connector), and how the number of **Non-business** connectors is now reduced by 1. Select the **Business** tab to see the SharePoint connector. Select **Next**.
 
-9. On the **Scope** page, you must define the environment to which the new policy will apply. Select the **Add all environments** option and then select **Next**.
+9. On the Custom connectors page, select **Next**.
 
-10. On the **Review** page, review all the settings that you previously assigned to the new policy. If any setting needs to be changed, select the **Edit** option for that setting. If all settings are correct, select the **Create policy** button.
 
-11. On the **Data policies** page, you should now see in the list of policies the new **DLP Policy** that you just created.
+10. On the **Scope** page, you must define the environment to which the new policy will apply. Select the **Add all environments** option and then select **Next**.
+
+11. On the **Review** page, review all the settings that you previously assigned to the new policy. If any setting needs to be changed, select the **Edit** option for that setting. If all settings are correct, select the **Create policy** button.
+
+12. On the **Data policies** page, you should now see in the list of policies the new **DLP Policy** that you just created.
 
       **Important:** You have created a data policy that has one of the two connectors used in your flow (SharePoint) in the **Business** group. However, Holly has forgotten that she actually has two connectors in her flow; the second connector is **Office 365 Outlook**, which manages the email that is automatically created and sent by the flow. This connector remains in the **Non-business** group.   
    
       In practice, you would not be able to implement this policy as you need both connectors used by the flow in the same group. If both connectors are not in the same group, the policy will be automatically suspended. Continue on to see how connectors in both groups impact the flow. 
 
-12. In your Edge browser, select the **View your flow owners | Power Automate** tab to return to the **Flows** window that displays your flow in the **Shared with me** tab. 
+13. In your Edge browser, select the **View your flow owners | Power Automate** tab to return to the **Flows** window that displays your flow in the **Shared with me** tab. 
 
-13. Select the **Service Request Flow for new/modified tickets**, which displays the detail information about the selected flow.  
+14. Select the **Service Request Flow for new/modified tickets**, which displays the detail information about the selected flow.  
 
       **Note:** The Status of the flow is **On**. Eventually, once the policy propagates through the system, the status will change from **On** to **Suspended**.
       
@@ -60,19 +62,19 @@ In this task, Holly wants to create a data lost prevention policy for the flows 
 
       Do NOT proceed to the next step until the **Status** of the flow has changed to **Suspended**. You may need to refresh the window a few times until you see this status change. 
 
-14. Once the flow has been suspended, select **Edit** in the menu bar at the top of the page. 
+15. Once the flow has been suspended, select **Edit** in the menu bar at the top of the page. 
 
-15. In the window that is returned, you will see the actions for your flow. Select **Save**.
+16. In the window that is returned, you will see the actions for your flow. Select **Save**.
 
       A **Flow Checker** pane appears on the right-side of the screen. Each of the two connectors used in this flow have been flagged as violating Adatum's DLP policy, since both connectors are not in the same group. Close the **Flow checker** pane.
    
       **Important:** Since this flow was already created at the time the policy was established, Power Automate automatically suspended the flow, which, in effect, turned the flow **Off**. If you subsequently create a new entry or modify an existing entry in the SharePoint list after the flow has been suspended, the flow will not run. 
 
-16. At the top of the page, to the left of the flow name, select the left arrow to return to the Detail page for the flow. 
+17. At the top of the page, to the left of the flow name, select the left arrow to return to the Detail page for the flow. 
 
-17. In the heading at the top of the page, **Flow &gt; Service Request Flow for new/modified tickets**, select **Flow** to return to the list of **Shared with me** flows. 
+18. In the heading at the top of the page, **Flow &gt; Service Request Flow for new/modified tickets**, select **Flow** to return to the list of **Shared with me** flows. 
 
-18. Leave your Edge browser and all its tabs open for the next task.
+19. Leave your Edge browser and all its tabs open for the next task.
 
 
 ### Task 2:  Edit your data loss prevention policy
