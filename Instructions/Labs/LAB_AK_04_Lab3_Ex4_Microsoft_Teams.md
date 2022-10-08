@@ -1,4 +1,4 @@
-# Module 4 - Lab 3 - Exercise 4 - Review Key Features of Microsoft Teams
+# Learning Path 4 - Lab 3 - Exercise 4 - Review Key Features of Microsoft Teams
 
 In this exercise you will learn how to manage and configure teams through the Microsoft Teams admin center.
 
@@ -10,7 +10,7 @@ As Holly Dickson, Adatum's Enterprise Administrator, you want to customize the c
 
 1. Switch to **LON-DC1** where you should still be logged in as **ADATUM\Administrator** and password **Pa55w.rd**; if not, then do so now.
 
-2. On LON-DC1, you should still have your Edge browser and the **Microsoft 365 admin center** open from the prior lab. If so, proceed to the next step; otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd**, and then in the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**.
+2. On LON-DC1, you should still have your Edge browser and the **Microsoft 365 admin center** open from the prior lab. If so, proceed to the next step; otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **User.pw1**, and then in the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**.
 
 3. To start fresh in this Teams lab exercise, close all SharePoint-related tabs in your Edge browser that were left open from the previous SharePoint lab exercise. Only leave the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open. 
 
@@ -18,26 +18,28 @@ As Holly Dickson, Adatum's Enterprise Administrator, you want to customize the c
 
 5. In the **Microsoft Teams admin center**, in the left-hand navigation pane, select **Meetings** to expand the **Meetings** group. In this group, select **Meeting policies**.
 
-6. In the **Meeting policies** window, scroll down to the list of meeting policies and select **Global (Org-wide default)**. 
+6. In the **Meeting policies** window, in the list of policies, select **Global (Org-wide default)**. 
 
-7. In the **Global** window that appears, under the **General** section, review each setting. All settings in this section should be turned **On**.
+7. In the **Global (Org-wide default)** window that appears, under the **General** section, review each setting. All settings in this section should be turned **On**.
 
-8. Under the **Recording & transcription** section, review each setting. Select the **Allow transcription** toggle switch to turn it **On**.
+8. Under the **Recording & transcription** section, review each setting. Select the **Transcription** toggle switch to turn it **On**.
 
 9. Under the **Content Sharing** section, review each setting and make the following changes: 
 
 	Set the **Screen sharing mode** to **Single application**.
-	Set the **Allow an external participant to give or request control** setting to **On**.
+	Set the **External participants can give or request control** setting to **On**.
 
-10. Under the **Participants &amp; guests** section, review each setting. 
+10. Under the **Participants & guests** section, review each setting. 
 
-	Because Adatum has had issues in the past with non-invited external users dialing into meetings, you have been asked to verify the **Allow dial-in users to bypass the lobby** option is set to **Off**; if this option is turned On, then change it to Off. This setting controls whether people who dial in by phone will automatically join the meeting or must wait in the lobby until they are admitted to the call. 
+	Because Adatum has had issues in the past with non-invited external users dialing into meetings, you have been asked to verify the **Dial-in users can bypass the lobby** option is set to **Off**; if this option is turned On, then change it to Off. This setting controls whether people who dial in by phone will automatically join the meeting or must wait in the lobby until they are admitted to the call. 
 	
-	Because the **Automatically admit people** setting is set to **Everyone in your organization**, anyone who dials-in will wait in the lobby until admitted; this includes both Adatum and non-Adatum participants. You may decide to turn this setting **On** if it proves to be problematic in practice, but for now, you want to begin with this level of control. 
+	Because the **Automatically admit people** setting is set to **People in my organization and guests**, anyone from outside Adatum who is not a guest to a meeting will wait in the lobby until admitted. You may decide to turn this setting **On** if it proves to be problematic in practice, but for now, you want to begin with this level of control. 
 
 11. Scroll to the bottom of the page and select **Save**.
 
-12. Leave all tabs open in your browser and proceed to the next task. 
+12.	Select **Confirm** when prompted that **Changes will take time to take effect**.
+
+13. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 2 – Manage Meeting Settings
@@ -68,7 +70,9 @@ As Holly Dickson, Adatum’s Microsoft 365 Enterprise Administrator, you use the
 
 7. Scroll to the bottom of the page and select **Save**.
 
-8. Leave all tabs open in your browser and proceed to the next task. 
+9. Select **Confirm** when prompted that **Changes will take time to take effect**.
+
+10. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 3 – Manage Messaging Policies
@@ -83,7 +87,7 @@ As part of her Microsoft Teams pilot project for Adatum, Holly wants to create a
 
 3. In the **Messaging policies** window, only the **Global (Org-wide default)** policy exists. Select **+Add** in the menu bar that appears above the list of policies.
 
-4. Select the **New messaging policy** field at the top of the page and enter **Chat and Channel Messaging Policy** as the name of the policy.
+4. In the **Messaging policies\Add** window, select the **Add a name for your messaging policy** field at the top of the page and enter **Chat and Channel Messaging Policy** as the name of the policy.
 
 5. Select the following values for each setting:
 
@@ -97,19 +101,19 @@ As part of her Microsoft Teams pilot project for Adatum, Holly wants to create a
 
 	- Chat: **On** 
 
-	- Use Giphy in conversations: **Off**
+	- Giphy in conversations: **Off**
 
 	- Giphy content rating: **Strict**
 
-	- Use Memes in conversations: **Off**
+	- Memes in conversations: **Off**
 
-	- User Stickers in conversations: **Off**
+	- Stickers in conversations: **Off**
 
-	- Allow URL previews: **On**
+	- URL previews: **On**
 
 	- Translate messages: **On**
 
-	- Allow immersive reader for viewing messages: **On**
+	- Immersive reader for messages: **On**
 
 	- Send urgent messages using priority notifications: **On** 
 
@@ -121,22 +125,26 @@ As part of her Microsoft Teams pilot project for Adatum, Holly wants to create a
 	
 	- Suggested replies: **Off**
 
+	- Chat permissions role: **Restricted permissions**
+
+	- Users with full change permissions can delete any message: **Off**
+
 6. Select **Save.** 
 
 7. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 4 – Create a Resource Account
+### Task 4 – Create Resource Accounts
 
 A resource account, which is referred to as a disabled user object in Azure Active Directory, can be used to represent resources in general. For example, a resource account in Exchange can be used to represent conference rooms, and in Microsoft Teams, resource accounts can be used to represent Phone System call queues and auto attendants. 
 
-As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dickson has been asked to create a resource account for a cloud call queue, which is a service that accepts customer calls, plays a greeting message, and then places the customer calls in a wait queue while searching a pre-configured list of agents to answer each call. 
+As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dickson has been asked to create a resource account for a cloud call queue, which is a service that accepts customer calls, plays a greeting message, and then places the customer calls in a wait queue while searching a pre-configured list of agents to answer each call. Holly must also create a resource account for the auto attendant that she plans to create later in this exercise.
 
-Creating a calling queue is a two-step process. In this task, you will first create a resource account that represents the call queue. In the next task, you will create the actual call queue and associate it with this resource account. 
+Creating a calling queue and an auto attendant are both two-step processes. In this task, you will complete the first step by creating resource accounts for the call queue and the auto attendant, respectively. In the next two tasks, you will create the actual call queue and auto attendant, and you'll assign each to their respective resource account that you created in this task. 
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Resource accounts.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane. Scroll to the bottom of the **Voice** group and select **Resource accounts.**
 
 3. In the **Resource accounts** window, select **+Add** in the menu bar at the top of the page.
 
@@ -152,63 +160,144 @@ Creating a calling queue is a two-step process. In this task, you will first cre
 
 5. Select **Save**. **Calling Queue 1** will now appear in the list of **Resource accounts**. 
 
-6. Leave all tabs open in your browser and proceed to the next task. 
+6. Repeat steps 3-5 to create a resource account for the auto attendant. For this resource account, enter the following information:
+
+	- Display name: **Auto Attendant 1**
+
+	- Username: **AA1**
+
+	- Domain name: In the domain name field to the right of the username, select the drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
+
+	- Resource account type: **Auto attendant**
+
+7. Leave all tabs open in your browser and proceed to the next task. 
 
 
 ### Task 5 - Create a Call Queue
 
-Now that you have created the resource account for your calling queue, you will create the call queue itself and assign it the resource account.
+Now that you have created the resource account for your calling queue, you will create the call queue itself and assign it the calling queue resource account.
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
-2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Call queues.**
+2. In your Edge browser, in the **Microsoft Teams admin center**, under the **Voice** group in the left-hand navigation pane, select **Call queues.**
 
 3. In the **Call queues** window, select **+Add** in the menu bar at the top of the page.
 
-4. Select the **Call queue name** field at the top of the page and enter **Call Queue 1** as the name of the queue.
+4. In the **Call queues\Add a call queue** window, select the **Add a name for your call queue** field at the top of the page and enter **Call Queue 1** as the name of the queue.
 
-5. The page displays a message indicating **You haven’t added any resource accounts yet.** Below this message, select the **Add accounts** button.
+5. In the **Resource accounts** section, a message should be displayed indicating **You haven’t added any resource accounts yet.** Below this message, select the **Add** button.
 
-6. In the **Add account** pane that appears on the right-side of the screen, in the **Search by display or username** field, enter **Calling.** As you type **Calling**, a window appears that displays resource accounts whose title starts with **Calling**. **Calling Queue 1** is displayed. As you hover your mouse over **Calling Queue 1**, an **Add** button appears to the right of it. Select the **Add** button.
+6. In the **Add accounts** pane that appears on the right-side of the screen, in the **Search by display or username** field, enter **Calling.** As you type **Calling**, a window appears that displays resource accounts whose title starts with **Calling**. **Calling Queue 1** is displayed. As you hover your mouse over **Calling Queue 1**, an **Add** button appears to the right of it. Select the **Add** button.
 
 7. At the bottom of the **Add accounts** pane, select **Add.** This returns you to the **Call Queue 1** window, which now displays **Calling Queue 1** in the list of Resource accounts associated with this call queue.
 
-8. In the **Call Queue 1** window, scroll down the page and select the following values for each option:
-	
-	- Language: **English (United States)**
+8. In the **Call Queue 1** window, in the **Language** section, select the drop-down arrow in the language field. In the list of languages, select **English (United States)**.
 
-	- Greeting: **No greeting**
+9. Select the **Next** button.
 
-	- Music on hold: **Play default music**
+10. On the **Greeting and music** page, under the **Greeting** section, select **No greeting**.
 
-	- Call answering: 
+11. Under the **Music on hold** section, select **Play default music**.
 
-		- **Choose which call agents to associate with this call queue:** Select the **Choose users and groups** option, then select **Add users**. In the **Add users** pane that appears on the right-side of the screen, in the **Search by display name or username** field, enter **Allan**. As you type **Allan**, a window appears listing users whose name starts with **Allan**. As you hover your mouse over **Allan Deyoung**, an **Add** button appears to the right of it. Select the **Add** button.
+12. Select the **Next** button.
+
+13. On the **Call answering** page, you want to choose which call agents to associate with this call queue. Select the **Choose users and groups** option.
+
+14. Under the **Choose users and groups** option, select **Add users**. 
+
+15. In the **Add users** pane that appears on the right-side of the screen, in the **Search by display name or username** field, enter **Allan**. As you type **Allan**, a window appears listing users whose name starts with **Allan**. As you hover your mouse over **Allan Deyoung**, an **Add** button appears to the right of it. Select the **Add** button.
 		
-			**Important:** Note the red error message that appears across the top of the page. The error message indicates that Allan cannot be associated with this call queue because he is not enterprise-voice enabled. Select anywhere in the red error message to close the **Add users** pane, and then select the **X** on the right-side of this error message to close it. Select the **Cancel** button.
+	**Important:** Note the red error message that appears across the top of the page. The error message indicates that Allan cannot be associated with this call queue because he is not enterprise-voice enabled. Select the **X** on the right-side of this error message to close it. Select the **Cancel** button to close the **Add users** pane.
 			
-		- **Choose which groups to associate with this call queue:** Select the **Add groups** button. In the **Add call agents** pane on the right-side of the screen, in the **Search by distribution list or group name** field, enter **Inside.** As you type Inside, a window appears listing the groups whose name starts with Inside. As you hover your mouse over **Inside Sales**, an **Add** button appears to the right of it. Select the **Add** button.
-		
-			In the **Add call agents** pane, the Inside Sales group appears under **Selected groups**. Select the **Add** button at the bottom of the pane.
+16. Under the **Choose users and groups** option, select **Add groups**.
 
-		- Routing Method: **Round Robin**   
+17. In the **Add call agents** pane that appears on the right-side of the screen, in the **Search by distribution list or group name** field, enter **Inside.** As you type Inside, a window appears listing the groups whose name starts with Inside. As you hover your mouse over **Inside Sales**, an **Add** button appears to the right of it. Select the **Add** button.
+
+18. In the **Add call agents** pane, the Inside Sales group appears under **Selected (1) groups**. Select the **Add** button at the bottom of the pane.
+
+19. On the **Call answering** page, select the **Next** button.
+
+20. On the **Agent selection** page, update the following settings:
+
+	- Routing method: **Round Robin**   
 		
-		- Presence-based routing - **Off**
+	- Presence-based routing - **Off**
 	
-		- Agents can opt out of taking calls: **On**
+	- Call agents can opt out of taking calls: **On**
 		
-		- Agent alert time (in seconds) - **45** (Hint: Entering the value in the field is easier than dragging the slider icon)
+	- Call agent alert time (seconds) - **45** (Hint: Entering the value in the field is easier than dragging the slider icon)
 
-		- Call overflow handling: **leave all settings to their default values**
+21. Select the **Next** button.
 
-		- Call time out handling: **leave all settings to their default values**
+22. On the **Call overflow handling** page, leave all settings to their default values and select the **Next** button.
 
-9. Select **Submit**. A Saved message will appear across the top of the page once the changes have been saved. This message will eventually disappear, and **Call Queue 1** will appear in the list of Call queues.
+23. On the **Call timeout handling** page, leave all settings to their default values and select the **Submit** button. 
 
-10. Leave all tabs open in your browser and proceed to the next task. 
+24. On the **Call queues** page, a Saved message will appear across the top of the page once the changes have been saved. This message will eventually disappear, and **Call Queue 1** will appear in the list of Call queues.
+
+25. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 6 - Create a Calling Policy 
+### Task 6 - Create an Auto Attendant
+
+Auto attendants let people call your organization and navigate a menu system to speak to the right department, call queue, person, or an operator. As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dickson has been asked to create an auto attendant. When doing so, you will assign the auto attendant resource account that you created earlier to the auto attendant record. Holly won't be setting up an operator at this time. Doing so requires setting up a number of additional parameters that are outside the scope of this training.
+
+1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
+
+2. In your Edge browser, in the **Microsoft Teams admin center**, select **Voice** in the left-hand navigation pane and then select **Auto attendants.**
+
+3. On the **Auto attendants** page, select **+Add** in the menu bar.
+
+4. In the **Auto attendant\Add auto attendant** page, enter the following information:
+
+	- Add a name for your auto attendant - **Auto attendant 1** 
+
+	- Operator (optional) - **No operator**. 
+
+	- Time zone - **(UTC-08:00) Pacific Time (US & Canada)**
+
+	- Language - **English (United States)**
+
+	- Voice inputs - **Off**
+
+5. Select **Next**.
+
+6. On the **Call flow** page, enter the following information:
+
+	- Greeting options - **Add a greeting message**; in the text message field that appears, enter **Welcome to Adatum Corporation.**
+
+	- Call routing options - **Disconnect**; Note: it's more common for organizations to select either the **Redirect call** or **Play menu options** option. However, these options take additional setup that's outside the scope of this training. For this lab, we'll simply select the Disconnect option. 
+
+7. Select **Next**.
+
+8. On the **Set business hours** page, note that the default business hours are set to 24/7, Monday through Sunday. For the pilot project, Holly wants to set the business hours from 8:00 am to 5:00 pm, Monday through Friday.
+
+	On the menu bar, select **Clear all hours**. For **Monday** through **Friday**, select **8:00 AM** as the **Start time** and **5:00 PM** as the **End time**. Do not set any times for Saturday or Sunday.
+	
+9. In the Set up after hours call flow section, enter the following information:
+
+	- Greeting options - **Add a greeting message**; in the text message field that appears, enter **We're sorry, but Adatum Corporation is closed. Standard business hours are Monday through Friday, 8:00 AM to 5:00 PM.**
+
+	- Call routing options - **Disconnect**
+
+10. Select **Next**.
+
+11. On the **Holiday call settings** page, select **Next**.
+
+12. On the **Dial Scope** page, accept all default options by selecting **Next**.
+
+13. On the **Resource accounts** page, select the **Add** button.
+
+14. In the **Add accounts** pane that appears on the right-side of the screen, enter **auto** in the **Search by display or username** field. Hover your mouse over the **Auto attendant 1** resource account that's displayed and then select the **Add** button.
+
+15. Select the **Add** button at the bottom of the **Add accounts** pane.
+
+16. On the **Resource accounts** page, select the **Submit** button.
+
+17. Leave all tabs open in your browser and proceed to the next task. 
+
+
+### Task 7 - Create a Calling Policy 
 
 In Microsoft Teams, calling policies control which calling and call forwarding features are available to users. Calling policies determine whether a user can make private calls, use call forwarding or simultaneous ringing to other users or external phone numbers, route calls to voicemail, send calls to Call Groups, use delegation for inbound and outbound calls, and so on. A default global policy is created automatically, but admins can also create and assign custom calling policies. 
 
@@ -247,38 +336,32 @@ As part of her Microsoft Teams pilot project, Holly Dickson has been tasked with
 7. Leave all tabs open in your browser and proceed to the next task. 
  
 
-### Task 7 – Manage External Access
+### Task 8 – Manage External Access
 
 With Microsoft Teams’ external access feature, Teams users from other domains can participate in your chats and calls. You can also block the users in specific domains from joining chats and calls. 
 
-As part of her Microsoft Teams pilot project, Holly Dickson wants to block communication with users from a specific domain (spam.com) that has been the source of multiple spam attacks within Adatum over the past year. At the same time, Holly wants to allow communication with the users from another domain (microsoft.com) that is one of Adatum's key business partners.
+As part of her Microsoft Teams pilot project, Holly Dickson wants to block communication with users from a specific domain (spam.com) that has been the source of multiple spam attacks within Adatum over the past year. 
 
 1. On LON-DC1, you should still be logged in as the Adatum Administrator, and you should still be logged into Microsoft 365 in your Edge browser as Holly Dickson. 
 
 2. In your Edge browser, in the **Microsoft Teams admin center**, select **Users** in the left-hand navigation pane and then select **External access.**
 
-3. In the **External access** window, leave the settings involving Skype users set to **On**. If necessary, set the **Choose which external domains your users have access to** drop-down field to **Block only specific external domains**. 
+3. In the **External access** window, under the **Teams and Skype for Business users in external organization** section, select the drop-down arrow in the **Choose which external domains your users have access to** field. In the drop-down menu that appears, select **Block only specific external domains**.
 
-4. To add the domain in which you want to block communication, select **Block domains** in the menu bar that appears above the list.  
+4. Select the **Block domains** button that appears.
 
-7. To add the blocked domain, in the **External access** window, select **Add a domain.**
+5. In the **Add external domain** pane that appears, enter **spam.com** in the **Domain** field, and then select the **Done** button.
 
-8. In the **Add a domain** pane that appears on the right, enter the following information:
+6. In the **External access** window, validate that **spam.com** is displayed in the list of blocked domains.
 
-	- Domain: **spam.com**
+7. No changes need to be made to the default settings in the **Teams accounts not managed by an organization** section and the **Skype users** section. Select **Save.**
 
-	- Action to take on this domain: **Blocked**
+8.	Select **Confirm** when prompted that **Changes will take time to take effect**.
 
-9. Select **Done.**
-
-10. In the **External access** window, validate that **spam.com** is represented in the list of domains and has the appropriate Status.
-
-11. Select **Save.**
-
-12. Leave all tabs open in your browser and proceed to the next task. 
+9. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 8 – Manage Guest Access
+### Task 9 – Manage Guest Access
 
 Microsoft Teams’ guest access feature enables you to configure settings for guests. IT admins can add guests at the tenant level, set and manage guest user policies and permissions, and generate reports on guest user activity. Guest access is turned On by default.
 
@@ -298,11 +381,11 @@ As part of your Microsoft Teams pilot project for Adatum, you will customize a v
 
 	- Meeting
 
-		- Allow IP video: **On**
+		- IP video: **On**
 
 		- Screen sharing mode: **Entire screen**
 
-		- Allow Meet Now: **On**
+		- Meet Now: **On**
 
 	- Messaging
 
@@ -312,22 +395,24 @@ As part of your Microsoft Teams pilot project for Adatum, you will customize a v
 
 		- Chat: **On**
 
-		- Use Giphy in conversations: **Off**
+		- Giphy in conversations: **Off**
 
 		- Giphy content rating: **Strict**
 	
-		- Use Memes in conversations: **Off**
+		- Memes in conversations: **Off**
 
-		- User Stickers in conversations: **Off**
+		- Stickers in conversations: **Off**
 
-		- Allow immersive reader for viewing messages: **On**
+		- Immersive reader for messages: **On**
 	
-5. Select **Save.** Note the message that displays indicating it can take a couple of hours for the changes to take effect. This message does not automatically disappear, so close this message by selecting the **X** that appears at the right-side of the message; otherwise, the message will remain at the top of your screen even as you navigate to other pages.
+5. On the **Guest access** window, Select **Save.** 
 
-6. Leave all tabs open in your browser and proceed to the next task. 
+6. Select **Confirm** when prompted that **Changes will take time to take effect**. Note the message that displays indicating your changes to guess access settings were saved. This message does not automatically disappear, so close this message by selecting the X that appears at the right-side of the message; otherwise, the message will remain at the top of your screen even as you navigate to other pages.
+
+7. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 9 – Manage Teams Settings
+### Task 10 – Manage Teams Settings
 
 Microsoft Teams includes a variety of global settings that control performance within Teams. As part of her Microsoft Teams pilot project, Holly Dickson will configure a number of these settings as determined by Adatum’s project team.
 
@@ -343,13 +428,13 @@ Microsoft Teams includes a variety of global settings that control performance w
 		
 	- Tagging
 		
-		- Tags are managed by: **Not enabled**
+		- Who can manage tags: **Not enabled**
 
 	- Email integration
 
-		- Allow users to send emails to a channel email address: **On**
+		- Users can send emails to a channel email address: **On**
 
-		- Accept channel email from these SMTP Domains: **microsoft.com**
+		- Accept channel email from these SMTP domains: **microsoft.com**
 
 	- Files
 
@@ -365,7 +450,7 @@ Microsoft Teams includes a variety of global settings that control performance w
 
 	- Organization
 
-		- Show Organization tab in chats: **On**
+		- Show Organization tab for users: **On**
 
 	- Devices
 
@@ -373,18 +458,24 @@ Microsoft Teams includes a variety of global settings that control performance w
 
 		- Set content PIN: **Required for outside scheduled meeting**
 
-		- Resource accounts can send messages: **On**
+		- Surface Hub accounts can send emails: **On**
 
 	- Search by name
 
 		- Scope directory search using an Exchange address book policy: **On**
 
-4. Select **Save**. Note the message that displays indicating it can take a few hours for the changes to take effect. This message will eventually disappear.
+	- Safety and communications
 
-5. Leave all tabs open in your browser and proceed to the next task. 
+		- Role-based chat permissions: **Off**
+
+4. On the **Team settings** window, Select **Save.** 
+
+5. Select **Confirm** when prompted that **Changes will take time to take effect**. Note the message that displays indicating your changes to team settings were saved. This message will eventually disappear.
+
+6. Leave all tabs open in your browser and proceed to the next task. 
 
 
-### Task 10 – Configure Chat functionality for the Ticketing System
+### Task 11 – Test chat functionality with an external user
 
 In this task, you will open the Microsoft Teams desktop application on LON-CL1 and log in as Adatum’s MOD Administrator. You will then conduct a brief chat session with the IT Consultant (your fellow student whose tenant ID was assigned to you by your instructor). This will validate that you can use Teams to chat with the IT Consultant whenever necessary to discuss matters concerning the new Service Request Ticketing system.
 
@@ -408,7 +499,7 @@ In this task, you will open the Microsoft Teams desktop application on LON-CL1 a
 
 7. Teams will perform an external search on this user account. It should display the result of this search below the **To:** field. Select this value. 
 
-8. This will open a new chat session with the IT Consultant (your fellow student). Send a message to this person and conduct a brief chat session to verify that you can communicate with him or her using the Chat functionality within Teams.
+8. This will open a new chat session with the IT Consultant (your fellow student). Send a message to this person and conduct a brief chat session to verify that you can communicate with them using the Chat functionality within Teams.
 
 9. When you have finished chatting, leave Teams open and proceed to the next task. 
 

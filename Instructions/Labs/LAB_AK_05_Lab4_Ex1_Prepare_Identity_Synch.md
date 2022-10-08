@@ -1,4 +1,4 @@
-# Module 5 - Lab 4 - Exercise 1 - Prepare for Identity Synchronization  
+# Learning Path 5 - Lab 4 - Exercise 1 - Prepare for Identity Synchronization  
 
 As in the previous lab exercises you will take on the role of Holly Dickson, Adatum Corporation’s Enterprise Administrator. Adatum has recently subscribed to Microsoft 365, and you have been tasked with deploying the application in Adatum’s virtualized lab environment. In this lab, you will perform the tasks necessary to manage your Microsoft 365 identity environment using both the Microsoft 365 admin center and Windows PowerShell. 
 
@@ -32,7 +32,7 @@ For this lab, Adatum has purchased the new xxxUPNxxx.xxxCustomDomainxxx.xxx doma
 
 		Connect-MsolService
 	
-6. In the **Sign in** dialog box that appears, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with the password **Pa55w.rd**. 
+6. In the **Sign in** dialog box that appears, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with the password **User.pw1**. 
 
 7. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press Enter:   <br/>
 

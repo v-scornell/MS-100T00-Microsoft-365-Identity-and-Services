@@ -1,4 +1,4 @@
-# Module 3 - Lab 2 - Exercise 3 - Manage a Microsoft 365 Apps for enterprise installation
+# Learning Path 3 - Lab 2 - Exercise 3 - Manage a Microsoft 365 Apps for enterprise installation
 
 You have taken on the persona of Holly Dickson, Adatum's Enterprise Administrator, and you have Microsoft 365 deployed in a virtualized lab environment. In this exercise, you will perform the tasks necessary to manage a user-driven Microsoft 365 Apps for enterprise installation. Performing a user-driven Microsoft 365 Apps for enterprise installation is a two-step process: 1) configuring the user account so the user is eligible to download and install the Office 365 deployment tool, and 2) performing the installation. 
 
@@ -36,7 +36,7 @@ Therefore, you must use one of Adatum's on-premises user accounts that has been 
 	After configuring this field, Laura’s **Username** should appear as: **Laura@xxxxxZZZZZZ.onmicrosoft.com**
 
 	- Password settings: Clear (uncheck) the **Automatic create a password** option
-	- Password: **Pa55w.rd** 
+	- Password: **User.pw1** 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
 	
 5. Select **Next**.
@@ -65,13 +65,13 @@ Therefore, you must use one of Adatum's on-premises user accounts that has been 
 
 15. In the **Sign in** window, enter **Laura@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
 
-16. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in.**
+16. In the **Enter password** window, enter **User.pw1** and then select **Sign in.**
 
 17. In the **Stay signed in?** window, select the **Don't show this again** check box and then select **Yes.**
 
 18. In the **Microsoft Office Home** page for Laura, notice that no column of Microsoft 365 app icons appears in the navigation pane on the left-side of the screen; this is because Laura does not have an Office 365 license assigned. <br/>
 
-	Select the **Install Office** button, and then in the drop-down menu that appears, select **Install other options**. This opens the **My account** window for Laura.
+	Select the **Install Office** button, and then in the drop-down menu that appears, select **Other install options**. This opens the **My account** window for Laura.
 
 19. In Laura's **My account** window, under the **Office apps &amp; devices** tile, select **View apps &amp; devices**. Note the message that appears at the top of page. Laura has not been assigned a license that includes the Office desktop apps, so she’s unable to install Microsoft 365 Apps for enterprise. <br/>
 	
@@ -102,7 +102,7 @@ Microsoft 365 includes a global Office download setting that controls the downlo
 	
 8. In the **Active users** list, scroll down to **Laura Atkins**. The value in the **Licenses** column for Laura currently indicates that she is **Unlicensed**. Select **Laura Atkins'** display name (do not select the check mark to the left of her name like you did for Adele) to open Laura's properties window.
 
-9. In **Laura Atkins** account pane, the **Account** tab is displayed by default. Select the **Licenses and Apps** tab. In the **Licenses** section, select the **Office 365 E5** check box and then select **Save changes**. You can then close Laura’s account pane. In the **Active users** list, note how the value in the **Licenses** column for Laura now displays **Office 365 E5**.
+9. In **Laura Atkins** account pane, the **Account** tab is displayed by default. Select the **Licenses and apps** tab. In the **Licenses** section, select the **Office 365 E5** check box and then select **Save changes**. You can then close Laura’s account pane. In the **Active users** list, note how the value in the **Licenses** column for Laura now displays **Office 365 E5**.
 
 10. You should now check whether Laura can download Microsoft 365 Apps for enterprise on to her client PC when the global Office download setting has been turned Off. <br/>
 
@@ -161,7 +161,7 @@ In the prior task, you logged into Laura Atkins’ client PC, and you verified t
 
 	Since Laura wants to install the 64-bit English version of Microsoft 365 Apps for enterprise, select the **Install Office** button now.
 		
-3. In the **Just a few more steps** window that appears, select **Close**.
+3. If a **Just a few more steps** window appears, select **Close**.
 
 4. In the **Downloads** window that appears at the top right-side of the page, notice the system is downloading the **OfficeSetup.exe** installation program to the LON-CL1 client PC. This is the 64-bit Microsoft 365 Apps for enterprise installation wizard.
 
@@ -181,7 +181,7 @@ In the prior task, you logged into Laura Atkins’ client PC, and you verified t
 
 10. In the **Start** menu, select **Word**.
 
-11. On the **Sign in to set up Office** page, select **Sign in**. On the **Activate Office** page, enter **Laura@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.
+11. On the **Sign in to get started with Office** page, select **Sign in or create account**. On the **Activate Office** page, enter **Laura@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **User.pw1**.
 
 12. On the **Stay signed in to all your apps** window, select **OK**.
 
@@ -207,4 +207,4 @@ In the prior task, you logged into Laura Atkins’ client PC, and you verified t
 
 	The desktop should now display the logged on user as **adatum\administrator**. LON-CL1 is now ready for the next lab.
 
-# End of Lab 2
+# Proceed to Lab 2 - Exercise 4
