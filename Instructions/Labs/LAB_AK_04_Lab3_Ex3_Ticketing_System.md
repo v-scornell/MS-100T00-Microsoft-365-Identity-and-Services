@@ -163,7 +163,7 @@ As the IT Consultant in this task, you will perform two primary steps:
 
     **Note:** If a **Sign in** window appears, enter the MOD Administrator’s account **for the IT Consultant’s tenant**. In this case, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is your fellow student's tenant prefix that was assigned to you by your instructor). Select **Next**, and then in the **Enter password** window, enter your fellow student's tenant password and then select **Sign in**.
 21. On the taskbar at the bottom of the screen, select the **Excel** icon. In the **Microsoft SharePoint Foundation** dialog box that displayed the link to the published list in the IT Services site, select **OK** to close the window.
-22. Close Excel. Select **Don't Save** if prompted to save changes to the file.
+22. Close Excel. Select **Don't Save** if prompted to save changes to the file. This should return you to the **IT Services** site, which should be displaying the **Service Desk Request** distribution list. The list should be displaying the data that was imported from the **Service Request System.xlsx** spreadsheet. 
 23. Close your Edge browser and proceed to the next task.
 
 
