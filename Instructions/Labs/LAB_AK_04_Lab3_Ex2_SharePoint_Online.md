@@ -115,7 +115,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 12. You are now back in the **Permissions: IT Services** tab in your browser. You have been asked to create a new group of users and assign them permission to access the IT Services site. In the ribbon that appears at the top of the page, under the **Grant** section, select **Create Group.**  
 
-	‎**Best Practice:** As a best practice, you should use **Groups** to assign access permissions rather than assigning access to individual user accounts for two important reasons: 1) Assigning individual users access to a site makes it difficult to track user access when the user leaves your organization, and 2) Individual user permissions can override security groups permissions.
+	‎**Best Practice:** As a best practice, you should use **Groups** to assign access permissions rather than assigning access to individual user accounts for two important reasons: 1) Assigning individual users access to a site makes it difficult to track user access when the user leaves your organization, and 2) Individual user permissions can override security group permissions.
 
 13. In the **People and Groups > Create Group** window, enter the following information:   
 
