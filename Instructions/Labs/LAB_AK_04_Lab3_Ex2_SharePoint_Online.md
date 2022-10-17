@@ -103,13 +103,13 @@ In this task, you will create the following hierarchical permission structure fo
 
 	**Note:** This option enables you to check access permissions for users and groups. In this case, you will check the permissions that were assigned to Holly Dickson. In the prior task, you assigned Holly as an owner of the IT Services site. The following steps will enable you to check what default team site permissions were assigned in this role. 
 
-8. In the **IT Services: Check Permissions** dialog box that appears, in the **User/Group** field, type **Holly**. As you type Holly, a window appears listing users whose first name starts with Holly. Select **Holly Dickson** and then select **Check now**. Since Holly is an owner of this site, this confirms that she was automatically assigned **Full Control** permissions through the IT Services Owners group.
+8. In the **IT Services: Check Permissions** dialog box that appears, in the **User/Group** field, type **Holly**. As you type Holly, a window appears listing users whose first name starts with Holly. Select **Holly Dickson** and then select **Check now**. Since Holly is an owner of this site, this confirms that she was automatically assigned **Full Control** permissions through the **IT Services Owners** group.
 
-9. In the **User/Group** field, select the **X** next to Holly’s name to remove it from the field. In the **User/Group** field, type **Nestor**. As you type Nestor, a window appears listing users whose first name starts with Nestor. Select **Nestor Wilke** and then select **Check now.** Since Nestor is member of this site, this confirms that he was automatically assigned **Edit** permissions.
+9. In the **User/Group** field, select the **X** next to Holly’s name to remove it from the field. In the **User/Group** field, type **Nestor**. As you type Nestor, a window appears listing users whose first name starts with Nestor. Select **Nestor Wilke** and then select **Check now.** Since Nestor is a member of this site, the dialog box confirms that he was automatically assigned **Edit** permissions through the **IT Services Members** group.
 
 	Repeat this step for Diego Siciliani and Patti Fernandez. As a site owner, Diego should have **Full Control** permissions, just like Holly. As a site member, Patti should have **Edit** permissions, just like Nestor. 
 	
-19. Repeat the prior step and check the permission for **Alex Wilber**, who is not a site member. You will see that Alex's permission level is set to **None**, which means he does not have permission to access or update the site since he has not been assigned as a site member.
+19. Repeat the prior step and check the permission for **Alex Wilber**, who is not a site member. You will see that Alex's permission level is set to **None**, which means he does not have permission to access or update the site since he has not been assigned as a site member or site owner.
 
 11. In the **IT Services: Check Permissions** window, select **Close.**
 
