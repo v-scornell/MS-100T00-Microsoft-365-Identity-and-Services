@@ -195,31 +195,32 @@ In this task you will return to your role as Holly Dickson. You have just been i
     If this option displays **Edit in grid view**, it means you are not in grid view, so proceed to the next step.
 
     If this option displays **Exit grid view**, then you are currently in grid view, which you do not want to be in. In this case, select **Exit grid view**.
-11. At the end of the column heading row, select **+Add column**, and then in the drop-down menu that appears, select **Person or Group**.
-12. In the **Create a column** window that appears, enter **Customer** in the **Name** field.
-13. In the **Type** field, verify it's already set to **Person or Group**.
-14. Verify the **Allow selection of Groups** check box is NOT selected. Do NOT select this check box.
-15. Select **More options**.
-16. Select the **Require that this column contains information** toggle switch to change it to **Yes**.
-17. Select **Save**.
-18. The **Customer** column should appear in the list. All record entries for this column should be highlighted in yellow and **Required info** should appear in this column for each record (this is because you set the **Require that this column contains information** option to **Yes** in the previous step when you created this column).
-19. Earlier, you were instructed to not be in grid view to add the Customer column. However, now that you have added the column, you must switch to grid view to copy and paste in the Column data from the Backupfile.xlsx spreadsheet.
+11. At the end of the column heading row, select **+Add column**, and then in the drop-down menu that appears, select **More** (you want to select **Person or Group**, which does not appear in this initial list of column types). 
+12. In the **Settings > Create Column** window that appears, enter **Customer** in the **Name** field.
+13. In the **Type** field, select **Person or Group**.
+14. Select the **Require that this column contains information** toggle switch to change it to **Yes**.
+15. Verify the **Allow selection of** option is set to **People Only** (if not, select it now).
+16. Select **OK**.
+17. The **Customer** column should now appear in the list. If the screen returns in grid view (**Exit grid view** appears on the menu bar), note how the **Customer** column is blank for each record in the list. If this is the case, then select **Exit grid view** now. <br/>
+
+    When you're not in grid view (**Edit in grid view** should appear on the menu bar), notice how all record entries for the **Customer** column are highlighted in yellow and **Required info** appears in the column for each record. This is because you set the **Require that this column contains information** option to **Yes** in the earlier step when you created this column.
+18. Now that you have added the Customer column, you must be in grid view to copy and paste in the Column data from the Backupfile.xlsx spreadsheet.
 
     On the menu bar, select **Edit in grid view**. In the next few steps, you will copy the Customer data from the **BackupCopy** spreadsheet and paste it into this column in the SharePoint list.
-20. Select the **Excel** spreadsheet icon on the taskbar to display the **BackupFile.xlsx** spreadsheet. Select all the items in the **Customer** column (start in row 2 so that you do not copy the column header), then right-click and select **Copy** from the menu (NOTE: Use the Copy option here instead of **Ctrl+C** to copy the column data; Ctrl+C sometimes results in an error when you attempt to paste in the copied cells in the next step).
+19. Select the **Excel** spreadsheet icon on the taskbar to display the **BackupFile.xlsx** spreadsheet. Select all the items in the **Customer** column (start in row 2 so that you do not copy the column header), then right-click and select **Copy** from the menu (NOTE: Use the Copy option here instead of **Ctrl+C** to copy the column data; Ctrl+C sometimes results in an error when you attempt to paste in the copied cells in the next step).
 
     **Note:** If a window appears showing the progress of the Copy command, do NOT proceed until the pane disappears. This may take a minute or so for the copy process to complete. If a progress window does not appear, then proceed to the next step.
-21. Select the **Edge** browser icon on the taskbar, which should return you to the grid view page for the **Service Desk Requests** list. Select all the empty fields in the **Customer** column and press **Ctrl+V**. All items will automatically appear in the appropriate row for the **Customer** column.
-22. Select the **Exit grid view** option on the menu bar to see how the Customer data appears in normal display view.
-23. Repeat steps **11-22** to add a column for the **Assign To** data and to copy the **Assign to** data from the **BackupFile.xlsx** spreadsheet and paste it into the **Service Desk Requests** list.
-24. After reviewing the changes to the **Service Desk Requests** list, you realize that the data type of the **Description** column only supports a **single line of text**. While this is fine for the existing data, going forward you want your customer support engineers to be able to enter more detailed information. Therefore, you want to modify this column to change the data type to **multiple lines of text**.
+20. Select the **Edge** browser icon on the taskbar, which should return you to the grid view page for the **Service Desk Requests** list. Select all the empty fields in the **Customer** column and press **Ctrl+V**. All items will automatically appear in the appropriate row for the **Customer** column.
+21. Select the **Exit grid view** option on the menu bar to see how the Customer data appears in normal display view.
+22. Repeat steps **11-21** to add a column for the **Assign To** data and to copy the **Assign to** data from the **BackupFile.xlsx** spreadsheet and paste it into the **Service Desk Requests** list.
+23. After reviewing the changes to the **Service Desk Requests** list, you realize that the data type of the **Description** column only supports a **single line of text**. While this is fine for the existing data, going forward you want your customer support engineers to be able to enter more detailed information. Therefore, you want to modify this column to change the data type to **multiple lines of text**.
 
     To make this change, select the **Description** column heading. In the menu that appears, select **Column Settings**, and then in the sub-menu, select **Edit**.
-25. In the **Edit column** window, select the drop-down arrow in the **Type** field and select **Multiple lines of text**.
-26. Select **More options**.
-27. Change the **Require that this column contains information** option to **Yes**.
-28. Select **Save**.
-29. Leave the browser and all existing tabs open on LON-CL1 for the next task.
+24. In the **Edit column** window, select the drop-down arrow in the **Type** field and select **Multiple lines of text**.
+25. Select **More options**.
+26. Change the **Require that this column contains information** option to **Yes**.
+27. Select **Save**.
+28. Leave the browser and all existing tabs open on LON-CL1 for the next task.
 
 ### Task 4 - Create filtered views for targeted viewing
 
