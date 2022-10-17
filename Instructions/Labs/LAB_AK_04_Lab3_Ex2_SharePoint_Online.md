@@ -119,7 +119,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 13. In the **People and Groups > Create Group** window, enter the following information:   
 
-	- Name: **Information Technology** (Select the X in the dialog box that appears below this field to close it)
+	- Name: **Information Technology** (If a dialog box appears below this field, select the X in the box to close it)
 
 	- About me: **This group is used for members of the IT staff**
 
