@@ -248,7 +248,7 @@ In this task, you will continue in your role as Holly Dickson, Adatum’s Enterp
       - Sort section - First sort by the column: **Assign to** and **Show items in ascending order**
       - Then sort by the column: **Date** and **Show items in ascending order**
       - Filter section - **Show items only when the following is true**
-      - Show the items when column section – select **Issue status** column
+      - Show the items when column – select **Issue status** column
       - Operand field – **Is equal to**
       - Condition field – enter **Active**
 6. Scroll to the bottom of the page and select **OK**.
@@ -266,7 +266,7 @@ In this task, you will continue in your role as Holly Dickson, Adatum’s Enterp
           - **Description** – Position from left: **5**
       - Sort section - First sort by the column: **Assign to** and **Show items in ascending order**
       - Filter section - **Show items only when the following is true**
-      - Show the items when column section – select **Issue status** column
+      - Show the items when column – select **Issue status** column
       - Operand field – **Is equal to**
       - Condition field – enter **Resolved**
 11. Scroll to the bottom of the page and select **OK**.
