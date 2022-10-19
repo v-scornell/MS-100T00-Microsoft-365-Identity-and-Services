@@ -285,11 +285,11 @@ Holly is now ready to create screen #3 for her app, which is the Edit screen. Th
 
 	**Note:** You can drag the bottom border line down to view most of the data entry boxes. You'll probabaly need to scroll down through the form to view all the fields.
 	
-		![image](https://user-images.githubusercontent.com/12913870/196799065-314a1d83-1c5f-4488-9f75-234a0df1ec9b.png)
+	![image](https://user-images.githubusercontent.com/12913870/196799065-314a1d83-1c5f-4488-9f75-234a0df1ec9b.png)
 
 6. Below the menu bar at the top of the window is the **Function property bar**. The field on the left side of the function currently displays **DataSource.** Select the down arrow that appears in this field. A menu appears that displays the properties for the edit form that you just added. Select **Item**. 
 
-	![image](https://user-images.githubusercontent.com/12913870/196799472-10013529-060a-4831-ad8b-e8641115a0d9.png)
+	![image](https://user-images.githubusercontent.com/12913870/196802129-4b6c129e-3a69-47cf-b997-c6c38658f8f9.png)
 
 7. Notice how the **function input box** that appears to the right of the **Item** field is blank. The item property for the edit form represents the record that will be added to the data source that will be displayed.   
 ‎  
@@ -317,35 +317,47 @@ The Edit screen that you created in the prior task provides the form needed to e
 - **Cancel icon -** You must add a trigger mechanism to navigate away from the Edit screen and back to the prior screen if the user selects a **Cancel** icon.   
 ‎
 
-1. You should still have the **&lt;app name&gt; - Power Apps** tab open in your browser from when you finished creating the Edit screen in the prior task. The tab should be displaying the **Tree view** tab from the menu bar; if not, select it now. 
+1. You should still have the **Power Apps** tab open in your browser from when you finished creating the Edit screen in the prior task. The tab should be displaying the **Tree view** tab from the menu bar; if not, select it now. 
 
-2. In the **Tree view** pane, select **BrowseScreen1**. 
+2. In the **Tree view** pane, select **BrowseScreen1**. If you contracted this object earlier, then select the arrow to the left of BrowseScreen1 to expand it; this will display Gallery1 and all its components. <br/>
 
-3. In the earlier task when you first created **BrowseScreen1**, the Gallery’s border went to the very top of the screen. Since you knew you would be adding controls to the screen later on, you moved the Gallery’s top border down to provide enough space to add these controls.   
+	![image](https://user-images.githubusercontent.com/12913870/196803546-fd3204c2-2a5a-4122-8b55-993e856f697e.png)
+
+3. In the earlier task when you first created **BrowseScreen1**, the Gallery’s border went to the very top of the screen. Since you knew you would be adding controls to the screen later on, you moved the Gallery’s top border down to provide enough space to add these controls.   <br/>
 ‎  
 ‎The first control you want to add is an **Add** icon for creating a new item. Scroll to the top of **BrowseScreen1** so that you can see the top of the screen with the blank space you configured for the controls.   
+
+	![image](https://user-images.githubusercontent.com/12913870/196804122-b4a3101b-15d5-4d51-99d2-b2dcff9b6643.png)
 ‎  
 ‎**Note:** Depending on where your slider is set, you may not be able to see the blank space at the top of the screen, even after scrolling to the top. If this occurs, set your slider to 100% to see the blank space at the top of **BrowseScreen1.**  
 ‎  
-‎On the **Insert ribbon**, select **Icons**, and in the menu that appears, select **Add**. Notice how the **Plus sign (+)** icon shows up on the screen, and in the **Tree view** pane, **Icon2** appears below **BrowseScreen1**. 
+‎On the menu bar at the top of the window, select **+Insert**, and then select **Icons** in the menu that appears to display the available icons to choose from (Note - the list of icons may already be displayed from an earlier task). In the list of icons, select **Add**. Notice how the **Plus sign (+)** icon shows up on the screen, and in the **Tree view** pane, **Icon2** appears below **BrowseScreen1**. 
 
-4. You now must associate a trigger mechanism to this **Plus sign (+)** icon so that when the user selects it, **EditScreen1** will be returned.   
+4. You must now associate a trigger mechanism to this **Plus sign (+)** icon so that when the user selects it, **EditScreen1** will be returned.   
 ‎  
-‎Below the **+Insert** button on the ribbon is the **Function property** **bar**. The field on the left side of the function currently displays **OnSelect.** While this value is left over from the prior task, it’s also the trigger action that you want to associate with this **Plus sign (+) sign** icon. If **OnSelect** is not displayed in this field, select the drop-down arrow and select it from the menu. 
+‎Below the menu bar is the **Function property** bar. The field on the left side of the function currently displays **OnSelect.** While this value is left over from the prior task, it’s also the trigger action that you want to associate with this **Plus sign (+) sign** icon. If **OnSelect** is not displayed in this field, select the drop-down arrow and select it from the menu. 
 
-5. In the function box, enter **NewForm(Form1); Navigate(EditScreen1)** and then press Enter.   
+5. In the function box, enter **NewForm(Form1); Navigate(EditScreen1)**.   <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196805792-2c7b21ec-add3-46b7-89b2-1e172b8b6186.png)
 ‎  
 ‎This function actually encapsulates two separate actions: 
 
-	- **NewForm(Form1)** - changes the form mode to New to enable the entry of a new record in **Form1**, which is the name of the edit form under **EditScreen1**. 
+	- **NewForm(Form1)** - changes the form mode to NewForm to enable the entry of a new record in **Form1**, which is the name of the edit form under **EditScreen1**. 
 
 	- **Navigate(EditScreen1)** – navigates the user to the screen (EditScreen1) which contains the edit form (Form1).
 
-6. Now that the **Plus sign (+)** icon has been configured, you decide that you want to make some cosmetic changes to it. First, you decide that you want to change the location of the icon from the top left corner of **BrowseScreen1** to the top right. To do this, select the border of the **Plus sign (+)** icon (so that an image of crossed arrows appears) and drag it across to the right corner.
+6. Now that the **Plus sign (+)** icon has been configured, you decide that you want to make some cosmetic changes to it. First, you decide that you want to change the location of the icon from the top left corner of **BrowseScreen1** to the top right. To do this, select the border of the **Plus sign (+)** icon (so that an image of crossed arrows appears). <br/>
 
-7. Next, you want to change the color of the icon and assign it a tool tip.  
+	![image](https://user-images.githubusercontent.com/12913870/196806879-e24f2fd3-6b50-40d2-9fff-9a77c674b34c.png)
+
+	Then drag the plus sign across to the right corner of **BrowseScreen1**.
+
+	![image](https://user-images.githubusercontent.com/12913870/196807342-63486813-8f35-4d2d-8d15-42cc38d7d1f1.png)
+
+7. Next, you want to change the color of the Plus sign (+) icon and assign it a tool tip.  
 ‎  
-‎If the **Plus sign (+)** icon is not selected, then click on it now (this will select **Icon2** under **BrowseScreen1** in the **Tree view** pane and display the **Properties pane** for Icon2 on the right side of the page).   
+‎If the **Plus sign (+)** icon is not selected, then select it now (this will select **Icon2** under **BrowseScreen1** in the **Tree view** pane and display the **Properties pane** for Icon2 on the right side of the page).   
 ‎  
 ‎Repeat the processes that you learned earlier to select a color and to add a tooltip for this icon. Choose whichever color you wish and enter **Create new item** for the tooltip. 
 
