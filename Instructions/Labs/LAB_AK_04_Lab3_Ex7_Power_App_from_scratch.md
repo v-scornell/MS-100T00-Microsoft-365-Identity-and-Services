@@ -75,7 +75,11 @@ In your role as Holly Dickson, you will begin the process of creating a canvas a
 
 	![image](https://user-images.githubusercontent.com/12913870/196527034-a17b5c75-7139-40b3-8113-6d33d1600fbc.png)
 
-14. Holly now wants to change which fields that are displayed in the gallery. In the **Gallery1** pane on the right-side of the screen, under the **Properties** tab, select **Edit** that appears to the right of the **Fields** property. A new **Data** window opens which shows the **BodyX**, **SubtitleX**, and **TitleX** fields (where X is a number assigned by the system, such as Body2, Subtitle3, and Title3); these are the three fields you selected for the **Layout** property in the prior step. For each field, you can select which field from the SharePoint list you want displayed in that field. Power Apps selects a default SharePoint field for each, but you can change them to display whatever fields that you want.   
+14. Holly now wants to change which fields that are displayed in the gallery. In the **Gallery1** pane on the right-side of the screen, under the **Properties** tab, select **Edit** that appears to the right of the **Fields** property. <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196789215-c6fa8e35-1ed3-4be4-89ae-9314140d75fc.png)
+
+	A new **Data** window opens which shows the **BodyX**, **SubtitleX**, and **TitleX** fields (where X is a number assigned by the system, such as Body2, Subtitle3, and Title3); these are the three fields you selected for the **Layout** property in the prior step. For each field, you can select which field from the SharePoint list you want displayed in that field. Power Apps selects a default SharePoint field for each, but you can change them to display whatever fields that you want.   
 ‎  
 ‎Holly has decided to customize the browse screen to change the **BodyX** field so that it maps to the **Assigned To** column of the SharePoint list. Select the drop-down arrow for the **BodyX** field. Note how the field is selected in the Gallery image. Select the drop-down arrow again for the **BodyX** field to display the list of available fields. Select the **Assign To** field. 
 
@@ -214,68 +218,88 @@ In the prior task, you created the DetailScreen1 that will be used to display th
 ‎  
 ‎To change the color of the **Back arrow** icon, select this field and then select the color of your choice from the color menu that appears. Note that you can select different colors to see which one you prefer. Each time you select a color, the color of the **Back arrow** icon in the **DetailScreen1** image changes to that selection.   
 ‎  
-‎Once you have selected the color that you want to use, press the **Esc** key on your keyboard to close the color menu. This will keep **Icon1** selected (if you select anywhere else, it will also close the color menu, but **Icon1** will be unselected and you will have to select it again to add a tool tip to the icon). <br/>
-
-	‎Scroll further down the **Properties pane** until you get to the **Tooltip** property. The **Tooltip** value currently displays **No value**. Select the **Tooltip** box, enter **Back**, and press Enter. <br/>
+‎Once you have selected the color that you want to use, press the **Esc** key on your keyboard to close the color menu. This will keep **Icon1** selected (if you select anywhere else, it will also close the color menu, but **Icon1** will be unselected and you will have to select it again to add a tool tip to the icon).
+ 
+11. Scroll further down the **Properties pane** until you get to the **Tooltip** property. The **Tooltip** currently displays **No value**. Select the **Tooltip** field and enter **Back**. This is the value that will be displayed when you hover your mouse over the Back arrow. <br/>
 
 	![image](https://user-images.githubusercontent.com/12913870/196763707-18747566-02a1-4a4a-aeb2-155eab9d9cdb.png)
+‎  
+‎**Note:** Hovering your mouse over the **Back arrow** icon on DetailScreen1 does not display the tool tip at this point in time. You will test this out when you finish all other edits in this task and use Preview mode to test the changes that you made. 
 
-	‎**Note:** Hovering your mouse over the **Back arrow** icon on DetailScreen1 does not display the tool tip. You will test this out when you finish all other edits in this task and use Preview mode to test the changes that you made. 
-
-11. You now need to configure this **Back arrow** icon so that when the user selects it, **BrowseScreen1** is returned. In the **Tree view** pane, select the **Icon1** control under **DetailScreen1** if it’s not already selected.   
+12. You must now configure the **Back arrow** icon so that when the user selects it, **BrowseScreen1** is returned. In the **Tree view** pane, select the **Icon1** control under **DetailScreen1** if it’s not already selected.   
 ‎  
 ‎In the **Function property bar**, the field on the left side of the function currently displays **OnSelect.** While this value is left over from the prior task, it’s also the trigger action that you want to associate with this **Back arrow** icon. If **OnSelect** is not displayed in this field, select the drop-down arrow and select it from the menu. 
 
-12. On the formula input box, enter **Navigate(BrowseScreen1)** and then press Enter.   
+13. On the formula input box, enter **Navigate(BrowseScreen1)**.  <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196787059-f0e649fd-83fb-442f-864d-c793235b8c4a.png)
 ‎  
 ‎You have now created the trigger action so that when a user selects the **Back arrow** icon in **DetailScreen1**, the app will return to **BrowseScreen1**.
 
-13. To test whether you have properly configured this trigger action, **press F5** to go into Preview mode. The record that was selected in the gallery will be displayed in **DetailScreen1**.   
+14. To test whether you have properly configured this trigger action, **press F5** to go into Preview mode. The record that was selected in the gallery will be displayed in **DetailScreen1**.   
 ‎  
 ‎You should begin by hovering your mouse over the **Back arrow** icon, which should display the **Back** tool tip. Select the **Back arrow** icon, which should return you to **BrowseScreen1**.   
 ‎  
 ‎Close Preview mode by selecting the **X** in the upper right corner of the screen.
 
-14. You have now finished creating the trigger mechanism for the Detail screen for your app, which you want to save before making any additional changes.   
-‎  
-‎Repeat the process that you learned earlier to save the file and then return to the Power App studio. Do **NOT** publish the app yet as you still have additional changes to make.
+15. You have now finished creating the trigger mechanism for the Detail screen for your app, which you want to save before making any additional changes. Select the **Save** icon in the upper right corner of the menu bar. Do **NOT** publish the app yet as you still have additional changes to make.
 
-15. Leave the Power Apps tabs open in your browser and proceed to the next task to create the Edit screen.
+16. Leave the Power Apps tab open in your browser and proceed to the next task to create the Edit screen.
  
 
 ### Task 4 - Create the Edit screen for your Power App  
 
 Holly is now ready to create screen #3 for her app, which is the Edit screen. This screen will enable users to add new Service tickets to the SharePoint list and edit and delete existing ones. You will create the Edit screen for your app in this task. 
 
-1. You should still have the **&lt;app name&gt; - Power Apps** tab open in your browser from when you finished creating the Browse screen for your app in the prior task.   
+1. You should still have the **Power Apps** tab open in your browser from when you finished creating the Browse screen for your app in the prior task.   
 ‎  
-‎In the **Tree View** pane, ensure that the **Screens** tab is selected and then under the **Search** field select **+New Screen**. In the menu of available screen types that appears, select **Blank**. This opens a new blank screen on the canvas pane that is titled **Screen3**.
+‎In the **Tree View** pane, ensure that the **Screens** tab is selected. Then under the **Search** field select **+New Screen**. In the menu of available screen types that appears, select **Blank**. This opens a new blank screen on the canvas pane that is titled **Screen1**.
 
-2. On the **Tree view** pane, select the **ellipses** next to **Screen3** and rename it to **EditScreen1**.
+2. On the **Tree view** pane, select the **ellipses** next to **Screen1**. In the menu that appears, select **Rename**.  Rename **Screen1** to **EditScreen1** and then press Enter. <br/>
 
-3. **EditScreen1** should be selected in the **Tree view** pane (if not, select it now). On the **Insert ribbon**, expand the Input list and select **Edit form**.   
+	**Note:** If the menu doesn't appear when you select the **ellipses** next to **ScreenX**, it's because Screen1 is at the bottom of your window and there's no room to display the frop-down menu. If this occurs, select **BrowseScreen1** and **DetailScreen1** to contract the elements displayed under each. This will provide you with room to display the menu for Screen1. Now select the **ellipses** next to **Screen1** to display the menu with the **Rename** option.
+
+3. **EditScreen1** should be selected in the **Tree view** pane (if not, select it now). On the menu bar at the top of the page, select **+Insert**. In the drop-down menu that appears, select **Edit form**.   
 ‎  
-‎**Note:** In the **Tree view** pane, this action has added an edit form titled **Form1** under **EditScreen1.**
+‎**Note:** In the **Tree view** pane, this action has added an edit form titled **Form1** under **EditScreen1.** <br/>
 
-4. If necessary, in the screen canvas in the middle of the page, scroll to the top to see the top of the form box. The form box is inserted by default at the top of page. Since you want to leave the top of the page open to add additional controls, you should move the empty form box down on the page to make space available at the top.  
+	![image](https://user-images.githubusercontent.com/12913870/196794669-8b0a941d-9872-49c8-95ea-583e217bed3f.png)
+
+4. If necessary, in the screen canvas in the middle of the page, scroll to the top to see the top of the form box. The form box is inserted by default at the top of page. <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196795210-8cd297d8-f5b2-4337-9f5b-3788ed062982.png)
+
+	Since you want to leave the top of the page open to add additional controls, you should move the empty form box down on the page to make space available at the top. To move the form box, hover your cursor over the circle that appears in the middle of the top border line for the form box. Note how the cursor image changes to an up and down arrow. At this point, hold the left mouse key and move the box down to the center of the page. Leave some space on the top of the page to add some additional controls later in this task. <br/>
+	
+	![image](https://user-images.githubusercontent.com/12913870/196796158-28f8f222-c55d-4af6-b04c-096b9ee7bffe.png)
+
+5. With the **Form1** edit form still selected in the **Tree view** pane, go to the **Properties** pane and select the down arrow in the **Data source** field. <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196797007-8b7b1b4a-5e4c-44a1-91be-4ecc11e7e56f.png)
+
+	In the pop-up window that appears, select **Service Desk Requests**.   
 ‎  
-‎To move the form box, hover your cursor over the circle that appears in the middle of the top border line for the form box. Note how the cursor image changes to an up and down arrow. At this point, hold the left mouse key and move the box down to the center of the page. Leave some space on the top of the page to add some additional controls later in this task.
+‎In the canvas in the middle of the page, the form should immediately update to display data entry boxes that are associated with each of the column headers from this SharePoint list. <br/>
 
-5. With the **Form1** edit form still selected, go to the **Properties pane** and select the down arrow in the **Data source** field. In the pop-up window that appears, select **Service Desk Requests**.   
-‎  
-‎In the canvas in the middle of the page, the form should immediately update to display data entry boxes that are associated with each of the column headers from this SharePoint list.
+	![image](https://user-images.githubusercontent.com/12913870/196797573-f757e8b5-27e9-4ab6-9d0e-11aeccbb1026.png)
 
-6. Below the **+Insert** button on the ribbon is the **Function property bar**. The field on the left side of the function currently displays **DataSource.** Select the down arrow that appears in this field. A menu appears that displays the properties for the edit form that you just added. Select **Item**. 
+	**Note:** You can drag the bottom border line down to view most of the data entry boxes. You'll probabaly need to scroll down through the form to view all the fields.
+	
+		![image](https://user-images.githubusercontent.com/12913870/196799065-314a1d83-1c5f-4488-9f75-234a0df1ec9b.png)
+
+6. Below the menu bar at the top of the window is the **Function property bar**. The field on the left side of the function currently displays **DataSource.** Select the down arrow that appears in this field. A menu appears that displays the properties for the edit form that you just added. Select **Item**. 
+
+	![image](https://user-images.githubusercontent.com/12913870/196799472-10013529-060a-4831-ad8b-e8641115a0d9.png)
 
 7. Notice how the **function input box** that appears to the right of the **Item** field is blank. The item property for the edit form represents the record that will be added to the data source that will be displayed.   
 ‎  
-‎In the function box, enter **Gallery1.Selected** and then press Enter.  
+‎In the function box, enter **Gallery1.Selected**.  
 ‎  
-‎**Note:** By entering this function, the edit form in the canvas will populate with values that map to the last selected item in the gallery of BrowseScreen1. 
+‎**Note:** By entering this function, the edit form in the canvas will populate with values that map to the last selected item in the gallery of BrowseScreen1. <br/>
 
-8. You have now finished creating the edit screen for your app, which you want to save before making any additional changes.   
-‎  
-‎Repeat the process that you learned earlier to save the file and then return to the Power App studio. Do **NOT** publish the app yet as you still have additional changes to make.
+	![image](https://user-images.githubusercontent.com/12913870/196799884-20ed845c-969a-4a8c-acea-ee89bd2c8a48.png)
+
+8. You have now finished creating the edit screen for your app, which you want to save before making any additional changes. Select the **Save** icon in the upper right corner of the menu bar. Do **NOT** publish the app yet as you still have additional changes to make.  
 
 9. Leave the Power Apps tabs open in your browser and proceed to the next task to assign a trigger action to the Detail screen.
 
