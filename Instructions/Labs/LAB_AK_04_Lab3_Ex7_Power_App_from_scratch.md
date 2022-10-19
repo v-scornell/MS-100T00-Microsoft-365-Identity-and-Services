@@ -194,22 +194,32 @@ In the prior task, you created the DetailScreen1 that will be used to display th
 ‎  
 ‎In the **Tree view pane**, scroll down and select **DetailsScreen1.**
 
-8. In the **Insert ribbon**, select **Icons**. In the menu that appears, scroll down and select **Back arrow.**  
-‎  
-‎**Note:** In the **DetailScreen1** image, notice how the **Back arrow** icon (the **&lt;** inside the circle) appears on the screen. 
+8. On the menu bar, select **+Insert**. In the drop-down menu that appears, scroll down and select **Icons**. In the list of icons that appears, scroll down and select **Back arrow.**  <br/>
 
-9. In the **Tree view** pane, notice how under **DetailScreen1** it now displays the **Icon1** control. The **Icon1** control is selected in the **Tree view** pane because when you inserted the **Back arrow** in the earlier step, Power Apps studio inserted the icon in DetailScreen1 and left it selected. 
+	![image](https://user-images.githubusercontent.com/12913870/196759269-a78dde9c-ecd0-4e1c-8db5-707949222bc3.png)
+‎  
+‎**Note:** In the **DetailScreen1** image, notice how the **Back arrow** icon (the **&lt;** inside the circle) appears on the screen. <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196760701-e1bbc101-00d0-415b-87e8-1f99b7900827.png)
+
+9. In the **Tree view** pane, notice how under **DetailScreen1** it now displays the **Icon1** control. The **Icon1** control is selected in the **Tree view** pane because when you inserted the **Back arrow** in the earlier step, Power Apps studio inserted the icon in DetailScreen1 and left it selected. <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196761212-de80abc3-525b-4906-97e2-9794ea97a7e0.png)
 
 10. After reviewing the Detail screen, you decide that you want to make two cosmetic changes to the **Back arrow** icon – you want to change its color, and you want to display a tool tip that says “Back” when you hover your mouse over it.   
 ‎  
-‎Since the **Icon1** control is selected in the **Tree view** pane (if not, select it now), the **Properties** pane displays the properties for this control. In the **Properties** pane, scroll down to the **Color** field, to the right of which are two boxes. The first box displays a capital **“A”** with a colored line below it. This line is currently black.   
+‎Since the **Icon1** control is selected in the **Tree view** pane under **DetailScreen1** (if not, select it now), the **Properties** pane displays the properties for this control. In the **Properties** pane, scroll down to the **Color** field, to the right of which are two boxes. The first box displays a capital **“A”** with a colored line below it. This line is currently black.   <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196762467-dbc1339e-27ad-4c2a-9cb3-1be31e8f4e9c.png)
 ‎  
 ‎To change the color of the **Back arrow** icon, select this field and then select the color of your choice from the color menu that appears. Note that you can select different colors to see which one you prefer. Each time you select a color, the color of the **Back arrow** icon in the **DetailScreen1** image changes to that selection.   
 ‎  
 ‎Once you have selected the color that you want to use, press the **Esc** key on your keyboard to close the color menu. This will keep **Icon1** selected (if you select anywhere else, it will also close the color menu, but **Icon1** will be unselected and you will have to select it again to add a tool tip to the icon). <br/>
 
-	‎Scroll further down the **Properties pane** until you get to the **Tooltip** property. Select the **Tooltip** box, enter **Back**, and press Enter. <br/>
-	
+	‎Scroll further down the **Properties pane** until you get to the **Tooltip** property. The **Tooltip** value currently displays **No value**. Select the **Tooltip** box, enter **Back**, and press Enter. <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196763707-18747566-02a1-4a4a-aeb2-155eab9d9cdb.png)
+
 	‎**Note:** Hovering your mouse over the **Back arrow** icon on DetailScreen1 does not display the tool tip. You will test this out when you finish all other edits in this task and use Preview mode to test the changes that you made. 
 
 11. You now need to configure this **Back arrow** icon so that when the user selects it, **BrowseScreen1** is returned. In the **Tree view** pane, select the **Icon1** control under **DetailScreen1** if it’s not already selected.   
