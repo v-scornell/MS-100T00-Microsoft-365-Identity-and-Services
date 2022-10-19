@@ -375,9 +375,9 @@ The Edit screen that you created in the prior task provides the form needed to e
 
 12. You have just associated a trigger mechanism to submit the data in the edit form (**Form1**) for processing when the check mark icon is selected. You must now create another trigger mechanism to navigate away from **Form1** and back to the prior screen once the data has been successfully submitted. <br/>
 
-	**NOTE: This is a navigation trigger; there is no icon associated with it.** 
-‎  
-‎In the **Tree view** pane, under **EditScreen1**, select **Form1**. 
+	**NOTE: This is a navigation trigger; there is no icon associated with it.** <br/>
+  
+	In the **Tree view** pane, under **EditScreen1**, select **Form1**. 
 
 13. In the **Function property** bar, the field on the left side of the function currently displays **Item**. Select the down arrow for this field and select **OnSuccess** from the menu. <br/>
 
@@ -405,7 +405,9 @@ The Edit screen that you created in the prior task provides the form needed to e
 ‎  
 ‎In the **Function property bar**, the field on the left side of the function currently displays **OnSelect.** While this value is left over from the prior task, it’s also the trigger action that you want to associate with this **Cancel** icon. If **OnSelect** is not displayed in this field, select the drop-down arrow and select it from the menu. 
 
-19. In the function box, enter **ResetForm(Form1); Back()**.   
+19. In the function box, enter **ResetForm(Form1); Back()**.   <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196813924-45ad13ce-5cca-431c-aec3-c2998298a76e.png)
 ‎  
 ‎This function actually encapsulates two separate actions: 
 
@@ -445,7 +447,7 @@ The Edit screen that you created in the prior task provides the form needed to e
 
 24. To test the **Save** functionality, begin by hovering your mouse over the green **check mark** icon, which should display the tool tip of **Save.** Once you have verified the tool tip displays properly, select the **check mark** icon to submit the form.
 
-25. Since the **Assign To** field is a required field, an error message should be displayed at the top of the screen indicating that one or more fields have errors. Scroll down through the form and note the specific error message below the **Assign To** field.   
+25. Since the **Assign To** field is a required field, an error message should be displayed below the field indicating that it's required. 
 ‎  
 ‎In the **Assign To** field, enter **Allan** in the field and then select **Allan Deyoung** from the list. 
 
@@ -457,7 +459,7 @@ The Edit screen that you created in the prior task provides the form needed to e
 ‎  
 ‎Select the **IT Services – Service Desk Requests** tab in your browser, and then select the **Refresh** icon on the left side of the address bar. Scroll down through the list and verify the record that you entered appears in the list.
 
-29. Switch back to the **&lt;app name&gt; - Saved (Unpublished) – Power Apps** tab in your browser. You should still be on the browse screen for the app (**BrowseScreen1**) and it should still be running in Preview mode. 
+29. Switch back to the **Power Apps** tab in your browser. You should still be on the browse screen for the app (**BrowseScreen1**) and it should still be running in Preview mode. Scroll down to the last record in BrowseScreen1, which should be the **Test record** that you just created. 
 
 30. Select the **Plus (+) sign** icon to display the edit form. 
 
@@ -465,9 +467,7 @@ The Edit screen that you created in the prior task provides the form needed to e
 
 32. To stop running the app in Preview mode, select the **X** in the circle that appears in the upper right corner of the screen.
 
-33. You have now finished creating the trigger mechanisms for adding and canceling records in your app, which you want to save before making any additional changes.   
-‎  
-‎Repeat the process that you learned earlier to save the file and then return to the Power App studio. Do **NOT** publish the app yet as you still have additional changes to make.
+33. You have now finished creating the trigger mechanisms for adding and canceling records in your app, which you want to save before making any additional changes. Select the **Save** icon in the upper right corner of the menu bar. Do **NOT** publish the app yet as you still have additional changes to make. 
 
 34. Leave the Power Apps tabs open in your browser and proceed to the next task to add Edit and Delete functionality to the Edit screen.
 
