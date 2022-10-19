@@ -331,7 +331,7 @@ The Edit screen that you created in the prior task provides the form needed to e
 ‎  
 ‎**Note:** Depending on where your slider is set, you may not be able to see the blank space at the top of the screen, even after scrolling to the top. If this occurs, set your slider to 100% to see the blank space at the top of **BrowseScreen1.**  
 ‎  
-‎On the menu bar at the top of the window, select **+Insert**, and then select **Icons** in the menu that appears to display the available icons to choose from (Note - the list of icons may already be displayed from an earlier task). In the list of icons, select **Add**. Notice how the **Plus sign (+)** icon shows up on the screen, and in the **Tree view** pane, **Icon2** appears below **BrowseScreen1**. 
+‎On the menu bar at the top of the window, select **+Insert**, and then select **Icons** in the menu that appears. This display the available icons to choose from (Note - the list of icons may already be displayed from an earlier task). In the list of icons, select **Add**. Notice how the **Plus sign (+)** icon shows up on the screen, and in the **Tree view** pane, **Icon2** appears below **BrowseScreen1**. 
 
 4. You must now associate a trigger mechanism to this **Plus sign (+)** icon so that when the user selects it, **EditScreen1** will be returned.   
 ‎  
@@ -361,33 +361,45 @@ The Edit screen that you created in the prior task provides the form needed to e
 ‎  
 ‎Repeat the processes that you learned earlier to select a color and to add a tooltip for this icon. Choose whichever color you wish and enter **Create new item** for the tooltip. 
 
-8. You must now enter a second trigger mechanism that will be associated with a **Save** icon. This icon and trigger mechanism will ensure that the data the user enters in the Edit screen can get saved to the data source, which for this app is the **Service Desk Requests** SharePoint list.   
+8. You must now enter a second trigger mechanism that will be associated with a **Save** icon. This icon and trigger mechanism will ensure that the data the user enters in the Edit screen can get saved to the data source, which for this app is the **Service Desk Requests** SharePoint list. You will use a check mark icon for saving records.
 ‎  
 ‎In the **Tree view** pane, select **EditScreen1**. 
 
-9. On the **Insert ribbon**, select **Icons**, and in the menu that appears, select **Check**. Notice how the **check mark** icon shows up on the screen, and in the **Tree view** pane, **Icon3** appears below **EditScreen1**. 
+9. On the menu bar at the top of the window, select **+Insert**, and then select **Icons** in the menu that appears. This display the available icons to choose from (Note - the list of icons may already be displayed from an earlier task). In the list of icons, select **Check**. Notice how the **check mark** icon shows up on the screen, and in the **Tree view** pane, **Icon3** appears below **EditScreen1**. 
 
 10. Now that you have added the **check mark** icon to **EditScreen1**, you must associate a trigger mechanism to the check mark so that the data is submitted when the **check mark** icon is selected. In the **Tree view** pane, the **Icon3** control should be selected; if not, then do so now.   
 ‎  
 ‎In the **Function property bar**, the field on the left side of the function currently displays **OnSelect.** While this value is left over from the prior task, it’s also the trigger action that you want to associate with this **check mark** icon. If **OnSelect** is not displayed in this field, select the drop-down arrow and select it from the menu. 
 
-11. In the function box, enter **SubmitForm(Form1)** and then press Enter. 
+11. In the function box, enter **SubmitForm(Form1)**. 
 
-12. You have just associated a trigger mechanism to submit the data in the edit form (**Form1**) for processing when the check mark icon is selected. You must now create another trigger mechanism to navigate away from **Form1** and back to the prior screen once the data has been successfully submitted. **This is a navigation trigger; there is no icon associated with it.**  
+12. You have just associated a trigger mechanism to submit the data in the edit form (**Form1**) for processing when the check mark icon is selected. You must now create another trigger mechanism to navigate away from **Form1** and back to the prior screen once the data has been successfully submitted. <br/>
+
+	**NOTE: This is a navigation trigger; there is no icon associated with it.** 
 ‎  
 ‎In the **Tree view** pane, under **EditScreen1**, select **Form1**. 
 
-13. In the **Function property** **bar**, the field on the left side of the function currently displays **Item**. Select the down arrow for this field and select **OnSuccess** from the menu. 
+13. In the **Function property** bar, the field on the left side of the function currently displays **Item**. Select the down arrow for this field and select **OnSuccess** from the menu. <br/>
 
-14. In the function box, enter **Back()** and then press Enter. 
+	![image](https://user-images.githubusercontent.com/12913870/196812058-cd0a4068-5825-4304-9a69-32a23832c2a5.png)
+
+14. In the function box, enter **Back()** and then press Enter. <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196812264-3b087699-b1b9-4ebc-b1d9-10773f9f21c6.png)
 
 15. You must now add one final trigger mechanism to the data entry form (Form1), which is the ability to cancel the data entry operation and return to the prior screen. This trigger will be associated with a **Cancel** icon.  
 ‎  
 ‎In the **Tree view** pane, under **EditScreen1**, select **Form1** if it’s not already selected. 
 
-16. On the **Insert ribbon**, select **Icons**, and in the menu that appears, select **Cancel**. Notice how the **“X”** (Cancel) icon shows up on the screen, and in the **Tree view** pane, **Icon4** appears below **EditScreen1**. 
+16. On the menu bar at the top of the window, select **+Insert**, and then select **Icons** in the menu that appears. This display the available icons to choose from (Note - the list of icons may already be displayed from an earlier task). In the list of icons, select **Cancel**. Notice how the **“X”** (Cancel) icon shows up on the screen, and in the **Tree view** pane, **Icon4** appears below **EditScreen1**. 
 
-17. You notice that the “X” (Cancel) icon is partially placed over the check mark icon in the upper left corner of the screen. To fix this, you want to move the “X” icon to the upper right corner of the form. To do this, select the border of the “X” icon (so that an image of crossed arrows appears) and drag it across to the right corner. You will also need to drag it up a bit so that it’s on the same line as the check mark icon.
+17. You notice that the “X” (Cancel) icon is partially placed over the check mark icon in the upper left corner of the screen. <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196812787-dfb5e1e0-f8d5-4c27-b2c9-659d94776bda.png)
+
+	To fix this, you want to move the “X” icon to the upper right corner of the form. To do this, select the border of the “X” icon (so that an image of crossed arrows appears) and drag it across to the right corner. You will also need to drag it up a bit so that it’s on the same line as the check mark icon.  <br/>
+
+	![image](https://user-images.githubusercontent.com/12913870/196813013-7335b680-bce5-4eb6-8bbb-38f6860fc0bd.png)
 
 18. Now that you have added the **Cancel** icon to **EditScreen1**, you must associate a trigger mechanism to the icon so that EditScreen1 is reset and the user is returned back to the most recently processed screen when the “X” icon is selected. In the **Tree view** pane, the **Icon4** control should be selected; if not, then do so now.   
 ‎  
