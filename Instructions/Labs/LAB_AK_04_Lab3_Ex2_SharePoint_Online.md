@@ -1,4 +1,4 @@
-# Module 4 - Lab 3 - Exercise 2 - Review Key Features of SharePoint Online
+# Learning Path 4 - Lab 3 - Exercise 2 - Review Key Features of SharePoint Online
 
 Adatum's CTO has heard a lot about Microsoft SharePoint Online and is interested in implementing it at Adatum. However, security is of the utmost concern to the CTO, who is worried whether new sites created within the company can be kept secure. The CTO has tasked Holly with reviewing some of the basic administrative functions in SharePoint Online to determine whether it can meet their security requirements.
 
@@ -8,7 +8,7 @@ A team site includes a group of related web pages, a default document library fo
 
 1. You should still be logged into LON-DC1 as **Administrator** and password **Pa55w.rd**; if not, then do so now.
 
-2. You should still have Microsoft Edge and the **Microsoft 365 admin center** open from the prior lab, and you should be logged in as Holly Dickson. If so, proceed to the next step; otherwise, open Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd**, and then on the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**.
+2. You should still have Microsoft Edge and the **Microsoft 365 admin center** open from the prior lab, and you should be logged in as Holly Dickson. If so, proceed to the next step; otherwise, open Edge, navigate to **https://portal.office.com/**, log in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **User.pw1**, and then on the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**.
 
 3. In the **Microsoft 365 admin center**, select **Show all** in the navigation pane (if necessary), then scroll down to **Admin centers** and select **SharePoint.** This will open the SharePoint admin center.
 
@@ -26,7 +26,7 @@ A team site includes a group of related web pages, a default document library fo
 
 	- Site address: As you typed in **IT Services** in the **Site name** field, the same text automatically prefilled in this field, although the blank space was removed so that it appears as one word (ITServices). Do not change this default value.
 
-	- Group owner: type **Holly**, and in the window that appears displaying the users whose first name starts with Holly, select **Holly Dickson**. (Note: If the search finishes and Holly's name is not displayed, select the **Search Directory** option that appears below the Group Owner field. This will display Holly Dickson, which you should then select). 
+	- Group owner: type **Holly**. If Holly Dickson's name does not appear, select **Search directory**. In the window that appears displaying the users whose first name starts with Holly, select **Holly Dickson**.  
 
 	- Select a language: Leave this as **English**
 
@@ -93,7 +93,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 4. In the upper right-hand corner of the **IT Services** site (to the left of the circle containing Holly Dickson's initials), select the **gear (Settings)** icon. In the **Settings** pane that appears, select **Site permissions.**
 
-5. In the **Permissions** pane that appears, select **Advanced permissions settings**, which opens a new **Permissions: IT Services** tab in your Edge browser.
+5. At the bottom of the **Permissions** pane that appears, select **Advanced permissions settings**, which opens a new **Permissions: IT Services** tab in your Edge browser.
 
 6. In the ribbon that appears at the top of the screen, two tabs are available - a **BROWSE** tab and a **PERMISSIONS** tab, the latter of which is displayed by default. <br/>
 
@@ -103,23 +103,23 @@ In this task, you will create the following hierarchical permission structure fo
 
 	**Note:** This option enables you to check access permissions for users and groups. In this case, you will check the permissions that were assigned to Holly Dickson. In the prior task, you assigned Holly as an owner of the IT Services site. The following steps will enable you to check what default team site permissions were assigned in this role. 
 
-8. In the **IT Services: Check Permissions** dialog box that appears, in the **User/Group** field, type **Holly**. As you type Holly, a window appears listing users whose first name starts with Holly. Select **Holly Dickson** and then select **Check now**. Since Holly is an owner of this site, this confirms that she was automatically assigned **Full Control** permissions through the IT Services Owners group.
+8. In the **IT Services: Check Permissions** dialog box that appears, in the **User/Group** field, type **Holly**. As you type Holly, a window appears listing users whose first name starts with Holly. Select **Holly Dickson** and then select **Check now**. Since Holly is an owner of this site, this confirms that she was automatically assigned **Full Control** permissions through the **IT Services Owners** group.
 
-9. In the **User/Group** field, select the **X** next to Holly’s name to remove it from the field. In the **User/Group** field, type **Nestor**. As you type Nestor, a window appears listing users whose first name starts with Nestor. Select **Nestor Wilke** and then select **Check now.** Since Nestor is member of this site, this confirms that he was automatically assigned **Edit** permissions.
+9. In the **User/Group** field, select the **X** next to Holly’s name to remove it from the field. In the **User/Group** field, type **Nestor**. As you type Nestor, a window appears listing users whose first name starts with Nestor. Select **Nestor Wilke** and then select **Check now.** Since Nestor is a member of this site, the dialog box confirms that he was automatically assigned **Edit** permissions through the **IT Services Members** group.
 
-	**Note:** At the time of this writing, the application was displaying **None** as Nestor's permission level, which is typically attributed to someone who is not a site member. The same thing occurred when checking Diego Siciliani and Patti Fernandez. You can try checking their permissions to see if this issue has been resolved and it displays their actual permission level.
+	Repeat this step for Diego Siciliani and Patti Fernandez. As a site owner, Diego should have **Full Control** permissions, just like Holly. As a site member, Patti should have **Edit** permissions, just like Nestor. 
 	
-19. Repeat the prior step and check the permission for **Alex Wilber**, who is not a site member. You will see that Alex's permission level is set to **None**, which means he does not have permission to access or update the site since he has not been assigned as a site member.
+19. Repeat the prior step and check the permission for **Alex Wilber**, who is not a site member. You will see that Alex's permission level is set to **None**, which means he does not have permission to access or update the site since he has not been assigned as a site member or site owner.
 
 11. In the **IT Services: Check Permissions** window, select **Close.**
 
 12. You are now back in the **Permissions: IT Services** tab in your browser. You have been asked to create a new group of users and assign them permission to access the IT Services site. In the ribbon that appears at the top of the page, under the **Grant** section, select **Create Group.**  
 
-	‎**Best Practice:** It’s a best practice that you should use Groups to assign access permissions rather than assigning access to individual user accounts for two important reasons: 1) Assigning individual users access to a site makes it difficult to track user access when the user leaves your organization, and 2) Idirect permissions can override security groups permissions.
+	‎**Best Practice:** As a best practice, you should use **Groups** to assign access permissions rather than assigning access to individual user accounts for two important reasons: 1) Assigning individual users access to a site makes it difficult to track user access when the user leaves your organization, and 2) Individual user permissions can override security group permissions.
 
 13. In the **People and Groups > Create Group** window, enter the following information:   
 
-	- Name: **Information Technology**
+	- Name: **Information Technology** (If a dialog box appears below this field, select the X in the box to close it)
 
 	- About me: **This group is used for members of the IT staff**
 
@@ -137,7 +137,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 		- Auto-accept requests: **No**
 
-		- Send membership requests to the following e-mail address: If Holly Dickson’s email appears, replace her email with the MOD Administrator's email, which is **admin@xxxxxZZZZZZ.onmicrosoft.com** (simply replace **holly** with **admin** in the email address)
+		- Send membership requests to the following e-mail address: If Holly Dickson’s email appears, replace her email with the MOD Administrator's email, which is **admin@xxxxxZZZZZZ.onmicrosoft.com** (simply replace **holly** with **admin** in the email address). If this field is blank, enter **admin@xxxxxZZZZZZ.onmicrosoft.com**.
 
 		- Choose the permission level group members get on this site: **Full Control – Has full control**
 
@@ -145,7 +145,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 15. This displays the **Information Technology** group information. The users displayed in the list are the members of this group. Since Holly Dickson created the group, she is listed as the sole member.
 
-16. In the menu bar that appears above the user list, select the drop-down arrow that appears next to **New**, and then in the drop-down menu, select **Add users to this group.**
+16. In the menu bar that appears above the user list, select the drop-down arrow that appears next to **New**, and then in the drop-down menu, select **Add users**.
 
 17. In the **Share ‘IT Services’** window, the **Invite people** tab is selected in the left-hand pane by default. In the **Enter names or email addresses** field, enter **Isaiah**. As you type Isaiah, a window appears listing users whose first name starts with Isaiah. Select **Isaiah Langer**. 
 
@@ -153,19 +153,19 @@ In this task, you will create the following hierarchical permission structure fo
 
 18. Below the personal message field, select **SHOW OPTIONS.**
 
-19. Uncheck the **Send an email invitation** option.
+19. Uncheck (clear) the **Send an email invitation** check box.
 
 20. Select **Share** to share the IT Services site with the members of this Information Technology group.
 
 21. In the **People and Groups > Information Technology** window that appears, the members of the group (Holly, Isaiah, and Joni) should be displayed.
 
-22. Close this **Peoples and Groups** tab in your Edge browser. This will return you to the **SharePoint admin center** and the **Active sites** list, with the **IT Services** pane open on the right-hand side. 
+22. Close this **Peoples and Groups** tab in your Edge browser. This will return you to the **SharePoint admin center** and the **Active sites** list, with the **IT Services** pane displayed on the right-hand side. 
 
 23. In the **IT Services** pane, select the URL (**.../sites/ITServices**) that is displayed under **URL.** 
 
 24. A new tab will open in your Edge browser that displays the **IT Services** site.
 
-25. In the upper right-hand corner of the **IT Services** site, select the **gear (Settings)** icon.
+25. In the upper right-hand corner of the **IT Services** site, select the **gear (Settings)** icon (it may take a minute or so to appear).
 
 26. In the **Settings** pane that appears, select **Site permissions.**
 
@@ -179,7 +179,7 @@ In this task, you will create the following hierarchical permission structure fo
 
 30. You want to create a permission level for your team’s web specialists who will be designing SharePoint sites upon request. Adatum's CTO wants them to be assigned permission levels that provide complete editing and administrative capabilities. In the window that appears, enter the following information:
 
-	- Name: **Designer**
+	- Name: **Designer** (Select the X in the dialog box that appears below this field to close it)
 	
 	- Description: **This level restricts the level of use for web designers**
 

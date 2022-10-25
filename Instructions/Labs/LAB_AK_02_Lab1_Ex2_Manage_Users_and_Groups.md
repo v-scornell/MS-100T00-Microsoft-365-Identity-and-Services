@@ -1,4 +1,4 @@
-# Module 2 - Lab 1 - Exercise 2 - Manage Users and Groups 
+# Learning Path 2 - Lab 1 - Exercise 2 - Manage Users and Groups 
 
 In the following lab exercise, you will continue in your role as Holly Dickson, Adatum Corporation’s Enterprise Administrator. In this exercise, you will perform several user and group management functions within Microsoft 365. You will begin by creating a Microsoft 365 user account for Holly, who will be assigned the Global Administrator role. You will create two Microsoft 365 groups and assign existing Microsoft 365 users as members of those groups. You will then delete one of the groups and then use Windows PowerShell to recover the deleted group.
 
@@ -31,15 +31,15 @@ That being said, you will not turn on MFA for Holly's account because time is li
 
 	- Username: **Holly** <br/>
 	
-		‎**IMPORTANT:** To the right of the **Username** field is the domain field. It will be prefilled with the **M365xZZZZZZ.onmicrosoft.com** cloud domain (where ZZZZZZ is your tenant ID provided by your lab hosting provider).<br/>
+		‎**IMPORTANT:** To the right of the **Username** field is the domain field. It will be prefilled with the **xxxxxZZZZZZ.onmicrosoft.com** cloud domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).<br/>
 	
 		After configuring this field, Holly’s username should appear as:<br/>
 
-		**Holly@M365xZZZZZZ.onmicrosoft.com**  
+		**Holly@xxxxxZZZZZZ.onmicrosoft.com**  
 	
 	- Clear (uncheck) the **Automatically create a password** check box, which will display a new field for entering an administrator defined password.
 
-	- In the new **Password** field that appears, enter: **Pa55w.rd** (**Hint**: Select the eye icon at the right side of the field to verify the password that you entered)
+	- In the new **Password** field that appears, enter: **User.pw1** (**Hint**: Select the eye icon at the right side of the field to verify the password that you entered)
 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
 
@@ -59,15 +59,15 @@ That being said, you will not turn on MFA for Holly's account because time is li
 
 	**Note:** All the admin roles will be displayed if you select **Show all by category**, which appears after the last common role. For Holly, you don't need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
 
-11. Select the **Global administrator** check box.
+11. Select the **Global Administrator** check box.
 
-    **Note:** A warning message will be displayed indicating that you now have 5 global admins. In a normal environment, this would be excessive and not recommended. For the purposes of this lab, the lab hosting provider assigned the Global admin role to the MOD Administrator and three of the other user accounts. Therefore, four of the 11 user accounts in your tenant are global admins, which is not something you would see in a real-world deployment. However, for the pupose of this lab in our fictitious Adatum lab environment, ignore this message. That being said, keep this guideline in mind for your real-world Microsoft 365 deployments. The best practice guideline that you should follow is to have from two to four Global admins.
+    **Note:** A warning message will be displayed indicating that you now have 5 global admins. In a normal environment, this would be excessive and not recommended. For the purposes of this lab, the lab hosting provider assigned the Global admin role to the MOD Administrator and three of the other user accounts. Therefore, four of the 11 user accounts in your tenant are global admins, which is not something you would see in a real-world deployment. However, for the pupose of this lab in your fictitious Adatum lab environment, ignore this message. That being said, keep this guideline in mind for your real-world Microsoft 365 deployments. The best practice guideline that you should follow is to have from two to four Global admins.
 
 12. Select **Next**.
 
 13. On the **Review and finish** window, review your selections. If anything must be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
-14. On the **Holly Dickson added to active users** page, under the **User details** section, select the **Show** option to verify Holly's password is **Pa55w.rd**.  <br/>
+14. On the **Holly Dickson added to active users** page, under the **User details** section, select the **Show** option to verify Holly's password is **User.pw1**.  <br/>
 
 	**Note:** If you accidentally entered a different password, then once you return to the **Active Users** page, you will need to select the **Reset a password** icon (the key icon that appears when you hover over Holly's account) to change her password to the correct value.
 
@@ -91,15 +91,15 @@ In this task, you will create two new groups and then manage the groups by assig
 
 3. Select the **Edge** icon on your taskbar to reopen your Microsoft Edge browser. Then enter the following URL in the address bar to sign back into Microsoft 365: **https://portal.office.com** 
 
-4. In the **Sign in** window, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
+4. In the **Pick an account** window, select **+Use another account**. In the **Sign in** windows that appears, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
 
-5. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
+5. In the **Enter password** window, enter **User.pw1** and then select **Sign in**.
 
-6. If a **Welcome to your new Office, Holly** window appears, there's no option to close it. Instead, select the right arrow icon (>) three times to page through this messaging window.
+6. If a **Welcome to your new Office, Holly** window appears, there's no option to close it. Instead, to the right of the window, select the right arrow icon (>) two times and then select the check mark icon to advance through the slides in this messaging window.
 
 7. In the **Find more apps** window that appears, select the **X** in the upper right-hand corner of the window to close it.
 
-8. On the **Microsoft Office Home** page, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab.
+8. On the **Microsoft Office Home** page, select the **Admin** icon in the left-hand navigation pane; this opens the **Microsoft 365 admin center** in a new browser tab.
 
 9. In the **Microsoft 365 admin center**, select **Teams & groups** in the navigation pane, and then under it, select **Active teams & groups**. 
 
@@ -192,7 +192,7 @@ In this task, you will use Windows PowerShell to recover the Inside Sales group 
 
 		Connect-AzureAD   
 
-4. A new window will appear requesting your credentials. Sign in using Holly's Microsoft 365 account of **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **Pa55w.rd** as the Password.  
+4. A new window will appear requesting your credentials. Sign in using Holly's Microsoft 365 account of **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **User.pw1** as the Password.  
 
 5. At the command prompt, type the following command and then press Enter to display the repository of deleted groups (this should display the **Inside Sales** group that you earlier deleted):<br/>  
 	

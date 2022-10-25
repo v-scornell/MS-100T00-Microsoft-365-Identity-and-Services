@@ -1,4 +1,4 @@
-# Module 4 - Lab 3 - Exercise 1 - Review Key Features of Exchange Online
+# Learning Path 4 - Lab 3 - Exercise 1 - Review Key Features of Exchange Online
 
 Holly Dickson is Adatum’s Enterprise Administrator. She has recently deployed
 Microsoft 365 in a virtualized lab environment. Now that she has a tenant
@@ -25,12 +25,12 @@ involved in creating and managing mail flow recipients.
 
     Switch to **LON-DC1**, where you should still be logged in as the
     **Administrator** with a password of **Pa55w.rd**; if not, then do so now.
-
+ 
 2.  You should still have an Edge browser session and the Microsoft 365 admin
     center open from the prior lab. If so, proceed to the next step; otherwise,
     open Microsoft Edge, navigate to **https://portal.office.com/**, log in as
     **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
-    provider) and **Pa55w.rd**, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen, and then in the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab.
+    provider) and **User.pw1**, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen, and then in the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab.
 
 3.  In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the navigation pane, then scroll down to **Admin centers**
     and select **Exchange**. This will open the **Exchange admin center** in a
@@ -125,7 +125,15 @@ group.
     **Name** field, tab into the **Description** field (which enables the
     **Next** button) but leave the field blank, and then select **Next**.
 
-5.  In the **Edit settings** page, enter the following information and then
+5.  Under the **Assign owners** page, select **+Assign owners**. 
+
+6.  In the **Assign owners** window that is displayed, select **Holly Dickson** and then select **Add (1)**. This returns you to the **Add a group** wizard where Holy Dickson is now displayed as an owner. Select **Next** to continue.
+
+7.  In the **Add members** page, select **+Add members**.
+
+8.  In the **Add members** window that is displayed, select **Allan Deyoung** and then select **Add (1)**. This returns you to the **Add a group** wizard where Allan Deyoung is now displayed as a member. Select **Next** to continue.
+
+9.  In the **Edit settings** page, enter the following information and then
     select **Next.**  <br/>
 
     -   Group email address: **SalesDept**
@@ -145,48 +153,46 @@ group.
         governing group membership, then select **Open** for either of these two
         options.
 
-6.  On the **Review and finish adding group** page, review the information that
+10.  On the **Review and finish adding group** page, review the information that
     you entered for this group. If anything needs to be changed, select the
     appropriate **Edit** link and make your corrections. When everything is
     correct, select the **Create group** button.
 
-7.  Once the group is created, the **Sales Department is created** page appears.
+11.  Once the group is created, the **Sales Department is created** page appears.
     Note the message at the top of the page indicating that it can take up to an
     hour for the group to appear in your groups list. Select **Close**.
 
-8.  This should return you to the **Groups** page, which is currently displaying
+12.  This should return you to the **Groups** page, which is currently displaying
     the **Microsoft 365** tab. Select the **Distribution list** tab to see the
     distribution group that you just created. If **Sales Department** does not
     appear in the list of distribution groups, refresh the page every few minutes
     until the group appears.
 
-9.  Once the **Sales Department** group appears in the list, select the **Sales
+13.  Once the **Sales Department** group appears in the list, select the **Sales
     Department** name. This opens a detail pane for the Sales Department group.
     The **General** tab is displayed by default. You now want to add
-    members to this group, so select the **Members** tab.
+    additional members to this group, so select the **Members** tab.
 
-10. On the **Members** tab, under the **Owners** section, select **View all and manage owners**, which opens
-    the **Owners** window. Since you are logged into the Exchange admin center
-    using Holly Dickson, her account was assigned as the default Owner when you created the group. However,
+14. On the **Members** tab, under the **Owners** section, select **View all and manage owners**, which opens
+    the **Owners** window.
     Holly wants Alex Wilber to co-own the group along with her, so select **+Add owners**.
 
-11. In the **Add owners** window, select **Alex Wilber**, and then select the
+15. In the **Add owners** window, select **Alex Wilber**, and then select the
     **Add (1)** button. This returns you to the **Owners** window and displays
     Alex and Holly as owners of this group. Select the back arrow in the
     top-left corner of the window to return you to the **Sales Department**
     window.
 
-12. Under the **Members** section, select **View all and manage members**, which opens the **Members** window.
+16. Under the **Members** section, select **View all and manage members**, which opens the **Members** window.
     Select **+Add members**.
 
-13. In the **Add members** window, select **Allan DeYoung**, **Diego
-    Siciliani,** and **Lynne Robbins**, and then select the **Add (3)** button. <br/>
+17. In the **Add members** window, select **Diego Siciliani** and **Lynne Robbins**, and then select the **Add (2)** button. <br/>
 
 	This returns you to the **Members** window and displays Lynne, Allan, and
     Diego as members of this group. Select the back arrow in the top-left corner
     of the window to return you to the **Sales Department** window.
 
-14. In the **Sales Department** window, the owners and members that you added
+18. In the **Sales Department** window, the owners and members that you added
     should be displayed. Select the **Settings** tab. While this tab enables you to
     make advanced settings changes, you won't make any settings changes in this lab.  <br/>
 
@@ -194,21 +200,21 @@ group.
     have reviewed the settings, select the **X** in the top right-hand corner of
     the window to close it.
 
-15. This should return you to the **Groups** page, which is currently displaying
+19. This should return you to the **Groups** page, which is currently displaying
     the **Distribution list** tab. You will now add a dynamic distribution group, so select **Add a group**. This initiates the **Add a group** wizard.
 
-16. In the **Add a group** wizard, the steps to add a group are displayed in the
+20. In the **Add a group** wizard, the steps to add a group are displayed in the
     middle pane. In the **Choose a group type** pane, select
     **Dynamic distribution** and then select **Next**.
 
-17. On the **Set up the basics** page, enter the following information and
+21. On the **Set up the basics** page, enter the following information and
     then select **Next**: <br/>
 
     -   Name: **Dynamics CRM project team**
 
     -   Description: **Adatum users working on the Microsoft Dynamics CRM project**
 
-18. On the **Assign users** page, enter the following information and then
+22. On the **Assign users** page, enter the following information and then
     select **Next**: <br/>
 
     -   Owner: select **Holly Dickson**
@@ -223,7 +229,7 @@ group.
 
         -   Enter words, separate with commas: type the word **Sales**
 
-19. On the **Edit settings** page, enter the following information then select
+23. On the **Edit settings** page, enter the following information then select
     **Next:** <br/>
 
     -   Group email address: **DynCRM**
@@ -233,32 +239,32 @@ group.
         **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix
         provided by your lab hosting provider.
 
-20. On the **Review and finish adding group** page, review the information that
+24. On the **Review and finish adding group** page, review the information that
     you entered for this group. If anything needs to be changed, select the
     appropriate **Edit** link and make your corrections. When everything is
     correct, select the **Create group** button.
 
-21. Once the group is created, the **Dynamics CRM Project Team is created, but it isn't ready to use yet** page
+25. Once the group is created, the **Dynamics CRM Project Team is created, but it isn't ready to use yet** page
     appears. Note the message that it may take up to 2 hours until you can send a message to this group. Select **Close**.
 
-21. This should return you to the **Groups** page. Select the **Dynamic Distribution list** tab. If **Dynamics
+26. This should return you to the **Groups** page. Select the **Dynamic Distribution list** tab. If **Dynamics
     CRM Project Team** does not appear in the list of dynamic distribution
     groups, refresh the list (select the **Refresh** option on the menu bar) every few minutes until the group appears.
 
-23. Holly now wants to add Nestor Wilke as an owner of this Dynamics CRM project team group. Perform the
+27. Holly now wants to add Nestor Wilke as an owner of this Dynamics CRM project team group. Perform the
     same steps that you completed earlier when you added an owner to the Sales
     Department group. In this case, add **Nestor Wilke** as a co-owner of the
     **Dynamics CRM Project Team** group.
 
-24. This should return you to the **Groups** page, which is currently displaying
+28. This should return you to the **Groups** page, which is currently displaying
     the **Dynamic Distribution list** tab. Select the **Dynamics
     CRM Project Team**, and in the detail pane that opens for the group, select the **Members** tab. <br/>
 
 	**Important:** Instead of having two owners (Holly and Nestor), verify that only Nestor appears as the owner of the group. A dynamic distribution group is different from the other group types because it can only have one owner. So when you added Nestor as a group owner in the earlier step, what actually happened is that Nestor replaced Holly as sole owner of the group. 
 	
-26. Close the **Dynamics CRM project team** pane.
+29. Close the **Dynamics CRM project team** pane.
 
-27. Leave your browser and all tabs open for the next task.
+30. Leave your browser and all tabs open for the next task.
 
 ### Task 3 - Upgrade Distribution Lists
 
@@ -306,6 +312,8 @@ organization based on the following format: **{Department} Group: {Group Name} {
     **Microsoft 365** tab. In the menu bar that appears over the list of groups,
     select **Add naming policy.**
 
+    If you do not see **Add naming policy** displayed in the menu bar, Uncheck (Deselect) the check box to the left of  the Sales Department group name.
+
 2.  In the **Edit group naming policy** window that appears, the **Policy** tab
     is displayed by default. Under the **Create a policy** section, you can
     select a prefix and a suffix. <br/>
@@ -333,7 +341,7 @@ organization based on the following format: **{Department} Group: {Group Name} {
 6.  At the bottom of the **Edit group naming policy** pane, review the **Preview policy** example that is
     based on the parameters you selected. The format should appear as: <br/>
     
-    	**<Department>Group:<GroupName><City>**  <br/>
+    	**<Department>Group:<GroupName><City>**  
 
 	If any portion of this rule in incorrect and must be fixed, select the
     correct values now. When everything is correct, select the **Save**
@@ -358,20 +366,19 @@ meetings, you can select the room from the Global Address List (GAL).
     prior task, and it should still be displaying the **Groups** window. In the
    navigation pane, under the **Recipients** group, select **Resources.**
 
-2.  In the **Resources** window, select **+Add a resource** on the menu bar.
+2.  In the **Resources** window, select **+Add a room resource** on the menu bar.
     This initiates the **New resource mailbox** wizard.
 
-3.  In the **New resource mailbox** wizard, on the **Fill in the basic info**
-    page, select **Room**, and then enter the following information:  <br/>
+3.  In the **New resource mailbox** wizard, on the **Set up a room mailboxes**
+    page, enter the following information and select **Next**:  <br/>
 
     -   Name: **Conference Room 1**
 
     -   Resource email: **Con1**
 
-    -   Email address domain: In the domain field to the right of the **Con1**
-        alias, select the drop-down arrow and select
-        **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix
-        provided by your lab hosting provider
+    -   Email address domain: In the domain field to the right of the **Con1** alias, select the drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix  provided by your lab hosting provider
+
+4.  On the **Set properties** page, enter the following information and then select **Next**.
 
     -   Capacity: **15**
 
@@ -379,45 +386,40 @@ meetings, you can select the room from the Global Address List (GAL).
 
     -   Phone: **425-555-2011**
 
-4.  Select **Next.**
-
-5.  A second **Fill in the basic info** page appears. This page is used to enter
-    the resource address. Since this information isn't applicable to the conference room, you can skip this page and select **Next**.
-
-6.  In the **Booking options** page, select the **Allow scheduling only during
+5.  In the **Booking options** page, select the **Allow scheduling only during
     working hours** check box.
 
-7.  Uncheck (clear) the **Auto-accepts meeting request** check box.
+6.  Uncheck (clear) the **Automatically accept/decline meeting request** check box.
 
-8.  In the **Booking delegates** field, enter **Holly** and then select **Holly
+7.  In the **Choose your booking delegates** field that appears, enter **Holly** and then select **Holly
     Dickson**. Then enter **Nestor** and select **Nestor Wilke**. <br/>
 
     **Note:** This option allows a user to filter booking requests.
 
-9.  Ensure the check box next to **Automatically decline meetings outside of
+8.  Ensure the check box next to **Automatically decline meetings outside of
     limits below** is selected or you won’t be able to input the following
     information.
 
-10. In the **Booking window (days)** field, enter **60**. <br/>
+9. In the **Booking window (days)** field, enter **60**. <br/>
 
     ‎**Note:** As a best practice, organizations should establish a company
     standard so that events do not over-book locations.
 
-11. In the **Maximum duration (hours)** field, enter **120** (this is five days,
+10. In the **Maximum duration (hours)** field, enter **120** (this is five days,
     or one work week).
 
-12. Select **Next**.
+11. Select **Next**.
 
-13. On the **Review resource** page, review the resource information that you
+12. On the **Review resource** page, review the resource information that you
     just entered. If anything needs to be fixed, select the **Back** button and
     make the necessary corrections. When everything looks correct, select
     **Create** and wait for the resource to be created. A message is displayed on the **Status** page indicating it may take a couple of
     minutes to create the resource.
 
-14. Once the resource mailbox has been successfully created, select **Done**. The new resource record for **Conference Room
+13. Once the resource mailbox has been successfully created, select **Done**. The new resource record for **Conference Room
     1** should appear in the **Resources** window.
 
-15. Leave your browser and all tabs open for the next task.
+14. Leave your browser and all tabs open for the next task.
 
 ### Task 6 – Manage Contacts
 
@@ -430,59 +432,54 @@ introduced to mail contacts and mail users.
     the navigation pane, under the **Recipients** group, select
     **Contacts.**
 
-2.  In the **Contacts** window, select **+Add a contact** that appears on the
-    menu bar.
+2.  In the **Contacts** window, select **+Add a mail contact** that appears on the
+    menu bar. This initiates the **New Mail Contact** wizard.
 
-3.  In the **Add contact** pane that appears on the right, enter the following
+3.  In the **New Mail Contact** wizard, on the **Set up the basic information** page, enter the following information and then select **Next**.
     information: <br/>
-
-    -   Contact type: select **Mail contact** from the drop-down menu  <br/>
-
-        ‎**Note:** This option enables external people from outside your
-        organization to be added to your Exchange Online distribution lists. This is what you will do in this step - add Hai Chu from Fabrikam as a mail contact.<br/>
 
     -   First name: **Hai**
 
     -   Last Name: **Chu**
 
-    -   Display Name: tab into the field and **Hai Chu** is automatically
-        displayed
+    -   Initials: **HC**
+
+    -   Display Name: **Hai Chu**
+
+    -   Alias: **Hai**
 
     -   External Email Address: **Hai@fabrikam.com**
 
-    -   Company: **Fabrikam**
+4.  On the **Set up mail contact information (Optional)** page, expand **Organisation information** and type **Fabrikam** under the **Company** Field, then select **Next**
 
-4.  Select the **Add** button at the bottom of the pane. It may take a minute or two to successfully create the
-    record.
+5.  In the **Review mail contact** page, review the contact information that you
+    just entered. If anything needs to be fixed, select the **Back** button and
+    make the necessary corrections. When everything looks correct, select
+    **Create** and wait for the contact to be created. A message is displayed on the **Status** page indicating it may take a couple of
+    minutes to create the contact.
 
-5.  Once the Contact record has been successfully created, a message indicating the **Contact created
-    successfully** will appear. Select the **X** in the upper right corner to close the pane. Hai Chu should now appear
+6.  Once the Contact record has been successfully created, a message indicating the **Mail contact creation
+    successfull!** will appear. Select the **X** in the upper right corner to close the pane. Hai Chu should now appear
     in the **Contacts** window. If Hai Chu doesn’t appear, select **Refresh** on
     the menu bar to refresh the Contacts list until the record appears (it may take a few minutes).
 
-6.  Hai Chu’s contact record was for a Mail Contact. Holly now wants to create a
+7.  Hai Chu’s contact record was for a Mail Contact. Holly now wants to create a
     second contact, but this time for a Mail User. On the menu bar above the
-    Contacts list, select **+Add a contact** to add another contact. <br/>
+    Contacts list, select **+Add a mail user** to initiate the **New Mail User** wizard. <br/>
     
-    	**Note:** A Mail User is an individual who needs to use the company
-        domain even though they are not a full-time employee (for example, contractors, advisors, and selective temporary staff). Defining a Mail User will
-        forward email to the individual’s external email when mail is sent to
-        the contact’s internal company account.  <br/>
+    **Note:** A Mail User is an individual who needs to use the company domain even though they are not a full-time employee (for example, contractors, advisors, and selective temporary staff). Defining a Mail User will forward email to the individual’s external email when mail is sent tothe contact’s internal company account.  <br/>
 
-        ‎**WARNING**: A Mail User does not need a license to access SharePoint
-        Online; the user simply needs to be given access to it.  <br/>
+    **WARNING**: A Mail User does not need a license to access SharePoint Online; the user simply needs to be given access to it.  <br/>
 
-7.  In the **Add contact** pane that appears on the right, enter the following
-    information: <br/>
-
-    -   Contact type: **Mail user** (this should be selected by default) <br/>
+8.  In the **New Mail User** wizard, on the **Set up basic information** page, enter the following information and then select **Next**: <br/>
 
     -   First name: **Bill**
 
     -   Last Name: **Norman**
 
-    -   Display Name: tab into the field and **Bill Norman** is automatically
-        displayed.
+        Initials: **BN**
+
+    -   Display Name: **Bill Norman** 
 
     -   External email address:
         **Bill@fabrikam.com**
@@ -496,21 +493,17 @@ introduced to mail contacts and mail users.
         drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where
         xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider.
 
-    -   Password: **Pa55w.rd**
+    -   Password: **User.pw1**
 
-    -   Confirm: **Pa55w.rd**
+    -   Confirm: **User.pw1**
 
-8.  Select **Add.**
+9.  In the **Review mail user** page, review the information that you just entered. If anything needs to be fixed, select the **Back** button and make the necessary corrections. When everything looks correct, select **Create** and wait for the Mail user to be created. A message is displayed on the **Status** page indicating it may take a couple of minutes to create the Mail user.    
 
-9.  Once the Contact record has been successfully created, a message indicating the **Contact created
-    successfully** will appear. Select the **X** in the upper right corner to close the pane. Select **Close**. 
+10.  Once the Mail user has been successfully created, a message indicating the **Mail user creation successfull!** will appear. Select the **X** in the upper right corner to close the pane. Select **Close**. 
 
-10. Bill Norman should now
-    appear in the **Contacts** window. If Bill Norman doesn’t appear, select
-    **Refresh** on the menu bar to refresh the Contacts list until his record
-    appears. 
+11. Bill Norman should now appear in the **Contacts** window. If Bill Norman doesn’t appear, select **Refresh** on the menu bar to refresh the Contacts list until his record appears. 
 
-11. Leave the Exchange admin center tab open and proceed to the next task.
+12. Leave the Exchange admin center tab open and proceed to the next task.
 
 ### Task 7 – Configure Messaging Protection
 
@@ -582,7 +575,7 @@ You will perform this task in LON-CL1.
 
 16.  Select the **Edge** icon on your taskbar to re-open the Edge browser. Enter **https://portal.office.com** in the address bar to open the Office 365 home page.
 
-17.  In the **Pick an account** window that appears, select Holly's email address (**Holly@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**. If the **Stay signed in?** window appears, select the **Don't show this again** check box and then select **Yes**.
+17.  In the **Pick an account** window that appears, select Holly's email address (**Holly@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **User.pw1** and then select **Sign in**. If the **Stay signed in?** window appears, select the **Don't show this again** check box and then select **Yes**.
 
 17.  On the **Microsoft Office Home** page, navigate to the **Microsoft 365 admin center**. 
 
@@ -657,7 +650,7 @@ You will perform this task in LON-CL1.
 
     5.  A **Microsoft 365 Sign in** window will appear. Enter the username for
     the **Mod Administrator** account, which is the Microsoft 365 tenant admin account provided by your learning provider
-    (admin@M365xZZZZZZ.onmicrosoft.com) and then select **Next**.
+    (admin@xxxxxZZZZZZ.onmicrosoft.com) and then select **Next**.
 
     6.  In the **Enter password** window, enter the password provided by your learning provider for this tenant admin account, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
@@ -800,15 +793,15 @@ email’s origin.
 
 	**Important:** We obviously can't implement this feature in this lab, but this exercise enables to see where this setting can be implemented (which is the same for the next setting as well). 
 
-    -   From these countries: **On**
+    -   From these countries: **On** 
 
-	Again, if you plan to use this setting, you should already know the countries/regions that you want to filter. In the
+	    Again, if you plan to use this setting, you should already know the countries/regions that you want to filter. In the
         blank field that appears below the **From these countries** field, enter
         the first letter of a country/region that you want to filter. This will display
         all countries/regions that start with that letter (as well as any countries/regions that
         contain that letter within the name of the country/region).
 
-	Enter a letter and then select a country/region with the letter in it that you
+	    Enter a letter and then select a country/region with the letter in it that you
         want to filter. Repeat this step for a couple of countries/regions.
 
 6.  Select **Save**.

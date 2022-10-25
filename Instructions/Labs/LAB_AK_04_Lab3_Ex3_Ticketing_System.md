@@ -1,4 +1,4 @@
-# Module 4 - Lab 3 - Exercise 3 - Create a Ticketing System in SharePoint
+# Learning Path 4 - Lab 3 - Exercise 3 - Create a Ticketing System in SharePoint
 
 As Adatum begins its transition to Microsoft 365 as their hosted cloud solution, they want to use this opportunity to reduce the amount of third-party software products they currently use. This will help them achieve their goal of reducing their overall IT expenses. The CTO has asked Holly Dickson, Adatum’s Enterprise Administrator, to design a solution that uses Microsoft 365 services to replace the third-party IT service request system that Adatum currently uses.
 
@@ -25,7 +25,7 @@ Instead, in your role as Holly Dickson, you will perform the following steps in 
 3. You should still have your Edge browser and the SharePoint admin center open from the prior lab in which you were logged in as Holly Dickson. If so, proceed to the next step; otherwise, navigate to the SharePoint admin center just as you did in the prior lab exercise.
 4. In the **SharePoint admin center**, you will begin by creating a new permission level for the IT Services site. In the navigation pane, select **Sites**, and then select **Active sites**.
 5. In the list of active sites, for the **IT Services** site that you created in the prior task, select the site's URL value (**.../sites/ITServices**) that appears under the **URL** column.
-6. A new tab will open in your Edge browser that displays the **IT Services** site. In the upper right-hand corner of the **IT Services** site, select the **gear (Settings)** icon.
+6. A new tab will open in your Edge browser that displays the **IT Services** site. In the upper right-hand corner of the **IT Services** site, select the **gear (Settings)** icon (it may take a minute or so to display).
 7. In the **Settings** pane that appears, select **Site permissions.**
 8. At the bottom of the **Site permissions** pane, select **Advanced permissions settings**, which opens a **Permissions: IT Services** page.
 9. In the ribbon that appears at the top of the screen, the **PERMISSIONS** tab is displayed by default. Under the **Manage** section, select **Permission Levels.**
@@ -55,7 +55,7 @@ Instead, in your role as Holly Dickson, you will perform the following steps in 
     On this **Permissions** \> **Permission Levels** heading line, select the **Permissions** link to return to the **Permissions: IT Services** page.
 14. In the ribbon displayed at the top of the screen, the **PERMISSIONS** tab is displayed by default. In this tab, under the **Grant** section, select **Create Group**.
 15. On the **People and Groups \> Create Group** page, enter the following information:
-      - Name: **Consultants**
+      - Name: **Consultants** (select the X in the dialog box that appears below this field to close it)
       - About Me: **This group is used for allowing consultants to modify work products only**.
       - Who can view the Membership of the Group: **Everyone**
       - Who can edit the membership of the Group: **Group Owner**
@@ -163,7 +163,7 @@ As the IT Consultant in this task, you will perform two primary steps:
 
     **Note:** If a **Sign in** window appears, enter the MOD Administrator’s account **for the IT Consultant’s tenant**. In this case, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is your fellow student's tenant prefix that was assigned to you by your instructor). Select **Next**, and then in the **Enter password** window, enter your fellow student's tenant password and then select **Sign in**.
 21. On the taskbar at the bottom of the screen, select the **Excel** icon. In the **Microsoft SharePoint Foundation** dialog box that displayed the link to the published list in the IT Services site, select **OK** to close the window.
-22. Close Excel. Select **Don't Save** if prompted to save changes to the file.
+22. Close Excel. Select **Don't Save** if prompted to save changes to the file. This should return you to the **IT Services** site, which should be displaying the **Service Desk Request** distribution list. The list should be displaying the data that was imported from the **Service Request System.xlsx** spreadsheet. 
 23. Close your Edge browser and proceed to the next task.
 
 
@@ -175,7 +175,7 @@ In this task you will return to your role as Holly Dickson. You have just been i
 2. Since Holly will be using her PC to perform this task, you will use LON-CL1 in this role-playing exercise as Holly’s PC rather than the IT Consultant's PC as you did in the prior task.
 
     Select the **Microsoft Edge** icon on the taskbar to open your browser, and then enter the following URL in the address bar: **<https://portal.office.com>**.
-3. In the **Pick an account** window, select Holly’s account if it appears; otherwise, select **Use another account** and then enter **holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix assigned to you by your lab hosting provider). In the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
+3. In the **Pick an account** window, select Holly’s account if it appears; otherwise, select **Use another account** and then enter **holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix assigned to you by your lab hosting provider). In the **Enter password** window, enter **User.pw1** and select **Sign in**.
 4. After reviewing the data that was imported into the Service Desk Requests list, you noticed that the **Customer** field and the **Assign to** fields were missing. However, after reviewing the spreadsheet, you realized the missing data wasn’t an upload issue because the **Customer** and **Assign To** columns were missing from the spreadsheet.
 
     While you cannot explain what caused this, you remember making a backup of the original spreadsheet. If these missing columns are in your backup file, you plan to add the two columns from your backup file to the **Service Desk Requests** list that is displayed in the IT Services site.
@@ -195,31 +195,32 @@ In this task you will return to your role as Holly Dickson. You have just been i
     If this option displays **Edit in grid view**, it means you are not in grid view, so proceed to the next step.
 
     If this option displays **Exit grid view**, then you are currently in grid view, which you do not want to be in. In this case, select **Exit grid view**.
-11. At the end of the column heading row, select **+Add column**, and then in the drop-down menu that appears, select **Person or Group**.
-12. In the **Create a column** window that appears, enter **Customer** in the **Name** field.
-13. In the **Type** field, verify it's already set to **Person or Group**.
-14. Verify the **Allow selection of Groups** check box is NOT selected. Do NOT select this check box.
-15. Select **More options**.
-16. Select the **Require that this column contains information** toggle switch to change it to **Yes**.
-17. Select **Save**.
-18. The **Customer** column should appear in the list. All record entries for this column should be highlighted in yellow and **Required info** should appear in this column for each record (this is because you set the **Require that this column contains information** option to **Yes** in the previous step when you created this column).
-19. Earlier, you were instructed to not be in grid view to add the Customer column. However, now that you have added the column, you must switch to grid view to copy and paste in the Column data from the Backupfile.xlsx spreadsheet.
+11. At the end of the column heading row, select **+Add column**, and then in the drop-down menu that appears, select **More** (you want to select **Person or Group**, which does not appear in this initial list of column types). 
+12. In the **Settings > Create Column** window that appears, enter **Customer** in the **Name** field.
+13. In the **Type** field, select **Person or Group**.
+14. Select the **Require that this column contains information** toggle switch to change it to **Yes**.
+15. Verify the **Allow selection of** option is set to **People Only** (if not, select it now).
+16. Select **OK**.
+17. The **Customer** column should now appear in the list. If the screen returns in grid view (**Exit grid view** appears on the menu bar), note how the **Customer** column is blank for each record in the list. If this is the case, then select **Exit grid view** now. <br/>
+
+    When you're not in grid view (**Edit in grid view** should appear on the menu bar), notice how all record entries for the **Customer** column are highlighted in yellow and **Required info** appears in the column for each record. This is because you set the **Require that this column contains information** option to **Yes** in the earlier step when you created this column.
+18. Now that you have added the Customer column, you must be in grid view to copy and paste in the Column data from the Backupfile.xlsx spreadsheet.
 
     On the menu bar, select **Edit in grid view**. In the next few steps, you will copy the Customer data from the **BackupCopy** spreadsheet and paste it into this column in the SharePoint list.
-20. Select the **Excel** spreadsheet icon on the taskbar to display the **BackupFile.xlsx** spreadsheet. Select all the items in the **Customer** column (start in row 2 so that you do not copy the column header), then right-click and select **Copy** from the menu (NOTE: Use the Copy option here instead of **Ctrl+C** to copy the column data; Ctrl+C sometimes results in an error when you attempt to paste in the copied cells in the next step).
+19. Select the **Excel** spreadsheet icon on the taskbar to display the **BackupFile.xlsx** spreadsheet. Select all the items in the **Customer** column (start in row 2 so that you do not copy the column header), then right-click and select **Copy** from the menu (NOTE: Use the Copy option here instead of **Ctrl+C** to copy the column data; Ctrl+C sometimes results in an error when you attempt to paste in the copied cells in the next step).
 
     **Note:** If a window appears showing the progress of the Copy command, do NOT proceed until the pane disappears. This may take a minute or so for the copy process to complete. If a progress window does not appear, then proceed to the next step.
-21. Select the **Edge** browser icon on the taskbar, which should return you to the grid view page for the **Service Desk Requests** list. Select all the empty fields in the **Customer** column and press **Ctrl+V**. All items will automatically appear in the appropriate row for the **Customer** column.
-22. Select the **Exit grid view** option on the menu bar to see how the Customer data appears in normal display view.
-23. Repeat steps **11-22** to add a column for the **Assign To** data and to copy the **Assign to** data from the **BackupFile.xlsx** spreadsheet and paste it into the **Service Desk Requests** list.
-24. After reviewing the changes to the **Service Desk Requests** list, you realize that the data type of the **Description** column only supports a **single line of text**. While this is fine for the existing data, going forward you want your customer support engineers to be able to enter more detailed information. Therefore, you want to modify this column to change the data type to **multiple lines of text**.
+20. Select the **Edge** browser icon on the taskbar, which should return you to the grid view page for the **Service Desk Requests** list. Select all the empty fields in the **Customer** column and press **Ctrl+V**. All items will automatically appear in the appropriate row for the **Customer** column.
+21. Select the **Exit grid view** option on the menu bar to see how the Customer data appears in normal display view.
+22. Repeat steps **11-21** to add a column for the **Assign To** data and to copy the **Assign to** data from the **BackupFile.xlsx** spreadsheet and paste it into the **Service Desk Requests** list.
+23. After reviewing the changes to the **Service Desk Requests** list, you realize that the data type of the **Description** column only supports a **single line of text**. While this is fine for the existing data, going forward you want your customer support engineers to be able to enter more detailed information. Therefore, you want to modify this column to change the data type to **multiple lines of text**.
 
     To make this change, select the **Description** column heading. In the menu that appears, select **Column Settings**, and then in the sub-menu, select **Edit**.
-25. In the **Edit column** window, select the drop-down arrow in the **Type** field and select **Multiple lines of text**.
-26. Select **More options**.
-27. Change the **Require that this column contains information** option to **Yes**.
-28. Select **Save**.
-29. Leave the browser and all existing tabs open on LON-CL1 for the next task.
+24. In the **Edit column** window, select the drop-down arrow in the **Type** field and select **Multiple lines of text**.
+25. Select **More options**.
+26. Change the **Require that this column contains information** option to **Yes**.
+27. Select **Save**.
+28. Leave the browser and all existing tabs open on LON-CL1 for the next task.
 
 ### Task 4 - Create filtered views for targeted viewing
 
@@ -247,7 +248,7 @@ In this task, you will continue in your role as Holly Dickson, Adatum’s Enterp
       - Sort section - First sort by the column: **Assign to** and **Show items in ascending order**
       - Then sort by the column: **Date** and **Show items in ascending order**
       - Filter section - **Show items only when the following is true**
-      - Show the items when column section – select **Issue status** column
+      - Show the items when column – select **Issue status** column
       - Operand field – **Is equal to**
       - Condition field – enter **Active**
 6. Scroll to the bottom of the page and select **OK**.
@@ -265,7 +266,7 @@ In this task, you will continue in your role as Holly Dickson, Adatum’s Enterp
           - **Description** – Position from left: **5**
       - Sort section - First sort by the column: **Assign to** and **Show items in ascending order**
       - Filter section - **Show items only when the following is true**
-      - Show the items when column section – select **Issue status** column
+      - Show the items when column – select **Issue status** column
       - Operand field – **Is equal to**
       - Condition field – enter **Resolved**
 11. Scroll to the bottom of the page and select **OK**.
