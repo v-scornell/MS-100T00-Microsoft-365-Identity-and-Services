@@ -860,35 +860,46 @@ size.
     messaging-related issues from recipients in your environment. For this lab, you will create an email size restriction rule. <br/>
     
     In the menu bar that appears over the list of mail flow rules (there are no rules at this point), select the
-    **plus (+)** sign. In the menu that appears, select **Filter messages by
+    **+ Add a rule** sign. In the menu that appears, select **Filter messages by
     size.**
 
-4.  In the **new rule** window that appears, enter the following information.
+4. In the **New Transport rule** wizard that appears, enter **Email size restriction** in the
+    **Name** field.
 
-    -   Name: **Email size restriction**
+5. Notice the two fields under **Set the rule if** are already populated with **The message** and **Size is greater than or equal to** by default. These are the correct settings for the purpose of this exercise, however if they are not pre-populated please set them accordingly.
 
-    -   Apply this rule if: **The message size is greater than or equal to...**
+6. Underneath the **Set the rule if** conditions, select **Enter text.**
 
-        -   To the right of this drop-down field, select **Enter text**.
+7. In the **specify size (kb)** window that appears, enter the text: **1024** and then select **Save**
 
-        -   In the **specify size (KB)** window that appears, 512 appears by default. Change this value to **1024** and
-            then select **OK**.
+8. In the drop-down menu under **Do the following**, select **Block the message** and in the drop down menu that appears on the right, select
+    **reject the message and include an explanation.**
 
-    -   Do the following: Select in this field, which displays a drop-down menu
-        of options. Hover your mouse over **Block the message...**, and then in
-        the drop-down menu that appears, select **Reject the message and include
-        an explanation**.
+9. in the **specify rejection reason** window that appears, enter the following text: **Your message exceeds the size limit. Please adjust the message size
+    or compress the email content and send it as a zipped file.**
 
-        -   In the **specify rejection reason** window, enter the following
-            text: **Your message exceeds the size limit. Please adjust the message size or compress the email content and send it as a zipped file.**
+10. Select **Save**
 
-        -   Select **OK.**
+11. Leave the **Except if** condition as the default setting, and then select **Next.**
 
-    -   Under **Choose a mode for this rule** setting, select **Enforce.**
+12. In the **Set rule settings** window that appears select the following settings:
 
-5.  Select **Save**. This may take a minute or so to create the new rule.
+    - Priority: **3**
+    - Rule Mode: **Enforce**
 
-6.  Leave your Edge browser open as well as all the tabs.
+13. Leave all other settings as default and then select **Next**.
+
+14. in the **Review and finish** page, Verify the rule conditions and settings are correct. If corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**.
+
+    It may take up to a minute to create the rule. Once **Transport rule created successfully** is displayed, select **Done**.
+
+15. You will now be brought back to the **Rules** page. Notice the rule **Email size restriction** shows a status of **Disabled**.
+
+    Select the word **Disabled** which will open up a new window for the **Email size restriction** rule settings. Under **Enable or disable rule** select the slider button so that it shows **Enabled** and then close the window by selecting **X** in the upper right hand corner.
+
+    **Note:** After enabling the rule, it may take up to a minute for the rule to refresh and display as enabled.
+
+16.  Leave your Edge browser open as well as all the tabs.
 
 ### Task 11 – Validate Accepted Domains
 
