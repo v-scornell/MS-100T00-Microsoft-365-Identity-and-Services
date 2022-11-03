@@ -18,7 +18,7 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 5. Holly's **Inbox** will be displayed in Outlook. If a **Welcome** window appears, select the **X** in the upper-right corner of the window to close it. <br/>
 
-	In Holly’s mailbox, at the top of the navigation pane, select the **New message** button to create a new email.
+	In Holly’s mailbox, at the top of the navigation pane, select the **New Mail** button to create a new email.
 
 6. In this email, you will send the mail to an email address in which the domain (alt.none) is an invalid domain. In the email pane that appears, enter **user@alt.none** in the **To** field. In the drop-down menu that appears, select **Use this address: user@alt.none**. 
 
@@ -48,7 +48,7 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 15. Select the **Clear** option that appears to the right of the **Analyze headers** button; this will reset the Message Header Analyzer window. 
 
-16. Select the **Mail - Holly Dickson - Outlook** tab in your browser. In Holly's mailbox, select **New message** to create a new email.
+16. Select the **Mail - Holly Dickson - Outlook** tab in your browser. In Holly's mailbox, select **New mail** to create a new email.
 
 17. In this email, you will send the mail to a non-existent mailbox in a valid domain (outlook.com). In the **To** field, enter an email address consisting of a random series of numbers followed by your name (for example, **nnnnnnnnYourName@outlook.com**). In the drop-down menu that appears, select **Use this address: nnnnnnnnYourName@outlook.com**.
 
