@@ -860,42 +860,36 @@ size.
     messaging-related issues from recipients in your environment. For this lab, you will create an email size restriction rule. <br/>
     
     In the menu bar that appears over the list of mail flow rules (there are no rules at this point), select the
-    **+ Add a rule** sign. In the menu that appears, select **Filter messages by
-    size.**
+    **+ Add a rule** sign. In the menu that appears, select **Filter messages by size.**
 
-4. In the **New Transport rule** wizard that appears, enter **Email size restriction** in the
-    **Name** field.
+4. In the **New Transport rule** wizard that appears, enter **Email size restriction** in the **Name** field.
 
-5. Notice the two fields under **Set the rule if** are already populated with **The message** and **Size is greater than or equal to** by default. These are the correct settings for the purpose of this exercise, however if they are not pre-populated please set them accordingly.
+5. Under **Apply this rule if** are two fields. The first field should already be populated with **The message**, and the second field should be populated with **size is greater than or equal to**. These default settings are the correct settings for the purpose of this exercise. If the fields are not pre-populated with these values, then enter them now. 
 
-6. Underneath the **Set the rule if** conditions, select **Enter text.**
+6. Underneath the **Apply this rule if** conditions is a line of text that says "The message size is greater than or equal to **Enter text** ". Select **Enter text.**
 
-7. In the **specify size (kb)** window that appears, enter the text: **1024** and then select **Save**
+7. In the **specify size (KB)** window that appears, enter **1024** in the field and then select **Save**.
 
-8. In the drop-down menu under **Do the following**, select **Block the message** and in the drop down menu that appears on the right, select
-    **reject the message and include an explanation.**
+8. Under **Do the following** are two fields. Select the first field. In the menu that appears, select **Block the message**. Select the second field. In the drop-down menu that appears, select **reject the message and include an explanation.**
 
-9. in the **specify rejection reason** window that appears, enter the following text: **Your message exceeds the size limit. Please adjust the message size
-    or compress the email content and send it as a zipped file.**
+9. in the **specify rejection reason** window that appears, enter the following text: **Your message exceeds the size limit. Please adjust the message size or compress the email content and send it as a zipped file.**
 
-10. Select **Save**
+10. Select **Save**.
 
-11. Leave the **Except if** condition as the default setting, and then select **Next.**
+11. There are no exceptions to this rule, so do not update the **Except if** condition. Select **Next.**
 
 12. In the **Set rule settings** window that appears select the following settings:
 
-    - Priority: **3**
     - Rule Mode: **Enforce**
+    - Severity: **Medium**
 
-13. Leave all other settings as default and then select **Next**.
+13. Do not change the default values for any of the other settings. Select **Next**.
 
-14. in the **Review and finish** page, Verify the rule conditions and settings are correct. If corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**.
+14. On the **Review and finish** page, Verify the rule conditions and settings are correct. If corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**. 
 
-    It may take up to a minute to create the rule. Once **Transport rule created successfully** is displayed, select **Done**.
+15. You will now be brought back to the **Home** page. In the navigation pane on the left, under the **Mail flow** group, select **Rules**. It may take up to a minute for the new rule to appear. You can select the **Refresh** option on the menu bar as often as needed until the new rule appears. Once the **Email size restriction** rule appears, note its status is set to **Disabled**.
 
-15. You will now be brought back to the **Rules** page. Notice the rule **Email size restriction** shows a status of **Disabled**.
-
-    Select the word **Disabled** which will open up a new window for the **Email size restriction** rule settings. Under **Enable or disable rule** select the slider button so that it shows **Enabled** and then close the window by selecting **X** in the upper right hand corner.
+    Select the word **Disabled** for this rule, which will open up a new window for the **Email size restriction** rule settings. Under **Enable or disable rule** select the slider button so that it shows **Enabled** and then close the window by selecting **X** in the upper right hand corner.
 
     **Note:** After enabling the rule, it may take up to a minute for the rule to refresh and display as enabled.
 
