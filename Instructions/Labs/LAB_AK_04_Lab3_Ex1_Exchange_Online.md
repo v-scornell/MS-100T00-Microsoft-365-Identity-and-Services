@@ -885,15 +885,17 @@ size.
 
 13. Do not change the default values for any of the other settings. Select **Next**.
 
-14. On the **Review and finish** page, Verify the rule conditions and settings are correct. If corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**. 
+14. On the **Review and finish** page, Verify the rule conditions and settings are correct. If corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**. <br/>
 
-15. You will now be brought back to the **Home** page. In the navigation pane on the left, under the **Mail flow** group, select **Rules**. It may take up to a minute for the new rule to appear. You can select the **Refresh** option on the menu bar as often as needed until the new rule appears. Once the **Email size restriction** rule appears, note its status is set to **Disabled**.
+	Once the rule is created, a message indicating **Transport rule created successfully** will appear. Select **Done**.
 
-    Select the word **Disabled** for this rule, which will open up a new window for the **Email size restriction** rule settings. Under **Enable or disable rule** select the slider button so that it shows **Enabled** and then close the window by selecting **X** in the upper right hand corner.
+15. You will now be brought back to the **Rules** page. It may take up to a minute for the new rule to appear. You can select the **Refresh** option on the menu bar as often as needed until the new rule appears. Once the **Email size restriction** rule appears, note its status is set to **Disabled**.
+
+16. Select the word **Disabled** for this rule, which will open up a new window for the **Email size restriction** rule settings. Select the toggle switch under **Enable or disable rule** to change the value to **Enabled**, then close the window by selecting the **X** in the upper right hand corner of the window.
 
     **Note:** After enabling the rule, it may take up to a minute for the rule to refresh and display as enabled.
 
-16.  Leave your Edge browser open as well as all the tabs.
+17.  Leave your Edge browser open as well as all the tabs.
 
 ### Task 11 – Validate Accepted Domains
 
