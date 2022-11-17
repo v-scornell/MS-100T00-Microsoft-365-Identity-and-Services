@@ -8,7 +8,7 @@ Pass-through Authentication allows users to sign-in to cloud-based services usin
 
 ‎Adatum's CTO wants to provide the company's users with a better logon experience (since PTA requires one less password to remember), as well as reduce Adatum’s IT helpdesk costs because with PTA their users are less likely to forget how to sign in. While this can also be achieved by employing Password Hash Synchronization as well as Active Directory Federation Services, Adatum has chosen to test PTA in its pilot project.
 
-1.  At the end of the previous lab exercise, you were on LON-CL1, where you took on the role of Laura Atkins and installed Microsoft 365 Apps for enterprise. For this lab exercise, you must switch back to LON-DC1, where you will resume your pilot project in the role of Holly Dickson. <br/>
+1.  At the end of the previous lab exercise, you were on LON-CL1, where you took on the role of Laura Atkins and installed Microsoft 365 Apps for enterprise. For this lab exercise, you must switch back to LON-DC1. <br/>
 
     Switch to **LON-DC1**, where you should still be logged into the machine as the **Administrator** with a password of **Pa55w.rd**; if not, then do so now.
 
