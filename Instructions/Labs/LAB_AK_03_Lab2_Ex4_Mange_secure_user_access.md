@@ -10,7 +10,7 @@ Pass-through Authentication allows users to sign-in to cloud-based services usin
 
 1.  At the end of the previous lab exercise, you were on LON-CL1, where you took on the role of Laura Atkins and installed Microsoft 365 Apps for enterprise. For this lab exercise, you must switch back to LON-DC1, where you will resume your pilot project in the role of Holly Dickson. <br/>
 
-    Switch to **LON-DC1**, where you should still be logged in as the **Administrator** with a password of **Pa55w.rd**; if not, then do so now.
+    Switch to **LON-DC1**, where you should still be logged into the machine as the **Administrator** with a password of **Pa55w.rd**; if not, then do so now.
 
 2. On LON-DC1, select the **Start** button on the taskbar, and then in the **Start** menu, select the **All Apps** icon to display the list of all installed applications. Select the **Azure AD Connect** program group and then select **Azure AD Connect**. This will initiate the **Microsoft Azure Active Directory Connect** wizard.
 
