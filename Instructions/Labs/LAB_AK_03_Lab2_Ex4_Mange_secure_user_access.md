@@ -8,43 +8,47 @@ Pass-through Authentication allows users to sign-in to cloud-based services usin
 
 ‎Adatum's CTO wants to provide the company's users with a better logon experience (since PTA requires one less password to remember), as well as reduce Adatum’s IT helpdesk costs because with PTA their users are less likely to forget how to sign in. While this can also be achieved by employing Password Hash Synchronization as well as Active Directory Federation Services, Adatum has chosen to test PTA in its pilot project.
 
-1. On LON-DC1, select the **Start** button on the taskbar, and then in the **Start** menu, select the **All Apps** icon to display the list of all installed applications. Select the **Azure AD Connect** program group and then select **Azure AD Connect**. This will initiate the **Microsoft Azure Active Directory Connect** wizard.
+1.  At the end of the previous lab exercise, you were on LON-CL1, where you took on the role of Laura Atkins and installed Microsoft 365 Apps for enterprise. For this lab exercise, you must switch back to LON-DC1, where you will resume your pilot project in the role of Holly Dickson. <br/>
 
-2. In the **Welcome to Azure AD Connect** window, you will receive a page indicating the synchronization service scheduler is suspended until this setup wizard is closed. This is because if you start the Azure AD Connect installation wizard (which you did in an earlier task), then the scheduler is temporarily suspended. Select **Configure.**
+    Switch to **LON-DC1**, where you should still be logged in as the **Administrator** with a password of **Pa55w.rd**; if not, then do so now.
 
-3. On the **Additional tasks** page, select the **Change user Sign-in** task and then select **Next**. 
+2. On LON-DC1, select the **Start** button on the taskbar, and then in the **Start** menu, select the **All Apps** icon to display the list of all installed applications. Select the **Azure AD Connect** program group and then select **Azure AD Connect**. This will initiate the **Microsoft Azure Active Directory Connect** wizard.
 
-4. On the **Connect to Azure AD** page, sign into Azure AD. The **USERNAME** field is already filled with **Holly@xxxUPNxxx.xxxCustomDomainxxx.xxx.** Enter **User.pw1** in the **PASSWORD** field, and then select **Next**.
+3. In the **Welcome to Azure AD Connect** window, you will receive a page indicating the synchronization service scheduler is suspended until this setup wizard is closed. This is because if you start the Azure AD Connect installation wizard (which you did in an earlier task), then the scheduler is temporarily suspended. Select **Configure.**
 
-5. On the **User sign-in** page, under **Select the Sign On method**, select **Pass-through authentication** and then select **Next**. 
+4. On the **Additional tasks** page, select the **Change user Sign-in** task and then select **Next**. 
 
-6. On the **Enable single sign-on** page, select **Enter credentials**. 
+5. On the **Connect to Azure AD** page, sign into Azure AD. The **USERNAME** field is already filled with **Holly@xxxUPNxxx.xxxCustomDomainxxx.xxx.** Enter **User.pw1** in the **PASSWORD** field, and then select **Next**.
 
-7. In the **Forest Credentials** dialog box, enter **adatum\administrator** as the **User name** and **Pa55w.rd** as the **Password**, and then select **OK**. 
+6. On the **User sign-in** page, under **Select the Sign On method**, select **Pass-through authentication** and then select **Next**. 
 
-8. When the credentials are verified, a check mark will appear to the right of the **Enter credentials** button. Select **Next**. 
+7. On the **Enable single sign-on** page, select **Enter credentials**. 
 
-9. On the **Ready to configure** page, select **Configure**. 
+8. In the **Forest Credentials** dialog box, enter **adatum\administrator** as the **User name** and **Pa55w.rd** as the **Password**, and then select **OK**. 
 
-10. On the **Configuration complete** page, select **Exit**. Pass-Through Authentication has now been enabled. 
+9. When the credentials are verified, a check mark will appear to the right of the **Enter credentials** button. Select **Next**. 
 
-11. To verify that Pass-Through Authentication is successfully enabled, select a new tab in your Edge browser and enter the following URL in the address bar: **https://aad.portal.azure.com**
+10. On the **Ready to configure** page, select **Configure**. 
 
-12. This opens the **Azure Active Directory admin center**. In the navigation pane, select **Azure Active Directory**. 
+11. On the **Configuration complete** page, select **Exit**. Pass-Through Authentication has now been enabled. 
 
-13. On the **Azure Active Directory admin center** page, in the left-hand navigation pane, select **All services**.
+12. To verify that Pass-Through Authentication is successfully enabled, select a new tab in your Edge browser and enter the following URL in the address bar: **https://aad.portal.azure.com**
 
-14. On the **All services** page, three groups are displayed - General, Identity, and Security. Under the **Identity** group, select **Azure Active Directory**. 
+13. This opens the **Azure Active Directory admin center**. In the navigation pane, select **Azure Active Directory**. 
 
-15. On the **Adatum Corporation | Overview** page, in the middle navigation pane under the **Manage** section, select **Azure AD Connect**.
+14. On the **Azure Active Directory admin center** page, in the left-hand navigation pane, select **All services**.
 
-16. On the **Adatum Corporation | Azure AD Connect** page, in the detail pane on the right, under the **USER SIGN IN** section, verify that the status of **Pass-through authentication** is **Enabled**, and then select **Pass-through authentication**. 
+15. On the **All services** page, three groups are displayed - General, Identity, and Security. Under the **Identity** group, select **Azure Active Directory**. 
 
-17. On the **Pass-through authentication** page, review the list of servers on which your pass-through authentication agents are installed. This should display **LON-DC1.Adatum.com**.
+16. On the **Adatum Corporation | Overview** page, in the middle navigation pane under the **Manage** section, select **Azure AD Connect**.
 
-18. Select the **X** in the upper-right corner of the **Pass-through authentication** page to close it, and then do the same to close the **Adatum Corporation | Azure AD Connect** page. You should now be back to the **All services** page in the **Azure Active Directory admin center**.
+17. On the **Adatum Corporation | Azure AD Connect** page, in the detail pane on the right, under the **USER SIGN IN** section, verify that the status of **Pass-through authentication** is **Enabled**, and then select **Pass-through authentication**. 
 
-19. Leave the **Azure Active Directory admin center** open as you will use it in the next task.
+18. On the **Pass-through authentication** page, review the list of servers on which your pass-through authentication agents are installed. This should display **LON-DC1.Adatum.com**.
+
+19. Select the **X** in the upper-right corner of the **Pass-through authentication** page to close it, and then do the same to close the **Adatum Corporation | Azure AD Connect** page. You should now be back to the **All services** page in the **Azure Active Directory admin center**.
+
+20. Leave the **Azure Active Directory admin center** open as you will use it in the next task.
    
 
 ### Task 2: Deploy Azure AD Smart Lockout
