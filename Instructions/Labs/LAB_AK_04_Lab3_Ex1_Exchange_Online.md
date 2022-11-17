@@ -18,29 +18,21 @@ Exchange Administrator role, Holly can perform all Exchange-related tasks.
 As you continue in your role as Holly Dickson, you are ready to review the steps
 involved in creating and managing mail flow recipients.
 
-1.  At the end of the previous lab, you were on LON-CL1, where you took on the
-    role of Laura Atkins and installed Microsoft 365 Apps for enterprise. For
-    this lab exercise, you must switch back to LON-DC1, where you will resume
-    your pilot project in the role of Holly Dickson. <br/>
-
-    Switch to **LON-DC1**, where you should still be logged in as the
-    **Administrator** with a password of **Pa55w.rd**; if not, then do so now.
- 
-2.  You should still have an Edge browser session and the Microsoft 365 admin
+1.  You should still have an Edge browser session and the Microsoft 365 admin
     center open from the prior lab. If so, proceed to the next step; otherwise,
     open Microsoft Edge, navigate to **https://portal.office.com/**, log in as
     **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
     provider) and **User.pw1**, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen, and then in the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab.
 
-3.  In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the navigation pane, then scroll down to **Admin centers**
+2.  In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the navigation pane, then scroll down to **Admin centers**
     and select **Exchange**. This will open the **Exchange admin center** in a
     new tab. This is the Exchange admin center for Microsoft Exchange Online. <br/>
 
 	**Note:** If a **Learn about the new menu** window appears, select the **X** to close it.
 
-4.  In the **Exchange admin center**, select **Recipients** in the navigation pane to expand the Recipients group.
+3.  In the **Exchange admin center**, select **Recipients** in the navigation pane to expand the Recipients group.
 
-5.  In the **Recipients** group, select **Mailboxes**. The mailboxes that appear
+4.  In the **Recipients** group, select **Mailboxes**. The mailboxes that appear
     in this view include all the user accounts that were created in your
     tenant by the lab hosting provider, along with the mailboxes for Holly
     Dickson and Laura Atkins that were created when you added their Microsoft
@@ -51,9 +43,9 @@ involved in creating and managing mail flow recipients.
     default, the window displays the **General** tab (the tabs appear at the top
     under Joni’s name).
 
-6.  On the tab, select the **Others** tab, and then select **Custom attributes**.
+5.  On the tab, select the **Others** tab, and then select **Custom attributes**.
 
-7.  This opens the **Custom attributes** window for Joni. You can enter up to 15
+6.  This opens the **Custom attributes** window for Joni. You can enter up to 15
     attributes. You will not be entering any attributes in this lab exercise,
     but it’s important that you know this feature is available. Select the **back arrow** in the top left corner of the pane to return to the previous page, which is Joni Sherman's properties page.  <br/>
 
@@ -61,7 +53,7 @@ involved in creating and managing mail flow recipients.
     mailbox identification, such as a cost center number for the mailbox or
     other information such as an HR personnel number.
 
-8.  This returns you to the **Others** tab in Joni's User mailbox pane. Select the **General** tab, which
+7.  This returns you to the **Others** tab in Joni's User mailbox pane. Select the **General** tab, which
     enables you to maintain additional information for this mailbox. While you
     won’t enter any of this optional information for this lab, take a few
     minutes now and select the following links to see what additional
@@ -74,28 +66,28 @@ involved in creating and managing mail flow recipients.
     -   **Manage Organization information.** This window enables you to add
         company-specific information such as Title, Department, and Company.
 
-9.  Select the **Delegation** tab.  <br/>
+8.  Select the **Delegation** tab.  <br/>
 
 	The **Manage mailbox delegation for Joni Sherman** window enables the admin to
     assign a user to this mailbox’s **Send as** and **Send on behalf**
     permissions, as well as **Read and manage (Full Access**.  
 
-10. For this lab, you will assign **Read and manage (Full Access)** permission to Holly Dickson. This will enable Holly to open Joni's mailbox and perform all mailbox functions, just as if she were Joni. <br/>
+9. For this lab, you will assign **Read and manage (Full Access)** permission to Holly Dickson. This will enable Holly to open Joni's mailbox and perform all mailbox functions, just as if she were Joni. <br/>
 
 	In the **Manage mailbox delegation for Joni Sherman** window, select the **Edit** button that appears below the **Read and manage (Full Access)** section.
 
-11. In the **Manage Mailbox delegation** window, select **+Add members**.
+10. In the **Manage Mailbox delegation** window, select **+Add members**.
 
-12. In the **Add read and manage permissions** pane, select **Holly Dickson**
+11. In the **Add read and manage permissions** pane, select **Holly Dickson**
     from the list of user accounts, and then select the **Save** button. Then
     select **Confirm.** 
 
-13. Once you receive the message indicating **Mailbox permissions were added to these mailboxes**, select the **X** in the upper right corner of this pane to close it. <br/> 
+12. Once you receive the message indicating **Mailbox permissions were added to these mailboxes**, select the **X** in the upper right corner of this pane to close it. <br/> 
 
     ‎**Note:** After about an hour Holly Dickson will have access Joni’s mailbox
     without needing a password.
 
-14. Leave your browser and all the tabs open for the next task.
+13. Leave your browser and all the tabs open for the next task.
 
 ### Task 2 – Manage Groups
 
