@@ -240,7 +240,7 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 	- Dawn Williamson
 
-17. Once you have completed the validation steps, minimize your PowerShell window (do not close it) and proceed to the next Lab. 
+17. Once you have completed the validation steps, close your PowerShell window. Congratulations! You have just completed the final lab in this course.
  
 # End of Lab 4
  
