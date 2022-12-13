@@ -45,7 +45,7 @@ PowerShell also enables you to display all the users assigned to a specific role
 
 1. On LON-DC1, select the Windows PowerShell icon on the taskbar that you left open from the previous lab. If you closed the PowerShell window, then open an elevated instance of it using the same instruction as before. 
 
-2. Your PowerShell session should still be connected to the Azure Active Directory PowerShell for Graph module (AzureAD) from the prior lab. However, if you previously closed PowerShell and just repopened it, then connect to the AzureAD module using the steps from the prior lab exercise. 
+2. Your PowerShell session should still be connected to the Azure Active Directory PowerShell for Graph module (AzureAD) from the prior lab. However, if you previously closed PowerShell and just reopened it, then connect to the AzureAD module using the steps from the prior lab exercise. 
 
 3. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press Enter:   <br/>
 
