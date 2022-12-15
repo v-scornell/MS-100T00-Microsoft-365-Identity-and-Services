@@ -82,7 +82,7 @@ Holly Dickson, Adatum's new Enterprise Administrator, wants to prepare herself f
 
 30. Under the **Time range** section, select the slider bar below **1 day** (don't select the **1 day** heading; you must select on the slider bar itself). Note how the slider circle moved under **1 day**.
 
-31. The drop-down arrow to the right of **Detailed search options** should be selected by default. This displays options such as Delivery status, Messatge ID, Direction, and others. If this information isn't displayed under **Detailed search options**, then select the drop-down arrow to expand this section.  <br/>
+31. The drop-down arrow to the right of **Detailed search options** should be selected by default. This displays options such as Delivery status, Message ID, Direction, and others. If this information isn't displayed under **Detailed search options**, then select the drop-down arrow to expand this section.  <br/>
 
 	Holly wants to customize the trace to look for failed messages. Select the **Delivery status** field, and in the drop-down menu that appears, select **Failed**.
 
