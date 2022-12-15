@@ -59,7 +59,7 @@ Therefore, you must use one of Adatum's on-premises user accounts that has been 
 
 13. Select the **Microsoft Edge** icon on the taskbar.
 
-14. In **Microsoft Edge**, maximize your browser if necessary. If you receive a **Welcome to Microsoft Edge** diaglog box, select the **Start without your data** button on the first screen, and then on the second page, unselect (clear) the **Make your Microsoft experience more useful to you** check box and select the **Confirm and start browsing** button.  <br/>
+14. In **Microsoft Edge**, maximize your browser if necessary. If you receive a **Welcome to Microsoft Edge** dialog box, select the **Start without your data** button on the first screen, and then on the second page, unselect (clear) the **Make your Microsoft experience more useful to you** check box and select the **Confirm and start browsing** button.  <br/>
 
 	On the Edge browser, go to the **Microsoft Office Home** page by entering the following URL in the address bar: **https://portal.office.com/**
 
