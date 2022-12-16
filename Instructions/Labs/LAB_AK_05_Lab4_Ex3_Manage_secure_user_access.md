@@ -132,6 +132,8 @@ The CTO is anxious to implement Smart Lockout because it will lock out the attac
 	**Note:** You will be prohibited from logging in as Laura until after the **90 second lockout duration** that you set earlier. 
 
 22. Once you've been locked out, wait 90 seconds and then verify that you can sign back in as **laura@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix assigned to you by your lab hosting provider) and the password **User.pw1**. If your log in is successful, you should return to the Azure Active Directory admin center.
+
+Congratulations! You have just completed the final lab in this course.
  
 
 # End of Lab 4
