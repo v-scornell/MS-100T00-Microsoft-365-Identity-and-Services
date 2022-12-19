@@ -88,7 +88,7 @@ In this task you will download and use the IdFix Directory Synchronization Error
 	
 3. On the **Microsoft - IdFix** page, select **Step 2: Install IdFix** in the navigation pane on the left. 
 
-4. On the **Step 2: Install IdFix**, the instructions direct you to select **setup.exe** to install the IdFix application on your machine. Select **setup.exe** to download the file to LON-DC1. 
+4. On the **Step 2: Install IdFix** page, the instructions direct you to select **setup.exe** to install the IdFix application on your machine. Select **setup.exe** to download the file to LON-DC1. 
 
 5. Once the **setup.exe** file is downloaded, it will appear in the notification bar at the top of the screen. Select **Open file**. 
 
