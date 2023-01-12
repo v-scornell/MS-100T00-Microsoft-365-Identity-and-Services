@@ -17,7 +17,7 @@ When you initially create these screens, you will just create their forms with t
 
 In your role as Holly Dickson, you will begin the process of creating a canvas app from scratch by building the app’s Browse screen.
 
-1. Switch to LON-DC1, where you should still be logged in as **ADATUM\Administrator** and password **Pa55w.rd**; if not, then do so now.
+1. Switch to **LON-DC1**, where you should still be logged in as **ADATUM\Administrator** and password **Pa55w.rd**; if not, then do so now.
 
 2. In your Microsoft Edge browser, open a new tab and enter the following URL in the address bar: **https://make.powerapps.com**
 
@@ -31,7 +31,7 @@ In your role as Holly Dickson, you will begin the process of creating a canvas a
 ‎  
 ‎**Screen1** (which appears in the right-hand pane) is the only screen in the Tree view pane since it is the name of the blank screen that appears on the canvas. By default, the font size on the screen is so small that it's difficult to read. Use the slider that appears at the bottom of the screen to increase the font size. While the text on the screen says **Add an item from the insert pane or connect to data**, do not select either of these options at this time. You will eventually configure the properties of this screen from the **Insert** pane, but for now, let’s begin by renaming this app screen.   
 ‎  
-‎In the **Tree view** pane on the left-side of the screen, select the **ellipses** icon that appears to the right of **Screen1**. In the menu that appears, select **Rename**, enter **BrowseScreen1** as the new screen name and then hit Enter (this will keep the screen name consistent with the naming convention that is used when Power Apps automatically creates screens for an app).
+‎In the **Tree view** pane on the left-side of the screen, select the **ellipses** icon that appears to the right of **Screen1**. In the menu that appears, select **Rename**, enter **BrowseScreen1** as the new screen name and then hit **Enter** (this will keep the screen name consistent with the naming convention that is used when Power Apps automatically creates screens for an app).
 
 7. Now you will access the **Insert** pane to configure screen properties. On the menu bar at the top of the Power Apps Studio screen, select **+Insert**. In the drop-down menu that appears, select **Vertical gallery**.
 
@@ -107,7 +107,7 @@ Holly is now ready to create screen #2 for her app, which is the Detail screen. 
 ‎  
 ‎In the **Tree View** pane, ensure that the **Screens** tab is selected and then under the **Search** field select **+New Screen**. In the menu of available screen types that appears, select **Blank**. This opens a new blank screen on the canvas pane that is titled **Screen2**.
 
-2. In the **Tree view** pane under the **Screens** tab, select the **ellipses** next to **Screen2**, select the **Rename** option from the menu that appears, enter **DetailScreen1** in the name field, and then press Enter.
+2. In the **Tree view** pane under the **Screens** tab, select the **ellipses** next to **Screen2**, select the **Rename** option from the menu that appears, enter **DetailScreen1** in the name field, and then press **Enter**.
 
 3. Verify that **DetailScreen1** is selected in the **Tree view** pane (if not, select it now). On the menu bar at ther top of the page, select **+Insert**. In the menu that appears, select **Input** to expand the Input group and then select **Display form**. The Detail form will display the fields for an individual record, but it will not allow you to edit the record (Note – in a later task, you will create the Edit screen, and for that screen, you will select Edit as the form type rather than Display).  
 ‎  
@@ -255,7 +255,7 @@ Holly is now ready to create screen #3 for her app, which is the Edit screen. Th
 ‎  
 ‎In the **Tree View** pane, ensure that the **Screens** tab is selected. Then under the **Search** field select **+New Screen**. In the menu of available screen types that appears, select **Blank**. This opens a new blank screen on the canvas pane that is titled **Screen1**.
 
-2. On the **Tree view** pane, select the **ellipses** next to **Screen1**. In the menu that appears, select **Rename**.  Rename **Screen1** to **EditScreen1** and then press Enter. <br/>
+2. On the **Tree view** pane, select the **ellipses** next to **Screen1**. In the menu that appears, select **Rename**.  Rename **Screen1** to **EditScreen1** and then press **Enter**. <br/>
 
 	**Note:** If the menu doesn't appear when you select the **ellipses** next to **ScreenX**, it's because Screen1 is at the bottom of your window and there's no room to display the frop-down menu. If this occurs, select **BrowseScreen1** and **DetailScreen1** to contract the elements displayed under each. This will provide you with room to display the menu for Screen1. Now select the **ellipses** next to **Screen1** to display the menu with the **Rename** option.
 
@@ -383,7 +383,7 @@ The Edit screen that you created in the prior task provides the form needed to e
 
 	![image](https://user-images.githubusercontent.com/12913870/196812058-cd0a4068-5825-4304-9a69-32a23832c2a5.png)
 
-14. In the function box, enter **Back()** and then press Enter. <br/>
+14. In the function box, enter **Back()** and then press **Enter**. <br/>
 
 	![image](https://user-images.githubusercontent.com/12913870/196812264-3b087699-b1b9-4ebc-b1d9-10773f9f21c6.png)
 
@@ -491,7 +491,7 @@ Now that Holly has created the ability to add a new record into the SharePoint l
 ‎  
 ‎In the **Function property** **bar**, the field on the left side of the function currently displays **OnSelect.** While this value is left over from the prior task, it’s also the trigger action that you want to associate with this **Edit** icon. If **OnSelect** is not displayed in this field, select the drop-down arrow and select it from the menu. 
 
-6. In the function box, enter **EditForm(Form1); Navigate(EditScreen1)** and then press Enter.   
+6. In the function box, enter **EditForm(Form1); Navigate(EditScreen1)** and then press **Enter**.   
 ‎  
 ‎This function actually encapsulates two separate actions: 
 
@@ -511,7 +511,7 @@ Now that Holly has created the ability to add a new record into the SharePoint l
 ‎  
 ‎In the **Function property** **bar**, the field on the left side of the function currently displays **OnSelect.** While this value is left over from the prior task, it’s also the trigger action that you want to associate with this **Edit** icon. If **OnSelect** is not displayed in this field, select the drop-down arrow and select it from the menu. 
 
-11. In the function box, enter **Remove('Service Desk Requests', Gallery1.Selected); If(IsEmpty(Errors('Service Desk Requests', Gallery1.Selected)), Back() )** and then press Enter (copy and paste this function if your VM environment provides a copy and paste feature; this will ensure that you do not enter a typo).   
+11. In the function box, enter **Remove('Service Desk Requests', Gallery1.Selected); If(IsEmpty(Errors('Service Desk Requests', Gallery1.Selected)), Back() )** and then press **Enter** (copy and paste this function if your VM environment provides a copy and paste feature; this will ensure that you do not enter a typo).   
 ‎  
 ‎This function actually encapsulates two separate actions: 
 
@@ -584,7 +584,7 @@ With the three screens for her app now in place, Holly wants to add one more con
 ‎  
 ‎Below the **+Insert** button in the ribbon is the **Function property** **bar**. The field on the left side of the function currently displays **OnSelect.** While this value is left over from the prior task, it’s also the trigger action that you want to associate with this **Reload** icon. If **OnSelect** is not displayed in this field, select the drop-down arrow and select it from the menu. 
 
-5. In the function box, enter **Refresh('Service Desk Requests')** and then press Enter. 
+5. In the function box, enter **Refresh('Service Desk Requests')** and then press **Enter**. 
 
 	Now that the **Reload** icon has been configured, you decide that you want to make some cosmetic changes to it. First, you decide that you want to change the location of the icon from the top left corner of **BrowseScreen1** to the left of the **Add** icon. To do this, select the border of the **Reload** icon (so that an image of crossed arrows appears) and drag it across to so that it’s to the left of the **Add** icon.
 
