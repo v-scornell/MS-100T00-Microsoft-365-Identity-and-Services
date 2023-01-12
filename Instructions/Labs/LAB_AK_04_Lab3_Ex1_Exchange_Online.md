@@ -628,7 +628,7 @@ You will perform this task in LON-CL1.
         administrator** in the drop-down menu.
 
     2.  Maximize your PowerShell window. In Windows PowerShell, at the command
-        prompt, type the following command and press Enter:
+        prompt, type the following command and press **Enter**:
 
         	Install-Module -name Exchangeonlinemanagement
 
@@ -636,7 +636,7 @@ You will perform this task in LON-CL1.
     an untrusted repository (PSGallery), enter **A** to select **[A] Yes to
     All.**
 
-    4. At the command prompt, type the following command and press Enter:
+    4. At the command prompt, type the following command and press **Enter**:
 
    		Connect-exchangeonline
 
@@ -647,7 +647,7 @@ You will perform this task in LON-CL1.
     6.  In the **Enter password** window, enter the password provided by your learning provider for this tenant admin account, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
 
-    7.  At the command prompt, type the following command and press Enter (**Note:**
+    7.  At the command prompt, type the following command and press **Enter** (**Note:**
     This command may fail the first time. If it fails, re-run this step until it
     returns a successful result (the command prompt appears with no errors);
     testing shows that it sometimes takes two attempts):
