@@ -151,7 +151,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 	**Note:** The IT admins group does not have a group email address because it's a Security group. Two additional group types are Mail-enabled Security groups and Distribution groups. Neither of these group types were used in this lab because it can take up to an hour for these two types of groups to appear in the Groups list; whereas Microsoft 365 groups and Security groups usually take just a matter of minutes to appear. 
 
-24. You’re now ready to add members to the IT Admin security group. In the list of **Active teams and groups**, select the **Security** tab, and then select the **IT Admins** group (select the name and not the check box that appears to the left of the name). 
+24. You’re now ready to add members to the IT Admins security group. In the **Security** tab, select the **IT Admins** group (select the name and not the check box that appears to the left of the name). 
 
 25. In the **IT Admins** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
 
