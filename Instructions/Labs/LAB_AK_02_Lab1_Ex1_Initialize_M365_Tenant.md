@@ -184,7 +184,7 @@ By the time you get to the Module 4 labs, External Access should be ready so tha
 
 	Below the toggle switch, verify the check box is selected for the option titled: **External users with Teanms accounts not managed by an organization can contact users in my organization**.
 
-10. Under the **Skype users** section, verify the toggle switch uis set to **On**. If it's set to **Off**, then set it to **On** now. 
+10. Under the **Skype users** section, verify the toggle switch is set to **On**. If it's set to **Off**, then set it to **On** now. 
 
 11. Select the **Save** button at the bottom of the page.<BR/>
 
