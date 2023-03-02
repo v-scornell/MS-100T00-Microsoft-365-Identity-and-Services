@@ -99,7 +99,7 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 ‎  
 ‎There is one major difference between an Excel sheet and a Power Bi page. An Excel sheet only contains one workbook; however, a Power BI page can have multiple visualizations on the page.  
 ‎  
-‎For this visualization, right-click on **Page 1** and select **Rename Page** in the menu that appears. Enter **Service Request Tickets** as the new name and press Enter to change the page name.
+‎For this visualization, right-click on **Page 1** and select **Rename Page** in the menu that appears. Enter **Service Request Tickets** as the new name and press **Enter** to change the page name.
 
 31. The **Visualizations** pane (which appears to the left of the **Fields** pane) includes a series of icons that represent the different types of visualizations that you can create. If you do not select an icon from the **Visualizations** pane, the default visualization type will be applied, which is a **Table**.   
 ‎  
@@ -131,7 +131,7 @@ In this task, you will download and install the Microsoft Power BI Desktop. Once
 ‎  
 ‎Take this opportunity to arrange the columns in whatever order you want.
 
-35. Next, you want to rename the columns so that they map to the user-friendly column names used in the SharePoint list rather than their database field names. To rename a field, under the **Fields** tab in the **Visualizations** pane, select the drop-down arrow for the field, select **Rename for this visual** in the menu that appears, and then enter the new name and press Enter.   
+35. Next, you want to rename the columns so that they map to the user-friendly column names used in the SharePoint list rather than their database field names. To rename a field, under the **Fields** tab in the **Visualizations** pane, select the drop-down arrow for the field, select **Rename for this visual** in the menu that appears, and then enter the new name and press **Enter**.   
 ‎  
 ‎Change the names of the following fields:
 
