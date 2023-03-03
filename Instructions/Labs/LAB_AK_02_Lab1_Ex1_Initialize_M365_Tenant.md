@@ -32,7 +32,7 @@ You should write down the following information (provided by your instructor) fo
 
 Throughout the labs in this course, you will role-play by taking on the persona of Holly Dickson, Adatum’s Enterprise Administrator. In your role as Holly, you have been tasked with setting up the company’s profile for its Microsoft 365 trial tenant. In this task, you will configure the required options for Adatum’s tenant. Since Holly has yet to create a personal Microsoft 365 user account for herself (you will do this in the next lab exercise), Holly will initially sign into Microsoft 365 using the default Microsoft 365 tenant admin account and password that was created by your lab hosting provider. This account is the MOD Administrator account, whose alias is "admin". The username for this account is admin@xxxxxZZZZZZ.onmicrosoft.com (where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider); the display name for this account will be MOD Administrator.
 
-1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the Domain Controller VM (LON-DC1). If your VM environment opens with one of the other machines, either the local client PC (LON-CL1) or Adatum's on-premises Exchange Server (LON-EX1), then switch to LON-DC1 now.
+1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the Domain Controller VM (LON-DC1). If your VM environment opens with one of the other machines, either the local client PC (LON-CL1) or Adatum's on-premises Exchange Server (LON-EX1), then switch to **LON-DC1** now.
 
 2. On **LON-DC1**, you must select **Ctrl+Alt+Delete** to log in (your instructor will guide you on how to find this option in your VM environment). Log into LON-DC1 as the local Adatum administrator account that was created by your lab hosting provider (**Administrator**) with the password **Pa55w.rd**. 
 
@@ -184,7 +184,7 @@ By the time you get to the Module 4 labs, External Access should be ready so tha
 
 	Below the toggle switch, verify the check box is selected for the option titled: **External users with Teanms accounts not managed by an organization can contact users in my organization**.
 
-10. Under the **Skype users** section, verify the toggle switch uis set to **On**. If it's set to **Off**, then set it to **On** now. 
+10. Under the **Skype users** section, verify the toggle switch is set to **On**. If it's set to **Off**, then set it to **On** now. 
 
 11. Select the **Save** button at the bottom of the page.<BR/>
 
