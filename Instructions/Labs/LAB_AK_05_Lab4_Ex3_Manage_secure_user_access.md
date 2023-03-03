@@ -95,7 +95,7 @@ The CTO is anxious to implement Smart Lockout because it will lock out the attac
 
 		- **Enforce custom list**: select **Yes**
 
-		- **Custom banned password list:** Enter the following values (press Enter after entering each value so that each value is on a separate line):
+		- **Custom banned password list:** Enter the following values (press **Enter** after entering each value so that each value is on a separate line):
 
 			- **Password01**
 
