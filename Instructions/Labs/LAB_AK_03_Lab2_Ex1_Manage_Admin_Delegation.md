@@ -47,7 +47,7 @@ PowerShell also enables you to display all the users assigned to a specific role
 
 2. Your PowerShell session should still be connected to the Azure Active Directory PowerShell for Graph module (AzureAD) from the prior lab. However, if you previously closed PowerShell and just reopened it, then connect to the AzureAD module using the steps from the prior lab exercise. 
 
-3. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press Enter:   <br/>
+3. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press **Enter**:   <br/>
 
 		Set-ExecutionPolicy unrestricted
 
@@ -55,11 +55,11 @@ PowerShell also enables you to display all the users assigned to a specific role
 
 4. Holly wants to assign **Patti Fernandez** to the **Service Support Administrator** role. To assign a role using the AzureAD PowerShell module, you must first obtain the Object ID of the user and the Object ID of the role. <br/>
 
-	To obtain Patti's Object ID, type the following command and then press Enter: <br/>
+	To obtain Patti's Object ID, type the following command and then press **Enter**: <br/>
 
 		Get-AzureADUser -ObjectID "PattiF@xxxxxZZZZZZ.onmicrosoft.com" (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
 
-5. You must now obtain the ObjectID of the Service Support Administrator role so that you can assign it to Patti using the role's ObjectID. However, in the AzureAD PowerShell module, you can only assign roles that have been "enabled". Enabled roles are roles that were either enabled from a role template, or they're roles that have already been assigned to users through PowerShell or the Microsoft 365 admin center. To view all the enabled roles in Microsoft 365, enter the following command at the command prompt and then press Enter: <br/>
+5. You must now obtain the ObjectID of the Service Support Administrator role so that you can assign it to Patti using the role's ObjectID. However, in the AzureAD PowerShell module, you can only assign roles that have been "enabled". Enabled roles are roles that were either enabled from a role template, or they're roles that have already been assigned to users through PowerShell or the Microsoft 365 admin center. To view all the enabled roles in Microsoft 365, enter the following command at the command prompt and then press **Enter**: <br/>
 	
 		Get-AzureADDirectoryRole
 
@@ -67,21 +67,21 @@ PowerShell also enables you to display all the users assigned to a specific role
 
 	However, since the Service Support Administrator is not included in this list of enabled roles, you must perform steps 6-9 to enable the role before you can assign it to Patti in step 10.
 
-6. To enable a role in the AzureAD PowerShell module, you must first locate the role template to verify its Display Name. You need to know the exact spelling of the role template in order to assign it to the role. To view the list of role templates, type in the following command and then press Enter: <br/>
+6. To enable a role in the AzureAD PowerShell module, you must first locate the role template to verify its Display Name. You need to know the exact spelling of the role template in order to assign it to the role. To view the list of role templates, type in the following command and then press **Enter**: <br/>
 
 		Get-AzureADDirectoryRoleTemplate
 	
 7. This command displayed the templates for all the possible Microsoft 365 roles. In the list of role templates, locate the template record for the **Service Support Administrator** role. Verify you have the correct spelling of the role (Note: the word Administrator must be spelled out. It can't be abbreviated to "admin" as we often times do in our documentation). <br/>
 
-	You should then retrieve the role template object for the Service Support Administrator role. To do so, type in the following command, which retrieves this template in the **$ServiceSupportRole** variable, and then press Enter:  <br/>
+	You should then retrieve the role template object for the Service Support Administrator role. To do so, type in the following command, which retrieves this template in the **$ServiceSupportRole** variable, and then press **Enter**:  <br/>
 
 		$ServiceSupportRole = Get-AzureADDirectoryRoleTemplate | Where-Object {$_.DisplayName -eq "Service Support Administrator"}
 
-8. You now want to verify that you captured the correct role template by verifying the contents of the $ServiceSupportRole variable. To do so, type the following command and press Enter: <br/>
+8. You now want to verify that you captured the correct role template by verifying the contents of the $ServiceSupportRole variable. To do so, type the following command and press **Enter**: <br/>
 
 		$ServiceSupportRole
 
-9. You're now ready to enable the Service Support Administrator role by basing it on its predefined template, which is stored in the $ServiceSupportRole variable. To do so, type the following command and press Enter: <br/>
+9. You're now ready to enable the Service Support Administrator role by basing it on its predefined template, which is stored in the $ServiceSupportRole variable. To do so, type the following command and press **Enter**: <br/>
 
 		Enable-AzureADDirectoryRole -RoleTemplateId $ServiceSupportRole.ObjectId
 
@@ -101,15 +101,15 @@ PowerShell also enables you to display all the users assigned to a specific role
 
 	Add-AzureADDirectoryRoleMember -ObjectID "03618579-3c16-4765-9539-86d9163ee3d9" -RefObjectId "a4a9ed46-369c-4b69-9e47-d2ac6029485d" <br/>
 
-	**Note:** To copy an ObjectID, highlight the ObjectID and select Ctrl+C to copy it. Then place your cursor in the appropriate spot in the command and press Ctrl+V to paste it. <br/>
+	**Note:** To copy an ObjectID, highlight the ObjectID and select Ctrl+C to copy it. Then place your cursor in the appropriate spot in the command and press **Ctrl+V** to paste it. <br/>
 	
-	Now that you know where each ObjectID goes, type in the following command, copy each ObjectID and paste it within quotation marks in its appropriate location within the command, and then press Enter: <br/>
+	Now that you know where each ObjectID goes, type in the following command, copy each ObjectID and paste it within quotation marks in its appropriate location within the command, and then press **Enter**: <br/>
 
 		Add-AzureADDirectoryRoleMember -ObjectID "paste in the role's ObjectID here" -RefObjectId "paste in Patti's object ID here"
 
 11. You now want to verify that Patti has been assigned to the Service Support Administrator role. Displaying the users assigned to a role is a two-step process in PowerShell. You will begin by creating a macro command ($role) that states that anytime $role is used in a cmdlet, it should retrieve all users assigned to whichever role name you are validating.  <br/>
 
-	You will create this $role variable for the Service Support Administrator role. To do so, type the following command and then press Enter:  <br/>
+	You will create this $role variable for the Service Support Administrator role. To do so, type the following command and then press **Enter**:  <br/>
 
 		$role = Get-AzureADDirectoryRole | Where-Object {$_.DisplayName -eq "Service Support Administrator"}
 		
