@@ -188,17 +188,17 @@ In this task, you will use Windows PowerShell to recover the Inside Sales group 
 
 2. If Windows PowerShell is still open from the previous exercise, select the **Windows PowerShell** icon on the taskbar; otherwise, you must open an elevated instance of Windows PowerShell just as you did before. Maximize your PowerShell window.
 
-3. In **Windows PowerShell**, at the command prompt type the following command and then press Enter to connect to the Azure Active Directory PowerShell for Graph module (AzureAD) with an authenticated account: <br/> 
+3. In **Windows PowerShell**, at the command prompt type the following command and then press **Enter** to connect to the Azure Active Directory PowerShell for Graph module (AzureAD) with an authenticated account: <br/> 
 
 		Connect-AzureAD   
 
 4. A new window will appear requesting your credentials. Sign in using Holly's Microsoft 365 account of **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and **User.pw1** as the Password.  
 
-5. At the command prompt, type the following command and then press Enter to display the repository of deleted groups (this should display the **Inside Sales** group that you earlier deleted):<br/>  
+5. At the command prompt, type the following command and then press **Enter** to display the repository of deleted groups (this should display the **Inside Sales** group that you earlier deleted):<br/>  
 	
 		Get-AzureADMSDeletedGroup   
 
-6. At the command prompt, either type or copy and paste in the following command; however, do not press Enter yet as you must first replace {objectId} with the actual Object ID of the deleted Inside Sales group.  <br/>
+6. At the command prompt, either type or copy and paste in the following command; however, do not press **Enter** yet as you must first replace {objectId} with the actual Object ID of the deleted Inside Sales group.  <br/>
 
 		Restore-AzureADMSDeletedDirectoryObject -Id {objectId}
 
