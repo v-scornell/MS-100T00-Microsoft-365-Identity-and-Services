@@ -131,7 +131,7 @@ Azure Active Directory is required to perform several configuration tasks when i
 
 1. On LON-DC1, you must open an elevated instance of **Windows PowerShell**. Select the magnifying glass (Search) icon on the taskbar at the bottom of the screen and type **powershell** in the Search box that appears. In the list of search results, right-click on **Windows PowerShell** (do not select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu. 
 
-2. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command to install the Azure AD PowerShell module from the PowerShell Gallery and then press Enter: <br/>
+2. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command to install the Azure AD PowerShell module from the PowerShell Gallery and then press **Enter**: <br/>
 
 		Install-Module AzureAD
 
@@ -141,7 +141,7 @@ Azure Active Directory is required to perform several configuration tasks when i
 
 4. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. You have now installed the Windows Azure Active Directory PowerShell Module. <br/>
 
-	You now must connect to the AzureAD module that you just installed. Type the following command and then press Enter: <br/>
+	You now must connect to the AzureAD module that you just installed. Type the following command and then press **Enter**: <br/>
 
 		Connect-AzureAD
 
